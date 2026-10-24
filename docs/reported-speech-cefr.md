@@ -17,9 +17,9 @@ The active data/micro-practice-library.json contains **276 activities overall**.
 
 | Level | Active Reported Speech activities | Intended emphasis |
 |---|---:|---|
-| A1 | 12 | Recognising and relaying familiar messages |
+| A1 | 11 | Recognising and relaying familiar messages |
 | A2 | 16 | Simple statements, plans and messages |
-| B1 | 40 | Indirect questions, requests, advice, listening, speaking and writing |
+| B1 | 41 | Indirect questions, requests, advice, listening, speaking and writing |
 | B2 | 24 in the separate locked pack | Attribution, stance, uncertainty and evidence boundaries |
 
 The 24 B2 activities are authored in data/reported-speech-b2-pack.json, which remains **locked until the progression evidence gate is implemented**. B2 content is not inserted into the active micro-library and cannot be reached merely by choosing a topic.
