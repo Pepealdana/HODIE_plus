@@ -15159,6 +15159,114 @@
         "errorType": "task-completion"
       },
       "languageResource": "grammar"
+    },
+    {
+      "id": "MIC-CEFR-A1-READING-05",
+      "canDoId": "RE-A1-01",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "level": "A1",
+      "context": "school",
+      "title": "Reading: follow a classroom sign",
+      "titleEs": "Lectura: sigue un aviso del aula",
+      "prompt": "Sign: “Room 12 is closed today. This class will meet in Room 14.” Where should the students go?",
+      "promptEs": "Aviso: «El salón 12 está cerrado hoy. Esta clase se reunirá en el salón 14». ¿A dónde deben ir los estudiantes?",
+      "options": [
+        "Room 14",
+        "Room 12",
+        "The library"
+      ],
+      "answer": "Room 14",
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "reading",
+        "short-notice"
+      ],
+      "resources": [
+        "reading",
+        "vocabulary"
+      ],
+      "languageResource": "reading",
+      "feedback": {
+        "correct": "The sign clearly says the class will meet in Room 14.",
+        "correctEs": "El aviso indica claramente que la clase se reunirá en el salón 14.",
+        "incorrect": "Look for the room number in the second sentence of the sign.",
+        "incorrectEs": "Busca el número del salón en la segunda oración del aviso."
+      }
+    },
+    {
+      "id": "MIC-CEFR-A1-READING-06",
+      "canDoId": "RE-A1-01",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Reading: find a time in a message",
+      "titleEs": "Lectura: encuentra una hora en un mensaje",
+      "prompt": "Message: “Hi, Sam. The film starts at 6:30. Let's meet outside at 6:10.” What time should Sam meet the writer?",
+      "promptEs": "Mensaje: «Hola, Sam. La película empieza a las 6:30. Encontrémonos afuera a las 6:10». ¿A qué hora debe encontrarse Sam con quien escribe?",
+      "options": [
+        "6:10",
+        "6:30",
+        "6:50"
+      ],
+      "answer": "6:10",
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "reading",
+        "time"
+      ],
+      "resources": [
+        "reading",
+        "vocabulary"
+      ],
+      "languageResource": "reading",
+      "feedback": {
+        "correct": "The meeting time is 6:10; 6:30 is when the film starts.",
+        "correctEs": "La hora de encuentro es 6:10; la película empieza a las 6:30.",
+        "incorrect": "Distinguish the meeting time from the film's start time.",
+        "incorrectEs": "Distingue la hora del encuentro de la hora de inicio de la película."
+      }
+    },
+    {
+      "id": "MIC-CEFR-A1-READING-07",
+      "canDoId": "RE-A1-01",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Reading: understand a short invitation",
+      "titleEs": "Lectura: comprende una invitación breve",
+      "prompt": "Invitation: “Come to my birthday party on Saturday at 3 p.m. Bring your favourite game.” What should the guest bring?",
+      "promptEs": "Invitación: «Ven a mi fiesta de cumpleaños el sábado a las 3 p. m. Trae tu juego favorito». ¿Qué debe llevar el invitado?",
+      "options": [
+        "A favourite game",
+        "A birthday cake",
+        "A school book"
+      ],
+      "answer": "A favourite game",
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "reading",
+        "invitation"
+      ],
+      "resources": [
+        "reading",
+        "vocabulary"
+      ],
+      "languageResource": "reading",
+      "feedback": {
+        "correct": "The invitation asks the guest to bring a favourite game.",
+        "correctEs": "La invitación pide al invitado que lleve su juego favorito.",
+        "incorrect": "Find the instruction that begins with “Bring”.",
+        "incorrectEs": "Busca la instrucción que comienza con «Bring»."
+      }
     }
   ]
 }
