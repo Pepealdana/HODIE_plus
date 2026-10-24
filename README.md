@@ -1138,7 +1138,7 @@ The size of the Can-Do matrix is not the same as the amount of content already e
 - **Can-Do descriptors:** 133 in the matrix.
 - **Guided home starter path:** four A2 speaking targets, `SP-A2-01` through `SP-A2-04`.
 - **Micro-practice catalogue:** 284 activities across grammar, vocabulary, reading, listening, speaking, writing, pronunciation and communication. Small focused pools can expand within the same CEFR level and requested skill.
-- **Reported Speech:** 68 active activities across A1, A2 and B1; a separate 24-activity B2 pack remains locked until the progression evidence gate is implemented.
+- **Reported Speech:** 70 active activities across A1, A2 and B1; a separate 24-activity B2 pack remains locked until the progression evidence gate is implemented.
 - **Correction:** four narrow, regression-tested Reported Speech rules provide high-confidence feedback. A missing correction does not prove the full response is correct.
 - **Conversation and simulation:** four rule-based experiences (one open conversation and three simulations).
 - **Persistence:** progress and resumable sessions are stored locally in the browser.
