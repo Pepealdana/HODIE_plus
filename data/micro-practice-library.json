@@ -6359,12 +6359,12 @@
     },
     {
       "id": "MIC-CEFR-A1-GRAMMAR-02",
-      "canDoId": "GR-A1-01",
+      "canDoId": "GR-B1-04",
       "skill": "grammar",
-      "level": "A1",
+      "level": "B1",
       "context": "daily-life",
-      "title": "Grammar: modals",
-      "titleEs": "Gramática: modals",
+      "title": "Grammar: give technical advice",
+      "titleEs": "Gramática: dar consejos técnicos",
       "tags": [
         "modals",
         "grammar",
@@ -6387,33 +6387,30 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "You ___ save a copy before editing the file.",
-      "promptEs": [
-        "should",
-        "wouldn't",
-        "did"
-      ],
+      "prompt": "Before updating the robot firmware, you ___ back up the current configuration.",
+      "promptEs": "Antes de actualizar el firmware del robot, ___ hacer una copia de seguridad de la configuración actual.",
       "options": [
         "should",
-        "shouldn't",
-        "should to"
+        "shouldn't to",
+        "mustn't"
       ],
       "answer": "should",
       "feedback": {
-        "correct": "Should gives advice.",
-        "correctEs": "Should da consejos.",
-        "incorrect": "Not quite. The expected answer is “should”. Should gives advice.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «should». Should da consejos."
-      }
+        "correct": "Should gives advice or a recommendation. The sentence recommends backing up the configuration first.",
+        "correctEs": "Should expresa un consejo o recomendación. La oración recomienda guardar una copia de la configuración primero.",
+        "incorrect": "Choose the modal that recommends a sensible action, not one that prohibits it.",
+        "incorrectEs": "Elige el modal que recomienda una acción sensata, no uno que la prohíba."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-GRAMMAR-03",
-      "canDoId": "GR-A1-01",
+      "canDoId": "GR-B1-01",
       "skill": "grammar",
-      "level": "A1",
+      "level": "B1",
       "context": "social",
-      "title": "Grammar: present perfect",
-      "titleEs": "Gramática: present perfect",
+      "title": "Grammar: present perfect experience",
+      "titleEs": "Gramática: experiencia en presente perfecto",
       "tags": [
         "present-perfect",
         "grammar",
@@ -6436,24 +6433,25 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "complete",
-      "prompt": "I have ___ this book before.",
-      "promptEs": null,
-      "answer": "read",
+      "prompt": "Our team has ___ the prototype twice, so we know the main issues.",
+      "promptEs": "Nuestro equipo ha ___ el prototipo dos veces, así que conocemos los problemas principales.",
+      "answer": "tested",
       "feedback": {
-        "correct": "Use the past participle after have.",
-        "correctEs": "Usa el participio pasado después de have.",
-        "incorrect": "Not quite. The expected answer is “read”. Use the past participle after have.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «read». Usa el participio pasado después de have."
-      }
+        "correct": "Tested is the past participle after has in the present perfect: has tested.",
+        "correctEs": "Tested es el participio pasado que sigue a has en presente perfecto: has tested.",
+        "incorrect": "After has, use the past participle: has tested.",
+        "incorrectEs": "Después de has, usa el participio pasado: has tested."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-GRAMMAR-04",
-      "canDoId": "GR-A1-01",
+      "canDoId": "GR-B1-07",
       "skill": "grammar",
-      "level": "A1",
+      "level": "B1",
       "context": "travel",
-      "title": "Grammar: connectors",
-      "titleEs": "Gramática: connectors",
+      "title": "Grammar: connect a cause and result precisely",
+      "titleEs": "Gramática: conecta causa y resultado con precisión",
       "tags": [
         "connectors",
         "grammar",
@@ -6476,46 +6474,44 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "The bus was late, ___ we took a taxi.",
-      "promptEs": [
-        "so",
+      "prompt": "The first prototype overheated; ___, the team redesigned the ventilation.",
+      "promptEs": "El primer prototipo se sobrecalentó; ___, el equipo rediseñó la ventilación.",
+      "options": [
+        "therefore",
         "although",
         "unless"
       ],
-      "options": [
-        "because",
-        "so",
-        "although"
-      ],
-      "answer": "so",
+      "answer": "therefore",
       "feedback": {
-        "correct": "So introduces a result.",
-        "correctEs": "So introduce un resultado.",
-        "incorrect": "Not quite. The expected answer is “so”. So introduces a result.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «so». So introduce un resultado."
-      }
+        "correct": "Therefore introduces a result that follows from the overheating problem.",
+        "correctEs": "Therefore introduce un resultado derivado del problema de sobrecalentamiento.",
+        "incorrect": "Choose a result connector; although introduces contrast and unless introduces a condition.",
+        "incorrectEs": "Elige un conector de resultado; although expresa contraste y unless introduce una condición."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-GRAMMAR-05",
-      "canDoId": "GR-A1-01",
+      "canDoId": "RS-B1-GRAM",
       "skill": "grammar",
-      "level": "A1",
+      "level": "B1",
       "context": "study",
       "title": "Grammar: reported questions",
-      "titleEs": "Gramática: reported questions",
+      "titleEs": "Gramática: preguntas indirectas",
       "tags": [
+        "reported-speech",
         "reported-questions",
-        "grammar",
-        "a1",
+        "word-order",
+        "b1",
         "cefr-informed"
       ],
       "errorType": "grammar",
-      "errorTarget": "reported questions",
+      "errorTarget": "reported-speech",
       "errorSeverity": "medium",
       "errorPriority": "medium",
       "reviewTargets": [
-        "grammar",
-        "reported questions"
+        "reported-speech",
+        "reported-question-word-order"
       ],
       "reviewPriority": "medium",
       "primarySkill": "grammar",
@@ -6525,24 +6521,24 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "She asked me where I ___.",
-      "promptEs": [
-        "lived",
-        "did live",
-        "do live"
-      ],
-      "options": [
-        "lived",
-        "did live",
-        "live"
-      ],
-      "answer": "lived",
+      "prompt": "The interviewer asked me where I ___ my first robot.",
+      "promptEs": "El entrevistador me preguntó dónde ___ mi primer robot.",
+      "answer": "built",
       "feedback": {
-        "correct": "Reported questions use statement word order; backshift is common after a past reporting verb.",
-        "correctEs": "Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
-        "incorrect": "Not quite. The expected answer is “lived”. Reported questions use statement word order; backshift is common after a past reporting verb.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «lived». Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado."
-      }
+        "correct": "Reported questions use statement word order: where I built, not where did I build.",
+        "correctEs": "Las preguntas indirectas usan el orden afirmativo: where I built, no where did I build.",
+        "incorrect": "After the question word, use subject + verb. Do not keep direct-question inversion.",
+        "incorrectEs": "Después de la palabra interrogativa, usa sujeto + verbo. No conserves la inversión de la pregunta directa."
+      },
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-CEFR-A1-GRAMMAR-06",
@@ -6644,12 +6640,12 @@
     },
     {
       "id": "MIC-CEFR-A1-VOCABULARY-02",
-      "canDoId": "VO-A1-01",
+      "canDoId": "VO-A2-01",
       "skill": "vocabulary",
-      "level": "A1",
+      "level": "A2",
       "context": "social",
-      "title": "Vocabulary: word formation",
-      "titleEs": "Vocabulario: word formation",
+      "title": "Vocabulary: form an adjective",
+      "titleEs": "Vocabulario: forma un adjetivo",
       "tags": [
         "word-formation",
         "vocabulary",
@@ -6685,20 +6681,21 @@
       ],
       "answer": "careful",
       "feedback": {
-        "correct": "Careful describes someone who takes care.",
-        "correctEs": "Careful describe a alguien que actúa con cuidado.",
-        "incorrect": "Not quite. The expected answer is “careful”. Careful describes someone who takes care.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «careful». Careful describe a alguien que actúa con cuidado."
-      }
+        "correct": "Careful is the adjective; carefully is an adverb and careless has the opposite meaning.",
+        "correctEs": "Careful es el adjetivo; carefully es un adverbio y careless tiene el significado contrario.",
+        "incorrect": "Choose the adjective that describes a person, not an adverb or its opposite.",
+        "incorrectEs": "Elige el adjetivo que describe a una persona, no un adverbio ni su contrario."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-VOCABULARY-03",
-      "canDoId": "VO-A1-01",
+      "canDoId": "VO-A2-03",
       "skill": "vocabulary",
-      "level": "A1",
+      "level": "A2",
       "context": "travel",
-      "title": "Vocabulary: precision",
-      "titleEs": "Vocabulario: precision",
+      "title": "Vocabulary: solve a problem",
+      "titleEs": "Vocabulario: resolver un problema",
       "tags": [
         "precision",
         "vocabulary",
@@ -6738,16 +6735,17 @@
         "correctEs": "Solve a problem es la colocación natural.",
         "incorrect": "Not quite. The expected answer is “solve a problem”. Solve a problem is the natural collocation.",
         "incorrectEs": "No exactamente. La respuesta esperada es «solve a problem». Solve a problem es la colocación natural."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-VOCABULARY-04",
-      "canDoId": "VO-A1-01",
+      "canDoId": "VO-B1-04",
       "skill": "vocabulary",
-      "level": "A1",
+      "level": "B1",
       "context": "study",
-      "title": "Vocabulary: opinion language",
-      "titleEs": "Vocabulario: opinion language",
+      "title": "Vocabulary: cautious opinion language",
+      "titleEs": "Vocabulario: lenguaje para expresar opiniones cautelosas",
       "tags": [
         "opinion-language",
         "vocabulary",
@@ -6787,16 +6785,17 @@
         "correctEs": "It seems that expresa una opinión matizada.",
         "incorrect": "Not quite. The expected answer is “It seems that...”. It seems that expresses a measured viewpoint.",
         "incorrectEs": "No exactamente. La respuesta esperada es «It seems that...». It seems that expresa una opinión matizada."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-VOCABULARY-05",
-      "canDoId": "VO-A1-01",
+      "canDoId": "VO-A2-03",
       "skill": "vocabulary",
-      "level": "A1",
+      "level": "A2",
       "context": "professional",
-      "title": "Vocabulary: collocations",
-      "titleEs": "Vocabulario: collocations",
+      "title": "Vocabulary: make a decision",
+      "titleEs": "Vocabulario: tomar una decisión",
       "tags": [
         "collocations",
         "vocabulary",
@@ -6836,16 +6835,17 @@
         "correctEs": "Make a decision es la colocación habitual.",
         "incorrect": "Not quite. The expected answer is “make”. Make a decision is the standard collocation.",
         "incorrectEs": "No exactamente. La respuesta esperada es «make». Make a decision es la colocación habitual."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-VOCABULARY-06",
-      "canDoId": "VO-A1-01",
+      "canDoId": "VO-A2-03",
       "skill": "vocabulary",
-      "level": "A1",
+      "level": "A2",
       "context": "daily-life",
-      "title": "Vocabulary: travel",
-      "titleEs": "Vocabulario: travel",
+      "title": "Vocabulary: travel documents",
+      "titleEs": "Vocabulario: documentos de viaje",
       "tags": [
         "travel",
         "vocabulary",
@@ -6886,7 +6886,8 @@
         "incorrect": "Not quite. The expected answer is “passport control”. Passport control checks travel documents.",
         "incorrectEs": "No exactamente. La respuesta esperada es «passport control». Passport control revisa documentos de viaje."
       },
-      "timeLimitSeconds": 25
+      "timeLimitSeconds": 25,
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-VOCABULARY-07",
@@ -6930,12 +6931,12 @@
     },
     {
       "id": "MIC-CEFR-A1-VOCABULARY-08",
-      "canDoId": "VO-A1-01",
+      "canDoId": "VO-A2-03",
       "skill": "vocabulary",
-      "level": "A1",
+      "level": "A2",
       "context": "travel",
-      "title": "Vocabulary: phrasal verbs",
-      "titleEs": "Vocabulario: phrasal verbs",
+      "title": "Vocabulary: phrasal verb look after",
+      "titleEs": "Vocabulario: el verbo frasal look after",
       "tags": [
         "phrasal-verbs",
         "vocabulary",
@@ -6975,16 +6976,17 @@
         "correctEs": "Look after significa cuidar de alguien o algo.",
         "incorrect": "Not quite. The expected answer is “take care of”. Look after means care for someone or something.",
         "incorrectEs": "No exactamente. La respuesta esperada es «take care of». Look after significa cuidar de alguien o algo."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-READING-01",
-      "canDoId": "RE-A1-01",
+      "canDoId": "RE-A2-01",
       "skill": "reading",
-      "level": "A1",
+      "level": "A2",
       "context": "social",
-      "title": "Reading: inference",
-      "titleEs": "Lectura: inference",
+      "title": "Reading: infer a likely next step",
+      "titleEs": "Lectura: infiere el siguiente paso probable",
       "tags": [
         "inference",
         "reading",
@@ -7024,16 +7026,17 @@
         "correctEs": "Las acciones sugieren un viaje próximo.",
         "incorrect": "Not quite. The expected answer is “The person will travel soon.”. The actions suggest an upcoming trip.",
         "incorrectEs": "No exactamente. La respuesta esperada es «The person will travel soon.». Las acciones sugieren un viaje próximo."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-READING-02",
-      "canDoId": "RE-A1-01",
+      "canDoId": "RE-B1-05",
       "skill": "reading",
-      "level": "A1",
+      "level": "B1",
       "context": "travel",
-      "title": "Reading: viewpoint",
-      "titleEs": "Lectura: viewpoint",
+      "title": "Reading: interpret a qualified viewpoint",
+      "titleEs": "Lectura: interpreta un punto de vista matizado",
       "tags": [
         "viewpoint",
         "reading",
@@ -7073,16 +7076,17 @@
         "correctEs": "Promising es positivo; although introduce una reserva.",
         "incorrect": "Not quite. The expected answer is “Cautiously positive”. Promising is positive; although introduces a reservation.",
         "incorrectEs": "No exactamente. La respuesta esperada es «Cautiously positive». Promising es positivo; although introduce una reserva."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-READING-03",
-      "canDoId": "RE-A1-01",
+      "canDoId": "RE-B1-02",
       "skill": "reading",
-      "level": "A1",
+      "level": "B1",
       "context": "study",
-      "title": "Reading: evidence",
-      "titleEs": "Lectura: evidence",
+      "title": "Reading: identify the supported claim",
+      "titleEs": "Lectura: identifica la afirmación sustentada",
       "tags": [
         "evidence",
         "reading",
@@ -7122,7 +7126,8 @@
         "correctEs": "No generalices más allá de la evidencia indicada.",
         "incorrect": "Not quite. The expected answer is “Three users reported easier navigation.”. Do not generalise beyond the stated evidence.",
         "incorrectEs": "No exactamente. La respuesta esperada es «Three users reported easier navigation.». No generalices más allá de la evidencia indicada."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-READING-04",
@@ -7130,8 +7135,8 @@
       "skill": "reading",
       "level": "A1",
       "context": "professional",
-      "title": "Reading: short message",
-      "titleEs": "Lectura: short message",
+      "title": "Reading: find a time in a short message",
+      "titleEs": "Lectura: encuentra una hora en un mensaje corto",
       "tags": [
         "short-message",
         "reading",
@@ -7171,7 +7176,8 @@
         "correctEs": "El mensaje indica la hora exacta de salida.",
         "incorrect": "Not quite. The expected answer is “9:10”. The message gives the exact departure time.",
         "incorrectEs": "No exactamente. La respuesta esperada es «9:10». El mensaje indica la hora exacta de salida."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A1-LISTENING-01",
@@ -9030,8 +9036,8 @@
       "skill": "reading",
       "level": "A2",
       "context": "study",
-      "title": "Reading: evidence",
-      "titleEs": "Lectura: evidence",
+      "title": "Reading: identify a limited finding",
+      "titleEs": "Lectura: identifica un resultado limitado",
       "tags": [
         "evidence",
         "reading",
@@ -9071,16 +9077,17 @@
         "correctEs": "No generalices más allá de la evidencia indicada.",
         "incorrect": "Not quite. The expected answer is “Three users reported easier navigation.”. Do not generalise beyond the stated evidence.",
         "incorrectEs": "No exactamente. La respuesta esperada es «Three users reported easier navigation.». No generalices más allá de la evidencia indicada."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A2-READING-02",
-      "canDoId": "RE-A2-01",
+      "canDoId": "RE-A2-03",
       "skill": "reading",
       "level": "A2",
       "context": "professional",
-      "title": "Reading: short message",
-      "titleEs": "Lectura: short message",
+      "title": "Reading: compare a weekly timetable",
+      "titleEs": "Lectura: compara un horario semanal",
       "tags": [
         "short-message",
         "reading",
@@ -9103,24 +9110,21 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "Read: “Bus 8 leaves at 9:10.” What time does it leave?",
-      "promptEs": [
-        "9:10",
-        "8:10",
-        "9:50"
-      ],
+      "prompt": "Timetable: Bus 8 leaves at 9:10 on weekdays and at 9:30 on Sundays. Today is Sunday. When does Bus 8 leave?",
+      "promptEs": "Horario: el bus 8 sale a las 9:10 entre semana y a las 9:30 los domingos. Hoy es domingo. ¿A qué hora sale el bus 8?",
       "options": [
+        "9:30",
         "9:10",
-        "9:01",
-        "9:30"
+        "10:00"
       ],
-      "answer": "9:10",
+      "answer": "9:30",
       "feedback": {
-        "correct": "The message gives the exact departure time.",
-        "correctEs": "El mensaje indica la hora exacta de salida.",
-        "incorrect": "Not quite. The expected answer is “9:10”. The message gives the exact departure time.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «9:10». El mensaje indica la hora exacta de salida."
-      }
+        "correct": "The timetable gives a separate Sunday time: 9:30.",
+        "correctEs": "El horario indica una hora distinta para el domingo: 9:30.",
+        "incorrect": "Use the Sunday row, not the weekday time.",
+        "incorrectEs": "Usa la información del domingo, no la hora de entre semana."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-A2-WRITING-01",
@@ -9426,16 +9430,17 @@
         "correctEs": "Usa el participio pasado después de have.",
         "incorrect": "Not quite. The expected answer is “read”. Use the past participle after have.",
         "incorrectEs": "No exactamente. La respuesta esperada es «read». Usa el participio pasado después de have."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-GRAMMAR-02",
-      "canDoId": "GR-B1-01",
+      "canDoId": "GR-B1-07",
       "skill": "grammar",
       "level": "B1",
       "context": "travel",
-      "title": "Grammar: connectors",
-      "titleEs": "Gramática: connectors",
+      "title": "Grammar: connect technical results",
+      "titleEs": "Gramática: conecta resultados técnicos",
       "tags": [
         "connectors",
         "grammar",
@@ -9458,46 +9463,44 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "The bus was late, ___ we took a taxi.",
-      "promptEs": [
-        "so",
+      "prompt": "The sensor produced inconsistent readings; ___, the team recalibrated it.",
+      "promptEs": "El sensor produjo lecturas inconsistentes; ___, el equipo lo recalibró.",
+      "options": [
+        "therefore",
         "although",
         "unless"
       ],
-      "options": [
-        "although",
-        "because",
-        "so"
-      ],
-      "answer": "so",
+      "answer": "therefore",
       "feedback": {
-        "correct": "So introduces a result.",
-        "correctEs": "So introduce un resultado.",
-        "incorrect": "Not quite. The expected answer is “so”. So introduces a result.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «so». So introduce un resultado."
-      }
+        "correct": "Therefore introduces the action taken as a result of the inconsistent readings.",
+        "correctEs": "Therefore introduce la acción realizada como resultado de las lecturas inconsistentes.",
+        "incorrect": "Choose the connector of result, not contrast or condition.",
+        "incorrectEs": "Elige el conector de resultado, no uno de contraste o condición."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-GRAMMAR-03",
-      "canDoId": "GR-B1-01",
+      "canDoId": "RS-B1-GRAM",
       "skill": "grammar",
       "level": "B1",
       "context": "study",
-      "title": "Grammar: reported questions",
-      "titleEs": "Gramática: reported questions",
+      "title": "Grammar: reported question word order",
+      "titleEs": "Gramática: orden en preguntas indirectas",
       "tags": [
+        "reported-speech",
         "reported-questions",
-        "grammar",
+        "word-order",
         "b1",
         "cefr-informed"
       ],
       "errorType": "grammar",
-      "errorTarget": "reported questions",
+      "errorTarget": "reported-speech",
       "errorSeverity": "medium",
       "errorPriority": "medium",
       "reviewTargets": [
-        "grammar",
-        "reported questions"
+        "reported-speech",
+        "reported-question-word-order"
       ],
       "reviewPriority": "medium",
       "primarySkill": "grammar",
@@ -9507,33 +9510,33 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "She asked me where I ___.",
-      "promptEs": [
-        "lived",
-        "did live",
-        "do live"
-      ],
-      "options": [
-        "live",
-        "lived",
-        "did live"
-      ],
-      "answer": "lived",
+      "prompt": "The mentor asked us what we ___ to improve the robot's balance.",
+      "promptEs": "El mentor nos preguntó qué ___ para mejorar el equilibrio del robot.",
+      "answer": "had changed",
       "feedback": {
-        "correct": "Reported questions use statement word order; backshift is common after a past reporting verb.",
-        "correctEs": "Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
-        "incorrect": "Not quite. The expected answer is “lived”. Reported questions use statement word order; backshift is common after a past reporting verb.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «lived». Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado."
-      }
+        "correct": "A reported question uses statement word order: what we had changed.",
+        "correctEs": "Una pregunta indirecta usa orden afirmativo: what we had changed.",
+        "incorrect": "Keep the subject before the verb after what; do not use what had we changed.",
+        "incorrectEs": "Conserva el sujeto antes del verbo después de what; no uses what had we changed."
+      },
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-CEFR-B1-GRAMMAR-04",
-      "canDoId": "GR-B1-01",
+      "canDoId": "GR-A1-01",
       "skill": "grammar",
-      "level": "B1",
+      "level": "A1",
       "context": "professional",
-      "title": "Grammar: articles",
-      "titleEs": "Gramática: articles",
+      "title": "Grammar: article before a /juː/ sound",
+      "titleEs": "Gramática: artículo antes de un sonido /juː/",
       "tags": [
         "articles",
         "grammar",
@@ -9556,31 +9559,28 @@
       "knowledgeScope": "global",
       "gameMode": "timed-challenge",
       "type": "choose",
-      "prompt": "She is ___ engineer.",
-      "promptEs": [
-        "a",
-        "an",
-        "the"
-      ],
+      "prompt": "She is ___ university student.",
+      "promptEs": "Ella es ___ estudiante universitaria.",
       "options": [
-        "an",
         "a",
+        "an",
         "the"
       ],
-      "answer": "an",
+      "answer": "a",
       "feedback": {
-        "correct": "Use an before a vowel sound.",
-        "correctEs": "Usa an antes de un sonido vocálico.",
-        "incorrect": "Not quite. The expected answer is “an”. Use an before a vowel sound.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «an». Usa an antes de un sonido vocálico."
+        "correct": "Use a before the consonant sound /j/ in university, even though the word begins with the letter u.",
+        "correctEs": "Usa a antes del sonido consonántico /j/ de university, aunque la palabra empieza con la letra u.",
+        "incorrect": "Choose a because the first sound is /j/, not a vowel sound.",
+        "incorrectEs": "Elige a porque el primer sonido es /j/, no un sonido vocálico."
       },
-      "timeLimitSeconds": 45
+      "timeLimitSeconds": 45,
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-VOCABULARY-01",
-      "canDoId": "VO-B1-01",
+      "canDoId": "VO-A2-01",
       "skill": "vocabulary",
-      "level": "B1",
+      "level": "A2",
       "context": "social",
       "title": "Vocabulary: word formation",
       "titleEs": "Vocabulario: word formation",
@@ -9623,16 +9623,17 @@
         "correctEs": "Careful describe a alguien que actúa con cuidado.",
         "incorrect": "Not quite. The expected answer is “careful”. Careful describes someone who takes care.",
         "incorrectEs": "No exactamente. La respuesta esperada es «careful». Careful describe a alguien que actúa con cuidado."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-VOCABULARY-02",
-      "canDoId": "VO-B1-01",
+      "canDoId": "VO-B1-02",
       "skill": "vocabulary",
       "level": "B1",
       "context": "travel",
-      "title": "Vocabulary: precision",
-      "titleEs": "Vocabulario: precision",
+      "title": "Vocabulary: precise technical verb",
+      "titleEs": "Vocabulario: verbo técnico preciso",
       "tags": [
         "precision",
         "vocabulary",
@@ -9655,28 +9656,25 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "Which phrase means “resolver un problema”?",
-      "promptEs": [
-        "solve a problem",
-        "do a problem",
-        "make a problem"
-      ],
+      "prompt": "The team used the test results to ___ the source of the fault.",
+      "promptEs": "El equipo usó los resultados de las pruebas para ___ el origen de la falla.",
       "options": [
-        "make a problem",
-        "solve a problem",
-        "do a problem"
+        "identify",
+        "invent",
+        "avoid"
       ],
-      "answer": "solve a problem",
+      "answer": "identify",
       "feedback": {
-        "correct": "Solve a problem is the natural collocation.",
-        "correctEs": "Solve a problem es la colocación natural.",
-        "incorrect": "Not quite. The expected answer is “solve a problem”. Solve a problem is the natural collocation.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «solve a problem». Solve a problem es la colocación natural."
-      }
+        "correct": "Identify means to find or establish exactly what something is; it fits the technical context.",
+        "correctEs": "Identify significa determinar exactamente qué es algo; encaja con el contexto técnico.",
+        "incorrect": "Choose the verb that means finding the source, not creating or avoiding it.",
+        "incorrectEs": "Elige el verbo que significa encontrar el origen, no crearlo ni evitarlo."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-VOCABULARY-03",
-      "canDoId": "VO-B1-01",
+      "canDoId": "VO-B1-04",
       "skill": "vocabulary",
       "level": "B1",
       "context": "study",
@@ -9721,7 +9719,8 @@
         "correctEs": "It seems that expresa una opinión matizada.",
         "incorrect": "Not quite. The expected answer is “It seems that...”. It seems that expresses a measured viewpoint.",
         "incorrectEs": "No exactamente. La respuesta esperada es «It seems that...». It seems that expresa una opinión matizada."
-      }
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-VOCABULARY-04",
@@ -9729,8 +9728,8 @@
       "skill": "vocabulary",
       "level": "B1",
       "context": "professional",
-      "title": "Vocabulary: collocations",
-      "titleEs": "Vocabulario: collocations",
+      "title": "Vocabulary: a decision in a professional context",
+      "titleEs": "Vocabulario: una decisión en contexto profesional",
       "tags": [
         "collocations",
         "vocabulary",
@@ -9753,25 +9752,22 @@
       "knowledgeScope": "global",
       "gameMode": "timed-challenge",
       "type": "choose",
-      "prompt": "Choose the natural phrase: ___ a decision.",
-      "promptEs": [
-        "make",
-        "do",
-        "take"
-      ],
+      "prompt": "After reviewing the evidence, the committee reached a ___.",
+      "promptEs": "Después de revisar la evidencia, el comité tomó una ___.",
       "options": [
-        "do",
-        "take",
-        "make"
+        "decision",
+        "decide",
+        "decisive"
       ],
-      "answer": "make",
+      "answer": "decision",
       "feedback": {
-        "correct": "Make a decision is the standard collocation.",
-        "correctEs": "Make a decision es la colocación habitual.",
-        "incorrect": "Not quite. The expected answer is “make”. Make a decision is the standard collocation.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «make». Make a decision es la colocación habitual."
+        "correct": "Reach a decision is a standard collocation; decision is the noun needed after a.",
+        "correctEs": "Reach a decision es una colocación habitual; decision es el sustantivo que se necesita después de a.",
+        "incorrect": "Use the noun decision, not the verb decide or the adjective decisive.",
+        "incorrectEs": "Usa el sustantivo decision, no el verbo decide ni el adjetivo decisive."
       },
-      "timeLimitSeconds": 45
+      "timeLimitSeconds": 45,
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-VOCABULARY-05",
@@ -9779,8 +9775,8 @@
       "skill": "vocabulary",
       "level": "B1",
       "context": "daily-life",
-      "title": "Vocabulary: travel",
-      "titleEs": "Vocabulario: travel",
+      "title": "Vocabulary: travel document check",
+      "titleEs": "Vocabulario: control de documentos de viaje",
       "tags": [
         "travel",
         "vocabulary",
@@ -9803,33 +9799,30 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "match",
-      "prompt": "Where do passengers show passports before boarding?",
-      "promptEs": [
-        "passport control",
-        "the bakery",
-        "the library"
-      ],
+      "prompt": "Before boarding an international flight, passengers may need to show their passports at ___.",
+      "promptEs": "Antes de abordar un vuelo internacional, los pasajeros pueden tener que mostrar sus pasaportes en ___.",
       "options": [
-        "departure gate",
         "passport control",
-        "baggage claim"
+        "baggage claim",
+        "the departure lounge"
       ],
       "answer": "passport control",
       "feedback": {
-        "correct": "Passport control checks travel documents.",
-        "correctEs": "Passport control revisa documentos de viaje.",
-        "incorrect": "Not quite. The expected answer is “passport control”. Passport control checks travel documents.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «passport control». Passport control revisa documentos de viaje."
-      }
+        "correct": "Passport control is where officials check travel documents; baggage claim is where passengers collect luggage.",
+        "correctEs": "Passport control es donde se revisan los documentos de viaje; baggage claim es donde se recoge el equipaje.",
+        "incorrect": "Choose the place for passport checks, not luggage collection or waiting.",
+        "incorrectEs": "Elige el lugar donde revisan pasaportes, no donde se recoge equipaje o se espera."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-VOCABULARY-06",
-      "canDoId": "VO-B1-01",
+      "canDoId": "VO-B1-02",
       "skill": "vocabulary",
       "level": "B1",
       "context": "social",
-      "title": "Vocabulary: jobs",
-      "titleEs": "Vocabulario: jobs",
+      "title": "Vocabulary: technical measurement device",
+      "titleEs": "Vocabulario: instrumento de medición técnica",
       "tags": [
         "jobs",
         "vocabulary",
@@ -9852,15 +9845,16 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "complete",
-      "prompt": "A person who repairs electrical systems is an ___.",
-      "promptEs": null,
-      "answer": "electrician",
+      "prompt": "The technician used an ___ to inspect the electrical signal on the screen.",
+      "promptEs": "El técnico usó un ___ para inspeccionar la señal eléctrica en la pantalla.",
+      "answer": "oscilloscope",
       "feedback": {
-        "correct": "Electrician names this occupation.",
-        "correctEs": "Electrician nombra esta ocupación.",
-        "incorrect": "Not quite. The expected answer is “electrician”. Electrician names this occupation.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «electrician». Electrician nombra esta ocupación."
-      }
+        "correct": "An oscilloscope displays electrical signals over time, which helps a technician inspect their shape and behaviour.",
+        "correctEs": "Un osciloscopio muestra señales eléctricas a lo largo del tiempo y ayuda a inspeccionar su forma y comportamiento.",
+        "incorrect": "Choose the instrument that displays an electrical signal, not a person or job.",
+        "incorrectEs": "Elige el instrumento que muestra una señal eléctrica, no una persona o profesión."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-VOCABULARY-07",
@@ -9868,8 +9862,8 @@
       "skill": "vocabulary",
       "level": "B1",
       "context": "travel",
-      "title": "Vocabulary: phrasal verbs",
-      "titleEs": "Vocabulario: phrasal verbs",
+      "title": "Vocabulary: phrasal verb in a work context",
+      "titleEs": "Vocabulario: verbo frasal en contexto laboral",
       "tags": [
         "phrasal-verbs",
         "vocabulary",
@@ -9892,33 +9886,30 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "“Look after” means ___.",
-      "promptEs": [
-        "take care of",
-        "look at quickly",
-        "search for"
-      ],
+      "prompt": "The lab assistant is responsible for ___ the equipment during the trip.",
+      "promptEs": "El asistente de laboratorio es responsable de ___ el equipo durante el viaje.",
       "options": [
-        "look for",
-        "look up",
-        "take care of"
+        "looking after",
+        "looking for",
+        "looking up"
       ],
-      "answer": "take care of",
+      "answer": "looking after",
       "feedback": {
-        "correct": "Look after means care for someone or something.",
-        "correctEs": "Look after significa cuidar de alguien o algo.",
-        "incorrect": "Not quite. The expected answer is “take care of”. Look after means care for someone or something.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «take care of». Look after significa cuidar de alguien o algo."
-      }
+        "correct": "Look after means take care of; the assistant must keep the equipment safe.",
+        "correctEs": "Look after significa cuidar de; el asistente debe mantener seguro el equipo.",
+        "incorrect": "Choose the phrasal verb meaning care for, not search for or consult information.",
+        "incorrectEs": "Elige el verbo frasal que significa cuidar, no buscar ni consultar información."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-READING-01",
-      "canDoId": "RE-B1-01",
+      "canDoId": "RE-B1-06",
       "skill": "reading",
       "level": "B1",
       "context": "social",
-      "title": "Reading: inference",
-      "titleEs": "Lectura: inference",
+      "title": "Reading: infer a technical word from context",
+      "titleEs": "Lectura: infiere una palabra técnica por el contexto",
       "tags": [
         "inference",
         "reading",
@@ -9941,33 +9932,30 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "“I packed my suitcase and checked in online.” What is likely next?",
-      "promptEs": [
-        "The person will travel soon.",
-        "The person is cooking dinner.",
-        "The person is buying a house."
-      ],
+      "prompt": "The test results were inconclusive, so the team repeated the experiment before making a decision. What does inconclusive mean here?",
+      "promptEs": "Los resultados de la prueba no fueron concluyentes, así que el equipo repitió el experimento antes de decidir. ¿Qué significa inconclusive aquí?",
       "options": [
-        "The person cancelled the trip.",
-        "The person will travel soon.",
-        "The person has returned from a trip."
+        "Not final or certain",
+        "Clearly successful",
+        "Unrelated to the experiment"
       ],
-      "answer": "The person will travel soon.",
+      "answer": "Not final or certain",
       "feedback": {
-        "correct": "The actions suggest an upcoming trip.",
-        "correctEs": "Las acciones sugieren un viaje próximo.",
-        "incorrect": "Not quite. The expected answer is “The person will travel soon.”. The actions suggest an upcoming trip.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «The person will travel soon.». Las acciones sugieren un viaje próximo."
-      }
+        "correct": "Inconclusive means the results do not provide a definite answer, which explains why the team repeated the experiment.",
+        "correctEs": "Inconclusive significa que los resultados no dan una respuesta definitiva, por eso el equipo repitió el experimento.",
+        "incorrect": "Use the context: they repeated the experiment because the results did not settle the question.",
+        "incorrectEs": "Usa el contexto: repitieron el experimento porque los resultados no resolvían la pregunta."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-READING-02",
-      "canDoId": "RE-B1-01",
+      "canDoId": "RE-B1-05",
       "skill": "reading",
       "level": "B1",
       "context": "travel",
-      "title": "Reading: viewpoint",
-      "titleEs": "Lectura: viewpoint",
+      "title": "Reading: interpret a qualified viewpoint",
+      "titleEs": "Lectura: interpreta un punto de vista matizado",
       "tags": [
         "viewpoint",
         "reading",
@@ -9990,33 +9978,30 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "“The idea is promising, although the cost is unclear.” What is the writer's position?",
-      "promptEs": [
-        "Cautiously positive",
-        "Completely opposed",
-        "Certain it will fail"
-      ],
+      "prompt": "“The proposal is promising, although the data are preliminary and the cost model remains uncertain.” What is the writer's position?",
+      "promptEs": "«La propuesta es prometedora, aunque los datos son preliminares y el modelo de costos sigue siendo incierto». ¿Cuál es la postura del autor?",
       "options": [
-        "Cautiously positive",
-        "Completely negative",
-        "Fully certain and enthusiastic"
+        "Cautiously supportive, with unresolved concerns",
+        "Completely opposed to the proposal",
+        "Certain that the proposal will succeed"
       ],
-      "answer": "Cautiously positive",
+      "answer": "Cautiously supportive, with unresolved concerns",
       "feedback": {
-        "correct": "Promising is positive; although introduces a reservation.",
-        "correctEs": "Promising es positivo; although introduce una reserva.",
-        "incorrect": "Not quite. The expected answer is “Cautiously positive”. Promising is positive; although introduces a reservation.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «Cautiously positive». Promising es positivo; although introduce una reserva."
-      }
+        "correct": "Promising signals support, while although introduces limitations. The writer is positive but not certain.",
+        "correctEs": "Promising indica apoyo, mientras although introduce limitaciones. El autor es positivo, pero no está seguro.",
+        "incorrect": "Consider both parts: a positive assessment and two limitations.",
+        "incorrectEs": "Considera ambas partes: una valoración positiva y dos limitaciones."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-READING-03",
-      "canDoId": "RE-B1-01",
+      "canDoId": "RE-B1-02",
       "skill": "reading",
       "level": "B1",
       "context": "study",
-      "title": "Reading: evidence",
-      "titleEs": "Lectura: evidence",
+      "title": "Reading: identify what the evidence supports",
+      "titleEs": "Lectura: identifica lo que sustenta la evidencia",
       "tags": [
         "evidence",
         "reading",
@@ -10039,33 +10024,30 @@
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
       "type": "choose",
-      "prompt": "“Three users found the menu easier to navigate.” What is supported?",
-      "promptEs": [
-        "Three users reported easier navigation.",
-        "All users prefer the menu.",
-        "The menu is perfect."
-      ],
+      "prompt": "“In a pilot with 12 students, 8 reported fewer login problems. No control group was used.” Which statement is supported?",
+      "promptEs": "«En una prueba piloto con 12 estudiantes, 8 reportaron menos problemas para iniciar sesión. No se utilizó grupo de control». ¿Qué afirmación está sustentada?",
       "options": [
-        "All users preferred the menu.",
-        "The new menu was proven to be better.",
-        "Three users reported easier navigation."
+        "Eight students in this pilot reported fewer login problems.",
+        "The update permanently eliminated login problems for all students.",
+        "The pilot proves the update caused the improvement."
       ],
-      "answer": "Three users reported easier navigation.",
+      "answer": "Eight students in this pilot reported fewer login problems.",
       "feedback": {
-        "correct": "Do not generalise beyond the stated evidence.",
-        "correctEs": "No generalices más allá de la evidencia indicada.",
-        "incorrect": "Not quite. The expected answer is “Three users reported easier navigation.”. Do not generalise beyond the stated evidence.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «Three users reported easier navigation.». No generalices más allá de la evidencia indicada."
-      }
+        "correct": "The text supports the report from eight participants. Without a control group, it does not prove causation or a universal result.",
+        "correctEs": "El texto sustenta el reporte de ocho participantes. Sin grupo de control, no demuestra causalidad ni un resultado universal.",
+        "incorrect": "Choose only the claim stated in the text; do not infer causation or generalise to everyone.",
+        "incorrectEs": "Elige solo la afirmación indicada en el texto; no infieras causalidad ni generalices a todos."
+      },
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-READING-04",
-      "canDoId": "RE-B1-01",
+      "canDoId": "RE-B1-04",
       "skill": "reading",
       "level": "B1",
       "context": "professional",
-      "title": "Reading: short message",
-      "titleEs": "Lectura: short message",
+      "title": "Reading: interpret a technical release note",
+      "titleEs": "Lectura: interpreta una nota técnica de versión",
       "tags": [
         "short-message",
         "reading",
@@ -10088,25 +10070,22 @@
       "knowledgeScope": "global",
       "gameMode": "timed-challenge",
       "type": "choose",
-      "prompt": "Read: “Bus 8 leaves at 9:10.” What time does it leave?",
-      "promptEs": [
-        "9:10",
-        "8:10",
-        "9:50"
-      ],
+      "prompt": "Release note: “Startup time was lower in our test environment. Results may vary on older devices.” What can the reader conclude?",
+      "promptEs": "Nota de versión: «El tiempo de inicio fue menor en nuestro entorno de prueba. Los resultados pueden variar en dispositivos antiguos». ¿Qué puede concluir el lector?",
       "options": [
-        "9:30",
-        "9:10",
-        "9:01"
+        "The test showed lower startup time, but the result may not apply to every device.",
+        "The update guarantees faster startup on every device.",
+        "Older devices were not tested and therefore cannot run the app."
       ],
-      "answer": "9:10",
+      "answer": "The test showed lower startup time, but the result may not apply to every device.",
       "feedback": {
-        "correct": "The message gives the exact departure time.",
-        "correctEs": "El mensaje indica la hora exacta de salida.",
-        "incorrect": "Not quite. The expected answer is “9:10”. The message gives the exact departure time.",
-        "incorrectEs": "No exactamente. La respuesta esperada es «9:10». El mensaje indica la hora exacta de salida."
+        "correct": "The note reports a test result and explicitly limits generalisation to other devices.",
+        "correctEs": "La nota comunica un resultado de prueba y limita explícitamente su generalización a otros dispositivos.",
+        "incorrect": "Keep both details: the measured improvement and the warning that results may vary.",
+        "incorrectEs": "Conserva ambos detalles: la mejora medida y la advertencia de que los resultados pueden variar."
       },
-      "timeLimitSeconds": 45
+      "timeLimitSeconds": 45,
+      "relatedCanDoIds": []
     },
     {
       "id": "MIC-CEFR-B1-LISTENING-01",
