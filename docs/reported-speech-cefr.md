@@ -13,7 +13,7 @@ The progression is deliberately communicative. Backshift is presented as a commo
 
 ## Current activity library
 
-The active data/micro-practice-library.json contains **279 activities overall**. Reported Speech contributes **68 activities** across the six skills represented in this topic:
+The active data/micro-practice-library.json contains **284 activities overall**. Reported Speech contributes **68 activities** across the six skills represented in this topic:
 
 | Level | Active Reported Speech activities | Intended emphasis |
 |---|---:|---|
