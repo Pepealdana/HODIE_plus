@@ -160,7 +160,7 @@ for (const level of ["A1", "A2", "B1"]) assert.ok(reportedSpeech.filter((item) =
 assert.ok(reportedSpeech.every((item) => item.prompt && item.promptEs && item.feedback.correct && item.feedback.correctEs));
 
 const reportedSpeechB2Pack = JSON.parse(fs.readFileSync(new URL("../data/reported-speech-b2-pack.json", import.meta.url), "utf8"));
-assert.equal(reportedSpeechB2Pack.activities.length, 4);
+assert.equal(reportedSpeechB2Pack.activities.length, 24);
 assert.ok(reportedSpeechB2Pack.activities.every((item) => item.level === "B2" && item.unlockRequirement === "B2"));
 assert.equal(reportedSpeechB2Pack.visibility, "locked-until-evidence-gate");
 
