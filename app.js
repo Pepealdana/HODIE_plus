@@ -659,44 +659,51 @@ function applyConversationFirstHome(level, targetActivity, statement) {
     if (summary) summary.textContent = isBeginner ? "Focus en una habilidad o recurso" : "Focus on a skill or resource";
   }
 
-  home.querySelector("#reportedSpeechShortcut")?.addEventListener("click", () => {
-    const requestedLevel = session?.target?.level || level || "A2";
-    const topicMatch = (activity) => {
-      const searchable = [
-        activity.id, activity.title, activity.titleEs, activity.prompt, activity.promptEs,
-        ...(activity.tags || []), ...(activity.reviewTargets || []), ...(activity.relatedCanDoIds || [])
-      ].filter(Boolean).join(" ").toLowerCase();
-      return /reported[- ]speech|estilo indirecto/.test(searchable);
-    };
-    const activity = microLibrary.activities.find((item) =>
-      item.level === requestedLevel &&
-      topicMatch(item) &&
-      (item.level !== "B2" || isB2Unlocked())
-    ) || microLibrary.activities.find((item) =>
-      item.level === "A2" && topicMatch(item)
-    );
+  // Delegate this action from document so it survives home-section re-renders.
+  if (!document.documentElement.dataset.reportedSpeechShortcutBound) {
+    document.documentElement.dataset.reportedSpeechShortcutBound = "true";
+    document.addEventListener("click", (event) => {
+      const button = event.target instanceof Element ? event.target.closest("#reportedSpeechShortcut") : null;
+      if (!button) return;
+      event.preventDefault();
 
-    if (activity) {
-      const mode = activity.skill || (
-        activity.type === "listening" ? "listening" :
-        activity.type === "speak" ? "speaking" :
-        activity.type === "mini-production" ? "writing" : "grammar"
+      const requestedLevel = document.querySelector(".level-option.is-selected")?.dataset.homeLevel || level || "A2";
+      const topicMatch = (activity) => {
+        const searchable = [
+          activity.id, activity.title, activity.titleEs, activity.prompt, activity.promptEs,
+          ...(activity.tags || []), ...(activity.reviewTargets || []), ...(activity.relatedCanDoIds || [])
+        ].filter(Boolean).join(" ").toLowerCase();
+        return /reported[- ]speech|estilo indirecto/.test(searchable);
+      };
+      const activity = microLibrary.activities.find((item) =>
+        item.level === requestedLevel && topicMatch(item) &&
+        (item.level !== "B2" || isB2Unlocked())
+      ) || microLibrary.activities.find((item) =>
+        item.level === "A2" && topicMatch(item)
       );
-      startPractice(mode, activity.id);
-      return;
-    }
 
-    const catalogSection = home.querySelector("#activityCatalog");
-    const levelFilter = home.querySelector("#catalogLevel");
-    const skillFilter = home.querySelector("#catalogSkill");
-    const searchFilter = home.querySelector("#catalogSearch");
-    if (levelFilter) levelFilter.value = requestedLevel;
-    if (skillFilter) skillFilter.value = "all";
-    if (searchFilter) searchFilter.value = "reported speech";
-    renderActivityCatalog();
-    catalogSection?.scrollIntoView({ behavior: "smooth", block: "start" });
-    window.alert("No Reported Speech activity is available at this level yet. The filtered catalogue is open.");
-  });
+      if (activity) {
+        const mode = activity.skill || getActivitySkill(activity) || "grammar";
+        try {
+          startPractice(mode, activity.id);
+        } catch (error) {
+          renderError(error);
+        }
+        return;
+      }
+
+      const catalogSection = document.querySelector("#activityCatalog");
+      const levelFilter = document.querySelector("#catalogLevel");
+      const skillFilter = document.querySelector("#catalogSkill");
+      const searchFilter = document.querySelector("#catalogSearch");
+      if (levelFilter) levelFilter.value = requestedLevel;
+      if (skillFilter) skillFilter.value = "all";
+      if (searchFilter) searchFilter.value = "reported speech";
+      renderActivityCatalog();
+      catalogSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.alert("No Reported Speech activity is available at this level yet. The filtered catalogue is open.");
+    });
+  }
 
   const catalog = home.querySelector("#activityCatalog");
   if (catalog) {
