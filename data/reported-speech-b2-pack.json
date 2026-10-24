@@ -227,9 +227,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: preserve epistemic caution",
-      "titleEs": "Estilo indirecto: preserve epistemic caution",
+      "titleEs": "Estilo indirecto: conserva la cautela epistémica",
       "prompt": "A researcher says, “The pattern may indicate a fault.” Which report preserves the degree of certainty?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Un investigador dice: «El patrón podría indicar una falla». ¿Qué reporte conserva el mismo grado de certeza?",
       "options": [
         "The researcher said the pattern might indicate a fault.",
         "The researcher confirmed that the pattern proved a fault.",
@@ -237,10 +237,10 @@
       ],
       "answer": "The researcher said the pattern might indicate a fault.",
       "feedback": {
-        "correct": "Might preserves the cautious possibility expressed by may. Confirmed and proved overstate the evidence.",
-        "correctEs": "Might conserva la posibilidad cautelosa expresada por may. Confirmed y proved exageran la evidencia.",
-        "incorrect": "Choose the version that keeps the claim tentative rather than treating it as proven.",
-        "incorrectEs": "Elige la versión que mantiene la afirmación como tentativa, sin tratarla como demostrada."
+        "correct": "Might preserves the tentative possibility expressed by may. Confirmed and proved would overstate the evidence.",
+        "correctEs": "Might conserva la posibilidad tentativa expresada por may. Confirmed y proved exagerarían la evidencia.",
+        "incorrect": "Choose the version that keeps the claim tentative. Do not turn a possibility into a confirmed result.",
+        "incorrectEs": "Elige la versión que mantiene la afirmación como tentativa. No conviertas una posibilidad en un resultado confirmado."
       },
       "tags": [
         "modality",
@@ -283,9 +283,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: report a concession",
-      "titleEs": "Estilo indirecto: report a concession",
+      "titleEs": "Estilo indirecto: comunica una concesión",
       "prompt": "“The interface is clearer, although the workflow is still slow,” the reviewer said. Choose the balanced report.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Una persona revisora dice: «La interfaz es más clara, aunque el flujo de trabajo sigue siendo lento». Elige el reporte equilibrado.",
       "options": [
         "The reviewer conceded that the interface was clearer but noted that the workflow remained slow.",
         "The reviewer proved that the workflow was fast.",
@@ -293,10 +293,10 @@
       ],
       "answer": "The reviewer conceded that the interface was clearer but noted that the workflow remained slow.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The report keeps both parts: the interface is clearer, but the workflow remains slow.",
+        "correctEs": "El reporte conserva ambas partes: la interfaz es más clara, pero el flujo de trabajo sigue siendo lento.",
+        "incorrect": "Do not remove either side of the concession. The report must keep the improvement and the limitation.",
+        "incorrectEs": "No elimines ninguna parte de la concesión. El reporte debe conservar la mejora y la limitación."
       },
       "tags": [
         "concession",
@@ -339,9 +339,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: choose the precise reporting verb",
-      "titleEs": "Estilo indirecto: choose the precise reporting verb",
+      "titleEs": "Estilo indirecto: elige el verbo de reporte preciso",
       "prompt": "A witness accepts that they made a mistake. Which verb best captures this act?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Un testigo acepta que cometió un error. ¿Qué verbo comunica mejor ese acto?",
       "options": [
         "admitted",
         "denied",
@@ -349,10 +349,10 @@
       ],
       "answer": "admitted",
       "feedback": {
-        "correct": "Admitted signals acceptance of something potentially negative; denied rejects it and predicted concerns the future.",
-        "correctEs": "Admitted indica que se acepta algo potencialmente negativo; denied lo rechaza y predicted se refiere al futuro.",
-        "incorrect": "Choose the verb that means accepting a mistake rather than rejecting it or forecasting an event.",
-        "incorrectEs": "Elige el verbo que significa aceptar un error, no rechazarlo ni predecir un hecho."
+        "correct": "Admitted means accepting or acknowledging something, often something negative. Denied rejects it; predicted refers to a future possibility.",
+        "correctEs": "Admitted significa aceptar o reconocer algo, a menudo algo negativo. Denied lo rechaza; predicted se refiere a una posibilidad futura.",
+        "incorrect": "Choose the verb that acknowledges the mistake, not one that rejects it or predicts a future event.",
+        "incorrectEs": "Elige el verbo que reconoce el error, no uno que lo rechaza o predice un hecho futuro."
       },
       "tags": [
         "reporting-verbs",
@@ -395,9 +395,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: avoid changing attribution into fact",
-      "titleEs": "Estilo indirecto: avoid changing attribution into fact",
+      "titleEs": "Estilo indirecto: distingue atribución y hecho",
       "prompt": "A memo says, “The contractor claimed that the sensor had failed before delivery.” Which summary is appropriately cautious?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Un memorando dice: «El contratista afirmó que el sensor había fallado antes de la entrega». ¿Qué resumen mantiene la cautela adecuada?",
       "options": [
         "The memo reports the contractor's claim that the sensor had failed before delivery.",
         "The sensor definitely failed before delivery.",
@@ -405,10 +405,10 @@
       ],
       "answer": "The memo reports the contractor's claim that the sensor had failed before delivery.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The summary attributes the allegation to the contractor. It does not independently establish that the sensor failed.",
+        "correctEs": "El resumen atribuye la afirmación al contratista. No demuestra de forma independiente que el sensor fallara.",
+        "incorrect": "Keep the source attached to the claim. Do not present the contractor's statement as verified fact.",
+        "incorrectEs": "Mantén la fuente vinculada a la afirmación. No presentes la declaración del contratista como un hecho verificado."
       },
       "tags": [
         "attribution",
@@ -451,9 +451,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: interpret hedging",
-      "titleEs": "Estilo indirecto: interpret hedging",
+      "titleEs": "Estilo indirecto: interpreta una formulación cautelosa",
       "prompt": "“The results appear to support the proposal, though the sample is small.” What is the most accurate interpretation?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "«Los resultados parecen respaldar la propuesta, aunque la muestra es pequeña». ¿Cuál es la interpretación más precisa?",
       "options": [
         "The evidence seems supportive, but the writer signals a limitation.",
         "The results conclusively prove the proposal.",
@@ -461,10 +461,10 @@
       ],
       "answer": "The evidence seems supportive, but the writer signals a limitation.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "Appears signals a cautious interpretation, while the small sample is an explicit limitation.",
+        "correctEs": "Appears señala una interpretación cautelosa, mientras que la muestra pequeña es una limitación explícita.",
+        "incorrect": "Keep both the tentative support and the limitation. The sentence does not claim conclusive proof.",
+        "incorrectEs": "Conserva tanto el apoyo tentativo como la limitación. La oración no afirma que exista una prueba concluyente."
       },
       "tags": [
         "reading-comprehension",
@@ -508,9 +508,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: detect a shift in stance",
-      "titleEs": "Estilo indirecto: detect a shift in stance",
+      "titleEs": "Estilo indirecto: detecta un cambio de postura",
       "prompt": "Source: “The team suggested a pilot; it did not recommend a full launch.” Which summary changes the source's stance?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Fuente: «El equipo sugirió una prueba piloto; no recomendó un lanzamiento completo». ¿Qué resumen cambia la postura de la fuente?",
       "options": [
         "The team recommended launching the product to everyone immediately.",
         "The team suggested testing a pilot first.",
@@ -518,10 +518,10 @@
       ],
       "answer": "The team recommended launching the product to everyone immediately.",
       "feedback": {
-        "correct": "This option overstates the source: a suggested pilot is not a recommendation for a full launch.",
-        "correctEs": "Esta opción exagera la fuente: sugerir un piloto no equivale a recomendar un lanzamiento completo.",
-        "incorrect": "Look for the summary that turns a limited pilot suggestion into a full-launch recommendation.",
-        "incorrectEs": "Busca el resumen que convierte la sugerencia de un piloto limitado en una recomendación de lanzamiento completo."
+        "correct": "This summary turns a limited pilot suggestion into an immediate full launch, which the source explicitly did not recommend.",
+        "correctEs": "Este resumen convierte la sugerencia de una prueba piloto limitada en un lanzamiento completo inmediato, algo que la fuente no recomendó.",
+        "incorrect": "Look for the option that turns the pilot into a full launch. The source distinguishes a test from a general release.",
+        "incorrectEs": "Busca la opción que convierte el piloto en un lanzamiento completo. La fuente distingue una prueba de una publicación general."
       },
       "tags": [
         "critical-reading",
@@ -565,9 +565,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: distinguish admission from proof",
-      "titleEs": "Estilo indirecto: distinguish admission from proof",
+      "titleEs": "Estilo indirecto: distingue admisión y prueba",
       "prompt": "“The supplier admitted that the shipment had arrived late.” What does this sentence establish?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "«El proveedor admitió que el envío había llegado tarde». ¿Qué establece esta oración?",
       "options": [
         "The supplier acknowledged the late arrival; it does not explain the cause by itself.",
         "The supplier proved that the customer caused the delay.",
@@ -575,10 +575,10 @@
       ],
       "answer": "The supplier acknowledged the late arrival; it does not explain the cause by itself.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "Admitted reports that the supplier acknowledged the late arrival. It does not identify the cause of the delay.",
+        "correctEs": "Admitted comunica que el proveedor reconoció la llegada tardía. No identifica la causa del retraso.",
+        "incorrect": "Do not infer who caused the delay. The sentence reports an admission about timing only.",
+        "incorrectEs": "No infieras quién causó el retraso. La oración comunica una admisión sobre el momento de llegada."
       },
       "tags": [
         "reading-comprehension",
@@ -622,9 +622,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: listen for qualification",
-      "titleEs": "Estilo indirecto: listen for qualification",
+      "titleEs": "Estilo indirecto: escucha los matices",
       "prompt": "Listen and choose the summary that keeps the speaker's qualification.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Escucha y elige el resumen que conserva la cautela de la persona analista.",
       "options": [
         "The analyst said the figures appeared encouraging but advised waiting for a larger sample before concluding.",
         "The analyst said the figures proved the project was successful.",
@@ -632,10 +632,10 @@
       ],
       "answer": "The analyst said the figures appeared encouraging but advised waiting for a larger sample before concluding.",
       "feedback": {
-        "correct": "The report preserves both the positive initial impression and the caution about sample size.",
-        "correctEs": "El reporte conserva tanto la impresión inicial positiva como la cautela sobre el tamaño de la muestra.",
-        "incorrect": "Listen for the positive assessment and the explicit warning not to conclude too soon.",
-        "incorrectEs": "Escucha la valoración positiva y la advertencia explícita de no concluir demasiado pronto."
+        "correct": "The report preserves both the encouraging initial figures and the advice to wait for a larger sample before concluding.",
+        "correctEs": "El reporte conserva tanto las cifras iniciales alentadoras como el consejo de esperar una muestra mayor antes de concluir.",
+        "incorrect": "Listen for the positive assessment and the explicit limit: the sample must be larger before drawing a conclusion.",
+        "incorrectEs": "Escucha la valoración positiva y el límite explícito: la muestra debe ser mayor antes de sacar una conclusión."
       },
       "tags": [
         "listening-comprehension",
@@ -680,9 +680,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: track competing viewpoints",
-      "titleEs": "Estilo indirecto: track competing viewpoints",
+      "titleEs": "Estilo indirecto: escucha dos posturas distintas",
       "prompt": "Listen and choose the balanced report.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Escucha y elige el reporte equilibrado de las dos personas.",
       "options": [
         "Marta expected time savings, while Joel supported the layout but warned about retraining time.",
         "Both speakers agreed that no training was needed.",
@@ -690,10 +690,10 @@
       ],
       "answer": "Marta expected time savings, while Joel supported the layout but warned about retraining time.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The report keeps Marta's expected time savings and Joel's support for the layout alongside his warning about staff retraining.",
+        "correctEs": "El reporte conserva el ahorro de tiempo que espera Marta y el apoyo de Joel al diseño, junto con su advertencia sobre la capacitación del personal.",
+        "incorrect": "Do not make the speakers agree completely. Marta highlights time savings; Joel adds a training concern.",
+        "incorrectEs": "No hagas que las dos personas estén totalmente de acuerdo. Marta destaca el ahorro de tiempo; Joel añade una preocupación sobre la capacitación."
       },
       "tags": [
         "listening-comprehension",
@@ -738,9 +738,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: identify an unsupported inference",
-      "titleEs": "Estilo indirecto: identify an unsupported inference",
+      "titleEs": "Estilo indirecto: identifica una inferencia no sustentada",
       "prompt": "Listen to the statement and choose only what it supports.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Escucha la declaración y elige únicamente lo que permite afirmar.",
       "options": [
         "The manager reported fewer errors in two teams but said long-term results were not yet checked.",
         "The update has permanently eliminated errors across the company.",
@@ -748,10 +748,10 @@
       ],
       "answer": "The manager reported fewer errors in two teams but said long-term results were not yet checked.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The manager reports fewer errors in two teams but explicitly says long-term results have not been checked.",
+        "correctEs": "La gerente comunica menos errores en dos equipos, pero indica explícitamente que aún no se han comprobado los resultados a largo plazo.",
+        "incorrect": "Do not infer a permanent or company-wide effect. The speaker limits the claim to two teams and notes that long-term results remain unchecked.",
+        "incorrectEs": "No infieras un efecto permanente ni para toda la empresa. La persona limita la afirmación a dos equipos y señala que faltan comprobaciones a largo plazo."
       },
       "tags": [
         "listening-comprehension",
@@ -796,15 +796,15 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: say a cautious conclusion",
-      "titleEs": "Estilo indirecto: say a cautious conclusion",
+      "titleEs": "Estilo indirecto: expresa una conclusión cautelosa",
       "prompt": "Say the model sentence, preserving the cautious meaning.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Di la oración modelo y conserva el significado prudente.",
       "answer": "The reviewer suggested that the results might be promising.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The model preserves the tentative word might. Transcript matching checks key words, not full pronunciation or every grammar choice.",
+        "correctEs": "El modelo conserva la palabra tentativa might. La coincidencia de transcripción comprueba palabras clave, no toda la pronunciación ni cada decisión gramatical.",
+        "incorrect": "Keep might to avoid overstating the evidence. The automatic check only looks for required words.",
+        "incorrectEs": "Conserva might para no exagerar la evidencia. La comprobación automática solo busca las palabras requeridas."
       },
       "tags": [
         "speaking",
@@ -858,15 +858,15 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: report a concession",
-      "titleEs": "Estilo indirecto: report a concession",
+      "titleEs": "Estilo indirecto: comunica una concesión",
       "prompt": "Say the model sentence with both sides of the viewpoint.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Di la oración modelo e incluye ambos lados del punto de vista.",
       "answer": "She acknowledged that the design was simpler but warned that it was less flexible.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The sentence reports the simpler design and the warning that it is less flexible.",
+        "correctEs": "La oración comunica que el diseño es más sencillo y la advertencia de que es menos flexible.",
+        "incorrect": "Include both the acknowledgement and the warning; omitting either changes the speaker's position.",
+        "incorrectEs": "Incluye tanto el reconocimiento como la advertencia; omitir uno cambia la postura de quien habla."
       },
       "tags": [
         "speaking",
@@ -925,14 +925,14 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: write a balanced evidence summary",
-      "titleEs": "Estilo indirecto: write a balanced evidence summary",
+      "titleEs": "Estilo indirecto: redacta un resumen equilibrado de evidencia",
       "prompt": "Write a 2–3 sentence summary: a small trial produced encouraging results, but the sample was too small to confirm the effect.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Escribe de dos a tres oraciones: una prueba pequeña produjo resultados alentadores, pero la muestra era demasiado reducida para confirmar el efecto.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "A strong summary attributes the finding, mentions the small sample and avoids claiming that the effect has been proven.",
+        "correctEs": "Un buen resumen atribuye el resultado, menciona la muestra pequeña y evita afirmar que el efecto esté demostrado.",
+        "incorrect": "Include the encouraging result and the sample-size limitation. Do not turn preliminary evidence into proof.",
+        "incorrectEs": "Incluye el resultado alentador y la limitación del tamaño de la muestra. No conviertas evidencia preliminar en una prueba."
       },
       "tags": [
         "writing",
@@ -1015,14 +1015,14 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: attribute a disputed claim",
-      "titleEs": "Estilo indirecto: attribute a disputed claim",
+      "titleEs": "Estilo indirecto: atribuye una afirmación controvertida",
       "prompt": "Write a short neutral summary of a disputed claim. Attribute the claim to its source and state that it has not been independently verified.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Escribe un resumen neutral de una afirmación discutida. Atribúyela a su fuente e indica que no ha sido verificada de forma independiente.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The response should identify the source and make the verification boundary explicit.",
+        "correctEs": "La respuesta debe identificar la fuente y dejar explícito el límite de verificación.",
+        "incorrect": "Name who made the claim and state that it has not been independently verified; do not present it as settled fact.",
+        "incorrectEs": "Indica quién hizo la afirmación y señala que no se ha verificado de forma independiente; no la presentes como un hecho establecido."
       },
       "tags": [
         "writing",
@@ -1105,9 +1105,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: repair an overconfident summary",
-      "titleEs": "Estilo indirecto: repair an overconfident summary",
+      "titleEs": "Estilo indirecto: corrige un resumen demasiado seguro",
       "prompt": "Source: “The initial feedback suggests that the change may help.” Which report avoids overstating the source?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Fuente: «Los comentarios iniciales sugieren que el cambio podría ayudar». ¿Qué reporte evita exagerar la afirmación original?",
       "options": [
         "The initial feedback suggests the change may help.",
         "The change has been proven to solve the problem.",
@@ -1115,10 +1115,10 @@
       ],
       "answer": "The initial feedback suggests the change may help.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The report keeps both the limited source (“initial feedback”) and the tentative modal “may”.",
+        "correctEs": "El reporte conserva tanto la fuente limitada («comentarios iniciales») como el modal tentativo «may».",
+        "incorrect": "Avoid claims such as proven or always works. The source only suggests a possible benefit.",
+        "incorrectEs": "Evita afirmaciones como proven o always works. La fuente solo sugiere un posible beneficio."
       },
       "tags": [
         "communication-repair",
@@ -1161,9 +1161,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: preserve disagreement",
-      "titleEs": "Estilo indirecto: preserve disagreement",
+      "titleEs": "Estilo indirecto: conserva el desacuerdo",
       "prompt": "A says the schedule is realistic. B says it is too ambitious. Which report preserves the disagreement?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Una persona considera realista el horario y otra cree que es demasiado ambicioso. ¿Qué reporte conserva el desacuerdo?",
       "options": [
         "A considered the schedule realistic, whereas B felt it was too ambitious.",
         "Everyone agreed that the schedule was realistic.",
@@ -1171,10 +1171,10 @@
       ],
       "answer": "A considered the schedule realistic, whereas B felt it was too ambitious.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "Whereas clearly contrasts the two positions without pretending the speakers agree.",
+        "correctEs": "Whereas contrasta claramente las dos posturas sin fingir que las personas están de acuerdo.",
+        "incorrect": "Attribute each opinion to the correct speaker and keep the contrast between realistic and too ambitious.",
+        "incorrectEs": "Atribuye cada opinión a la persona correcta y conserva el contraste entre realista y demasiado ambicioso."
       },
       "tags": [
         "communication",
@@ -1218,9 +1218,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: distinguish proposal from instruction",
-      "titleEs": "Estilo indirecto: distinguish proposal from instruction",
+      "titleEs": "Estilo indirecto: distingue una propuesta de una instrucción",
       "prompt": "“The engineer suggested restarting the device.” What did the engineer do?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "«El ingeniero sugirió reiniciar el dispositivo». ¿Qué hizo el ingeniero?",
       "options": [
         "Proposed a possible action.",
         "Ordered the team to restart it.",
@@ -1228,10 +1228,10 @@
       ],
       "answer": "Proposed a possible action.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "Suggested reports a proposal or possible action; it does not mean the engineer ordered the team to act.",
+        "correctEs": "Suggested comunica una propuesta o acción posible; no significa que el ingeniero ordenara actuar al equipo.",
+        "incorrect": "Choose the option that describes a proposal, not an order or a claim that the restart already happened.",
+        "incorrectEs": "Elige la opción que describe una propuesta, no una orden ni una afirmación de que el reinicio ya ocurrió."
       },
       "tags": [
         "pragmatics",
@@ -1274,9 +1274,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: report an allegation carefully",
-      "titleEs": "Estilo indirecto: report an allegation carefully",
+      "titleEs": "Estilo indirecto: comunica una acusación con cuidado",
       "prompt": "A witness says, “I believe the figures were altered.” Which report preserves the witness's level of certainty?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Un testigo dice: «Creo que las cifras fueron alteradas». ¿Qué reporte conserva su grado de certeza?",
       "options": [
         "The witness said they believed the figures had been altered.",
         "The witness proved that the figures had been altered.",
@@ -1284,10 +1284,10 @@
       ],
       "answer": "The witness said they believed the figures had been altered.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The report keeps the witness's belief as a belief; it does not turn it into a proven alteration.",
+        "correctEs": "El reporte mantiene la creencia del testigo como una creencia; no la convierte en una alteración demostrada.",
+        "incorrect": "Keep the attribution “they believed”. Do not replace a belief with confirmed proof.",
+        "incorrectEs": "Conserva la atribución «creían». No sustituyas una creencia por una prueba confirmada."
       },
       "tags": [
         "stance",
@@ -1330,9 +1330,9 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: summarise a nuanced argument",
-      "titleEs": "Estilo indirecto: summarise a nuanced argument",
+      "titleEs": "Estilo indirecto: resume un argumento matizado",
       "prompt": "Source: “Although the tool is faster, it may not be suitable for every classroom.” Which summary preserves both parts?",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Fuente: «Aunque la herramienta es más rápida, puede que no sea adecuada para todas las aulas». ¿Qué resumen conserva ambas partes?",
       "options": [
         "The source recognises the speed advantage but questions whether the tool fits every classroom.",
         "The source says the tool is unsuitable for all classrooms.",
@@ -1340,10 +1340,10 @@
       ],
       "answer": "The source recognises the speed advantage but questions whether the tool fits every classroom.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "The summary keeps the speed advantage and the qualification about suitability across classrooms.",
+        "correctEs": "El resumen conserva la ventaja de velocidad y el matiz sobre su idoneidad en distintas aulas.",
+        "incorrect": "Do not remove the concession or turn may not into a categorical rejection.",
+        "incorrectEs": "No elimines la concesión ni conviertas may not en un rechazo categórico."
       },
       "tags": [
         "reading",
@@ -1388,14 +1388,14 @@
       "context": "professional",
       "level": "B2",
       "title": "Reported Speech: compare two attributed claims",
-      "titleEs": "Estilo indirecto: compare two attributed claims",
+      "titleEs": "Estilo indirecto: compara dos afirmaciones atribuidas",
       "prompt": "Write a concise comparison of two sources that disagree about a new policy. Attribute each position and avoid deciding which is true without evidence.",
-      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "promptEs": "Escribe una comparación breve de dos fuentes que discrepan sobre una política nueva. Atribuye cada postura y no decidas cuál es verdadera sin evidencia.",
       "feedback": {
-        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
-        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
-        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
-        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+        "correct": "A strong comparison attributes both positions to their sources and distinguishes disagreement from verified fact.",
+        "correctEs": "Una buena comparación atribuye ambas posturas a sus fuentes y distingue el desacuerdo de un hecho verificado.",
+        "incorrect": "Identify each source, state the difference between their claims and avoid choosing a winner without evidence.",
+        "incorrectEs": "Identifica cada fuente, indica la diferencia entre sus afirmaciones y evita elegir una como verdadera sin evidencia."
       },
       "tags": [
         "writing",
