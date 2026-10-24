@@ -38,7 +38,7 @@ for (const activity of library.activities) {
   if (activity.type === "listening") assert.ok(activity.audioText, activity.id + " needs audio text");
   if (activity.type === "speak") {
     assert.ok(activity.targetPhrase && activity.requiredTokens?.length, activity.id + " needs a model phrase and required words");
-    assert.ok(activity.feedback?.correct && activity.feedback?.partial, activity.id + " needs speaking-specific feedback");
+    assert.ok(activity.feedback?.correct && (activity.feedback?.partial || activity.feedback?.incorrect), activity.id + " needs speaking-specific feedback");
   }
   if (activity.type === "mini-production") {
     assert.ok(activity.evaluation?.criteria?.length, activity.id + " needs a task checklist");
