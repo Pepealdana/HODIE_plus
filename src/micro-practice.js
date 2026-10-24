@@ -170,15 +170,44 @@ function selectMicroActivities(
   library,
   { canDoId, mode = "mixed", limit = 6, profile = {} } = {}
 ) {
-  const scopedActivities = (library.activities || []).filter(
+  const allActivities = library.activities || [];
+  const scopedActivities = allActivities.filter(
     (item) => !canDoId || item.canDoId === canDoId || (item.relatedCanDoIds || []).includes(canDoId)
   );
   // Review is deliberately cross-level: retrieval practice must be able to revisit
   // foundational A1 material even when the current learning target is A2 or B1.
-  const activities = mode === "review" ? (library.activities || []) : scopedActivities;
-  if (!activities.length) return [];
-
   const config = MODE_CONFIG[mode] || MODE_CONFIG.mixed;
+  let activities = mode === "review" ? allActivities : scopedActivities;
+
+  // A single Can-Do often has only a handful of authored items. When that pool
+  // cannot fill a useful session, expand within the same CEFR level and requested
+  // skill/resource. Rank related tags first; never substitute another skill.
+  if (mode !== "review" && activities.length < limit) {
+    const anchor = activities[0] || allActivities.find((item) => item.canDoId === canDoId);
+    const level = anchor?.level;
+    if (level) {
+      const primaryIds = new Set(activities.map((item) => item.id));
+      const anchorTerms = new Set([
+        ...(anchor.tags || []),
+        ...(anchor.reviewTargets || []),
+        ...(anchor.relatedCanDoIds || [])
+      ].map((value) => String(value).toLowerCase()));
+      const fallback = allActivities
+        .filter((item) => item.level === level && !primaryIds.has(item.id) && activityMatchesFocus(item, config))
+        .map((item) => {
+          const terms = [...(item.tags || []), ...(item.reviewTargets || []), item.canDoId]
+            .filter(Boolean).map((value) => String(value).toLowerCase());
+          const relevance = terms.reduce((score, term) => score + (anchorTerms.has(term) ? 3 : 0), 0);
+          const sameContext = anchor.context && item.context === anchor.context ? 1 : 0;
+          return { item, score: relevance + sameContext };
+        })
+        .sort((a, b) => b.score - a.score || rankMixed(a.item) - rankMixed(b.item))
+        .map(({ item }) => item);
+      activities = [...activities, ...fallback];
+    }
+  }
+
+  if (!activities.length) return [];
   const mini = mode === "review" ? null : activities.find((item) => item.type === "mini-production");
 
   if (mode === "mixed") return selectMixed(activities, limit, mini);
@@ -187,9 +216,8 @@ function selectMicroActivities(
   const filtered = activities.filter((item) => activityMatchesFocus(item, config));
   const ordered = [...filtered].sort((a, b) => rankMixed(a) - rankMixed(b));
 
-  // Focused modes remain faithful to their category.
-  // Never substitute a Speaking production task into Listening, Grammar, etc.
-  // If content is not available yet, return [] so the UI can explain it.
+  // Focused modes remain faithful to their category and CEFR level.
+  // A small Can-Do pool is supplemented only by the same requested skill/resource.
   return ordered.slice(0, limit);
 }
 
