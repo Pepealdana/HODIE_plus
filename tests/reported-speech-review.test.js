@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import { reviewReportedSpeech } from "../src/reported-speech-review.js";
+import { evaluateMicroActivity } from "../src/micro-practice.js";
+import library from "../data/micro-practice-library.json" with { type: "json" };
 
 const cases = [
   ["She said me that she was busy.", "She told me that she was busy.", "RS-SAY-TELL-001"],
@@ -27,6 +29,10 @@ for (const valid of [
   assert.equal(result.errors.length, 0, "A valid reported-speech form must not be changed: " + valid);
   assert.equal(result.correctedText, valid);
 }
+
+const writingActivity = library.activities.find((activity) => activity.id === "MIC-RS-B1-26");
+const integrated = evaluateMicroActivity(writingActivity, "My teammate said me that the project was delayed because the battery was missing.");
+assert.ok(integrated.errors.some((error) => error.ruleId === "RS-SAY-TELL-001"), "The Reported Speech correction rules must run inside activity feedback");
 
 const noMatch = reviewReportedSpeech("I enjoy building robots with my students.");
 assert.equal(noMatch.errors.length, 0);
