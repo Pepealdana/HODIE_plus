@@ -1,15 +1,15 @@
 const RULES = [
   {
     id: "RS-SAY-TELL-001",
-    pattern: /\\bsaid\\s+(me|him|her|us|them)\\b/gi,
-    replace: (match, object) => `told ${object}`,
+    pattern: /\bsaid\s+(me|him|her|us|them)\b/gi,
+    replace: (match, object) => "told " + object,
     target: "say-tell-object",
     message: "Use tell + person for this pattern: “told me”. “Said me” is not standard English.",
     messageEs: "Usa tell + persona en este patrón: “told me”. “Said me” no es una estructura estándar en inglés."
   },
   {
     id: "RS-TELL-CLAUSE-001",
-    pattern: /\\btold\\s+that\\b/gi,
+    pattern: /\btold\s+that\b/gi,
     replace: () => "said that",
     target: "say-tell-object",
     message: "Tell normally needs a person object before a that-clause (for example, “told me that…”). Without that object, use “said that…”.",
@@ -17,10 +17,10 @@ const RULES = [
   },
   {
     id: "RS-INDIRECT-WHERE-001",
-    pattern: /\\basked\\s+(me|him|her|us|them)\\s+where\\s+did\\s+I\\s+(live|work|study|play|use|teach|build|go|make|have)\\b/gi,
+    pattern: /\basked\s+(me|him|her|us|them)\s+where\s+did\s+I\s+(live|work|study|play|use|teach|build|go|make|have)\b/gi,
     replace: (match, object, verb) => {
       const past = { live: "lived", work: "worked", study: "studied", play: "played", use: "used", teach: "taught", build: "built", go: "went", make: "made", have: "had" };
-      return match.replace(/where\\s+did\\s+I\\s+\\w+$/i, `where I ${past[verb.toLowerCase()]}`);
+      return match.replace(/where\s+did\s+I\s+\w+$/i, "where I " + past[verb.toLowerCase()]);
     },
     target: "reported-question-word-order",
     message: "A reported question uses statement word order. After “asked me where”, write “I lived/worked…” rather than “did I live/work”. This narrow rule assumes a past-time question.",
@@ -28,8 +28,8 @@ const RULES = [
   },
   {
     id: "RS-INDIRECT-YESNO-001",
-    pattern: /\\basked\\s+(me|him|her|us|them)\\s+(if|whether)\\s+(am|is|are|was|were|can|could|will|would|has|have|had)\\s+(I|he|she|we|they|you|it)\\b/gi,
-    replace: (match, object, conjunction, verb, subject) => match.replace(new RegExp(`\\\\b${verb}\\\\s+${subject}\\\\b$`, "i"), `${subject} ${verb}`),
+    pattern: /\basked\s+(me|him|her|us|them)\s+(if|whether)\s+(am|is|are|was|were|can|could|will|would|has|have|had)\s+(I|he|she|we|they|you|it)\b/gi,
+    replace: (match) => match.replace(/\b(if|whether)\s+(am|is|are|was|were|can|could|will|would|has|have|had)\s+(I|he|she|we|they|you|it)\b/i, (_, conjunction, verb, subject) => conjunction + " " + subject + " " + verb),
     target: "reported-question-word-order",
     message: "A reported yes/no question uses statement word order after “if/whether”: subject before verb.",
     messageEs: "Una pregunta indirecta de sí/no usa orden afirmativo después de “if/whether”: primero el sujeto y luego el verbo."
