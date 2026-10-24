@@ -1,0 +1,118 @@
+const KNOWLEDGE_TYPES = new Set(["vocabulary", "grammar", "function", "pronunciation", "expression", "example"]);
+
+function buildKnowledgeGraph(matrix, microLibrary, contentLibrary, knowledgeLibrary, linguisticCatalog = null) {
+  const canDos = new Map((matrix?.canDos || []).map((item) => [item.id, item]));
+  const microActivities = microLibrary?.activities || [];
+  const contentActivities = contentLibrary?.activities || [];
+  const nodes = knowledgeLibrary?.knowledge || [];
+  const ids = new Set();
+  const errors = [];
+  const graphNodes = nodes.map((node) => {
+    if (!node.id || ids.has(node.id)) errors.push(`Missing or duplicate knowledge id: ${node.id || "(empty)"}`);
+    ids.add(node.id);
+    if (!KNOWLEDGE_TYPES.has(node.type)) errors.push(`${node.id}: unsupported knowledge type "${node.type}"`);
+    for (const canDoId of node.canDoIds || []) {
+      if (!canDos.has(canDoId)) errors.push(`${node.id}: unknown Can-Do "${canDoId}"`);
+    }
+    return {
+      ...node,
+      canDos: (node.canDoIds || []).map((id) => canDos.get(id)).filter(Boolean),
+      microActivityIds: microActivities.filter((activity) =>
+        (node.canDoIds || []).includes(activity.canDoId) &&
+        (node.resources || []).some((resource) =>
+          activity.resources?.includes(resource) ||
+          activity.languageResource === resource ||
+          activity.skill === resource
+        )
+      ).map((activity) => activity.id),
+      contentActivityIds: contentActivities.filter((activity) => {
+        if (!(node.canDoIds || []).includes(activity.canDoId)) return false;
+        const tags = (activity.metadata?.tags || []).map((tag) => String(tag).toLowerCase());
+        const items = (node.items || []).map((item) => String(item).toLowerCase());
+        return (node.resources || []).some((resource) => activity.resources?.includes(resource) || activity.languageResource === resource || activity.skill === resource) ||
+          items.some((item) => tags.includes(item)) ||
+          tags.some((tag) => (node.label + " " + (node.labelEs || "")).toLowerCase().includes(tag));
+      }).map((activity) => activity.id)
+    };
+  });
+
+  const nodeIds = new Set(graphNodes.map((node) => node.id));
+  for (const node of graphNodes) {
+    for (const dependency of node.dependsOn || []) {
+      if (!nodeIds.has(dependency)) errors.push(`${node.id}: unknown dependency "${dependency}"`);
+    }
+  }
+
+  const communicativeFunctions = linguisticCatalog?.communicativeFunctions || [];
+  const linguisticRules = linguisticCatalog?.grammarRules || [];
+  const vocabularyEntries = linguisticCatalog?.vocabularyEntries || [];
+  const knownCanDoIds = new Set(canDos.keys());
+  for (const fn of communicativeFunctions) {
+    for (const canDoId of fn.canDoIds || []) {
+      if (!knownCanDoIds.has(canDoId)) errors.push(fn.id + ': unknown linguistic Can-Do "' + canDoId + '"');
+    }
+  }
+
+  return {
+    schemaVersion: knowledgeLibrary?.schemaVersion || "1.0.0",
+    nodes: graphNodes,
+    linguisticCatalogVersion: linguisticCatalog?.schemaVersion || null,
+    communicativeFunctions,
+    linguisticRules,
+    vocabularyEntries,
+    errors,
+    valid: errors.length === 0
+  };
+}
+
+function getKnowledgeForCanDo(graph, canDoId) {
+  return (graph?.nodes || []).filter((node) => node.canDoIds?.includes(canDoId));
+}
+
+function getLinguisticResourcesForCanDo(graph, canDoId) {
+  const functions = (graph?.communicativeFunctions || []).filter((item) => (item.canDoIds || []).includes(canDoId) || (item.relatedCanDoIds || []).includes(canDoId));
+  const structures = new Set(functions.flatMap((item) => item.structures || []));
+  const implementationsForStructure = {
+    be: ["be-agreement"], articles: ["article-profession", "article-a-an"],
+    capitalization: ["capital-i"], spelling: ["spelling-teacher"],
+    "present-simple": ["plural-agreement", "third-person-singular"],
+    "subject-verb-agreement": ["plural-agreement", "third-person-singular"],
+    "like-love-enjoy": ["enjoy-gerund", "like-gerund"],
+    "verb-patterns": ["enjoy-gerund", "like-gerund"],
+    "enjoy-ing": ["enjoy-gerund"], prepositions: ["work-place"],
+    collocations: ["work-place"], connectors: ["repeated-connector"],
+    syntax: ["adjective-noun-order"], "sequence-connectors": ["sequence-connectors"],
+    "past-simple": ["past-simple"], "there-is-are": ["there-is-are"],
+    "question-forms": ["question-order"], "modal-ability": ["modal-ability"]
+  };
+  const implementations = new Set([...structures].flatMap((structure) => implementationsForStructure[structure] || []));
+  const rules = (graph?.linguisticRules || []).filter((rule) =>
+    implementations.has(rule.implementation) || structures.has(rule.category) || structures.has(rule.implementation)
+  );
+  const domains = new Set(functions.flatMap((item) => item.vocabularyDomains || []));
+  const vocabulary = (graph?.vocabularyEntries || []).filter((item) => domains.has(item.domain));
+  return { canDoId, functions, structures: [...structures], rules, vocabulary };
+}
+
+function getKnowledgeForActivity(graph, activity) {
+  if (!activity) return [];
+  return (graph?.nodes || []).filter((node) =>
+    node.canDoIds?.includes(activity.canDoId) &&
+    (node.resources || []).some((resource) =>
+      activity.resources?.includes(resource) ||
+      activity.languageResource === resource ||
+      activity.skill === resource
+    )
+  );
+}
+
+function validateKnowledgeGraph(graph) {
+  const errors = [...(graph?.errors || [])];
+  for (const node of graph?.nodes || []) {
+    if (!(node.items || []).length) errors.push(`${node.id}: knowledge node has no examples or items`);
+    if (!(node.transferTo || []).length) errors.push(`${node.id}: knowledge node has no transfer skills`);
+  }
+  return { valid: errors.length === 0, errors };
+}
+
+export { buildKnowledgeGraph, getKnowledgeForCanDo, getKnowledgeForActivity, getLinguisticResourcesForCanDo, validateKnowledgeGraph };
