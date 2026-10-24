@@ -47,6 +47,7 @@ function activityMatchesFocus(activity, config) {
     if (config.resource === "grammar" || config.resource === "vocabulary") {
       return ["choose", "complete", "order", "match"].includes(activity.type);
     }
+    if (config.resource === "pronunciation") return activity.skill === "pronunciation";
 
     return true;
   }
