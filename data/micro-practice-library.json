@@ -2651,10 +2651,10 @@
         "built"
       ],
       "feedback": {
-        "correct": "Correct. \"Work at a school\" is the natural expression here.",
-        "correctEs": "Correcto. \"Work at a school\" es la expresión natural aquí.",
-        "incorrect": "Try again. We normally say \"work at a school\".",
-        "incorrectEs": "Inténtalo de nuevo. Normalmente decimos \"work at a school\"."
+        "correct": "Built is the past participle of build and follows have in the present perfect: “I have built several robots.”",
+        "correctEs": "Built es el participio pasado de build y va después de have en presente perfecto: «I have built several robots».",
+        "incorrect": "Use the past participle after have/has. The correct complete sentence is “I have built several robots.”",
+        "incorrectEs": "Usa el participio pasado después de have/has. La oración completa correcta es «I have built several robots»."
       },
       "tags": [
         "present-perfect",
@@ -3383,19 +3383,44 @@
           {
             "id": "habit",
             "label": "describes a learning habit",
-            "type": "content-point"
+            "type": "content-point",
+            "patterns": [
+              "\\bpractice\\b",
+              "\\bstudy\\b",
+              "\\blearn\\b",
+              "\\bpractise\\b"
+            ],
+            "missingMessage": "Include this required element: describes a learning habit.",
+            "missingMessageEs": "Incluye este elemento solicitado: describes a learning habit."
           },
           {
             "id": "frequency",
             "label": "uses a frequency adverb",
-            "type": "language-feature"
+            "type": "language-feature",
+            "patterns": [
+              "\\balways\\b",
+              "\\busually\\b",
+              "\\boften\\b",
+              "\\bsometimes\\b",
+              "\\bnever\\b"
+            ],
+            "missingMessage": "Include this required element: uses a frequency adverb.",
+            "missingMessageEs": "Incluye este elemento solicitado: uses a frequency adverb."
           },
           {
             "id": "reason",
             "label": "gives a reason with because",
-            "type": "language-feature"
+            "type": "language-feature",
+            "patterns": [
+              "\\bbecause\\b"
+            ],
+            "missingMessage": "Include this required element: gives a reason with because.",
+            "missingMessageEs": "Incluye este elemento solicitado: gives a reason with because."
           }
-        ]
+        ],
+        "minimumCriteria": 3,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 35
       },
       "reviewTargets": [
         "frequency-adverbs",
@@ -3443,19 +3468,50 @@
           {
             "id": "comparison",
             "label": "compares two methods",
-            "type": "content-point"
+            "type": "content-point",
+            "patterns": [
+              "\\bthan\\b",
+              "\\bwhile\\b",
+              "\\bwhereas\\b",
+              "\\bcompared with\\b"
+            ],
+            "missingMessage": "Include this required element: compares two methods.",
+            "missingMessageEs": "Incluye este elemento solicitado: compares two methods."
           },
           {
             "id": "comparative",
             "label": "uses a comparative form",
-            "type": "language-feature"
+            "type": "language-feature",
+            "patterns": [
+              "\\bmore\\b",
+              "\\bless\\b",
+              "\\bbetter\\b",
+              "\\beasier\\b",
+              "\\bfaster\\b",
+              "\\bcheaper\\b"
+            ],
+            "missingMessage": "Include this required element: uses a comparative form.",
+            "missingMessageEs": "Incluye este elemento solicitado: uses a comparative form."
           },
           {
             "id": "balance",
             "label": "states an advantage and disadvantage",
-            "type": "content-point"
+            "type": "content-point",
+            "patterns": [
+              "\\badvantage\\b",
+              "\\bdisadvantage\\b",
+              "\\bbenefit\\b",
+              "\\bdrawback\\b",
+              "\\bbut\\b",
+              "\\bhowever\\b"
+            ],
+            "missingMessage": "Include this required element: states an advantage and disadvantage.",
+            "missingMessageEs": "Incluye este elemento solicitado: states an advantage and disadvantage."
           }
-        ]
+        ],
+        "minimumCriteria": 3,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 45
       },
       "reviewTargets": [
         "comparatives",
@@ -6134,13 +6190,17 @@
         "are playing",
         "plays"
       ],
-      "options": "are playing",
-      "answer": "Use the present continuous for an action happening now.",
+      "options": [
+        "played",
+        "are playing",
+        "play"
+      ],
+      "answer": "are playing",
       "feedback": {
-        "correct": "Correct. Usa presente continuo para una acción que ocurre ahora.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Usa presente continuo para una acción que ocurre ahora.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Use the present continuous for an action happening now.",
+        "correctEs": "Usa presente continuo para una acción que ocurre ahora.",
+        "incorrect": "Not quite. The expected answer is “are playing”. Use the present continuous for an action happening now.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «are playing». Usa presente continuo para una acción que ocurre ahora."
       },
       "timeLimitSeconds": 25
     },
@@ -6180,13 +6240,17 @@
         "wouldn't",
         "did"
       ],
-      "options": "should",
-      "answer": "Should gives advice.",
+      "options": [
+        "should",
+        "shouldn't",
+        "should to"
+      ],
+      "answer": "should",
       "feedback": {
-        "correct": "Correct. Should da consejos.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Should da consejos.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Should gives advice.",
+        "correctEs": "Should da consejos.",
+        "incorrect": "Not quite. The expected answer is “should”. Should gives advice.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «should». Should da consejos."
       }
     },
     {
@@ -6221,13 +6285,12 @@
       "type": "complete",
       "prompt": "I have ___ this book before.",
       "promptEs": null,
-      "options": "read",
-      "answer": "Use the past participle after have.",
+      "answer": "read",
       "feedback": {
-        "correct": "Correct. Usa el participio pasado después de have.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Usa el participio pasado después de have.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Use the past participle after have.",
+        "correctEs": "Usa el participio pasado después de have.",
+        "incorrect": "Not quite. The expected answer is “read”. Use the past participle after have.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «read». Usa el participio pasado después de have."
       }
     },
     {
@@ -6266,13 +6329,17 @@
         "although",
         "unless"
       ],
-      "options": "so",
-      "answer": "So introduces a result.",
+      "options": [
+        "because",
+        "so",
+        "although"
+      ],
+      "answer": "so",
       "feedback": {
-        "correct": "Correct. So introduce un resultado.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. So introduce un resultado.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "So introduces a result.",
+        "correctEs": "So introduce un resultado.",
+        "incorrect": "Not quite. The expected answer is “so”. So introduces a result.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «so». So introduce un resultado."
       }
     },
     {
@@ -6311,13 +6378,17 @@
         "did live",
         "do live"
       ],
-      "options": "lived",
-      "answer": "Reported questions use statement word order; backshift is common after a past reporting verb.",
+      "options": [
+        "lived",
+        "did live",
+        "live"
+      ],
+      "answer": "lived",
       "feedback": {
-        "correct": "Correct. Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Reported questions use statement word order; backshift is common after a past reporting verb.",
+        "correctEs": "Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
+        "incorrect": "Not quite. The expected answer is “lived”. Reported questions use statement word order; backshift is common after a past reporting verb.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «lived». Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado."
       }
     },
     {
@@ -6356,13 +6427,17 @@
         "an",
         "the"
       ],
-      "options": "an",
-      "answer": "Use an before a vowel sound.",
+      "options": [
+        "a",
+        "the",
+        "an"
+      ],
+      "answer": "an",
       "feedback": {
-        "correct": "Correct. Usa an antes de un sonido vocálico.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Usa an antes de un sonido vocálico.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Use an before a vowel sound.",
+        "correctEs": "Usa an antes de un sonido vocálico.",
+        "incorrect": "Not quite. The expected answer is “an”. Use an before a vowel sound.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «an». Usa an antes de un sonido vocálico."
       }
     },
     {
@@ -6401,13 +6476,17 @@
         "ticket office",
         "garage"
       ],
-      "options": "doctor",
-      "answer": "A doctor can assess a health problem.",
+      "options": [
+        "doctor",
+        "teacher",
+        "dentist"
+      ],
+      "answer": "doctor",
       "feedback": {
-        "correct": "Correct. Un médico puede evaluar un problema de salud.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Un médico puede evaluar un problema de salud.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "A doctor can assess a health problem.",
+        "correctEs": "Un médico puede evaluar un problema de salud.",
+        "incorrect": "Not quite. The expected answer is “doctor”. A doctor can assess a health problem.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «doctor». Un médico puede evaluar un problema de salud."
       }
     },
     {
@@ -6446,13 +6525,17 @@
         "carefully",
         "careless of"
       ],
-      "options": "careful",
-      "answer": "Careful describes someone who takes care.",
+      "options": [
+        "carefully",
+        "careless",
+        "careful"
+      ],
+      "answer": "careful",
       "feedback": {
-        "correct": "Correct. Careful describe a alguien que actúa con cuidado.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Careful describe a alguien que actúa con cuidado.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Careful describes someone who takes care.",
+        "correctEs": "Careful describe a alguien que actúa con cuidado.",
+        "incorrect": "Not quite. The expected answer is “careful”. Careful describes someone who takes care.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «careful». Careful describe a alguien que actúa con cuidado."
       }
     },
     {
@@ -6491,13 +6574,17 @@
         "do a problem",
         "make a problem"
       ],
-      "options": "solve a problem",
-      "answer": "Solve a problem is the natural collocation.",
+      "options": [
+        "make a problem",
+        "solve a problem",
+        "do a problem"
+      ],
+      "answer": "solve a problem",
       "feedback": {
-        "correct": "Correct. Solve a problem es la colocación natural.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Solve a problem es la colocación natural.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Solve a problem is the natural collocation.",
+        "correctEs": "Solve a problem es la colocación natural.",
+        "incorrect": "Not quite. The expected answer is “solve a problem”. Solve a problem is the natural collocation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «solve a problem». Solve a problem es la colocación natural."
       }
     },
     {
@@ -6536,13 +6623,17 @@
         "It is always certainly...",
         "No one can disagree..."
       ],
-      "options": "It seems that...",
-      "answer": "It seems that expresses a measured viewpoint.",
+      "options": [
+        "It seems that...",
+        "It proves that...",
+        "I am certain that..."
+      ],
+      "answer": "It seems that...",
       "feedback": {
-        "correct": "Correct. It seems that expresa una opinión matizada.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. It seems that expresa una opinión matizada.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "It seems that expresses a measured viewpoint.",
+        "correctEs": "It seems that expresa una opinión matizada.",
+        "incorrect": "Not quite. The expected answer is “It seems that...”. It seems that expresses a measured viewpoint.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «It seems that...». It seems that expresa una opinión matizada."
       }
     },
     {
@@ -6581,13 +6672,17 @@
         "do",
         "take"
       ],
-      "options": "make",
-      "answer": "Make a decision is the standard collocation.",
+      "options": [
+        "do",
+        "take",
+        "make"
+      ],
+      "answer": "make",
       "feedback": {
-        "correct": "Correct. Make a decision es la colocación habitual.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Make a decision es la colocación habitual.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Make a decision is the standard collocation.",
+        "correctEs": "Make a decision es la colocación habitual.",
+        "incorrect": "Not quite. The expected answer is “make”. Make a decision is the standard collocation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «make». Make a decision es la colocación habitual."
       }
     },
     {
@@ -6626,13 +6721,17 @@
         "the bakery",
         "the library"
       ],
-      "options": "passport control",
-      "answer": "Passport control checks travel documents.",
+      "options": [
+        "departure gate",
+        "passport control",
+        "baggage claim"
+      ],
+      "answer": "passport control",
       "feedback": {
-        "correct": "Correct. Passport control revisa documentos de viaje.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Passport control revisa documentos de viaje.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Passport control checks travel documents.",
+        "correctEs": "Passport control revisa documentos de viaje.",
+        "incorrect": "Not quite. The expected answer is “passport control”. Passport control checks travel documents.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «passport control». Passport control revisa documentos de viaje."
       },
       "timeLimitSeconds": 25
     },
@@ -6668,13 +6767,12 @@
       "type": "complete",
       "prompt": "A person who repairs electrical systems is an ___.",
       "promptEs": null,
-      "options": "electrician",
-      "answer": "Electrician names this occupation.",
+      "answer": "electrician",
       "feedback": {
-        "correct": "Correct. Electrician nombra esta ocupación.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Electrician nombra esta ocupación.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Electrician names this occupation.",
+        "correctEs": "Electrician nombra esta ocupación.",
+        "incorrect": "Not quite. The expected answer is “electrician”. Electrician names this occupation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «electrician». Electrician nombra esta ocupación."
       }
     },
     {
@@ -6713,13 +6811,17 @@
         "look at quickly",
         "search for"
       ],
-      "options": "take care of",
-      "answer": "Look after means care for someone or something.",
+      "options": [
+        "look for",
+        "look up",
+        "take care of"
+      ],
+      "answer": "take care of",
       "feedback": {
-        "correct": "Correct. Look after significa cuidar de alguien o algo.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Look after significa cuidar de alguien o algo.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Look after means care for someone or something.",
+        "correctEs": "Look after significa cuidar de alguien o algo.",
+        "incorrect": "Not quite. The expected answer is “take care of”. Look after means care for someone or something.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «take care of». Look after significa cuidar de alguien o algo."
       }
     },
     {
@@ -6758,13 +6860,17 @@
         "The person is cooking dinner.",
         "The person is buying a house."
       ],
-      "options": "The person will travel soon.",
-      "answer": "The actions suggest an upcoming trip.",
+      "options": [
+        "The person has returned from a trip.",
+        "The person cancelled the trip.",
+        "The person will travel soon."
+      ],
+      "answer": "The person will travel soon.",
       "feedback": {
-        "correct": "Correct. Las acciones sugieren un viaje próximo.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Las acciones sugieren un viaje próximo.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "The actions suggest an upcoming trip.",
+        "correctEs": "Las acciones sugieren un viaje próximo.",
+        "incorrect": "Not quite. The expected answer is “The person will travel soon.”. The actions suggest an upcoming trip.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «The person will travel soon.». Las acciones sugieren un viaje próximo."
       }
     },
     {
@@ -6803,13 +6909,17 @@
         "Completely opposed",
         "Certain it will fail"
       ],
-      "options": "Cautiously positive",
-      "answer": "Promising is positive; although introduces a reservation.",
+      "options": [
+        "Fully certain and enthusiastic",
+        "Cautiously positive",
+        "Completely negative"
+      ],
+      "answer": "Cautiously positive",
       "feedback": {
-        "correct": "Correct. Promising es positivo; although introduce una reserva.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Promising es positivo; although introduce una reserva.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Promising is positive; although introduces a reservation.",
+        "correctEs": "Promising es positivo; although introduce una reserva.",
+        "incorrect": "Not quite. The expected answer is “Cautiously positive”. Promising is positive; although introduces a reservation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «Cautiously positive». Promising es positivo; although introduce una reserva."
       }
     },
     {
@@ -6848,13 +6958,17 @@
         "All users prefer the menu.",
         "The menu is perfect."
       ],
-      "options": "Three users reported easier navigation.",
-      "answer": "Do not generalise beyond the stated evidence.",
+      "options": [
+        "Three users reported easier navigation.",
+        "All users preferred the menu.",
+        "The new menu was proven to be better."
+      ],
+      "answer": "Three users reported easier navigation.",
       "feedback": {
-        "correct": "Correct. No generalices más allá de la evidencia indicada.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. No generalices más allá de la evidencia indicada.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Do not generalise beyond the stated evidence.",
+        "correctEs": "No generalices más allá de la evidencia indicada.",
+        "incorrect": "Not quite. The expected answer is “Three users reported easier navigation.”. Do not generalise beyond the stated evidence.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «Three users reported easier navigation.». No generalices más allá de la evidencia indicada."
       }
     },
     {
@@ -6893,13 +7007,17 @@
         "8:10",
         "9:50"
       ],
-      "options": "9:10",
-      "answer": "The message gives the exact departure time.",
+      "options": [
+        "9:01",
+        "9:30",
+        "9:10"
+      ],
+      "answer": "9:10",
       "feedback": {
-        "correct": "Correct. El mensaje indica la hora exacta de salida.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. El mensaje indica la hora exacta de salida.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "The message gives the exact departure time.",
+        "correctEs": "El mensaje indica la hora exacta de salida.",
+        "incorrect": "Not quite. The expected answer is “9:10”. The message gives the exact departure time.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «9:10». El mensaje indica la hora exacta de salida."
       }
     },
     {
@@ -8789,13 +8907,17 @@
         "All users prefer the menu.",
         "The menu is perfect."
       ],
-      "options": "Three users reported easier navigation.",
-      "answer": "Do not generalise beyond the stated evidence.",
+      "options": [
+        "The new menu was proven to be better.",
+        "Three users reported easier navigation.",
+        "All users preferred the menu."
+      ],
+      "answer": "Three users reported easier navigation.",
       "feedback": {
-        "correct": "Correct. No generalices más allá de la evidencia indicada.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. No generalices más allá de la evidencia indicada.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Do not generalise beyond the stated evidence.",
+        "correctEs": "No generalices más allá de la evidencia indicada.",
+        "incorrect": "Not quite. The expected answer is “Three users reported easier navigation.”. Do not generalise beyond the stated evidence.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «Three users reported easier navigation.». No generalices más allá de la evidencia indicada."
       }
     },
     {
@@ -8834,13 +8956,17 @@
         "8:10",
         "9:50"
       ],
-      "options": "9:10",
-      "answer": "The message gives the exact departure time.",
+      "options": [
+        "9:10",
+        "9:01",
+        "9:30"
+      ],
+      "answer": "9:10",
       "feedback": {
-        "correct": "Correct. El mensaje indica la hora exacta de salida.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. El mensaje indica la hora exacta de salida.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "The message gives the exact departure time.",
+        "correctEs": "El mensaje indica la hora exacta de salida.",
+        "incorrect": "Not quite. The expected answer is “9:10”. The message gives the exact departure time.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «9:10». El mensaje indica la hora exacta de salida."
       }
     },
     {
@@ -9141,13 +9267,12 @@
       "type": "complete",
       "prompt": "I have ___ this book before.",
       "promptEs": null,
-      "options": "read",
-      "answer": "Use the past participle after have.",
+      "answer": "read",
       "feedback": {
-        "correct": "Correct. Usa el participio pasado después de have.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Usa el participio pasado después de have.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Use the past participle after have.",
+        "correctEs": "Usa el participio pasado después de have.",
+        "incorrect": "Not quite. The expected answer is “read”. Use the past participle after have.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «read». Usa el participio pasado después de have."
       }
     },
     {
@@ -9186,13 +9311,17 @@
         "although",
         "unless"
       ],
-      "options": "so",
-      "answer": "So introduces a result.",
+      "options": [
+        "although",
+        "because",
+        "so"
+      ],
+      "answer": "so",
       "feedback": {
-        "correct": "Correct. So introduce un resultado.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. So introduce un resultado.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "So introduces a result.",
+        "correctEs": "So introduce un resultado.",
+        "incorrect": "Not quite. The expected answer is “so”. So introduces a result.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «so». So introduce un resultado."
       }
     },
     {
@@ -9231,13 +9360,17 @@
         "did live",
         "do live"
       ],
-      "options": "lived",
-      "answer": "Reported questions use statement word order; backshift is common after a past reporting verb.",
+      "options": [
+        "live",
+        "lived",
+        "did live"
+      ],
+      "answer": "lived",
       "feedback": {
-        "correct": "Correct. Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Reported questions use statement word order; backshift is common after a past reporting verb.",
+        "correctEs": "Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado.",
+        "incorrect": "Not quite. The expected answer is “lived”. Reported questions use statement word order; backshift is common after a past reporting verb.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «lived». Las preguntas indirectas usan orden afirmativo; el cambio verbal es común tras un introductor en pasado."
       }
     },
     {
@@ -9276,13 +9409,17 @@
         "an",
         "the"
       ],
-      "options": "an",
-      "answer": "Use an before a vowel sound.",
+      "options": [
+        "an",
+        "a",
+        "the"
+      ],
+      "answer": "an",
       "feedback": {
-        "correct": "Correct. Usa an antes de un sonido vocálico.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Usa an antes de un sonido vocálico.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Use an before a vowel sound.",
+        "correctEs": "Usa an antes de un sonido vocálico.",
+        "incorrect": "Not quite. The expected answer is “an”. Use an before a vowel sound.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «an». Usa an antes de un sonido vocálico."
       },
       "timeLimitSeconds": 45
     },
@@ -9322,13 +9459,17 @@
         "carefully",
         "careless of"
       ],
-      "options": "careful",
-      "answer": "Careful describes someone who takes care.",
+      "options": [
+        "carefully",
+        "careless",
+        "careful"
+      ],
+      "answer": "careful",
       "feedback": {
-        "correct": "Correct. Careful describe a alguien que actúa con cuidado.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Careful describe a alguien que actúa con cuidado.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Careful describes someone who takes care.",
+        "correctEs": "Careful describe a alguien que actúa con cuidado.",
+        "incorrect": "Not quite. The expected answer is “careful”. Careful describes someone who takes care.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «careful». Careful describe a alguien que actúa con cuidado."
       }
     },
     {
@@ -9367,13 +9508,17 @@
         "do a problem",
         "make a problem"
       ],
-      "options": "solve a problem",
-      "answer": "Solve a problem is the natural collocation.",
+      "options": [
+        "make a problem",
+        "solve a problem",
+        "do a problem"
+      ],
+      "answer": "solve a problem",
       "feedback": {
-        "correct": "Correct. Solve a problem es la colocación natural.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Solve a problem es la colocación natural.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Solve a problem is the natural collocation.",
+        "correctEs": "Solve a problem es la colocación natural.",
+        "incorrect": "Not quite. The expected answer is “solve a problem”. Solve a problem is the natural collocation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «solve a problem». Solve a problem es la colocación natural."
       }
     },
     {
@@ -9412,13 +9557,17 @@
         "It is always certainly...",
         "No one can disagree..."
       ],
-      "options": "It seems that...",
-      "answer": "It seems that expresses a measured viewpoint.",
+      "options": [
+        "It seems that...",
+        "It proves that...",
+        "I am certain that..."
+      ],
+      "answer": "It seems that...",
       "feedback": {
-        "correct": "Correct. It seems that expresa una opinión matizada.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. It seems that expresa una opinión matizada.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "It seems that expresses a measured viewpoint.",
+        "correctEs": "It seems that expresa una opinión matizada.",
+        "incorrect": "Not quite. The expected answer is “It seems that...”. It seems that expresses a measured viewpoint.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «It seems that...». It seems that expresa una opinión matizada."
       }
     },
     {
@@ -9457,13 +9606,17 @@
         "do",
         "take"
       ],
-      "options": "make",
-      "answer": "Make a decision is the standard collocation.",
+      "options": [
+        "do",
+        "take",
+        "make"
+      ],
+      "answer": "make",
       "feedback": {
-        "correct": "Correct. Make a decision es la colocación habitual.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Make a decision es la colocación habitual.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Make a decision is the standard collocation.",
+        "correctEs": "Make a decision es la colocación habitual.",
+        "incorrect": "Not quite. The expected answer is “make”. Make a decision is the standard collocation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «make». Make a decision es la colocación habitual."
       },
       "timeLimitSeconds": 45
     },
@@ -9503,13 +9656,17 @@
         "the bakery",
         "the library"
       ],
-      "options": "passport control",
-      "answer": "Passport control checks travel documents.",
+      "options": [
+        "departure gate",
+        "passport control",
+        "baggage claim"
+      ],
+      "answer": "passport control",
       "feedback": {
-        "correct": "Correct. Passport control revisa documentos de viaje.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Passport control revisa documentos de viaje.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Passport control checks travel documents.",
+        "correctEs": "Passport control revisa documentos de viaje.",
+        "incorrect": "Not quite. The expected answer is “passport control”. Passport control checks travel documents.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «passport control». Passport control revisa documentos de viaje."
       }
     },
     {
@@ -9544,13 +9701,12 @@
       "type": "complete",
       "prompt": "A person who repairs electrical systems is an ___.",
       "promptEs": null,
-      "options": "electrician",
-      "answer": "Electrician names this occupation.",
+      "answer": "electrician",
       "feedback": {
-        "correct": "Correct. Electrician nombra esta ocupación.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Electrician nombra esta ocupación.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Electrician names this occupation.",
+        "correctEs": "Electrician nombra esta ocupación.",
+        "incorrect": "Not quite. The expected answer is “electrician”. Electrician names this occupation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «electrician». Electrician nombra esta ocupación."
       }
     },
     {
@@ -9589,13 +9745,17 @@
         "look at quickly",
         "search for"
       ],
-      "options": "take care of",
-      "answer": "Look after means care for someone or something.",
+      "options": [
+        "look for",
+        "look up",
+        "take care of"
+      ],
+      "answer": "take care of",
       "feedback": {
-        "correct": "Correct. Look after significa cuidar de alguien o algo.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Look after significa cuidar de alguien o algo.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Look after means care for someone or something.",
+        "correctEs": "Look after significa cuidar de alguien o algo.",
+        "incorrect": "Not quite. The expected answer is “take care of”. Look after means care for someone or something.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «take care of». Look after significa cuidar de alguien o algo."
       }
     },
     {
@@ -9634,13 +9794,17 @@
         "The person is cooking dinner.",
         "The person is buying a house."
       ],
-      "options": "The person will travel soon.",
-      "answer": "The actions suggest an upcoming trip.",
+      "options": [
+        "The person cancelled the trip.",
+        "The person will travel soon.",
+        "The person has returned from a trip."
+      ],
+      "answer": "The person will travel soon.",
       "feedback": {
-        "correct": "Correct. Las acciones sugieren un viaje próximo.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Las acciones sugieren un viaje próximo.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "The actions suggest an upcoming trip.",
+        "correctEs": "Las acciones sugieren un viaje próximo.",
+        "incorrect": "Not quite. The expected answer is “The person will travel soon.”. The actions suggest an upcoming trip.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «The person will travel soon.». Las acciones sugieren un viaje próximo."
       }
     },
     {
@@ -9679,13 +9843,17 @@
         "Completely opposed",
         "Certain it will fail"
       ],
-      "options": "Cautiously positive",
-      "answer": "Promising is positive; although introduces a reservation.",
+      "options": [
+        "Cautiously positive",
+        "Completely negative",
+        "Fully certain and enthusiastic"
+      ],
+      "answer": "Cautiously positive",
       "feedback": {
-        "correct": "Correct. Promising es positivo; although introduce una reserva.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. Promising es positivo; although introduce una reserva.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Promising is positive; although introduces a reservation.",
+        "correctEs": "Promising es positivo; although introduce una reserva.",
+        "incorrect": "Not quite. The expected answer is “Cautiously positive”. Promising is positive; although introduces a reservation.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «Cautiously positive». Promising es positivo; although introduce una reserva."
       }
     },
     {
@@ -9724,13 +9892,17 @@
         "All users prefer the menu.",
         "The menu is perfect."
       ],
-      "options": "Three users reported easier navigation.",
-      "answer": "Do not generalise beyond the stated evidence.",
+      "options": [
+        "All users preferred the menu.",
+        "The new menu was proven to be better.",
+        "Three users reported easier navigation."
+      ],
+      "answer": "Three users reported easier navigation.",
       "feedback": {
-        "correct": "Correct. No generalices más allá de la evidencia indicada.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. No generalices más allá de la evidencia indicada.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "Do not generalise beyond the stated evidence.",
+        "correctEs": "No generalices más allá de la evidencia indicada.",
+        "incorrect": "Not quite. The expected answer is “Three users reported easier navigation.”. Do not generalise beyond the stated evidence.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «Three users reported easier navigation.». No generalices más allá de la evidencia indicada."
       }
     },
     {
@@ -9769,13 +9941,17 @@
         "8:10",
         "9:50"
       ],
-      "options": "9:10",
-      "answer": "The message gives the exact departure time.",
+      "options": [
+        "9:30",
+        "9:10",
+        "9:01"
+      ],
+      "answer": "9:10",
       "feedback": {
-        "correct": "Correct. El mensaje indica la hora exacta de salida.",
-        "correctEs": "Correcto. undefined",
-        "incorrect": "Not quite. El mensaje indica la hora exacta de salida.",
-        "incorrectEs": "No exactamente. undefined"
+        "correct": "The message gives the exact departure time.",
+        "correctEs": "El mensaje indica la hora exacta de salida.",
+        "incorrect": "Not quite. The expected answer is “9:10”. The message gives the exact departure time.",
+        "incorrectEs": "No exactamente. La respuesta esperada es «9:10». El mensaje indica la hora exacta de salida."
       },
       "timeLimitSeconds": 45
     },
