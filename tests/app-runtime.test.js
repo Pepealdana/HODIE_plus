@@ -15,6 +15,7 @@ assert.match(app, /DATA\.contexts/);
 assert.match(app, /chooseLearningSurface/);
 assert.match(app, /startExperience/);
 assert.match(app, /startPractice/);
-assert.match(app, /reportedSpeechShortcut[\\s\\S]*?startPractice\\(mode, activity\\.id\\)/, "Reported Speech shortcut must launch a matching activity instead of only scrolling to the catalogue");
+assert.ok(app.includes('home.querySelector("#reportedSpeechShortcut")?.addEventListener("click"'), "Reported Speech shortcut must have a click handler");
+assert.ok(app.includes("startPractice(mode, activity.id)"), "Reported Speech shortcut must launch a matching activity");
 
 console.log("HODIE app runtime contract: PASS");
