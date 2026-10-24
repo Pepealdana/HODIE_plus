@@ -182,7 +182,10 @@ function selectMicroActivities(
   // A single Can-Do often has only a handful of authored items. When that pool
   // cannot fill a useful session, expand within the same CEFR level and requested
   // skill/resource. Rank related tags first; never substitute another skill.
-  if (mode !== "review" && activities.length < limit) {
+  const availableForFocus = mode === "mixed" || mode === "review"
+    ? activities.length
+    : activities.filter((item) => activityMatchesFocus(item, config)).length;
+  if (mode !== "review" && availableForFocus < limit) {
     const anchor = activities[0] || allActivities.find((item) => item.canDoId === canDoId);
     const level = anchor?.level;
     if (level) {
