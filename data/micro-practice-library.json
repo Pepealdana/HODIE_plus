@@ -12055,6 +12055,2027 @@
       "relatedCanDoIds": [
         "RS-B1-WRITE"
       ]
+    },
+    {
+      "id": "MIC-RS-B1-09",
+      "canDoId": "RS-B1-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "primarySkill": "grammar",
+      "context": "professional",
+      "level": "B1",
+      "title": "Backshift after a past reporting verb",
+      "titleEs": "Cambio verbal tras un verbo de reporte en pasado",
+      "prompt": "Yesterday, Lina said, “I am tired.” Lina said that she ___ tired.",
+      "promptEs": "Ayer Lina dijo: «Estoy cansada». Lina dijo que ___ cansada.",
+      "answer": "was",
+      "feedback": {
+        "correct": "Was is the expected backshift after said in this past-time exercise. In real contexts, is can remain possible if the state is still true and the speaker chooses not to backshift.",
+        "correctEs": "Was es el cambio verbal esperado después de said en este ejercicio situado en el pasado. En contextos reales, is también puede ser válido si el estado sigue vigente y se decide no retroceder el tiempo verbal.",
+        "incorrect": "The reported clause uses statement order. For this exercise, choose the usual backshift from am to was.",
+        "incorrectEs": "La oración indirecta conserva el orden afirmativo. En este ejercicio, elige el cambio habitual de am a was."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "backshift",
+        "tense"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "was",
+        "is she",
+        "has been"
+      ],
+      "gameMode": "timed-challenge",
+      "timeLimitSeconds": 25
+    },
+    {
+      "id": "MIC-RS-B1-10",
+      "canDoId": "RS-B1-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "primarySkill": "grammar",
+      "context": "professional",
+      "level": "B1",
+      "title": "Say or tell?",
+      "titleEs": "¿Say o tell?",
+      "prompt": "Choose the natural sentence: “The technician ___ me that the robot was ready.”",
+      "promptEs": "Elige la oración natural: «El técnico ___ que el robot estaba listo».",
+      "answer": "told",
+      "feedback": {
+        "correct": "Tell normally takes a person as its object: told me that… Say does not take this direct object pattern (*said me).",
+        "correctEs": "Tell normalmente lleva una persona como complemento: told me that… Say no utiliza directamente ese complemento (*said me).",
+        "incorrect": "Use told + person + that-clause: told me that the robot was ready.",
+        "incorrectEs": "Usa told + persona + oración con that: told me that the robot was ready."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "say-tell",
+        "reporting-verbs"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "told",
+        "said me",
+        "told that me"
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-11",
+      "canDoId": "RS-B1-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "primarySkill": "grammar",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report a question without inversion",
+      "titleEs": "Comunicar una pregunta sin invertir el orden",
+      "prompt": "“Where do you work?” He asked me where ___.",
+      "promptEs": "«¿Dónde trabajas?» Me preguntó dónde ___.",
+      "answer": "I worked",
+      "feedback": {
+        "correct": "Reported questions use statement word order and usually backshift here: where I worked.",
+        "correctEs": "Las preguntas indirectas usan el orden afirmativo y aquí normalmente retroceden el tiempo verbal: where I worked.",
+        "incorrect": "Do not keep the direct-question inversion. Use subject + verb: where I worked.",
+        "incorrectEs": "No conserves la inversión de la pregunta directa. Usa sujeto + verbo: where I worked."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reported-questions",
+        "word-order"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "I worked",
+        "did I work",
+        "worked I"
+      ],
+      "gameMode": "riddle"
+    },
+    {
+      "id": "MIC-RS-B1-12",
+      "canDoId": "RS-B1-GRAM",
+      "type": "complete",
+      "skill": "grammar",
+      "primarySkill": "grammar",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report a request",
+      "titleEs": "Comunicar una petición",
+      "prompt": "“Please save the file.” She asked me ___ save the file.",
+      "promptEs": "«Por favor, guarda el archivo». Me pidió ___ guardara el archivo.",
+      "answer": "to",
+      "feedback": {
+        "correct": "Ask + object + to-infinitive reports a request: She asked me to save the file.",
+        "correctEs": "Ask + objeto + infinitivo con to comunica una petición: She asked me to save the file.",
+        "incorrect": "After asked me, use to + base verb: asked me to save.",
+        "incorrectEs": "Después de asked me, usa to + verbo base: asked me to save."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "requests",
+        "infinitive"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "acceptableAnswers": [
+        "to"
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-13",
+      "canDoId": "RS-B1-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "primarySkill": "grammar",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report advice accurately",
+      "titleEs": "Comunicar un consejo con precisión",
+      "prompt": "“You should back up your files,” the instructor said. The instructor advised us ___ our files.",
+      "promptEs": "«Deberían hacer copias de seguridad», dijo el instructor. El instructor nos aconsejó ___ nuestros archivos.",
+      "answer": "to back up",
+      "feedback": {
+        "correct": "Advise + object + to-infinitive is a standard pattern: advised us to back up our files.",
+        "correctEs": "Advise + objeto + infinitivo con to es un patrón estándar: advised us to back up our files.",
+        "incorrect": "Use advised + person + to + base verb.",
+        "incorrectEs": "Usa advised + persona + to + verbo base."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reporting-verbs",
+        "advice"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "to back up",
+        "backing up",
+        "that back up"
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-14",
+      "canDoId": "RS-B1-READ",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "context": "professional",
+      "level": "B1",
+      "title": "Read a project update",
+      "titleEs": "Lee una actualización de proyecto",
+      "prompt": "Marta wrote: “The prototype needs one more test, and I can finish it on Friday.” Which summary preserves both points?",
+      "promptEs": "Marta escribió: «El prototipo necesita una prueba más y puedo terminarlo el viernes». ¿Qué resumen conserva ambos puntos?",
+      "answer": "Marta said the prototype needed one more test and that she could finish it on Friday.",
+      "feedback": {
+        "correct": "The correct summary keeps both the remaining test and Marta’s stated ability to finish on Friday; it does not turn a plan into a verified result.",
+        "correctEs": "El resumen correcto conserva la prueba pendiente y la capacidad que Marta expresó para terminar el viernes; no convierte un plan en un resultado verificado.",
+        "incorrect": "Compare both details with the original: one test remains, and Marta says she can finish on Friday.",
+        "incorrectEs": "Compara los dos detalles con el original: queda una prueba y Marta dice que puede terminar el viernes."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reading-comprehension",
+        "meaning-preservation"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "reading",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "Marta said the prototype needed one more test and that she could finish it on Friday.",
+        "Marta confirmed the prototype had passed every test.",
+        "Marta said she could not finish the prototype."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-15",
+      "canDoId": "RS-B1-READ",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "context": "professional",
+      "level": "B1",
+      "title": "Separate a claim from a fact",
+      "titleEs": "Distingue una afirmación de un hecho",
+      "prompt": "A report says: “The supplier claimed that the delay was caused by bad weather.” What does claimed tell the reader?",
+      "promptEs": "Un informe dice: «El proveedor afirmó que el retraso se debió al mal tiempo». ¿Qué indica claimed al lector?",
+      "answer": "It attributes the explanation to the supplier; it does not independently prove it.",
+      "feedback": {
+        "correct": "Claimed attributes a position to the supplier. The sentence alone does not establish whether the explanation is true.",
+        "correctEs": "Claimed atribuye una postura al proveedor. La oración por sí sola no demuestra si la explicación es verdadera.",
+        "incorrect": "Look for the difference between reporting what a source says and confirming the claim yourself.",
+        "incorrectEs": "Busca la diferencia entre comunicar lo que dice una fuente y confirmar tú mismo la afirmación."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reporting-verbs",
+        "stance",
+        "riddle"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "reading",
+        "vocabulary",
+        "communication"
+      ],
+      "languageResource": "vocabulary",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "It attributes the explanation to the supplier; it does not independently prove it.",
+        "It confirms that the weather definitely caused the delay.",
+        "It means the supplier apologised."
+      ],
+      "gameMode": "timed-challenge",
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "MIC-RS-B1-16",
+      "canDoId": "RS-B1-READ",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "context": "professional",
+      "level": "B1",
+      "title": "Interpret a reported request",
+      "titleEs": "Interpreta una petición comunicada",
+      "prompt": "“The coordinator asked us to send the list by noon.” What did the coordinator want?",
+      "promptEs": "«La coordinadora nos pidió enviar la lista antes del mediodía». ¿Qué quería la coordinadora?",
+      "answer": "The list should be sent by noon.",
+      "feedback": {
+        "correct": "Asked us to send expresses a request. It does not say the list was already sent.",
+        "correctEs": "Asked us to send expresa una petición. No indica que la lista ya se haya enviado.",
+        "incorrect": "Identify the action requested and the deadline; do not infer completion.",
+        "incorrectEs": "Identifica la acción solicitada y el plazo; no infieras que ya se cumplió."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "requests",
+        "reading-comprehension"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "reading",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "The list should be sent by noon.",
+        "The list had already been sent at noon.",
+        "The coordinator asked who had made the list."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-17",
+      "canDoId": "RS-B1-READ",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "context": "professional",
+      "level": "B1",
+      "title": "Understand a reported denial",
+      "titleEs": "Comprende una negación comunicada",
+      "prompt": "“The student denied copying the code.” What did the student do?",
+      "promptEs": "«El estudiante negó haber copiado el código». ¿Qué hizo el estudiante?",
+      "answer": "The student said they had not copied the code.",
+      "feedback": {
+        "correct": "Denied means the person said that an accusation or statement was not true; it does not prove whether the denial is true.",
+        "correctEs": "Denied significa que la persona dijo que una acusación o afirmación no era cierta; no demuestra si la negación es verdadera.",
+        "incorrect": "Denied is the opposite of admitted in this context.",
+        "incorrectEs": "En este contexto, denied es lo contrario de admitted."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reporting-verbs",
+        "meaning"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "reading",
+        "vocabulary"
+      ],
+      "languageResource": "vocabulary",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "The student said they had not copied the code.",
+        "The student admitted copying the code.",
+        "The student asked someone to copy the code."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-18",
+      "canDoId": "RS-B1-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "primarySkill": "listening",
+      "context": "professional",
+      "level": "B1",
+      "title": "Listen for a change of plan",
+      "titleEs": "Escucha un cambio de plan",
+      "prompt": "Listen to the message and choose the accurate report.",
+      "promptEs": "Escucha el mensaje y elige el reporte correcto.",
+      "answer": "Daniel said he would test the robot the next day because the battery had not arrived.",
+      "feedback": {
+        "correct": "The message gives a postponed test and a missing battery. The next-day wording follows the past reporting frame in this exercise.",
+        "correctEs": "El mensaje comunica una prueba aplazada y una batería que no ha llegado. La referencia al día siguiente sigue el marco pasado del ejercicio.",
+        "incorrect": "Listen for the reason and the new time. The test has not happened yet; it is planned for tomorrow.",
+        "incorrectEs": "Escucha la razón y el nuevo momento. La prueba aún no se ha realizado; está prevista para mañana."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "listening-comprehension",
+        "time-reference"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "listening",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "Daniel said he would test the robot the next day because the battery had not arrived.",
+        "Daniel said he had tested the robot the previous day.",
+        "Daniel said the battery had arrived and the test was cancelled."
+      ],
+      "audioText": "Daniel said, 'I was going to test the robot today, but I will do it tomorrow because the battery has not arrived.'"
+    },
+    {
+      "id": "MIC-RS-B1-19",
+      "canDoId": "RS-B1-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "primarySkill": "listening",
+      "context": "professional",
+      "level": "B1",
+      "title": "Listen for advice",
+      "titleEs": "Escucha un consejo",
+      "prompt": "Listen and identify the advice that was reported.",
+      "promptEs": "Escucha e identifica el consejo comunicado.",
+      "answer": "The mentor advised me to explain the problem before showing the solution.",
+      "feedback": {
+        "correct": "Should expresses advice here, so advised + object + to-infinitive preserves the original function.",
+        "correctEs": "Should expresa un consejo; advised + objeto + infinitivo con to conserva esa función.",
+        "incorrect": "The original sentence gives advice, not a question or a denial.",
+        "incorrectEs": "La oración original da un consejo, no formula una pregunta ni expresa una negación."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "listening-comprehension",
+        "advice"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "listening",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "The mentor advised me to explain the problem before showing the solution.",
+        "The mentor denied explaining the problem.",
+        "The mentor asked whether the solution was finished."
+      ],
+      "audioText": "The mentor said, 'You should explain the problem before showing the solution.'"
+    },
+    {
+      "id": "MIC-RS-B1-20",
+      "canDoId": "RS-B1-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "primarySkill": "listening",
+      "context": "professional",
+      "level": "B1",
+      "title": "Memory challenge: remember two details",
+      "titleEs": "Reto de memoria: recuerda dos detalles",
+      "prompt": "Listen once, hide the transcript in your mind, and choose both details correctly.",
+      "promptEs": "Escucha una vez, intenta recordar el mensaje y elige los dos detalles correctos.",
+      "answer": "Nora said the meeting started at ten and asked us to bring the printed diagrams.",
+      "feedback": {
+        "correct": "Both details match: ten o’clock and printed diagrams. The request is reported with asked us to bring.",
+        "correctEs": "Ambos detalles coinciden: las diez y los diagramas impresos. La petición se comunica con asked us to bring.",
+        "incorrect": "Check the time and what people must bring. Both details must be correct.",
+        "incorrectEs": "Comprueba la hora y lo que deben llevar. Ambos detalles deben ser correctos."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "listening-comprehension",
+        "memory",
+        "requests"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "listening",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "Nora said the meeting started at ten and asked us to bring the printed diagrams.",
+        "Nora said the meeting started at twelve and asked for a laptop.",
+        "Nora said the meeting had ended and the diagrams were digital."
+      ],
+      "audioText": "Nora said, 'The meeting starts at ten, and please bring the printed diagrams.'",
+      "gameMode": "memory-recall",
+      "memoryText": "Nora said the meeting starts at ten and asked everyone to bring printed diagrams."
+    },
+    {
+      "id": "MIC-RS-B1-21",
+      "canDoId": "RS-B1-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "primarySkill": "listening",
+      "context": "professional",
+      "level": "B1",
+      "title": "Listen for a viewpoint, not a fact",
+      "titleEs": "Escucha una opinión, no un hecho",
+      "prompt": "Choose what the speaker actually reported.",
+      "promptEs": "Elige lo que realmente comunicó la persona.",
+      "answer": "Luis argued that the design was easier to repair but admitted that it was more expensive.",
+      "feedback": {
+        "correct": "Argued attributes a viewpoint; admitted signals acceptance of the higher cost. Neither makes the claim an independently verified fact.",
+        "correctEs": "Argued atribuye una opinión; admitted indica que se reconoce el mayor costo. Ninguno convierte la afirmación en un hecho verificado independientemente.",
+        "incorrect": "Keep both parts: the repair advantage and the higher cost.",
+        "incorrectEs": "Conserva ambas partes: la ventaja para reparar y el mayor costo."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "listening-comprehension",
+        "stance",
+        "contrast"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "listening",
+        "vocabulary",
+        "communication"
+      ],
+      "languageResource": "vocabulary",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "Luis argued that the design was easier to repair but admitted that it was more expensive.",
+        "Luis proved that the design was cheaper and impossible to repair.",
+        "Luis denied that the design cost more."
+      ],
+      "audioText": "Luis argued that the new design was easier to repair, although he admitted that it cost more."
+    },
+    {
+      "id": "MIC-RS-B1-22",
+      "canDoId": "RS-B1-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "primarySkill": "speaking",
+      "context": "professional",
+      "level": "B1",
+      "title": "Say a reported statement clearly",
+      "titleEs": "Di con claridad una afirmación indirecta",
+      "prompt": "Listen to the model, then say the reported sentence.",
+      "promptEs": "Escucha el modelo y después di la oración indirecta.",
+      "feedback": {
+        "correct": "The key information and reported structure are present. This check verifies required words, not full pronunciation or grammatical quality.",
+        "correctEs": "La información clave y la estructura indirecta están presentes. Esta comprobación verifica palabras necesarias, no toda la pronunciación ni la calidad gramatical.",
+        "incorrect": "Include who spoke, the reporting verb, and the reported need. This automatic check uses the speech transcript and may miss pronunciation details.",
+        "incorrectEs": "Incluye quién habló, el verbo de reporte y la necesidad comunicada. Esta comprobación automática usa la transcripción y puede pasar por alto detalles de pronunciación."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "speaking",
+        "fluency",
+        "backshift"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "speaking",
+        "pronunciation",
+        "grammar"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "targetPhrase": "Maya said that she needed more time.",
+      "requiredTokens": [
+        "maya",
+        "said",
+        "needed",
+        "time"
+      ],
+      "audioText": "Maya said that she needed more time."
+    },
+    {
+      "id": "MIC-RS-B1-23",
+      "canDoId": "RS-B1-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "primarySkill": "speaking",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report an indirect question aloud",
+      "titleEs": "Comunica una pregunta indirecta en voz alta",
+      "prompt": "Say the report using statement word order.",
+      "promptEs": "Di el reporte usando el orden de una oración afirmativa.",
+      "feedback": {
+        "correct": "The target uses statement word order: where I lived, not where did I live.",
+        "correctEs": "El modelo usa el orden afirmativo: where I lived, no where did I live.",
+        "incorrect": "Listen to the model again and keep the subject before the verb in the reported question.",
+        "incorrectEs": "Vuelve a escuchar el modelo y conserva el sujeto antes del verbo en la pregunta indirecta."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "speaking",
+        "reported-questions",
+        "word-order"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "speaking",
+        "pronunciation",
+        "grammar"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "targetPhrase": "He asked me where I lived.",
+      "requiredTokens": [
+        "asked",
+        "where",
+        "lived"
+      ],
+      "audioText": "He asked me where I lived."
+    },
+    {
+      "id": "MIC-RS-B1-24",
+      "canDoId": "RS-B1-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "primarySkill": "speaking",
+      "context": "professional",
+      "level": "B1",
+      "title": "Pass on a request",
+      "titleEs": "Transmite una petición",
+      "prompt": "Tell a classmate what the teacher requested.",
+      "promptEs": "Dile a un compañero lo que pidió el profesor.",
+      "feedback": {
+        "correct": "The report preserves the requested action and deadline. The transcript check only checks key words, so review the full sentence too.",
+        "correctEs": "El reporte conserva la acción solicitada y el plazo. La transcripción solo verifica palabras clave; revisa también la oración completa.",
+        "incorrect": "Include the requested action and the deadline. Use asked us to + verb.",
+        "incorrectEs": "Incluye la acción solicitada y el plazo. Usa asked us to + verbo."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "speaking",
+        "requests",
+        "role-play"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "speaking",
+        "communication",
+        "grammar"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "targetPhrase": "The teacher asked us to submit the project on Friday.",
+      "requiredTokens": [
+        "teacher",
+        "asked",
+        "submit",
+        "project",
+        "friday"
+      ],
+      "audioText": "The teacher asked us to submit the project on Friday."
+    },
+    {
+      "id": "MIC-RS-B1-25",
+      "canDoId": "RS-B1-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "primarySkill": "speaking",
+      "context": "professional",
+      "level": "B1",
+      "title": "Riddle: identify the reporting verb",
+      "titleEs": "Acertijo: identifica el verbo de reporte",
+      "prompt": "A person says a claim is not true. Which sentence reports this meaning? Say the sentence aloud.",
+      "promptEs": "Una persona dice que una afirmación no es cierta. ¿Qué oración comunica ese significado? Dila en voz alta.",
+      "feedback": {
+        "correct": "Denied reports rejection of an allegation. The transcript check looks for the key meaning words only.",
+        "correctEs": "Denied comunica el rechazo de una acusación. La comprobación de transcripción solo busca las palabras clave del significado.",
+        "incorrect": "Use denied when someone says an allegation is not true; do not use admitted.",
+        "incorrectEs": "Usa denied cuando alguien dice que una acusación no es cierta; no uses admitted."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "speaking",
+        "riddle",
+        "reporting-verbs"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "speaking",
+        "vocabulary",
+        "pronunciation"
+      ],
+      "languageResource": "vocabulary",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "targetPhrase": "She denied sharing the password.",
+      "requiredTokens": [
+        "denied",
+        "sharing",
+        "password"
+      ],
+      "audioText": "She denied sharing the password."
+    },
+    {
+      "id": "MIC-RS-B1-26",
+      "canDoId": "RS-B1-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "primarySkill": "writing",
+      "context": "professional",
+      "level": "B1",
+      "title": "Write a two-sentence project update",
+      "titleEs": "Escribe una actualización de proyecto en dos oraciones",
+      "prompt": "Write two sentences reporting what a teammate said about a project delay.",
+      "promptEs": "Escribe dos oraciones para comunicar lo que un compañero dijo sobre un retraso.",
+      "feedback": {
+        "correct": "Your response meets the basic task criteria. The deterministic grammar checker may still miss errors; review the complete text before using it.",
+        "correctEs": "Tu respuesta cumple los criterios básicos de la tarea. El corrector determinista aún puede pasar por alto errores; revisa todo el texto antes de usarlo.",
+        "incorrect": "Include who reported the message, the reason for the delay, and the information they gave.",
+        "incorrectEs": "Incluye quién comunicó el mensaje, la razón del retraso y la información que dio."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "writing",
+        "production",
+        "reporting-verbs"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "writing",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "reporting-verb",
+            "label": "Use said, told or explained",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\btold\\b",
+              "\\bexplained\\b"
+            ],
+            "missingMessage": "Attribute the information to the teammate with a reporting verb.",
+            "missingMessageEs": "Atribuye la información al compañero con un verbo de reporte."
+          },
+          {
+            "id": "delay-reason",
+            "label": "Include a reason for the delay",
+            "patterns": [
+              "\\bbecause\\b",
+              "\\bdue to\\b",
+              "\\bas the\\b",
+              "\\bsince\\b"
+            ],
+            "missingMessage": "State why the project is delayed.",
+            "missingMessageEs": "Explica por qué se retrasa el proyecto."
+          },
+          {
+            "id": "reported-content",
+            "label": "Include the reported information",
+            "patterns": [
+              "\\bthat\\b",
+              "\\bwould\\b",
+              "\\bcould\\b",
+              "\\bwas\\b",
+              "\\bwere\\b",
+              "\\bhad\\b"
+            ],
+            "missingMessage": "Include the teammate's reported message.",
+            "missingMessageEs": "Incluye el mensaje comunicado por el compañero."
+          }
+        ],
+        "minimumCriteria": 3,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 35,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-B1-27",
+      "canDoId": "RS-B1-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "primarySkill": "writing",
+      "context": "professional",
+      "level": "B1",
+      "title": "Summarise two viewpoints",
+      "titleEs": "Resume dos puntos de vista",
+      "prompt": "Write a short neutral summary: one colleague supports the new plan; another worries about its cost.",
+      "promptEs": "Escribe un resumen neutral: un compañero apoya el nuevo plan y otro se preocupa por su costo.",
+      "feedback": {
+        "correct": "The checklist checks whether you included both viewpoints and attributed them. It does not judge every nuance of neutrality.",
+        "correctEs": "La lista comprueba que incluyas ambos puntos de vista y los atribuyas. No evalúa todos los matices de neutralidad.",
+        "incorrect": "Name both viewpoints and attribute them to different speakers. Avoid stating either opinion as proven fact.",
+        "incorrectEs": "Menciona ambos puntos de vista y atribúyelos a personas distintas. Evita presentar cualquiera de las opiniones como un hecho probado."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "writing",
+        "summary",
+        "stance"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "writing",
+        "vocabulary",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "viewpoint-one",
+            "label": "Attribute the first viewpoint",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\bargued\\b",
+              "\\bsupported\\b",
+              "\\bfavoured\\b"
+            ],
+            "missingMessage": "Attribute the first viewpoint to a speaker.",
+            "missingMessageEs": "Atribuye el primer punto de vista a una persona."
+          },
+          {
+            "id": "viewpoint-two",
+            "label": "Attribute the concern about cost",
+            "patterns": [
+              "\\bworried\\b",
+              "\\bconcerned\\b",
+              "\\bcost\\b",
+              "\\bexpensive\\b"
+            ],
+            "missingMessage": "Include the second person's concern about cost.",
+            "missingMessageEs": "Incluye la preocupación de la segunda persona por el costo."
+          },
+          {
+            "id": "neutral-summary",
+            "label": "Keep the summary neutral",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\bargued\\b",
+              "\\bthought\\b",
+              "\\bbelieved\\b",
+              "\\bconcerned\\b"
+            ],
+            "missingMessage": "Report the viewpoints rather than presenting either as a proven fact.",
+            "missingMessageEs": "Comunica los puntos de vista sin presentar ninguno como hecho probado."
+          }
+        ],
+        "minimumCriteria": 3,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 35,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-B1-28",
+      "canDoId": "RS-B1-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "primarySkill": "writing",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report a polite request in an email",
+      "titleEs": "Comunica una petición cortés en un correo",
+      "prompt": "Write one or two sentences telling a colleague what the coordinator asked you to do.",
+      "promptEs": "Escribe una o dos oraciones para decirle a un compañero qué te pidió hacer la coordinadora.",
+      "feedback": {
+        "correct": "The checklist checks for an attributed request and an action. Check the verb form and the intended deadline yourself.",
+        "correctEs": "La lista comprueba que atribuyas la petición e incluyas una acción. Revisa por tu cuenta la forma verbal y el plazo previsto.",
+        "incorrect": "Use a reporting structure and state the action. Do not write *asked me that send*.",
+        "incorrectEs": "Usa una estructura de reporte e indica la acción. No escribas *asked me that send*."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "writing",
+        "requests",
+        "email"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "writing",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "request-verb",
+            "label": "Use asked me to",
+            "patterns": [
+              "\\basked me to\\b",
+              "\\brequested that\\b"
+            ],
+            "missingMessage": "Report the request with asked me to + verb or a suitable alternative.",
+            "missingMessageEs": "Comunica la petición con asked me to + verbo u otra estructura adecuada."
+          },
+          {
+            "id": "action",
+            "label": "State the requested action",
+            "patterns": [
+              "\\bsend\\b",
+              "\\bprepare\\b",
+              "\\bcheck\\b",
+              "\\bshare\\b",
+              "\\bbring\\b",
+              "\\bsubmit\\b"
+            ],
+            "missingMessage": "Include the action requested by the coordinator.",
+            "missingMessageEs": "Incluye la acción solicitada por la coordinadora."
+          }
+        ],
+        "minimumCriteria": 2,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-B1-29",
+      "canDoId": "RS-B1-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "primarySkill": "writing",
+      "context": "professional",
+      "level": "B1",
+      "title": "Write a short interview report",
+      "titleEs": "Escribe un breve informe de entrevista",
+      "prompt": "Write a short report of what an interviewee said about their experience and what they hope to do next.",
+      "promptEs": "Escribe un breve informe de lo que una persona entrevistada dijo sobre su experiencia y lo que espera hacer después.",
+      "feedback": {
+        "correct": "The checklist checks attribution, experience and a future plan. It is not a complete grammar or CEFR assessment.",
+        "correctEs": "La lista comprueba atribución, experiencia y un plan futuro. No es una evaluación completa de gramática ni del MCER.",
+        "incorrect": "Include what the person said about the past and what they plan or hope to do next.",
+        "incorrectEs": "Incluye lo que la persona dijo sobre el pasado y lo que planea o espera hacer después."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "writing",
+        "interview",
+        "summary"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "writing",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "reporting-verb",
+            "label": "Attribute the interviewee's words",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\bexplained\\b",
+              "\\bmentioned\\b",
+              "\\breported\\b"
+            ],
+            "missingMessage": "Attribute the information to the interviewee.",
+            "missingMessageEs": "Atribuye la información a la persona entrevistada."
+          },
+          {
+            "id": "experience",
+            "label": "Mention experience",
+            "patterns": [
+              "\\bexperience\\b",
+              "\\bworked\\b",
+              "\\bhas worked\\b",
+              "\\bused\\b",
+              "\\bbuilt\\b",
+              "\\blearned\\b"
+            ],
+            "missingMessage": "Include a detail about the interviewee's experience.",
+            "missingMessageEs": "Incluye un detalle de la experiencia de la persona entrevistada."
+          },
+          {
+            "id": "future-plan",
+            "label": "Mention a next step or plan",
+            "patterns": [
+              "\\bwould like to\\b",
+              "\\bhoped to\\b",
+              "\\bplanned to\\b",
+              "\\bnext\\b",
+              "\\bwill\\b"
+            ],
+            "missingMessage": "Include the next step or plan.",
+            "missingMessageEs": "Incluye el siguiente paso o plan."
+          }
+        ],
+        "minimumCriteria": 3,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 35,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-B1-30",
+      "canDoId": "RS-B1-COMM",
+      "type": "order",
+      "skill": "communication",
+      "primarySkill": "communication",
+      "context": "professional",
+      "level": "B1",
+      "title": "Sequence an interview summary",
+      "titleEs": "Ordena el resumen de una entrevista",
+      "prompt": "Put the three statements in a coherent order: introduce the speaker, report the main point, then add the follow-up detail.",
+      "promptEs": "Ordena las tres oraciones de forma coherente: presenta a la persona, comunica la idea principal y añade el detalle posterior.",
+      "answer": [
+        "Ana explained that her team had built a low-cost sensor.",
+        "She added that the sensor could help monitor water use.",
+        "The interviewer then asked whether she could demonstrate the prototype."
+      ],
+      "feedback": {
+        "correct": "A coherent report introduces the main point, adds a related detail, and then reports the follow-up question.",
+        "correctEs": "Un informe coherente presenta la idea principal, añade un detalle relacionado y después comunica la pregunta de seguimiento.",
+        "incorrect": "Start with Ana's main point, follow with the related detail, and finish with the interviewer's question.",
+        "incorrectEs": "Empieza con la idea principal de Ana, sigue con el detalle relacionado y termina con la pregunta del entrevistador."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "communication",
+        "cohesion",
+        "sequencing"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "communication",
+        "writing"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "tokens": [
+        "The interviewer then asked whether she could demonstrate the prototype.",
+        "Ana explained that her team had built a low-cost sensor.",
+        "She added that the sensor could help monitor water use."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-31",
+      "canDoId": "RS-B1-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "primarySkill": "communication",
+      "context": "professional",
+      "level": "B1",
+      "title": "Choose a neutral report",
+      "titleEs": "Elige un reporte neutral",
+      "prompt": "A colleague says, “I think the timetable is unrealistic.” Which report attributes the opinion without endorsing it?",
+      "promptEs": "Un compañero dice: «Creo que el horario no es realista». ¿Qué reporte atribuye la opinión sin respaldarla?",
+      "answer": "He felt that the timetable was unrealistic.",
+      "feedback": {
+        "correct": "Felt attributes the evaluation to the colleague. The other options turn one person's view into a fact or group consensus.",
+        "correctEs": "Felt atribuye la valoración al compañero. Las otras opciones convierten la opinión de una persona en un hecho o consenso grupal.",
+        "incorrect": "Choose the option that keeps the opinion attached to the speaker.",
+        "incorrectEs": "Elige la opción que mantiene la opinión atribuida a quien la expresó."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "communication",
+        "stance",
+        "reporting-verbs"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "communication",
+        "vocabulary"
+      ],
+      "languageResource": "vocabulary",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "He felt that the timetable was unrealistic.",
+        "The timetable was definitely unrealistic.",
+        "Everyone agreed that the timetable was unrealistic."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-32",
+      "canDoId": "RS-B1-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "primarySkill": "communication",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report a question politely",
+      "titleEs": "Comunica una pregunta con cortesía",
+      "prompt": "A visitor asked, “Could you show me the robotics lab?” Choose the accurate report.",
+      "promptEs": "Un visitante preguntó: «¿Podría mostrarme el laboratorio de robótica?». Elige el reporte correcto.",
+      "answer": "The visitor asked if I could show them the robotics lab.",
+      "feedback": {
+        "correct": "A yes/no question can be reported with asked if/whether + statement word order.",
+        "correctEs": "Una pregunta de sí/no puede comunicarse con asked if/whether + orden afirmativo.",
+        "incorrect": "Use asked if + subject + verb. Do not keep direct-question inversion or use told for a question.",
+        "incorrectEs": "Usa asked if + sujeto + verbo. No conserves la inversión de la pregunta directa ni uses told para una pregunta."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "communication",
+        "reported-questions",
+        "politeness"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "communication",
+        "grammar"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "The visitor asked if I could show them the robotics lab.",
+        "The visitor asked could I show them the robotics lab.",
+        "The visitor told me if I could show them the robotics lab."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-33",
+      "canDoId": "RS-B1-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "primarySkill": "communication",
+      "context": "professional",
+      "level": "B1",
+      "title": "Preserve uncertainty in a report",
+      "titleEs": "Conserva la incertidumbre al informar",
+      "prompt": "A researcher says, “The results may indicate a problem.” Which report preserves the uncertainty?",
+      "promptEs": "Un investigador dice: «Los resultados podrían indicar un problema». ¿Qué reporte conserva la incertidumbre?",
+      "answer": "The researcher said the results might indicate a problem.",
+      "feedback": {
+        "correct": "Might preserves the original uncertainty expressed by may. Confirmed and proved would make a stronger claim than the source.",
+        "correctEs": "Might conserva la incertidumbre expresada por may. Confirmed y proved harían una afirmación más fuerte que la fuente.",
+        "incorrect": "Keep the cautious meaning of may; do not turn a possibility into proof.",
+        "incorrectEs": "Conserva el sentido cauteloso de may; no conviertas una posibilidad en una prueba."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "communication",
+        "modality",
+        "certainty"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "communication",
+        "grammar"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "The researcher said the results might indicate a problem.",
+        "The researcher confirmed that the results proved a problem.",
+        "The researcher denied that the results might indicate a problem."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-34",
+      "canDoId": "RS-B1-GRAM",
+      "type": "complete",
+      "skill": "grammar",
+      "primarySkill": "grammar",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report a yes/no question",
+      "titleEs": "Comunica una pregunta de sí/no",
+      "prompt": "“Are you ready?” She asked me ___ I was ready.",
+      "promptEs": "«¿Estás listo?» Me preguntó ___ estaba listo.",
+      "answer": "if",
+      "feedback": {
+        "correct": "If and whether can introduce a reported yes/no question. Both are valid here.",
+        "correctEs": "If y whether pueden introducir una pregunta indirecta de sí/no. Ambas son válidas aquí.",
+        "incorrect": "Use if or whether before the reported clause.",
+        "incorrectEs": "Usa if o whether antes de la oración indirecta."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reported-questions",
+        "if-whether"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "acceptableAnswers": [
+        "whether"
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-35",
+      "canDoId": "RS-B1-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "primarySkill": "grammar",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report a warning",
+      "titleEs": "Comunica una advertencia",
+      "prompt": "“Don't touch the wires,” the technician said. The technician warned us ___ the wires.",
+      "promptEs": "«No toquen los cables», dijo el técnico. El técnico nos advirtió que no ___ los cables.",
+      "answer": "not to touch",
+      "feedback": {
+        "correct": "Warn + object + not to-infinitive reports a warning not to do something.",
+        "correctEs": "Warn + objeto + infinitivo negativo con to comunica una advertencia para no hacer algo.",
+        "incorrect": "Use warned us not to + base verb.",
+        "incorrectEs": "Usa warned us not to + verbo base."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reporting-verbs",
+        "warnings"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "not to touch",
+        "to not touching",
+        "don't touch"
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-36",
+      "canDoId": "RS-B1-READ",
+      "type": "choose",
+      "skill": "reading",
+      "primarySkill": "reading",
+      "context": "professional",
+      "level": "B1",
+      "title": "Spot an unsupported conclusion",
+      "titleEs": "Detecta una conclusión no sustentada",
+      "prompt": "Source: “The manager suggested testing the app with five students.” Which summary adds an unsupported claim?",
+      "promptEs": "Fuente: «La gerente sugirió probar la aplicación con cinco estudiantes». ¿Qué resumen añade una afirmación no sustentada?",
+      "answer": "The manager proved that the app works perfectly.",
+      "feedback": {
+        "correct": "Suggested reports a proposal. It does not prove the app works, so the second option invents a conclusion.",
+        "correctEs": "Suggested comunica una propuesta. No demuestra que la aplicación funcione; la segunda opción inventa una conclusión.",
+        "incorrect": "Distinguish a proposal from evidence of a successful result.",
+        "incorrectEs": "Distingue una propuesta de la evidencia de un resultado exitoso."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "reading",
+        "critical-reading",
+        "reporting-verbs"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "reading",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "The manager suggested a small user test.",
+        "The manager proved that the app works perfectly.",
+        "The manager suggested testing the app with five students."
+      ]
+    },
+    {
+      "id": "MIC-RS-B1-37",
+      "canDoId": "RS-B1-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "primarySkill": "listening",
+      "context": "professional",
+      "level": "B1",
+      "title": "Listen for a denial and a reason",
+      "titleEs": "Escucha una negación y su razón",
+      "prompt": "Listen and select the accurate report.",
+      "promptEs": "Escucha y selecciona el reporte correcto.",
+      "answer": "The student denied deleting the file and said the computer had restarted unexpectedly.",
+      "feedback": {
+        "correct": "The speaker denied deleting the file and gave an unexpected restart as context. The audio does not establish who or what caused the deletion.",
+        "correctEs": "La persona negó haber eliminado el archivo y mencionó un reinicio inesperado. El audio no demuestra quién o qué causó la eliminación.",
+        "incorrect": "Listen for denied and the reason given. Do not replace denial with admission.",
+        "incorrectEs": "Escucha denied y la razón que se da. No sustituyas una negación por una admisión."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "listening",
+        "reporting-verbs",
+        "causality"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "listening",
+        "communication",
+        "vocabulary"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "The student denied deleting the file and said the computer had restarted unexpectedly.",
+        "The student admitted deleting the file because the computer was slow.",
+        "The student said the file had been deleted on purpose."
+      ],
+      "audioText": "The student denied deleting the file and said that the computer had restarted unexpectedly."
+    },
+    {
+      "id": "MIC-RS-B1-38",
+      "canDoId": "RS-B1-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "primarySkill": "speaking",
+      "context": "professional",
+      "level": "B1",
+      "title": "Report a warning aloud",
+      "titleEs": "Comunica una advertencia en voz alta",
+      "prompt": "Say what the technician warned the team not to do.",
+      "promptEs": "Di qué advirtió el técnico que el equipo no debía hacer.",
+      "feedback": {
+        "correct": "The target preserves the negative warning. Transcript matching checks key words only; it cannot fully score pronunciation or grammar.",
+        "correctEs": "El modelo conserva la advertencia negativa. La coincidencia de transcripción solo verifica palabras clave; no evalúa por completo la pronunciación ni la gramática.",
+        "incorrect": "Keep not before to touch. A missing not reverses the meaning.",
+        "incorrectEs": "Conserva not antes de to touch. Si falta not, cambia el significado."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "speaking",
+        "warnings",
+        "pronunciation"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "speaking",
+        "pronunciation",
+        "grammar"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "targetPhrase": "The technician warned us not to touch the wires.",
+      "requiredTokens": [
+        "technician",
+        "warned",
+        "not",
+        "touch",
+        "wires"
+      ],
+      "audioText": "The technician warned us not to touch the wires."
+    },
+    {
+      "id": "MIC-RS-B1-39",
+      "canDoId": "RS-B1-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "primarySkill": "writing",
+      "context": "professional",
+      "level": "B1",
+      "title": "Write a source-based summary",
+      "titleEs": "Escribe un resumen basado en la fuente",
+      "prompt": "Summarise this source without treating its claim as proven: “The supplier claimed the sensor was faulty.”",
+      "promptEs": "Resume esta fuente sin tratar su afirmación como demostrada: «El proveedor afirmó que el sensor estaba defectuoso».",
+      "feedback": {
+        "correct": "The checklist verifies source attribution and the reported claim. It does not verify whether the supplier's claim is true.",
+        "correctEs": "La lista verifica la atribución de la fuente y la afirmación comunicada. No verifica si lo que afirma el proveedor es cierto.",
+        "incorrect": "Keep the source attached to the claim: “The supplier claimed that…”",
+        "incorrectEs": "Mantén la fuente vinculada a la afirmación: “The supplier claimed that…”."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "writing",
+        "critical-thinking",
+        "attribution"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "writing",
+        "reading",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "attribution",
+            "label": "Attribute the claim to the supplier",
+            "patterns": [
+              "\\bsupplier\\b",
+              "\\bclaimed\\b",
+              "\\bsaid\\b",
+              "\\breported\\b"
+            ],
+            "missingMessage": "Make clear that the claim comes from the supplier.",
+            "missingMessageEs": "Deja claro que la afirmación proviene del proveedor."
+          },
+          {
+            "id": "claim-content",
+            "label": "Mention the sensor fault claim",
+            "patterns": [
+              "\\bsensor\\b",
+              "\\bfaulty\\b",
+              "\\bdefect\\b",
+              "\\bproblem\\b"
+            ],
+            "missingMessage": "Include what the supplier claimed.",
+            "missingMessageEs": "Incluye lo que afirmó el proveedor."
+          }
+        ],
+        "minimumCriteria": 2,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 22,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-B1-40",
+      "canDoId": "RS-B1-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "primarySkill": "communication",
+      "context": "professional",
+      "level": "B1",
+      "title": "Repair an unclear report",
+      "titleEs": "Aclara un reporte confuso",
+      "prompt": "You hear: “She told that the meeting was moved.” Choose the correction.",
+      "promptEs": "Escuchas: «She told that the meeting was moved». Elige la corrección.",
+      "answer": "She said that the meeting was moved.",
+      "feedback": {
+        "correct": "Say can take a that-clause without a person object: She said that… Tell normally needs an object here: She told me that…",
+        "correctEs": "Say puede llevar una oración con that sin objeto de persona: She said that… Tell normalmente necesita un objeto aquí: She told me that…",
+        "incorrect": "Choose said that, or add a person after told (for example, told me that).",
+        "incorrectEs": "Elige said that o añade una persona después de told (por ejemplo, told me that)."
+      },
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "b1",
+        "communication-repair",
+        "say-tell",
+        "riddle"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "resources": [
+        "communication",
+        "grammar"
+      ],
+      "languageResource": "grammar",
+      "target": "reported-speech",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ],
+      "options": [
+        "She said that the meeting was moved.",
+        "She told that the meeting was moved.",
+        "She said me that the meeting was moved."
+      ]
     }
   ]
 }
