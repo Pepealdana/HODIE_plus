@@ -218,6 +218,1257 @@
       "languageResource": "grammar",
       "knowledgeScope": "global",
       "unlockRequirement": "B2"
+    },
+    {
+      "id": "MIC-RS-B2-05",
+      "canDoId": "RS-B2-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: preserve epistemic caution",
+      "titleEs": "Estilo indirecto: preserve epistemic caution",
+      "prompt": "A researcher says, “The pattern may indicate a fault.” Which report preserves the degree of certainty?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The researcher said the pattern might indicate a fault.",
+        "The researcher confirmed that the pattern proved a fault.",
+        "The researcher denied that the pattern could indicate a fault."
+      ],
+      "answer": "The researcher said the pattern might indicate a fault.",
+      "feedback": {
+        "correct": "Might preserves the cautious possibility expressed by may. Confirmed and proved overstate the evidence.",
+        "correctEs": "Might conserva la posibilidad cautelosa expresada por may. Confirmed y proved exageran la evidencia.",
+        "incorrect": "Choose the version that keeps the claim tentative rather than treating it as proven.",
+        "incorrectEs": "Elige la versión que mantiene la afirmación como tentativa, sin tratarla como demostrada."
+      },
+      "tags": [
+        "modality",
+        "epistemic-caution",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "grammar",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-06",
+      "canDoId": "RS-B2-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: report a concession",
+      "titleEs": "Estilo indirecto: report a concession",
+      "prompt": "“The interface is clearer, although the workflow is still slow,” the reviewer said. Choose the balanced report.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The reviewer conceded that the interface was clearer but noted that the workflow remained slow.",
+        "The reviewer proved that the workflow was fast.",
+        "The reviewer denied that the interface was clearer."
+      ],
+      "answer": "The reviewer conceded that the interface was clearer but noted that the workflow remained slow.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "concession",
+        "contrast",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "grammar",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-07",
+      "canDoId": "RS-B2-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: choose the precise reporting verb",
+      "titleEs": "Estilo indirecto: choose the precise reporting verb",
+      "prompt": "A witness accepts that they made a mistake. Which verb best captures this act?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "admitted",
+        "denied",
+        "predicted"
+      ],
+      "answer": "admitted",
+      "feedback": {
+        "correct": "Admitted signals acceptance of something potentially negative; denied rejects it and predicted concerns the future.",
+        "correctEs": "Admitted indica que se acepta algo potencialmente negativo; denied lo rechaza y predicted se refiere al futuro.",
+        "incorrect": "Choose the verb that means accepting a mistake rather than rejecting it or forecasting an event.",
+        "incorrectEs": "Elige el verbo que significa aceptar un error, no rechazarlo ni predecir un hecho."
+      },
+      "tags": [
+        "reporting-verbs",
+        "pragmatics",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "grammar",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-08",
+      "canDoId": "RS-B2-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: avoid changing attribution into fact",
+      "titleEs": "Estilo indirecto: avoid changing attribution into fact",
+      "prompt": "A memo says, “The contractor claimed that the sensor had failed before delivery.” Which summary is appropriately cautious?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The memo reports the contractor's claim that the sensor had failed before delivery.",
+        "The sensor definitely failed before delivery.",
+        "The memo establishes that the contractor was responsible."
+      ],
+      "answer": "The memo reports the contractor's claim that the sensor had failed before delivery.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "attribution",
+        "source-reliability",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "grammar",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-09",
+      "canDoId": "RS-B2-READ",
+      "type": "choose",
+      "skill": "reading",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: interpret hedging",
+      "titleEs": "Estilo indirecto: interpret hedging",
+      "prompt": "“The results appear to support the proposal, though the sample is small.” What is the most accurate interpretation?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The evidence seems supportive, but the writer signals a limitation.",
+        "The results conclusively prove the proposal.",
+        "The writer rejects the proposal completely."
+      ],
+      "answer": "The evidence seems supportive, but the writer signals a limitation.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "reading-comprehension",
+        "hedging",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "reading",
+      "resources": [
+        "reading",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-10",
+      "canDoId": "RS-B2-READ",
+      "type": "choose",
+      "skill": "reading",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: detect a shift in stance",
+      "titleEs": "Estilo indirecto: detect a shift in stance",
+      "prompt": "Source: “The team suggested a pilot; it did not recommend a full launch.” Which summary changes the source's stance?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The team recommended launching the product to everyone immediately.",
+        "The team suggested testing a pilot first.",
+        "The team did not recommend a full launch."
+      ],
+      "answer": "The team recommended launching the product to everyone immediately.",
+      "feedback": {
+        "correct": "This option overstates the source: a suggested pilot is not a recommendation for a full launch.",
+        "correctEs": "Esta opción exagera la fuente: sugerir un piloto no equivale a recomendar un lanzamiento completo.",
+        "incorrect": "Look for the summary that turns a limited pilot suggestion into a full-launch recommendation.",
+        "incorrectEs": "Busca el resumen que convierte la sugerencia de un piloto limitado en una recomendación de lanzamiento completo."
+      },
+      "tags": [
+        "critical-reading",
+        "stance",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "reading",
+      "resources": [
+        "reading",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-11",
+      "canDoId": "RS-B2-READ",
+      "type": "choose",
+      "skill": "reading",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: distinguish admission from proof",
+      "titleEs": "Estilo indirecto: distinguish admission from proof",
+      "prompt": "“The supplier admitted that the shipment had arrived late.” What does this sentence establish?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The supplier acknowledged the late arrival; it does not explain the cause by itself.",
+        "The supplier proved that the customer caused the delay.",
+        "The shipment arrived early."
+      ],
+      "answer": "The supplier acknowledged the late arrival; it does not explain the cause by itself.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "reading-comprehension",
+        "attribution",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "reading",
+      "resources": [
+        "reading",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-12",
+      "canDoId": "RS-B2-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: listen for qualification",
+      "titleEs": "Estilo indirecto: listen for qualification",
+      "prompt": "Listen and choose the summary that keeps the speaker's qualification.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The analyst said the figures appeared encouraging but advised waiting for a larger sample before concluding.",
+        "The analyst said the figures proved the project was successful.",
+        "The analyst said no further evidence was needed."
+      ],
+      "answer": "The analyst said the figures appeared encouraging but advised waiting for a larger sample before concluding.",
+      "feedback": {
+        "correct": "The report preserves both the positive initial impression and the caution about sample size.",
+        "correctEs": "El reporte conserva tanto la impresión inicial positiva como la cautela sobre el tamaño de la muestra.",
+        "incorrect": "Listen for the positive assessment and the explicit warning not to conclude too soon.",
+        "incorrectEs": "Escucha la valoración positiva y la advertencia explícita de no concluir demasiado pronto."
+      },
+      "tags": [
+        "listening-comprehension",
+        "hedging",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "listening",
+      "resources": [
+        "listening",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "audioText": "The analyst said, 'The new figures appear encouraging, but we should wait for a larger sample before drawing a conclusion.'"
+    },
+    {
+      "id": "MIC-RS-B2-13",
+      "canDoId": "RS-B2-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: track competing viewpoints",
+      "titleEs": "Estilo indirecto: track competing viewpoints",
+      "prompt": "Listen and choose the balanced report.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "Marta expected time savings, while Joel supported the layout but warned about retraining time.",
+        "Both speakers agreed that no training was needed.",
+        "Joel rejected the redesign because the layout was unclear."
+      ],
+      "answer": "Marta expected time savings, while Joel supported the layout but warned about retraining time.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "listening-comprehension",
+        "contrast",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "listening",
+      "resources": [
+        "listening",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "audioText": "Marta argued that the redesign would save time. Joel agreed about the clearer layout but warned that retraining staff would take several weeks."
+    },
+    {
+      "id": "MIC-RS-B2-14",
+      "canDoId": "RS-B2-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: identify an unsupported inference",
+      "titleEs": "Estilo indirecto: identify an unsupported inference",
+      "prompt": "Listen to the statement and choose only what it supports.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The manager reported fewer errors in two teams but said long-term results were not yet checked.",
+        "The update has permanently eliminated errors across the company.",
+        "The manager said the update had no effect."
+      ],
+      "answer": "The manager reported fewer errors in two teams but said long-term results were not yet checked.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "listening-comprehension",
+        "evidence-boundary",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "listening",
+      "resources": [
+        "listening",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "audioText": "The manager said, 'Two teams reported fewer errors after the update, although we have not yet checked the long-term results.'"
+    },
+    {
+      "id": "MIC-RS-B2-15",
+      "canDoId": "RS-B2-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: say a cautious conclusion",
+      "titleEs": "Estilo indirecto: say a cautious conclusion",
+      "prompt": "Say the model sentence, preserving the cautious meaning.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "answer": "The reviewer suggested that the results might be promising.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "speaking",
+        "modality",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "speaking",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "targetPhrase": "The reviewer suggested that the results might be promising.",
+      "requiredTokens": [
+        "the",
+        "reviewer",
+        "suggested",
+        "that",
+        "the",
+        "results",
+        "might",
+        "promising"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-16",
+      "canDoId": "RS-B2-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: report a concession",
+      "titleEs": "Estilo indirecto: report a concession",
+      "prompt": "Say the model sentence with both sides of the viewpoint.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "answer": "She acknowledged that the design was simpler but warned that it was less flexible.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "speaking",
+        "concession",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "speaking",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "targetPhrase": "She acknowledged that the design was simpler but warned that it was less flexible.",
+      "requiredTokens": [
+        "she",
+        "acknowledged",
+        "that",
+        "the",
+        "design",
+        "was",
+        "simpler",
+        "but",
+        "warned",
+        "that",
+        "was",
+        "less",
+        "flexible"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-17",
+      "canDoId": "RS-B2-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: write a balanced evidence summary",
+      "titleEs": "Estilo indirecto: write a balanced evidence summary",
+      "prompt": "Write a 2–3 sentence summary: a small trial produced encouraging results, but the sample was too small to confirm the effect.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "writing",
+        "evidence-boundary",
+        "hedging",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "writing",
+      "resources": [
+        "writing",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "source",
+            "label": "Attribute the report to its source",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\bclaimed\\b",
+              "\\bargued\\b",
+              "\\badmitted\\b",
+              "\\bdenied\\b",
+              "\\bconceded\\b"
+            ],
+            "missingMessage": "Attribute the claim or viewpoint to its source.",
+            "missingMessageEs": "Atribuye la afirmación o punto de vista a su fuente."
+          },
+          {
+            "id": "nuance",
+            "label": "Preserve uncertainty or qualification",
+            "patterns": [
+              "\\bmay\\b",
+              "\\bmight\\b",
+              "\\bseems\\b",
+              "\\bappears\\b",
+              "\\balthough\\b",
+              "\\bhowever\\b",
+              "\\bwhile\\b",
+              "\\baccording to\\b"
+            ],
+            "missingMessage": "Preserve the original qualification or uncertainty.",
+            "missingMessageEs": "Conserva el matiz o la incertidumbre original."
+          }
+        ],
+        "minimumCriteria": 2,
+        "practiceMinimumCriteria": 1,
+        "minimumResponseCharacters": 35,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-B2-18",
+      "canDoId": "RS-B2-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: attribute a disputed claim",
+      "titleEs": "Estilo indirecto: attribute a disputed claim",
+      "prompt": "Write a short neutral summary of a disputed claim. Attribute the claim to its source and state that it has not been independently verified.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "writing",
+        "source-attribution",
+        "neutrality",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "writing",
+      "resources": [
+        "writing",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "source",
+            "label": "Attribute the report to its source",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\bclaimed\\b",
+              "\\bargued\\b",
+              "\\badmitted\\b",
+              "\\bdenied\\b",
+              "\\bconceded\\b"
+            ],
+            "missingMessage": "Attribute the claim or viewpoint to its source.",
+            "missingMessageEs": "Atribuye la afirmación o punto de vista a su fuente."
+          },
+          {
+            "id": "nuance",
+            "label": "Preserve uncertainty or qualification",
+            "patterns": [
+              "\\bmay\\b",
+              "\\bmight\\b",
+              "\\bseems\\b",
+              "\\bappears\\b",
+              "\\balthough\\b",
+              "\\bhowever\\b",
+              "\\bwhile\\b",
+              "\\baccording to\\b"
+            ],
+            "missingMessage": "Preserve the original qualification or uncertainty.",
+            "missingMessageEs": "Conserva el matiz o la incertidumbre original."
+          }
+        ],
+        "minimumCriteria": 2,
+        "practiceMinimumCriteria": 1,
+        "minimumResponseCharacters": 35,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-B2-19",
+      "canDoId": "RS-B2-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: repair an overconfident summary",
+      "titleEs": "Estilo indirecto: repair an overconfident summary",
+      "prompt": "Source: “The initial feedback suggests that the change may help.” Which report avoids overstating the source?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The initial feedback suggests the change may help.",
+        "The change has been proven to solve the problem.",
+        "The feedback confirms that the change always works."
+      ],
+      "answer": "The initial feedback suggests the change may help.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "communication-repair",
+        "certainty",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "communication",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-20",
+      "canDoId": "RS-B2-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: preserve disagreement",
+      "titleEs": "Estilo indirecto: preserve disagreement",
+      "prompt": "A says the schedule is realistic. B says it is too ambitious. Which report preserves the disagreement?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "A considered the schedule realistic, whereas B felt it was too ambitious.",
+        "Everyone agreed that the schedule was realistic.",
+        "A and B both rejected the schedule."
+      ],
+      "answer": "A considered the schedule realistic, whereas B felt it was too ambitious.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "communication",
+        "contrast",
+        "synthesis",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "communication",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-21",
+      "canDoId": "RS-B2-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: distinguish proposal from instruction",
+      "titleEs": "Estilo indirecto: distinguish proposal from instruction",
+      "prompt": "“The engineer suggested restarting the device.” What did the engineer do?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "Proposed a possible action.",
+        "Ordered the team to restart it.",
+        "Confirmed that it had already restarted."
+      ],
+      "answer": "Proposed a possible action.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "pragmatics",
+        "reporting-verbs",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "communication",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-22",
+      "canDoId": "RS-B2-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: report an allegation carefully",
+      "titleEs": "Estilo indirecto: report an allegation carefully",
+      "prompt": "A witness says, “I believe the figures were altered.” Which report preserves the witness's level of certainty?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The witness said they believed the figures had been altered.",
+        "The witness proved that the figures had been altered.",
+        "The witness confirmed that the figures were accurate."
+      ],
+      "answer": "The witness said they believed the figures had been altered.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "stance",
+        "belief-reporting",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "grammar",
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-23",
+      "canDoId": "RS-B2-READ",
+      "type": "choose",
+      "skill": "reading",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: summarise a nuanced argument",
+      "titleEs": "Estilo indirecto: summarise a nuanced argument",
+      "prompt": "Source: “Although the tool is faster, it may not be suitable for every classroom.” Which summary preserves both parts?",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "options": [
+        "The source recognises the speed advantage but questions whether the tool fits every classroom.",
+        "The source says the tool is unsuitable for all classrooms.",
+        "The source says speed is irrelevant."
+      ],
+      "answer": "The source recognises the speed advantage but questions whether the tool fits every classroom.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "reading",
+        "concession",
+        "nuance",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "reading",
+      "resources": [
+        "reading",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ]
+    },
+    {
+      "id": "MIC-RS-B2-24",
+      "canDoId": "RS-B2-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "context": "professional",
+      "level": "B2",
+      "title": "Reported Speech: compare two attributed claims",
+      "titleEs": "Estilo indirecto: compare two attributed claims",
+      "prompt": "Write a concise comparison of two sources that disagree about a new policy. Attribute each position and avoid deciding which is true without evidence.",
+      "promptEs": "Elige o produce la respuesta que conserva con precisión el significado y la postura de la fuente.",
+      "feedback": {
+        "correct": "The report preserves the source's meaning and stance without presenting an attributed claim as independently verified.",
+        "correctEs": "El reporte conserva el significado y la postura de la fuente sin presentar una afirmación atribuida como verificada de forma independiente.",
+        "incorrect": "Check the source, degree of certainty, reporting verb and any contrast or qualification in the original message.",
+        "incorrectEs": "Comprueba la fuente, el grado de certeza, el verbo de reporte y cualquier contraste o matiz del mensaje original."
+      },
+      "tags": [
+        "writing",
+        "synthesis",
+        "source-attribution",
+        "b2",
+        "cefr"
+      ],
+      "errorType": "grammar",
+      "errorTarget": "reported-speech-nuance",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "reviewTargets": [
+        "reported-speech",
+        "reporting-verbs",
+        "stance",
+        "tense-shift",
+        "modality"
+      ],
+      "reviewPriority": "high",
+      "primarySkill": "writing",
+      "resources": [
+        "writing",
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar",
+      "knowledgeScope": "global",
+      "unlockRequirement": "B2",
+      "relatedCanDoIds": [
+        "RS-B2-GRAM",
+        "RS-B2-READ",
+        "RS-B2-LISTEN",
+        "RS-B2-COMM"
+      ],
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "source",
+            "label": "Attribute the report to its source",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\bclaimed\\b",
+              "\\bargued\\b",
+              "\\badmitted\\b",
+              "\\bdenied\\b",
+              "\\bconceded\\b"
+            ],
+            "missingMessage": "Attribute the claim or viewpoint to its source.",
+            "missingMessageEs": "Atribuye la afirmación o punto de vista a su fuente."
+          },
+          {
+            "id": "nuance",
+            "label": "Preserve uncertainty or qualification",
+            "patterns": [
+              "\\bmay\\b",
+              "\\bmight\\b",
+              "\\bseems\\b",
+              "\\bappears\\b",
+              "\\balthough\\b",
+              "\\bhowever\\b",
+              "\\bwhile\\b",
+              "\\baccording to\\b"
+            ],
+            "missingMessage": "Preserve the original qualification or uncertainty.",
+            "missingMessageEs": "Conserva el matiz o la incertidumbre original."
+          }
+        ],
+        "minimumCriteria": 2,
+        "practiceMinimumCriteria": 1,
+        "minimumResponseCharacters": 35,
+        "errorType": "task-completion"
+      }
     }
   ]
 }
