@@ -660,15 +660,42 @@ function applyConversationFirstHome(level, targetActivity, statement) {
   }
 
   home.querySelector("#reportedSpeechShortcut")?.addEventListener("click", () => {
+    const requestedLevel = session?.target?.level || level || "A2";
+    const topicMatch = (activity) => {
+      const searchable = [
+        activity.id, activity.title, activity.titleEs, activity.prompt, activity.promptEs,
+        ...(activity.tags || []), ...(activity.reviewTargets || []), ...(activity.relatedCanDoIds || [])
+      ].filter(Boolean).join(" ").toLowerCase();
+      return /reported[- ]speech|estilo indirecto/.test(searchable);
+    };
+    const activity = microLibrary.activities.find((item) =>
+      item.level === requestedLevel &&
+      topicMatch(item) &&
+      (item.level !== "B2" || isB2Unlocked())
+    ) || microLibrary.activities.find((item) =>
+      item.level === "A2" && topicMatch(item)
+    );
+
+    if (activity) {
+      const mode = activity.skill || (
+        activity.type === "listening" ? "listening" :
+        activity.type === "speak" ? "speaking" :
+        activity.type === "mini-production" ? "writing" : "grammar"
+      );
+      startPractice(mode, activity.id);
+      return;
+    }
+
     const catalogSection = home.querySelector("#activityCatalog");
     const levelFilter = home.querySelector("#catalogLevel");
     const skillFilter = home.querySelector("#catalogSkill");
     const searchFilter = home.querySelector("#catalogSearch");
-    if (levelFilter) levelFilter.value = session?.target?.level || "A2";
+    if (levelFilter) levelFilter.value = requestedLevel;
     if (skillFilter) skillFilter.value = "all";
     if (searchFilter) searchFilter.value = "reported speech";
     renderActivityCatalog();
     catalogSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.alert("No Reported Speech activity is available at this level yet. The filtered catalogue is open.");
   });
 
   const catalog = home.querySelector("#activityCatalog");
