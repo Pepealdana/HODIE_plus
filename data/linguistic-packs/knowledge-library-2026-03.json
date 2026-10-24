@@ -1,0 +1,8182 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "HODIE-GLOBAL-KNOWLEDGE-2026-03",
+  "title": "Global linguistic knowledge library 03",
+  "description": "Expanded bilingual vocabulary and discourse functions. Knowledge is globally searchable; learning depth is gated separately from correction availability.",
+  "communicativeFunctions": [
+    {
+      "id": "EXPLAIN_PROCESS_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Explain a process or procedure",
+      "labelEs": "Explicar un proceso o procedimiento",
+      "skills": [
+        "speaking",
+        "writing",
+        "listening"
+      ],
+      "structures": [
+        "passive-voice",
+        "sequence-connectors"
+      ],
+      "vocabularyDomains": [
+        "technology",
+        "science",
+        "work"
+      ],
+      "contexts": [
+        "professional",
+        "project"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "EXPLAIN_PROCESS_B1",
+        "Explain a process or procedure",
+        "Explicar un proceso o procedimiento",
+        "passive-voice",
+        "sequence-connectors",
+        "technology",
+        "science",
+        "work"
+      ]
+    },
+    {
+      "id": "REPORT_PROGRESS_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Report progress and obstacles",
+      "labelEs": "Informar sobre avances y obstáculos",
+      "skills": [
+        "speaking",
+        "writing",
+        "interaction"
+      ],
+      "structures": [
+        "present-perfect",
+        "past-simple",
+        "connectors"
+      ],
+      "vocabularyDomains": [
+        "work",
+        "projects",
+        "learning"
+      ],
+      "contexts": [
+        "professional",
+        "project"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "REPORT_PROGRESS_B1",
+        "Report progress and obstacles",
+        "Informar sobre avances y obstáculos",
+        "present-perfect",
+        "past-simple",
+        "connectors",
+        "work",
+        "projects",
+        "learning"
+      ]
+    },
+    {
+      "id": "EXPRESS_UNCERTAINTY_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Express degrees of certainty",
+      "labelEs": "Expresar grados de certeza",
+      "skills": [
+        "speaking",
+        "writing",
+        "interaction"
+      ],
+      "structures": [
+        "modals",
+        "hedging"
+      ],
+      "vocabularyDomains": [
+        "communication",
+        "work"
+      ],
+      "contexts": [
+        "professional",
+        "discussion"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "EXPRESS_UNCERTAINTY_B1",
+        "Express degrees of certainty",
+        "Expresar grados de certeza",
+        "modals",
+        "hedging",
+        "communication",
+        "work"
+      ]
+    },
+    {
+      "id": "COMPARE_OPTIONS_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Compare options and justify a choice",
+      "labelEs": "Comparar opciones y justificar una elección",
+      "skills": [
+        "speaking",
+        "writing",
+        "reading"
+      ],
+      "structures": [
+        "comparatives",
+        "conditionals",
+        "connectors"
+      ],
+      "vocabularyDomains": [
+        "technology",
+        "work",
+        "daily-life"
+      ],
+      "contexts": [
+        "decision",
+        "professional"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "COMPARE_OPTIONS_B1",
+        "Compare options and justify a choice",
+        "Comparar opciones y justificar una elección",
+        "comparatives",
+        "conditionals",
+        "connectors",
+        "technology",
+        "work",
+        "daily-life"
+      ]
+    },
+    {
+      "id": "SUMMARIZE_INFO_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Summarize key information",
+      "labelEs": "Resumir información clave",
+      "skills": [
+        "reading",
+        "listening",
+        "writing",
+        "speaking"
+      ],
+      "structures": [
+        "summarizing",
+        "paraphrase",
+        "discourse-markers"
+      ],
+      "vocabularyDomains": [
+        "learning",
+        "communication",
+        "science"
+      ],
+      "contexts": [
+        "academic",
+        "professional"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "SUMMARIZE_INFO_B1",
+        "Summarize key information",
+        "Resumir información clave",
+        "summarizing",
+        "paraphrase",
+        "discourse-markers",
+        "learning",
+        "communication",
+        "science"
+      ]
+    },
+    {
+      "id": "REPAIR_MISUNDERSTANDING_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Repair a misunderstanding",
+      "labelEs": "Resolver un malentendido",
+      "skills": [
+        "speaking",
+        "listening",
+        "interaction"
+      ],
+      "structures": [
+        "clarification-requests",
+        "indirect-questions",
+        "rephrasing"
+      ],
+      "vocabularyDomains": [
+        "communication",
+        "work"
+      ],
+      "contexts": [
+        "conversation",
+        "professional"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "REPAIR_MISUNDERSTANDING_B1",
+        "Repair a misunderstanding",
+        "Resolver un malentendido",
+        "clarification-requests",
+        "indirect-questions",
+        "rephrasing",
+        "communication",
+        "work"
+      ]
+    },
+    {
+      "id": "WRITE_EMAIL_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Write a clear professional email",
+      "labelEs": "Escribir un correo profesional claro",
+      "skills": [
+        "writing",
+        "reading"
+      ],
+      "structures": [
+        "email-register",
+        "polite-requests",
+        "connectors"
+      ],
+      "vocabularyDomains": [
+        "work",
+        "communication"
+      ],
+      "contexts": [
+        "professional"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "WRITE_EMAIL_B1",
+        "Write a clear professional email",
+        "Escribir un correo profesional claro",
+        "email-register",
+        "polite-requests",
+        "connectors",
+        "work",
+        "communication"
+      ]
+    },
+    {
+      "id": "DISCUSS_EVIDENCE_B2",
+      "level": "B2",
+      "canDoIds": [],
+      "label": "Evaluate evidence and support a claim",
+      "labelEs": "Evaluar evidencia y sustentar una afirmación",
+      "skills": [
+        "speaking",
+        "writing",
+        "reading"
+      ],
+      "structures": [
+        "argument-structure",
+        "evidence-language",
+        "concession"
+      ],
+      "vocabularyDomains": [
+        "science",
+        "work",
+        "education"
+      ],
+      "contexts": [
+        "academic",
+        "debate"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "DISCUSS_EVIDENCE_B2",
+        "Evaluate evidence and support a claim",
+        "Evaluar evidencia y sustentar una afirmación",
+        "argument-structure",
+        "evidence-language",
+        "concession",
+        "science",
+        "work",
+        "education"
+      ]
+    },
+    {
+      "id": "QUALIFY_CLAIM_B2",
+      "level": "B2",
+      "canDoIds": [],
+      "label": "Qualify a claim and express limitations",
+      "labelEs": "Matizar una afirmación y expresar limitaciones",
+      "skills": [
+        "speaking",
+        "writing"
+      ],
+      "structures": [
+        "hedging",
+        "modals",
+        "adverbs-of-degree"
+      ],
+      "vocabularyDomains": [
+        "communication",
+        "science"
+      ],
+      "contexts": [
+        "academic",
+        "professional"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "QUALIFY_CLAIM_B2",
+        "Qualify a claim and express limitations",
+        "Matizar una afirmación y expresar limitaciones",
+        "hedging",
+        "modals",
+        "adverbs-of-degree",
+        "communication",
+        "science"
+      ]
+    },
+    {
+      "id": "SYNTHESIZE_SOURCES_B2",
+      "level": "B2",
+      "canDoIds": [],
+      "label": "Synthesize information from different sources",
+      "labelEs": "Sintetizar información de varias fuentes",
+      "skills": [
+        "reading",
+        "listening",
+        "writing",
+        "speaking"
+      ],
+      "structures": [
+        "synthesis",
+        "reporting-verbs",
+        "cohesion"
+      ],
+      "vocabularyDomains": [
+        "education",
+        "science",
+        "work"
+      ],
+      "contexts": [
+        "academic",
+        "research"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "SYNTHESIZE_SOURCES_B2",
+        "Synthesize information from different sources",
+        "Sintetizar información de varias fuentes",
+        "synthesis",
+        "reporting-verbs",
+        "cohesion",
+        "education",
+        "science",
+        "work"
+      ]
+    },
+    {
+      "id": "COUNTERARGUMENT_B2",
+      "level": "B2",
+      "canDoIds": [],
+      "label": "Address a counterargument respectfully",
+      "labelEs": "Abordar un contraargumento con respeto",
+      "skills": [
+        "speaking",
+        "writing",
+        "interaction"
+      ],
+      "structures": [
+        "concession",
+        "contrast-connectors",
+        "argument-structure"
+      ],
+      "vocabularyDomains": [
+        "communication",
+        "work"
+      ],
+      "contexts": [
+        "debate",
+        "academic"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "COUNTERARGUMENT_B2",
+        "Address a counterargument respectfully",
+        "Abordar un contraargumento con respeto",
+        "concession",
+        "contrast-connectors",
+        "argument-structure",
+        "communication",
+        "work"
+      ]
+    },
+    {
+      "id": "REFLECT_LEARNING_B1",
+      "level": "B1",
+      "canDoIds": [],
+      "label": "Reflect on learning and set a next goal",
+      "labelEs": "Reflexionar sobre el aprendizaje y fijar una meta",
+      "skills": [
+        "speaking",
+        "writing"
+      ],
+      "structures": [
+        "past-simple",
+        "present-perfect",
+        "goal-language"
+      ],
+      "vocabularyDomains": [
+        "learning",
+        "work"
+      ],
+      "contexts": [
+        "personal",
+        "learning"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "REFLECT_LEARNING_B1",
+        "Reflect on learning and set a next goal",
+        "Reflexionar sobre el aprendizaje y fijar una meta",
+        "past-simple",
+        "present-perfect",
+        "goal-language",
+        "learning",
+        "work"
+      ]
+    }
+  ],
+  "grammarRules": [],
+  "vocabularyEntries": [
+    {
+      "id": "VOC-GLOBAL-001",
+      "lemma": "device",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "dispositivo",
+      "forms": [
+        "device"
+      ],
+      "collocations": [
+        "device",
+        "electronic device"
+      ],
+      "examples": [
+        "This device is small."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "This device is small.",
+          "es": "Este dispositivo es pequeño."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "device",
+        "dispositivo",
+        "technology",
+        "electronic device"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-002",
+      "lemma": "tool",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "herramienta",
+      "forms": [
+        "tool"
+      ],
+      "collocations": [
+        "tool",
+        "digital tool"
+      ],
+      "examples": [
+        "This tool is useful."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "This tool is useful.",
+          "es": "Esta herramienta es útil."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "tool",
+        "herramienta",
+        "technology",
+        "digital tool"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-003",
+      "lemma": "screen",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "pantalla",
+      "forms": [
+        "screen"
+      ],
+      "collocations": [
+        "screen",
+        "touch screen"
+      ],
+      "examples": [
+        "Look at the screen."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Look at the screen.",
+          "es": "Mira la pantalla."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "screen",
+        "pantalla",
+        "technology",
+        "touch screen"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-004",
+      "lemma": "keyboard",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "teclado",
+      "forms": [
+        "keyboard"
+      ],
+      "collocations": [
+        "keyboard",
+        "computer keyboard"
+      ],
+      "examples": [
+        "I use a keyboard."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I use a keyboard.",
+          "es": "Uso un teclado."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "keyboard",
+        "teclado",
+        "technology",
+        "computer keyboard"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-005",
+      "lemma": "mouse",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "ratón; mouse",
+      "forms": [
+        "mouse"
+      ],
+      "collocations": [
+        "mouse",
+        "computer mouse"
+      ],
+      "examples": [
+        "The mouse is next to the computer."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The mouse is next to the computer.",
+          "es": "El ratón está al lado del computador."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "mouse",
+        "ratón; mouse",
+        "technology",
+        "computer mouse"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-006",
+      "lemma": "file",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "archivo",
+      "forms": [
+        "file"
+      ],
+      "collocations": [
+        "file",
+        "save a file"
+      ],
+      "examples": [
+        "Open the file."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Open the file.",
+          "es": "Abre el archivo."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "file",
+        "archivo",
+        "technology",
+        "save a file"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-007",
+      "lemma": "folder",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "carpeta",
+      "forms": [
+        "folder"
+      ],
+      "collocations": [
+        "folder",
+        "project folder"
+      ],
+      "examples": [
+        "Put the image in the folder."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Put the image in the folder.",
+          "es": "Pon la imagen en la carpeta."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "folder",
+        "carpeta",
+        "technology",
+        "project folder"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-008",
+      "lemma": "app",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "domain": "technology",
+      "meaningEs": "aplicación",
+      "forms": [
+        "app"
+      ],
+      "collocations": [
+        "app",
+        "learning app"
+      ],
+      "examples": [
+        "I use an app to study."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I use an app to study.",
+          "es": "Uso una aplicación para estudiar."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "app",
+        "aplicación",
+        "technology",
+        "learning app"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-009",
+      "lemma": "website",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "sitio web",
+      "forms": [
+        "website"
+      ],
+      "collocations": [
+        "website",
+        "school website"
+      ],
+      "examples": [
+        "The website works on my phone."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The website works on my phone.",
+          "es": "El sitio web funciona en mi teléfono."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "website",
+        "sitio web",
+        "technology",
+        "school website"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-010",
+      "lemma": "account",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "cuenta",
+      "forms": [
+        "account"
+      ],
+      "collocations": [
+        "account",
+        "user account"
+      ],
+      "examples": [
+        "Create an account."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Create an account.",
+          "es": "Crea una cuenta."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "account",
+        "cuenta",
+        "technology",
+        "user account"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-011",
+      "lemma": "password",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "contraseña",
+      "forms": [
+        "password"
+      ],
+      "collocations": [
+        "password",
+        "strong password"
+      ],
+      "examples": [
+        "Never share your password."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Never share your password.",
+          "es": "Nunca compartas tu contraseña."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "password",
+        "contraseña",
+        "technology",
+        "strong password"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-012",
+      "lemma": "setting",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "configuración",
+      "forms": [
+        "setting"
+      ],
+      "collocations": [
+        "setting",
+        "privacy settings"
+      ],
+      "examples": [
+        "Check the privacy settings."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Check the privacy settings.",
+          "es": "Revisa la configuración de privacidad."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "setting",
+        "configuración",
+        "technology",
+        "privacy settings"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-013",
+      "lemma": "update",
+      "partOfSpeech": "noun/verb",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "actualización; actualizar",
+      "forms": [
+        "update"
+      ],
+      "collocations": [
+        "update",
+        "software update"
+      ],
+      "examples": [
+        "Update the application."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Update the application.",
+          "es": "Actualiza la aplicación."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun/verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "update",
+        "actualización; actualizar",
+        "technology",
+        "software update"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-014",
+      "lemma": "access",
+      "partOfSpeech": "noun/verb",
+      "level": "B1",
+      "domain": "technology",
+      "meaningEs": "acceso; acceder",
+      "forms": [
+        "access"
+      ],
+      "collocations": [
+        "access",
+        "gain access"
+      ],
+      "examples": [
+        "Students can access the platform."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Students can access the platform.",
+          "es": "Los estudiantes pueden acceder a la plataforma."
+        }
+      ],
+      "tags": [
+        "technology",
+        "noun/verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "access",
+        "acceso; acceder",
+        "technology",
+        "gain access"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-015",
+      "lemma": "configure",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "technology",
+      "meaningEs": "configurar",
+      "forms": [
+        "configure"
+      ],
+      "collocations": [
+        "configure",
+        "configure a system"
+      ],
+      "examples": [
+        "Configure the device before use."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Configure the device before use.",
+          "es": "Configura el dispositivo antes de usarlo."
+        }
+      ],
+      "tags": [
+        "technology",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "configure",
+        "configurar",
+        "technology",
+        "configure a system"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-016",
+      "lemma": "debug",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "programming",
+      "meaningEs": "depurar código",
+      "forms": [
+        "debug"
+      ],
+      "collocations": [
+        "debug",
+        "debug code"
+      ],
+      "examples": [
+        "We need to debug the program."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We need to debug the program.",
+          "es": "Necesitamos depurar el programa."
+        }
+      ],
+      "tags": [
+        "programming",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "debug",
+        "depurar código",
+        "programming",
+        "debug code"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-017",
+      "lemma": "deploy",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "programming",
+      "meaningEs": "desplegar",
+      "forms": [
+        "deploy"
+      ],
+      "collocations": [
+        "deploy",
+        "deploy an app"
+      ],
+      "examples": [
+        "We will deploy the update tomorrow."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We will deploy the update tomorrow.",
+          "es": "Desplegaremos la actualización mañana."
+        }
+      ],
+      "tags": [
+        "programming",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "deploy",
+        "desplegar",
+        "programming",
+        "deploy an app"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-018",
+      "lemma": "repository",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "programming",
+      "meaningEs": "repositorio",
+      "forms": [
+        "repository"
+      ],
+      "collocations": [
+        "repository",
+        "Git repository"
+      ],
+      "examples": [
+        "The repository contains the source code."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The repository contains the source code.",
+          "es": "El repositorio contiene el código fuente."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "repository",
+        "repositorio",
+        "programming",
+        "Git repository"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-019",
+      "lemma": "branch",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "programming",
+      "meaningEs": "rama",
+      "forms": [
+        "branch"
+      ],
+      "collocations": [
+        "branch",
+        "feature branch"
+      ],
+      "examples": [
+        "Create a new branch."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Create a new branch.",
+          "es": "Crea una rama nueva."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "branch",
+        "rama",
+        "programming",
+        "feature branch"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-020",
+      "lemma": "commit",
+      "partOfSpeech": "noun/verb",
+      "level": "B1",
+      "domain": "programming",
+      "meaningEs": "registrar cambios; commit",
+      "forms": [
+        "commit"
+      ],
+      "collocations": [
+        "commit",
+        "make a commit"
+      ],
+      "examples": [
+        "Commit the changes after testing."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Commit the changes after testing.",
+          "es": "Registra los cambios después de probarlos."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun/verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "commit",
+        "registrar cambios; commit",
+        "programming",
+        "make a commit"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-021",
+      "lemma": "issue",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "programming",
+      "meaningEs": "problema; incidencia",
+      "forms": [
+        "issue"
+      ],
+      "collocations": [
+        "issue",
+        "resolve an issue"
+      ],
+      "examples": [
+        "There is an issue with the app."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "There is an issue with the app.",
+          "es": "Hay un problema con la aplicación."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "issue",
+        "problema; incidencia",
+        "programming",
+        "resolve an issue"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-022",
+      "lemma": "feature",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "programming",
+      "meaningEs": "funcionalidad",
+      "forms": [
+        "feature"
+      ],
+      "collocations": [
+        "feature",
+        "new feature"
+      ],
+      "examples": [
+        "This feature helps learners."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "This feature helps learners.",
+          "es": "Esta funcionalidad ayuda a los estudiantes."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "feature",
+        "funcionalidad",
+        "programming",
+        "new feature"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-023",
+      "lemma": "release",
+      "partOfSpeech": "noun/verb",
+      "level": "B1",
+      "domain": "programming",
+      "meaningEs": "publicación; publicar",
+      "forms": [
+        "release"
+      ],
+      "collocations": [
+        "release",
+        "release a version"
+      ],
+      "examples": [
+        "We plan to release a new version."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We plan to release a new version.",
+          "es": "Planeamos publicar una nueva versión."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun/verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "release",
+        "publicación; publicar",
+        "programming",
+        "release a version"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-024",
+      "lemma": "bug",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "programming",
+      "meaningEs": "error de software",
+      "forms": [
+        "bug"
+      ],
+      "collocations": [
+        "bug",
+        "fix a bug"
+      ],
+      "examples": [
+        "I found a bug in the code."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I found a bug in the code.",
+          "es": "Encontré un error en el código."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "bug",
+        "error de software",
+        "programming",
+        "fix a bug"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-025",
+      "lemma": "reliable",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "technology",
+      "meaningEs": "fiable",
+      "forms": [
+        "reliable"
+      ],
+      "collocations": [
+        "reliable",
+        "reliable result"
+      ],
+      "examples": [
+        "The correction should be reliable."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The correction should be reliable.",
+          "es": "La corrección debe ser fiable."
+        }
+      ],
+      "tags": [
+        "technology",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "reliable",
+        "fiable",
+        "technology",
+        "reliable result"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-026",
+      "lemma": "accurate",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "technology",
+      "meaningEs": "preciso",
+      "forms": [
+        "accurate"
+      ],
+      "collocations": [
+        "accurate",
+        "accurate answer"
+      ],
+      "examples": [
+        "The feedback is accurate."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The feedback is accurate.",
+          "es": "La retroalimentación es precisa."
+        }
+      ],
+      "tags": [
+        "technology",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "accurate",
+        "preciso",
+        "technology",
+        "accurate answer"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-027",
+      "lemma": "available",
+      "partOfSpeech": "adjective",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "disponible",
+      "forms": [
+        "available"
+      ],
+      "collocations": [
+        "available",
+        "available offline"
+      ],
+      "examples": [
+        "The library is always available."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The library is always available.",
+          "es": "La biblioteca siempre está disponible."
+        }
+      ],
+      "tags": [
+        "technology",
+        "adjective",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "available",
+        "disponible",
+        "technology",
+        "available offline"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-028",
+      "lemma": "index",
+      "partOfSpeech": "noun/verb",
+      "level": "B2",
+      "domain": "programming",
+      "meaningEs": "índice; indexar",
+      "forms": [
+        "index"
+      ],
+      "collocations": [
+        "index",
+        "search index"
+      ],
+      "examples": [
+        "An index makes search faster."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "An index makes search faster.",
+          "es": "Un índice hace que la búsqueda sea más rápida."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun/verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "index",
+        "índice; indexar",
+        "programming",
+        "search index"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-029",
+      "lemma": "query",
+      "partOfSpeech": "noun/verb",
+      "level": "B1",
+      "domain": "programming",
+      "meaningEs": "consulta",
+      "forms": [
+        "query"
+      ],
+      "collocations": [
+        "query",
+        "search query"
+      ],
+      "examples": [
+        "The query returns relevant rules."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The query returns relevant rules.",
+          "es": "La consulta devuelve reglas pertinentes."
+        }
+      ],
+      "tags": [
+        "programming",
+        "noun/verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "query",
+        "consulta",
+        "programming",
+        "search query"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-030",
+      "lemma": "evidence",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "evidencia",
+      "forms": [
+        "evidence"
+      ],
+      "collocations": [
+        "evidence",
+        "evidence of progress"
+      ],
+      "examples": [
+        "We need evidence of learning."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We need evidence of learning.",
+          "es": "Necesitamos evidencia de aprendizaje."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "evidence",
+        "evidencia",
+        "learning",
+        "evidence of progress"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-031",
+      "lemma": "retrieve",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "learning",
+      "meaningEs": "recuperar",
+      "forms": [
+        "retrieve"
+      ],
+      "collocations": [
+        "retrieve",
+        "retrieval practice"
+      ],
+      "examples": [
+        "Retrieve the word from memory."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Retrieve the word from memory.",
+          "es": "Recupera la palabra de la memoria."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "retrieve",
+        "recuperar",
+        "learning",
+        "retrieval practice"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-032",
+      "lemma": "review",
+      "partOfSpeech": "noun/verb",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "repasar; revisión",
+      "forms": [
+        "review"
+      ],
+      "collocations": [
+        "review",
+        "spaced review"
+      ],
+      "examples": [
+        "Review the words tomorrow."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Review the words tomorrow.",
+          "es": "Repasa las palabras mañana."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun/verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "review",
+        "repasar; revisión",
+        "learning",
+        "spaced review"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-033",
+      "lemma": "retain",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "learning",
+      "meaningEs": "retener",
+      "forms": [
+        "retain"
+      ],
+      "collocations": [
+        "retain",
+        "retain information"
+      ],
+      "examples": [
+        "Short reviews help you retain vocabulary."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Short reviews help you retain vocabulary.",
+          "es": "Los repasos breves te ayudan a retener vocabulario."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "retain",
+        "retener",
+        "learning",
+        "retain information"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-034",
+      "lemma": "recall",
+      "partOfSpeech": "noun/verb",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "recordar; recuperación",
+      "forms": [
+        "recall"
+      ],
+      "collocations": [
+        "recall",
+        "active recall"
+      ],
+      "examples": [
+        "Can you recall the expression?"
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Can you recall the expression?",
+          "es": "¿Puedes recordar la expresión?"
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun/verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "recall",
+        "recordar; recuperación",
+        "learning",
+        "active recall"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-035",
+      "lemma": "feedback",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "retroalimentación",
+      "forms": [
+        "feedback"
+      ],
+      "collocations": [
+        "feedback",
+        "useful feedback"
+      ],
+      "examples": [
+        "The feedback explains the correction."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The feedback explains the correction.",
+          "es": "La retroalimentación explica la corrección."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "feedback",
+        "retroalimentación",
+        "learning",
+        "useful feedback"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-036",
+      "lemma": "attempt",
+      "partOfSpeech": "noun/verb",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "intento; intentar",
+      "forms": [
+        "attempt"
+      ],
+      "collocations": [
+        "attempt",
+        "first attempt"
+      ],
+      "examples": [
+        "Try another attempt."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Try another attempt.",
+          "es": "Intenta una vez más."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun/verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "attempt",
+        "intento; intentar",
+        "learning",
+        "first attempt"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-037",
+      "lemma": "improve",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "domain": "learning",
+      "meaningEs": "mejorar",
+      "forms": [
+        "improve"
+      ],
+      "collocations": [
+        "improve",
+        "improve a skill"
+      ],
+      "examples": [
+        "I want to improve my English."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I want to improve my English.",
+          "es": "Quiero mejorar mi inglés."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "improve",
+        "mejorar",
+        "learning",
+        "improve a skill"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-038",
+      "lemma": "achieve",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "lograr",
+      "forms": [
+        "achieve"
+      ],
+      "collocations": [
+        "achieve",
+        "achieve a goal"
+      ],
+      "examples": [
+        "She achieved her goal."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "She achieved her goal.",
+          "es": "Ella logró su objetivo."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "achieve",
+        "lograr",
+        "learning",
+        "achieve a goal"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-039",
+      "lemma": "progress",
+      "partOfSpeech": "noun/verb",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "progreso",
+      "forms": [
+        "progress"
+      ],
+      "collocations": [
+        "progress",
+        "make progress"
+      ],
+      "examples": [
+        "You are making progress."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "You are making progress.",
+          "es": "Estás progresando."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun/verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "progress",
+        "progreso",
+        "learning",
+        "make progress"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-040",
+      "lemma": "challenge",
+      "partOfSpeech": "noun/verb",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "reto",
+      "forms": [
+        "challenge"
+      ],
+      "collocations": [
+        "challenge",
+        "face a challenge"
+      ],
+      "examples": [
+        "This activity is a challenge."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "This activity is a challenge.",
+          "es": "Esta actividad es un reto."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun/verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "challenge",
+        "reto",
+        "learning",
+        "face a challenge"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-041",
+      "lemma": "strategy",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "estrategia",
+      "forms": [
+        "strategy"
+      ],
+      "collocations": [
+        "strategy",
+        "learning strategy"
+      ],
+      "examples": [
+        "Choose a strategy that works for you."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Choose a strategy that works for you.",
+          "es": "Elige una estrategia que te funcione."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "strategy",
+        "estrategia",
+        "learning",
+        "learning strategy"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-042",
+      "lemma": "confident",
+      "partOfSpeech": "adjective",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "seguro; con confianza",
+      "forms": [
+        "confident"
+      ],
+      "collocations": [
+        "confident",
+        "feel confident"
+      ],
+      "examples": [
+        "I feel more confident when I practise."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I feel more confident when I practise.",
+          "es": "Me siento más seguro cuando practico."
+        }
+      ],
+      "tags": [
+        "learning",
+        "adjective",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "confident",
+        "seguro; con confianza",
+        "learning",
+        "feel confident"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-043",
+      "lemma": "fluent",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "fluido",
+      "forms": [
+        "fluent"
+      ],
+      "collocations": [
+        "fluent",
+        "speak fluently"
+      ],
+      "examples": [
+        "She is becoming more fluent."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "She is becoming more fluent.",
+          "es": "Ella está ganando fluidez."
+        }
+      ],
+      "tags": [
+        "learning",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "fluent",
+        "fluido",
+        "learning",
+        "speak fluently"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-044",
+      "lemma": "colleague",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "work",
+      "meaningEs": "colega",
+      "forms": [
+        "colleague"
+      ],
+      "collocations": [
+        "colleague",
+        "work colleague"
+      ],
+      "examples": [
+        "I work with two colleagues."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I work with two colleagues.",
+          "es": "Trabajo con dos colegas."
+        }
+      ],
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "colleague",
+        "colega",
+        "work",
+        "work colleague"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-045",
+      "lemma": "meeting",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "work",
+      "meaningEs": "reunión",
+      "forms": [
+        "meeting"
+      ],
+      "collocations": [
+        "meeting",
+        "attend a meeting"
+      ],
+      "examples": [
+        "The meeting starts at nine."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The meeting starts at nine.",
+          "es": "La reunión empieza a las nueve."
+        }
+      ],
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "meeting",
+        "reunión",
+        "work",
+        "attend a meeting"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-046",
+      "lemma": "agenda",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "work",
+      "meaningEs": "orden del día",
+      "forms": [
+        "agenda"
+      ],
+      "collocations": [
+        "agenda",
+        "meeting agenda"
+      ],
+      "examples": [
+        "Let's review the agenda."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Let's review the agenda.",
+          "es": "Revisemos el orden del día."
+        }
+      ],
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "agenda",
+        "orden del día",
+        "work",
+        "meeting agenda"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-047",
+      "lemma": "deadline",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "work",
+      "meaningEs": "fecha límite",
+      "forms": [
+        "deadline"
+      ],
+      "collocations": [
+        "deadline",
+        "meet a deadline"
+      ],
+      "examples": [
+        "The deadline is next Friday."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The deadline is next Friday.",
+          "es": "La fecha límite es el próximo viernes."
+        }
+      ],
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "deadline",
+        "fecha límite",
+        "work",
+        "meet a deadline"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-048",
+      "lemma": "priority",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "work",
+      "meaningEs": "prioridad",
+      "forms": [
+        "priority"
+      ],
+      "collocations": [
+        "priority",
+        "high priority"
+      ],
+      "examples": [
+        "Safety is our first priority."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Safety is our first priority.",
+          "es": "La seguridad es nuestra primera prioridad."
+        }
+      ],
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "priority",
+        "prioridad",
+        "work",
+        "high priority"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-049",
+      "lemma": "responsibility",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "work",
+      "meaningEs": "responsabilidad",
+      "forms": [
+        "responsibility"
+      ],
+      "collocations": [
+        "responsibility",
+        "take responsibility"
+      ],
+      "examples": [
+        "This is my responsibility."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "This is my responsibility.",
+          "es": "Esta es mi responsabilidad."
+        }
+      ],
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "responsibility",
+        "responsabilidad",
+        "work",
+        "take responsibility"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-050",
+      "lemma": "decision",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "work",
+      "meaningEs": "decisión",
+      "forms": [
+        "decision"
+      ],
+      "collocations": [
+        "decision",
+        "make a decision"
+      ],
+      "examples": [
+        "We need to make a decision."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We need to make a decision.",
+          "es": "Necesitamos tomar una decisión."
+        }
+      ],
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "decision",
+        "decisión",
+        "work",
+        "make a decision"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-051",
+      "lemma": "recommend",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "work",
+      "meaningEs": "recomendar",
+      "forms": [
+        "recommend"
+      ],
+      "collocations": [
+        "recommend",
+        "recommend a solution"
+      ],
+      "examples": [
+        "I recommend this approach."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I recommend this approach.",
+          "es": "Recomiendo este enfoque."
+        }
+      ],
+      "tags": [
+        "work",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "recommend",
+        "recomendar",
+        "work",
+        "recommend a solution"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-052",
+      "lemma": "clarify",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "aclarar",
+      "forms": [
+        "clarify"
+      ],
+      "collocations": [
+        "clarify",
+        "ask for clarification"
+      ],
+      "examples": [
+        "Could you clarify the question?"
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Could you clarify the question?",
+          "es": "¿Podrías aclarar la pregunta?"
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "clarify",
+        "aclarar",
+        "communication",
+        "ask for clarification"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-053",
+      "lemma": "suggest",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "sugerir",
+      "forms": [
+        "suggest"
+      ],
+      "collocations": [
+        "suggest",
+        "suggest a change"
+      ],
+      "examples": [
+        "I suggest starting with a small test."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I suggest starting with a small test.",
+          "es": "Sugiero comenzar con una prueba pequeña."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "suggest",
+        "sugerir",
+        "communication",
+        "suggest a change"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-054",
+      "lemma": "agree",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "domain": "communication",
+      "meaningEs": "estar de acuerdo",
+      "forms": [
+        "agree"
+      ],
+      "collocations": [
+        "agree",
+        "agree with someone"
+      ],
+      "examples": [
+        "I agree with your idea."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I agree with your idea.",
+          "es": "Estoy de acuerdo con tu idea."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "agree",
+        "estar de acuerdo",
+        "communication",
+        "agree with someone"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-055",
+      "lemma": "disagree",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "estar en desacuerdo",
+      "forms": [
+        "disagree"
+      ],
+      "collocations": [
+        "disagree",
+        "respectfully disagree"
+      ],
+      "examples": [
+        "I disagree with that conclusion."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I disagree with that conclusion.",
+          "es": "No estoy de acuerdo con esa conclusión."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "disagree",
+        "estar en desacuerdo",
+        "communication",
+        "respectfully disagree"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-056",
+      "lemma": "opinion",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "communication",
+      "meaningEs": "opinión",
+      "forms": [
+        "opinion"
+      ],
+      "collocations": [
+        "opinion",
+        "give an opinion"
+      ],
+      "examples": [
+        "In my opinion, practice is essential."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "In my opinion, practice is essential.",
+          "es": "En mi opinión, la práctica es esencial."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "opinion",
+        "opinión",
+        "communication",
+        "give an opinion"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-057",
+      "lemma": "advantage",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "ventaja",
+      "forms": [
+        "advantage"
+      ],
+      "collocations": [
+        "advantage",
+        "main advantage"
+      ],
+      "examples": [
+        "One advantage is flexibility."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "One advantage is flexibility.",
+          "es": "Una ventaja es la flexibilidad."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "advantage",
+        "ventaja",
+        "communication",
+        "main advantage"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-058",
+      "lemma": "disadvantage",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "desventaja",
+      "forms": [
+        "disadvantage"
+      ],
+      "collocations": [
+        "disadvantage",
+        "potential disadvantage"
+      ],
+      "examples": [
+        "A disadvantage is the cost."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "A disadvantage is the cost.",
+          "es": "Una desventaja es el costo."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "disadvantage",
+        "desventaja",
+        "communication",
+        "potential disadvantage"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-059",
+      "lemma": "claim",
+      "partOfSpeech": "noun/verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "afirmación; sostener",
+      "forms": [
+        "claim"
+      ],
+      "collocations": [
+        "claim",
+        "support a claim"
+      ],
+      "examples": [
+        "The claim needs evidence."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The claim needs evidence.",
+          "es": "La afirmación necesita evidencia."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun/verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "claim",
+        "afirmación; sostener",
+        "communication",
+        "support a claim"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-060",
+      "lemma": "conclusion",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "conclusión",
+      "forms": [
+        "conclusion"
+      ],
+      "collocations": [
+        "conclusion",
+        "draw a conclusion"
+      ],
+      "examples": [
+        "In conclusion, the plan is practical."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "In conclusion, the plan is practical.",
+          "es": "En conclusión, el plan es práctico."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "conclusion",
+        "conclusión",
+        "communication",
+        "draw a conclusion"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-061",
+      "lemma": "counterargument",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "contraargumento",
+      "forms": [
+        "counterargument"
+      ],
+      "collocations": [
+        "counterargument",
+        "address a counterargument"
+      ],
+      "examples": [
+        "A strong essay addresses a counterargument."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "A strong essay addresses a counterargument.",
+          "es": "Un buen ensayo aborda un contraargumento."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "counterargument",
+        "contraargumento",
+        "communication",
+        "address a counterargument"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-062",
+      "lemma": "assumption",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "suposición",
+      "forms": [
+        "assumption"
+      ],
+      "collocations": [
+        "assumption",
+        "underlying assumption"
+      ],
+      "examples": [
+        "That assumption needs checking."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "That assumption needs checking.",
+          "es": "Esa suposición debe comprobarse."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "assumption",
+        "suposición",
+        "communication",
+        "underlying assumption"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-063",
+      "lemma": "uncertain",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "incierto",
+      "forms": [
+        "uncertain"
+      ],
+      "collocations": [
+        "uncertain",
+        "uncertain outcome"
+      ],
+      "examples": [
+        "The result is still uncertain."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The result is still uncertain.",
+          "es": "El resultado sigue siendo incierto."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "uncertain",
+        "incierto",
+        "communication",
+        "uncertain outcome"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-064",
+      "lemma": "likely",
+      "partOfSpeech": "adjective/adverb",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "probable",
+      "forms": [
+        "likely"
+      ],
+      "collocations": [
+        "likely",
+        "highly likely"
+      ],
+      "examples": [
+        "It is likely to rain."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "It is likely to rain.",
+          "es": "Es probable que llueva."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adjective/adverb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "likely",
+        "probable",
+        "communication",
+        "highly likely"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-065",
+      "lemma": "nevertheless",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "no obstante",
+      "forms": [
+        "nevertheless"
+      ],
+      "collocations": [
+        "nevertheless",
+        "nevertheless"
+      ],
+      "examples": [
+        "The task was difficult; nevertheless, we finished."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The task was difficult; nevertheless, we finished.",
+          "es": "La tarea fue difícil; no obstante, terminamos."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adverb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "nevertheless",
+        "no obstante",
+        "communication",
+        "nevertheless"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-066",
+      "lemma": "although",
+      "partOfSpeech": "conjunction",
+      "level": "A2",
+      "domain": "communication",
+      "meaningEs": "aunque",
+      "forms": [
+        "although"
+      ],
+      "collocations": [
+        "although",
+        "although it seems"
+      ],
+      "examples": [
+        "Although it was late, we continued."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Although it was late, we continued.",
+          "es": "Aunque era tarde, continuamos."
+        }
+      ],
+      "tags": [
+        "communication",
+        "conjunction",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "although",
+        "aunque",
+        "communication",
+        "although it seems"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-067",
+      "lemma": "whereas",
+      "partOfSpeech": "conjunction",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "mientras que; en cambio",
+      "forms": [
+        "whereas"
+      ],
+      "collocations": [
+        "whereas",
+        "whereas others"
+      ],
+      "examples": [
+        "Some tasks are short, whereas others take longer."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Some tasks are short, whereas others take longer.",
+          "es": "Algunas tareas son cortas, mientras que otras toman más tiempo."
+        }
+      ],
+      "tags": [
+        "communication",
+        "conjunction",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "whereas",
+        "mientras que; en cambio",
+        "communication",
+        "whereas others"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-068",
+      "lemma": "therefore",
+      "partOfSpeech": "adverb",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "por lo tanto",
+      "forms": [
+        "therefore"
+      ],
+      "collocations": [
+        "therefore",
+        "therefore"
+      ],
+      "examples": [
+        "The test failed; therefore, we checked the code."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The test failed; therefore, we checked the code.",
+          "es": "La prueba falló; por lo tanto, revisamos el código."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adverb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "therefore",
+        "por lo tanto",
+        "communication",
+        "therefore"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-069",
+      "lemma": "moreover",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "además; es más",
+      "forms": [
+        "moreover"
+      ],
+      "collocations": [
+        "moreover",
+        "moreover"
+      ],
+      "examples": [
+        "Moreover, the system works offline."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Moreover, the system works offline.",
+          "es": "Además, el sistema funciona sin conexión."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adverb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "moreover",
+        "además; es más",
+        "communication",
+        "moreover"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-070",
+      "lemma": "instead",
+      "partOfSpeech": "adverb",
+      "level": "A2",
+      "domain": "communication",
+      "meaningEs": "en lugar de eso",
+      "forms": [
+        "instead"
+      ],
+      "collocations": [
+        "instead",
+        "instead of"
+      ],
+      "examples": [
+        "We used a local rule instead."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We used a local rule instead.",
+          "es": "Usamos una regla local en lugar de eso."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adverb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "instead",
+        "en lugar de eso",
+        "communication",
+        "instead of"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-071",
+      "lemma": "otherwise",
+      "partOfSpeech": "adverb",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "de lo contrario",
+      "forms": [
+        "otherwise"
+      ],
+      "collocations": [
+        "otherwise",
+        "otherwise"
+      ],
+      "examples": [
+        "Save your work; otherwise, you may lose it."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Save your work; otherwise, you may lose it.",
+          "es": "Guarda tu trabajo; de lo contrario, podrías perderlo."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adverb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "otherwise",
+        "de lo contrario",
+        "communication",
+        "otherwise"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-072",
+      "lemma": "healthy",
+      "partOfSpeech": "adjective",
+      "level": "A1",
+      "domain": "daily-life",
+      "meaningEs": "saludable",
+      "forms": [
+        "healthy"
+      ],
+      "collocations": [
+        "healthy",
+        "healthy habit"
+      ],
+      "examples": [
+        "Walking is a healthy habit."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Walking is a healthy habit.",
+          "es": "Caminar es un hábito saludable."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "adjective",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "healthy",
+        "saludable",
+        "daily-life",
+        "healthy habit"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-073",
+      "lemma": "neighbourhood",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "places",
+      "meaningEs": "barrio",
+      "forms": [
+        "neighbourhood"
+      ],
+      "collocations": [
+        "neighbourhood",
+        "local neighbourhood"
+      ],
+      "examples": [
+        "My neighbourhood is quiet."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "My neighbourhood is quiet.",
+          "es": "Mi barrio es tranquilo."
+        }
+      ],
+      "tags": [
+        "places",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "neighbourhood",
+        "barrio",
+        "places",
+        "local neighbourhood"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-074",
+      "lemma": "transport",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "travel",
+      "meaningEs": "transporte",
+      "forms": [
+        "transport"
+      ],
+      "collocations": [
+        "transport",
+        "public transport"
+      ],
+      "examples": [
+        "Public transport is convenient."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Public transport is convenient.",
+          "es": "El transporte público es conveniente."
+        }
+      ],
+      "tags": [
+        "travel",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "transport",
+        "transporte",
+        "travel",
+        "public transport"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-075",
+      "lemma": "traffic",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "travel",
+      "meaningEs": "tráfico",
+      "forms": [
+        "traffic"
+      ],
+      "collocations": [
+        "traffic",
+        "heavy traffic"
+      ],
+      "examples": [
+        "The traffic is heavy today."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The traffic is heavy today.",
+          "es": "El tráfico está pesado hoy."
+        }
+      ],
+      "tags": [
+        "travel",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "traffic",
+        "tráfico",
+        "travel",
+        "heavy traffic"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-076",
+      "lemma": "reservation",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "travel",
+      "meaningEs": "reserva",
+      "forms": [
+        "reservation"
+      ],
+      "collocations": [
+        "reservation",
+        "make a reservation"
+      ],
+      "examples": [
+        "I have a reservation for two."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I have a reservation for two.",
+          "es": "Tengo una reserva para dos."
+        }
+      ],
+      "tags": [
+        "travel",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "reservation",
+        "reserva",
+        "travel",
+        "make a reservation"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-077",
+      "lemma": "carry",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "domain": "daily-life",
+      "meaningEs": "llevar; cargar",
+      "forms": [
+        "carry"
+      ],
+      "collocations": [
+        "carry",
+        "carry out a task"
+      ],
+      "examples": [
+        "Can you carry this box?"
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Can you carry this box?",
+          "es": "¿Puedes cargar esta caja?"
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "carry",
+        "llevar; cargar",
+        "daily-life",
+        "carry out a task"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-078",
+      "lemma": "choose",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "domain": "daily-life",
+      "meaningEs": "elegir",
+      "forms": [
+        "choose"
+      ],
+      "collocations": [
+        "choose",
+        "choose an option"
+      ],
+      "examples": [
+        "Choose one answer."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Choose one answer.",
+          "es": "Elige una respuesta."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "choose",
+        "elegir",
+        "daily-life",
+        "choose an option"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-079",
+      "lemma": "decide",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "decidir",
+      "forms": [
+        "decide"
+      ],
+      "collocations": [
+        "decide",
+        "decide on a plan"
+      ],
+      "examples": [
+        "We need to decide today."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We need to decide today.",
+          "es": "Necesitamos decidir hoy."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "decide",
+        "decidir",
+        "daily-life",
+        "decide on a plan"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-080",
+      "lemma": "avoid",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "evitar",
+      "forms": [
+        "avoid"
+      ],
+      "collocations": [
+        "avoid",
+        "avoid doing"
+      ],
+      "examples": [
+        "Avoid making the same mistake."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Avoid making the same mistake.",
+          "es": "Evita cometer el mismo error."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "avoid",
+        "evitar",
+        "daily-life",
+        "avoid doing"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-081",
+      "lemma": "manage",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "lograr; gestionar",
+      "forms": [
+        "manage"
+      ],
+      "collocations": [
+        "manage",
+        "manage to do"
+      ],
+      "examples": [
+        "I managed to finish the task."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I managed to finish the task.",
+          "es": "Logré terminar la tarea."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "manage",
+        "lograr; gestionar",
+        "daily-life",
+        "manage to do"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-082",
+      "lemma": "allow",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "permitir",
+      "forms": [
+        "allow"
+      ],
+      "collocations": [
+        "allow",
+        "allow someone to do"
+      ],
+      "examples": [
+        "The app allows offline practice."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The app allows offline practice.",
+          "es": "La aplicación permite practicar sin conexión."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "allow",
+        "permitir",
+        "daily-life",
+        "allow someone to do"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-083",
+      "lemma": "require",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "requerir",
+      "forms": [
+        "require"
+      ],
+      "collocations": [
+        "require",
+        "require practice"
+      ],
+      "examples": [
+        "This task requires attention."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "This task requires attention.",
+          "es": "Esta tarea requiere atención."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "require",
+        "requerir",
+        "daily-life",
+        "require practice"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-084",
+      "lemma": "depend",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "depender",
+      "forms": [
+        "depend"
+      ],
+      "collocations": [
+        "depend",
+        "depend on"
+      ],
+      "examples": [
+        "It depends on the context."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "It depends on the context.",
+          "es": "Depende del contexto."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "depend",
+        "depender",
+        "daily-life",
+        "depend on"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-085",
+      "lemma": "consider",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "considerar",
+      "forms": [
+        "consider"
+      ],
+      "collocations": [
+        "consider",
+        "consider doing"
+      ],
+      "examples": [
+        "Consider another possibility."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Consider another possibility.",
+          "es": "Considera otra posibilidad."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "consider",
+        "considerar",
+        "daily-life",
+        "consider doing"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-086",
+      "lemma": "realize",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "darse cuenta",
+      "forms": [
+        "realize"
+      ],
+      "collocations": [
+        "realize",
+        "realize that"
+      ],
+      "examples": [
+        "I realized my mistake."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I realized my mistake.",
+          "es": "Me di cuenta de mi error."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "realize",
+        "darse cuenta",
+        "daily-life",
+        "realize that"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-087",
+      "lemma": "remind",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "recordar a alguien",
+      "forms": [
+        "remind"
+      ],
+      "collocations": [
+        "remind",
+        "remind someone to do"
+      ],
+      "examples": [
+        "Please remind me tomorrow."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Please remind me tomorrow.",
+          "es": "Por favor, recuérdame mañana."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "remind",
+        "recordar a alguien",
+        "daily-life",
+        "remind someone to do"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-088",
+      "lemma": "promise",
+      "partOfSpeech": "verb/noun",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "prometer; promesa",
+      "forms": [
+        "promise"
+      ],
+      "collocations": [
+        "promise",
+        "promise to do"
+      ],
+      "examples": [
+        "I promise to practise."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I promise to practise.",
+          "es": "Prometo practicar."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb/noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "promise",
+        "prometer; promesa",
+        "daily-life",
+        "promise to do"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-089",
+      "lemma": "seem",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "parecer",
+      "forms": [
+        "seem"
+      ],
+      "collocations": [
+        "seem",
+        "seem to be"
+      ],
+      "examples": [
+        "It seems reasonable."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "It seems reasonable.",
+          "es": "Parece razonable."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "seem",
+        "parecer",
+        "daily-life",
+        "seem to be"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-090",
+      "lemma": "reduce",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "reducir",
+      "forms": [
+        "reduce"
+      ],
+      "collocations": [
+        "reduce",
+        "reduce errors"
+      ],
+      "examples": [
+        "We can reduce unnecessary steps."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We can reduce unnecessary steps.",
+          "es": "Podemos reducir los pasos innecesarios."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "reduce",
+        "reducir",
+        "daily-life",
+        "reduce errors"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-091",
+      "lemma": "increase",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "aumentar",
+      "forms": [
+        "increase"
+      ],
+      "collocations": [
+        "increase",
+        "increase gradually"
+      ],
+      "examples": [
+        "Practice can increase confidence."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Practice can increase confidence.",
+          "es": "La práctica puede aumentar la confianza."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "increase",
+        "aumentar",
+        "daily-life",
+        "increase gradually"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-092",
+      "lemma": "prevent",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "prevenir",
+      "forms": [
+        "prevent"
+      ],
+      "collocations": [
+        "prevent",
+        "prevent a problem"
+      ],
+      "examples": [
+        "Tests help prevent regressions."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Tests help prevent regressions.",
+          "es": "Las pruebas ayudan a prevenir regresiones."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "prevent",
+        "prevenir",
+        "daily-life",
+        "prevent a problem"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-093",
+      "lemma": "context",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "contexto",
+      "forms": [
+        "context"
+      ],
+      "collocations": [
+        "context",
+        "in context"
+      ],
+      "examples": [
+        "Context helps us understand meaning."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Context helps us understand meaning.",
+          "es": "El contexto nos ayuda a comprender el significado."
+        }
+      ],
+      "tags": [
+        "communication",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "context",
+        "contexto",
+        "communication",
+        "in context"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-094",
+      "lemma": "interpret",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "interpretar",
+      "forms": [
+        "interpret"
+      ],
+      "collocations": [
+        "interpret",
+        "interpret data"
+      ],
+      "examples": [
+        "Interpret the phrase in context."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Interpret the phrase in context.",
+          "es": "Interpreta la expresión en contexto."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "interpret",
+        "interpretar",
+        "communication",
+        "interpret data"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-095",
+      "lemma": "imply",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "dar a entender",
+      "forms": [
+        "imply"
+      ],
+      "collocations": [
+        "imply",
+        "imply that"
+      ],
+      "examples": [
+        "The statement may imply a criticism."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The statement may imply a criticism.",
+          "es": "La afirmación puede dar a entender una crítica."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "imply",
+        "dar a entender",
+        "communication",
+        "imply that"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-096",
+      "lemma": "indicate",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "academic",
+      "meaningEs": "indicar",
+      "forms": [
+        "indicate"
+      ],
+      "collocations": [
+        "indicate",
+        "indicate that"
+      ],
+      "examples": [
+        "The results indicate progress."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The results indicate progress.",
+          "es": "Los resultados indican progreso."
+        }
+      ],
+      "tags": [
+        "academic",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "indicate",
+        "indicar",
+        "academic",
+        "indicate that"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-097",
+      "lemma": "result in",
+      "partOfSpeech": "verb phrase",
+      "level": "B2",
+      "domain": "academic",
+      "meaningEs": "dar lugar a",
+      "forms": [
+        "result in"
+      ],
+      "collocations": [
+        "result in",
+        "result in a change"
+      ],
+      "examples": [
+        "Poor planning may result in delays."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Poor planning may result in delays.",
+          "es": "Una mala planificación puede dar lugar a retrasos."
+        }
+      ],
+      "tags": [
+        "academic",
+        "verb phrase",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "result in",
+        "dar lugar a",
+        "academic",
+        "result in a change"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-098",
+      "lemma": "lead to",
+      "partOfSpeech": "verb phrase",
+      "level": "B2",
+      "domain": "academic",
+      "meaningEs": "conducir a",
+      "forms": [
+        "lead to"
+      ],
+      "collocations": [
+        "lead to",
+        "lead to improvement"
+      ],
+      "examples": [
+        "Regular practice can lead to better results."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Regular practice can lead to better results.",
+          "es": "La práctica regular puede conducir a mejores resultados."
+        }
+      ],
+      "tags": [
+        "academic",
+        "verb phrase",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "lead to",
+        "conducir a",
+        "academic",
+        "lead to improvement"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-099",
+      "lemma": "carry out",
+      "partOfSpeech": "phrasal verb",
+      "level": "B1",
+      "domain": "academic",
+      "meaningEs": "llevar a cabo",
+      "forms": [
+        "carry out"
+      ],
+      "collocations": [
+        "carry out",
+        "carry out research"
+      ],
+      "examples": [
+        "We carried out the experiment."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We carried out the experiment.",
+          "es": "Llevamos a cabo el experimento."
+        }
+      ],
+      "tags": [
+        "academic",
+        "phrasal verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "carry out",
+        "llevar a cabo",
+        "academic",
+        "carry out research"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-100",
+      "lemma": "set up",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "configurar; montar",
+      "forms": [
+        "set up"
+      ],
+      "collocations": [
+        "set up",
+        "set up a device"
+      ],
+      "examples": [
+        "We set up the Arduino board."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We set up the Arduino board.",
+          "es": "Configuramos la placa Arduino."
+        }
+      ],
+      "tags": [
+        "technology",
+        "phrasal verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "set up",
+        "configurar; montar",
+        "technology",
+        "set up a device"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-101",
+      "lemma": "find out",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "averiguar",
+      "forms": [
+        "find out"
+      ],
+      "collocations": [
+        "find out",
+        "find out why"
+      ],
+      "examples": [
+        "I need to find out the answer."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I need to find out the answer.",
+          "es": "Necesito averiguar la respuesta."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "phrasal verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "find out",
+        "averiguar",
+        "daily-life",
+        "find out why"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-102",
+      "lemma": "figure out",
+      "partOfSpeech": "phrasal verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "resolver; descifrar",
+      "forms": [
+        "figure out"
+      ],
+      "collocations": [
+        "figure out",
+        "figure out a solution"
+      ],
+      "examples": [
+        "We figured out the problem."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We figured out the problem.",
+          "es": "Encontramos la solución al problema."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "phrasal verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "figure out",
+        "resolver; descifrar",
+        "daily-life",
+        "figure out a solution"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-103",
+      "lemma": "carry on",
+      "partOfSpeech": "phrasal verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "continuar",
+      "forms": [
+        "carry on"
+      ],
+      "collocations": [
+        "carry on",
+        "carry on doing"
+      ],
+      "examples": [
+        "Let's carry on with the activity."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Let's carry on with the activity.",
+          "es": "Continuemos con la actividad."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "phrasal verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "carry on",
+        "continuar",
+        "daily-life",
+        "carry on doing"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-104",
+      "lemma": "give up",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "rendirse; dejar",
+      "forms": [
+        "give up"
+      ],
+      "collocations": [
+        "give up",
+        "give up trying"
+      ],
+      "examples": [
+        "Don't give up after one mistake."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Don't give up after one mistake.",
+          "es": "No te rindas después de un error."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "phrasal verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "give up",
+        "rendirse; dejar",
+        "daily-life",
+        "give up trying"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-105",
+      "lemma": "look for",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2",
+      "domain": "daily-life",
+      "meaningEs": "buscar",
+      "forms": [
+        "look for"
+      ],
+      "collocations": [
+        "look for",
+        "look for information"
+      ],
+      "examples": [
+        "I'm looking for my keys."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I'm looking for my keys.",
+          "es": "Estoy buscando mis llaves."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "phrasal verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "look for",
+        "buscar",
+        "daily-life",
+        "look for information"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-106",
+      "lemma": "look after",
+      "partOfSpeech": "phrasal verb",
+      "level": "B1",
+      "domain": "daily-life",
+      "meaningEs": "cuidar",
+      "forms": [
+        "look after"
+      ],
+      "collocations": [
+        "look after",
+        "look after someone"
+      ],
+      "examples": [
+        "She looks after her younger brother."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "She looks after her younger brother.",
+          "es": "Ella cuida a su hermano menor."
+        }
+      ],
+      "tags": [
+        "daily-life",
+        "phrasal verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "look after",
+        "cuidar",
+        "daily-life",
+        "look after someone"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-107",
+      "lemma": "get along with",
+      "partOfSpeech": "phrasal verb",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "llevarse bien con",
+      "forms": [
+        "get along with"
+      ],
+      "collocations": [
+        "get along with",
+        "get along well"
+      ],
+      "examples": [
+        "I get along with my colleagues."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I get along with my colleagues.",
+          "es": "Me llevo bien con mis colegas."
+        }
+      ],
+      "tags": [
+        "communication",
+        "phrasal verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "get along with",
+        "llevarse bien con",
+        "communication",
+        "get along well"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-108",
+      "lemma": "take part in",
+      "partOfSpeech": "verb phrase",
+      "level": "B1",
+      "domain": "education",
+      "meaningEs": "participar en",
+      "forms": [
+        "take part in"
+      ],
+      "collocations": [
+        "take part in",
+        "take part in a project"
+      ],
+      "examples": [
+        "Students take part in the robotics club."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Students take part in the robotics club.",
+          "es": "Los estudiantes participan en el club de robótica."
+        }
+      ],
+      "tags": [
+        "education",
+        "verb phrase",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "take part in",
+        "participar en",
+        "education",
+        "take part in a project"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-109",
+      "lemma": "pay attention",
+      "partOfSpeech": "verb phrase",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "prestar atención",
+      "forms": [
+        "pay attention"
+      ],
+      "collocations": [
+        "pay attention",
+        "pay attention to"
+      ],
+      "examples": [
+        "Pay attention to the ending."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Pay attention to the ending.",
+          "es": "Presta atención a la terminación."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb phrase",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "pay attention",
+        "prestar atención",
+        "learning",
+        "pay attention to"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-110",
+      "lemma": "make progress",
+      "partOfSpeech": "verb phrase",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "progresar",
+      "forms": [
+        "make progress"
+      ],
+      "collocations": [
+        "make progress",
+        "make steady progress"
+      ],
+      "examples": [
+        "You make progress with regular practice."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "You make progress with regular practice.",
+          "es": "Progresas con la práctica regular."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb phrase",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "make progress",
+        "progresar",
+        "learning",
+        "make steady progress"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-111",
+      "lemma": "on the other hand",
+      "partOfSpeech": "discourse marker",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "por otro lado",
+      "forms": [
+        "on the other hand"
+      ],
+      "collocations": [
+        "on the other hand",
+        "on the other hand"
+      ],
+      "examples": [
+        "The app is simple; on the other hand, feedback is limited."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The app is simple; on the other hand, feedback is limited.",
+          "es": "La aplicación es sencilla; por otro lado, la retroalimentación es limitada."
+        }
+      ],
+      "tags": [
+        "communication",
+        "discourse marker",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "on the other hand",
+        "por otro lado",
+        "communication",
+        "on the other hand"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-112",
+      "lemma": "as a result",
+      "partOfSpeech": "discourse marker",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "como resultado",
+      "forms": [
+        "as a result"
+      ],
+      "collocations": [
+        "as a result",
+        "as a result"
+      ],
+      "examples": [
+        "The tests passed. As a result, we merged the change."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The tests passed. As a result, we merged the change.",
+          "es": "Las pruebas pasaron. Como resultado, integramos el cambio."
+        }
+      ],
+      "tags": [
+        "communication",
+        "discourse marker",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "as a result",
+        "como resultado",
+        "communication",
+        "as a result"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-113",
+      "lemma": "for instance",
+      "partOfSpeech": "discourse marker",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "por ejemplo",
+      "forms": [
+        "for instance"
+      ],
+      "collocations": [
+        "for instance",
+        "for instance"
+      ],
+      "examples": [
+        "For instance, you can practise with a short dialogue."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "For instance, you can practise with a short dialogue.",
+          "es": "Por ejemplo, puedes practicar con un diálogo corto."
+        }
+      ],
+      "tags": [
+        "communication",
+        "discourse marker",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "for instance",
+        "por ejemplo",
+        "communication",
+        "for instance"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-114",
+      "lemma": "in contrast",
+      "partOfSpeech": "discourse marker",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "en contraste",
+      "forms": [
+        "in contrast"
+      ],
+      "collocations": [
+        "in contrast",
+        "in contrast to"
+      ],
+      "examples": [
+        "In contrast, the second method is faster."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "In contrast, the second method is faster.",
+          "es": "En contraste, el segundo método es más rápido."
+        }
+      ],
+      "tags": [
+        "communication",
+        "discourse marker",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "in contrast",
+        "en contraste",
+        "communication",
+        "in contrast to"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-115",
+      "lemma": "to some extent",
+      "partOfSpeech": "discourse marker",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "hasta cierto punto",
+      "forms": [
+        "to some extent"
+      ],
+      "collocations": [
+        "to some extent",
+        "agree to some extent"
+      ],
+      "examples": [
+        "I agree to some extent."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I agree to some extent.",
+          "es": "Estoy de acuerdo hasta cierto punto."
+        }
+      ],
+      "tags": [
+        "communication",
+        "discourse marker",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "to some extent",
+        "hasta cierto punto",
+        "communication",
+        "agree to some extent"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-116",
+      "lemma": "in other words",
+      "partOfSpeech": "discourse marker",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "en otras palabras",
+      "forms": [
+        "in other words"
+      ],
+      "collocations": [
+        "in other words",
+        "in other words"
+      ],
+      "examples": [
+        "In other words, the rule is not global."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "In other words, the rule is not global.",
+          "es": "En otras palabras, la regla no es global."
+        }
+      ],
+      "tags": [
+        "communication",
+        "discourse marker",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "in other words",
+        "en otras palabras",
+        "communication",
+        "in other words"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-117",
+      "lemma": "eventually",
+      "partOfSpeech": "adverb",
+      "level": "B1",
+      "domain": "time",
+      "meaningEs": "finalmente; con el tiempo",
+      "forms": [
+        "eventually"
+      ],
+      "collocations": [
+        "eventually",
+        "eventually learn"
+      ],
+      "examples": [
+        "Eventually, the process becomes easier."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Eventually, the process becomes easier.",
+          "es": "Con el tiempo, el proceso se vuelve más fácil."
+        }
+      ],
+      "tags": [
+        "time",
+        "adverb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "eventually",
+        "finalmente; con el tiempo",
+        "time",
+        "eventually learn"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-118",
+      "lemma": "recently",
+      "partOfSpeech": "adverb",
+      "level": "A2",
+      "domain": "time",
+      "meaningEs": "recientemente",
+      "forms": [
+        "recently"
+      ],
+      "collocations": [
+        "recently",
+        "recently completed"
+      ],
+      "examples": [
+        "I have recently finished the project."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I have recently finished the project.",
+          "es": "He terminado el proyecto recientemente."
+        }
+      ],
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "recently",
+        "recientemente",
+        "time",
+        "recently completed"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-119",
+      "lemma": "currently",
+      "partOfSpeech": "adverb",
+      "level": "B1",
+      "domain": "time",
+      "meaningEs": "actualmente",
+      "forms": [
+        "currently"
+      ],
+      "collocations": [
+        "currently",
+        "currently working"
+      ],
+      "examples": [
+        "I'm currently learning English."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I'm currently learning English.",
+          "es": "Actualmente estoy aprendiendo inglés."
+        }
+      ],
+      "tags": [
+        "time",
+        "adverb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "currently",
+        "actualmente",
+        "time",
+        "currently working"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-120",
+      "lemma": "already",
+      "partOfSpeech": "adverb",
+      "level": "A2",
+      "domain": "time",
+      "meaningEs": "ya",
+      "forms": [
+        "already"
+      ],
+      "collocations": [
+        "already",
+        "have already"
+      ],
+      "examples": [
+        "I have already checked the result."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I have already checked the result.",
+          "es": "Ya he revisado el resultado."
+        }
+      ],
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "already",
+        "ya",
+        "time",
+        "have already"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-121",
+      "lemma": "yet",
+      "partOfSpeech": "adverb",
+      "level": "A2",
+      "domain": "time",
+      "meaningEs": "todavía; ya en preguntas",
+      "forms": [
+        "yet"
+      ],
+      "collocations": [
+        "yet",
+        "not yet"
+      ],
+      "examples": [
+        "I haven't finished yet."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I haven't finished yet.",
+          "es": "Todavía no he terminado."
+        }
+      ],
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "yet",
+        "todavía; ya en preguntas",
+        "time",
+        "not yet"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-122",
+      "lemma": "still",
+      "partOfSpeech": "adverb",
+      "level": "A2",
+      "domain": "time",
+      "meaningEs": "todavía; aún",
+      "forms": [
+        "still"
+      ],
+      "collocations": [
+        "still",
+        "still working"
+      ],
+      "examples": [
+        "I still need more practice."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I still need more practice.",
+          "es": "Todavía necesito más práctica."
+        }
+      ],
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "still",
+        "todavía; aún",
+        "time",
+        "still working"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-123",
+      "lemma": "despite",
+      "partOfSpeech": "preposition",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "a pesar de",
+      "forms": [
+        "despite"
+      ],
+      "collocations": [
+        "despite",
+        "despite being"
+      ],
+      "examples": [
+        "Despite the difficulty, we finished."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Despite the difficulty, we finished.",
+          "es": "A pesar de la dificultad, terminamos."
+        }
+      ],
+      "tags": [
+        "communication",
+        "preposition",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "despite",
+        "a pesar de",
+        "communication",
+        "despite being"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-124",
+      "lemma": "unless",
+      "partOfSpeech": "conjunction",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "a menos que",
+      "forms": [
+        "unless"
+      ],
+      "collocations": [
+        "unless",
+        "unless otherwise"
+      ],
+      "examples": [
+        "We won't finish unless we start now."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We won't finish unless we start now.",
+          "es": "No terminaremos a menos que empecemos ahora."
+        }
+      ],
+      "tags": [
+        "communication",
+        "conjunction",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "unless",
+        "a menos que",
+        "communication",
+        "unless otherwise"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-125",
+      "lemma": "even if",
+      "partOfSpeech": "conjunction",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "incluso si",
+      "forms": [
+        "even if"
+      ],
+      "collocations": [
+        "even if",
+        "even if it rains"
+      ],
+      "examples": [
+        "I'll practise even if I have little time."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I'll practise even if I have little time.",
+          "es": "Practicaré incluso si tengo poco tiempo."
+        }
+      ],
+      "tags": [
+        "communication",
+        "conjunction",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "even if",
+        "incluso si",
+        "communication",
+        "even if it rains"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-126",
+      "lemma": "until",
+      "partOfSpeech": "preposition/conjunction",
+      "level": "A2",
+      "domain": "time",
+      "meaningEs": "hasta",
+      "forms": [
+        "until"
+      ],
+      "collocations": [
+        "until",
+        "until tomorrow"
+      ],
+      "examples": [
+        "Wait until the audio ends."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Wait until the audio ends.",
+          "es": "Espera hasta que termine el audio."
+        }
+      ],
+      "tags": [
+        "time",
+        "preposition/conjunction",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "until",
+        "hasta",
+        "time",
+        "until tomorrow"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-127",
+      "lemma": "enough",
+      "partOfSpeech": "determiner/adverb",
+      "level": "A2",
+      "domain": "grammar",
+      "meaningEs": "suficiente; suficientemente",
+      "forms": [
+        "enough"
+      ],
+      "collocations": [
+        "enough",
+        "enough time"
+      ],
+      "examples": [
+        "I have enough time to practise."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I have enough time to practise.",
+          "es": "Tengo suficiente tiempo para practicar."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "determiner/adverb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "enough",
+        "suficiente; suficientemente",
+        "grammar",
+        "enough time"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-128",
+      "lemma": "fewer",
+      "partOfSpeech": "determiner",
+      "level": "B1",
+      "domain": "grammar",
+      "meaningEs": "menos para contables",
+      "forms": [
+        "fewer"
+      ],
+      "collocations": [
+        "fewer",
+        "fewer mistakes"
+      ],
+      "examples": [
+        "We made fewer mistakes today."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We made fewer mistakes today.",
+          "es": "Cometimos menos errores hoy."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "determiner",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "fewer",
+        "menos para contables",
+        "grammar",
+        "fewer mistakes"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-129",
+      "lemma": "both",
+      "partOfSpeech": "determiner/pronoun",
+      "level": "A2",
+      "domain": "grammar",
+      "meaningEs": "ambos",
+      "forms": [
+        "both"
+      ],
+      "collocations": [
+        "both",
+        "both options"
+      ],
+      "examples": [
+        "Both answers are possible."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Both answers are possible.",
+          "es": "Ambas respuestas son posibles."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "determiner/pronoun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "both",
+        "ambos",
+        "grammar",
+        "both options"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-130",
+      "lemma": "neither",
+      "partOfSpeech": "determiner/pronoun",
+      "level": "B1",
+      "domain": "grammar",
+      "meaningEs": "ninguno de los dos",
+      "forms": [
+        "neither"
+      ],
+      "collocations": [
+        "neither",
+        "neither answer"
+      ],
+      "examples": [
+        "Neither answer is correct."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Neither answer is correct.",
+          "es": "Ninguna de las dos respuestas es correcta."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "determiner/pronoun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "neither",
+        "ninguno de los dos",
+        "grammar",
+        "neither answer"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-131",
+      "lemma": "each",
+      "partOfSpeech": "determiner/pronoun",
+      "level": "A2",
+      "domain": "grammar",
+      "meaningEs": "cada uno",
+      "forms": [
+        "each"
+      ],
+      "collocations": [
+        "each",
+        "each student"
+      ],
+      "examples": [
+        "Each student has a task."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Each student has a task.",
+          "es": "Cada estudiante tiene una tarea."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "determiner/pronoun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "each",
+        "cada uno",
+        "grammar",
+        "each student"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-132",
+      "lemma": "another",
+      "partOfSpeech": "determiner/pronoun",
+      "level": "A2",
+      "domain": "grammar",
+      "meaningEs": "otro; otra",
+      "forms": [
+        "another"
+      ],
+      "collocations": [
+        "another",
+        "another example"
+      ],
+      "examples": [
+        "Try another example."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Try another example.",
+          "es": "Prueba otro ejemplo."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "determiner/pronoun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "another",
+        "otro; otra",
+        "grammar",
+        "another example"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-133",
+      "lemma": "myself",
+      "partOfSpeech": "pronoun",
+      "level": "A2",
+      "domain": "grammar",
+      "meaningEs": "yo mismo",
+      "forms": [
+        "myself"
+      ],
+      "collocations": [
+        "myself",
+        "by myself"
+      ],
+      "examples": [
+        "I taught myself some English."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "I taught myself some English.",
+          "es": "Aprendí algo de inglés por mi cuenta."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "pronoun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "myself",
+        "yo mismo",
+        "grammar",
+        "by myself"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-134",
+      "lemma": "succeed",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "tener éxito",
+      "forms": [
+        "succeed"
+      ],
+      "collocations": [
+        "succeed",
+        "succeed in doing"
+      ],
+      "examples": [
+        "You can succeed with regular practice."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "You can succeed with regular practice.",
+          "es": "Puedes tener éxito con práctica regular."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "succeed",
+        "tener éxito",
+        "learning",
+        "succeed in doing"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-135",
+      "lemma": "purpose",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "learning",
+      "meaningEs": "propósito",
+      "forms": [
+        "purpose"
+      ],
+      "collocations": [
+        "purpose",
+        "main purpose"
+      ],
+      "examples": [
+        "What is the purpose of this activity?"
+      ],
+      "examplesBilingual": [
+        {
+          "en": "What is the purpose of this activity?",
+          "es": "¿Cuál es el propósito de esta actividad?"
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "purpose",
+        "propósito",
+        "learning",
+        "main purpose"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-136",
+      "lemma": "outcome",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "resultado",
+      "forms": [
+        "outcome"
+      ],
+      "collocations": [
+        "outcome",
+        "learning outcome"
+      ],
+      "examples": [
+        "The outcome was positive."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The outcome was positive.",
+          "es": "El resultado fue positivo."
+        }
+      ],
+      "tags": [
+        "learning",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "outcome",
+        "resultado",
+        "learning",
+        "learning outcome"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-137",
+      "lemma": "relevant",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "pertinente",
+      "forms": [
+        "relevant"
+      ],
+      "collocations": [
+        "relevant",
+        "relevant information"
+      ],
+      "examples": [
+        "Choose relevant examples."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Choose relevant examples.",
+          "es": "Elige ejemplos pertinentes."
+        }
+      ],
+      "tags": [
+        "learning",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "relevant",
+        "pertinente",
+        "learning",
+        "relevant information"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-138",
+      "lemma": "specific",
+      "partOfSpeech": "adjective",
+      "level": "A2",
+      "domain": "communication",
+      "meaningEs": "específico",
+      "forms": [
+        "specific"
+      ],
+      "collocations": [
+        "specific",
+        "specific detail"
+      ],
+      "examples": [
+        "Give a specific example."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Give a specific example.",
+          "es": "Da un ejemplo específico."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adjective",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "specific",
+        "específico",
+        "communication",
+        "specific detail"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-139",
+      "lemma": "appropriate",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "communication",
+      "meaningEs": "apropiado",
+      "forms": [
+        "appropriate"
+      ],
+      "collocations": [
+        "appropriate",
+        "appropriate response"
+      ],
+      "examples": [
+        "Choose an appropriate response."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Choose an appropriate response.",
+          "es": "Elige una respuesta apropiada."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "appropriate",
+        "apropiado",
+        "communication",
+        "appropriate response"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-140",
+      "lemma": "effective",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "eficaz",
+      "forms": [
+        "effective"
+      ],
+      "collocations": [
+        "effective",
+        "effective strategy"
+      ],
+      "examples": [
+        "Short feedback can be effective."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Short feedback can be effective.",
+          "es": "La retroalimentación breve puede ser eficaz."
+        }
+      ],
+      "tags": [
+        "learning",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "effective",
+        "eficaz",
+        "learning",
+        "effective strategy"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-141",
+      "lemma": "efficient",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "technology",
+      "meaningEs": "eficiente",
+      "forms": [
+        "efficient"
+      ],
+      "collocations": [
+        "efficient",
+        "efficient process"
+      ],
+      "examples": [
+        "An index makes retrieval efficient."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "An index makes retrieval efficient.",
+          "es": "Un índice hace eficiente la recuperación."
+        }
+      ],
+      "tags": [
+        "technology",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "efficient",
+        "eficiente",
+        "technology",
+        "efficient process"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-142",
+      "lemma": "complex",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "domain": "academic",
+      "meaningEs": "complejo",
+      "forms": [
+        "complex"
+      ],
+      "collocations": [
+        "complex",
+        "complex sentence"
+      ],
+      "examples": [
+        "This is a complex structure."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "This is a complex structure.",
+          "es": "Esta es una estructura compleja."
+        }
+      ],
+      "tags": [
+        "academic",
+        "adjective",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "complex",
+        "complejo",
+        "academic",
+        "complex sentence"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-143",
+      "lemma": "structure",
+      "partOfSpeech": "noun/verb",
+      "level": "A2",
+      "domain": "grammar",
+      "meaningEs": "estructura",
+      "forms": [
+        "structure"
+      ],
+      "collocations": [
+        "structure",
+        "sentence structure"
+      ],
+      "examples": [
+        "The sentence has a clear structure."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The sentence has a clear structure.",
+          "es": "La oración tiene una estructura clara."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "noun/verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "structure",
+        "estructura",
+        "grammar",
+        "sentence structure"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-144",
+      "lemma": "exception",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "domain": "grammar",
+      "meaningEs": "excepción",
+      "forms": [
+        "exception"
+      ],
+      "collocations": [
+        "exception",
+        "common exception"
+      ],
+      "examples": [
+        "There are exceptions to this rule."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "There are exceptions to this rule.",
+          "es": "Hay excepciones a esta regla."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "exception",
+        "excepción",
+        "grammar",
+        "common exception"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-145",
+      "lemma": "pattern",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "domain": "grammar",
+      "meaningEs": "patrón",
+      "forms": [
+        "pattern"
+      ],
+      "collocations": [
+        "pattern",
+        "verb pattern"
+      ],
+      "examples": [
+        "Notice the verb pattern."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Notice the verb pattern.",
+          "es": "Observa el patrón verbal."
+        }
+      ],
+      "tags": [
+        "grammar",
+        "noun",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "pattern",
+        "patrón",
+        "grammar",
+        "verb pattern"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-146",
+      "lemma": "robust",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "domain": "technology",
+      "meaningEs": "robusto",
+      "forms": [
+        "robust"
+      ],
+      "collocations": [
+        "robust",
+        "robust system"
+      ],
+      "examples": [
+        "We need a robust search engine."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We need a robust search engine.",
+          "es": "Necesitamos un motor de búsqueda robusto."
+        }
+      ],
+      "tags": [
+        "technology",
+        "adjective",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "robust",
+        "robusto",
+        "technology",
+        "robust system"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-147",
+      "lemma": "scalable",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "domain": "technology",
+      "meaningEs": "escalable",
+      "forms": [
+        "scalable"
+      ],
+      "collocations": [
+        "scalable",
+        "scalable architecture"
+      ],
+      "examples": [
+        "The library must be scalable."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The library must be scalable.",
+          "es": "La biblioteca debe ser escalable."
+        }
+      ],
+      "tags": [
+        "technology",
+        "adjective",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "scalable",
+        "escalable",
+        "technology",
+        "scalable architecture"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-148",
+      "lemma": "maintain",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "technology",
+      "meaningEs": "mantener",
+      "forms": [
+        "maintain"
+      ],
+      "collocations": [
+        "maintain",
+        "maintain quality"
+      ],
+      "examples": [
+        "Maintain a stable vocabulary ID."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Maintain a stable vocabulary ID.",
+          "es": "Mantén un identificador estable de vocabulario."
+        }
+      ],
+      "tags": [
+        "technology",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "maintain",
+        "mantener",
+        "technology",
+        "maintain quality"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-149",
+      "lemma": "expand",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "domain": "technology",
+      "meaningEs": "ampliar",
+      "forms": [
+        "expand"
+      ],
+      "collocations": [
+        "expand",
+        "expand coverage"
+      ],
+      "examples": [
+        "We can expand the library."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We can expand the library.",
+          "es": "Podemos ampliar la biblioteca."
+        }
+      ],
+      "tags": [
+        "technology",
+        "verb",
+        "a2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "A2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "expand",
+        "ampliar",
+        "technology",
+        "expand coverage"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-150",
+      "lemma": "refine",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "technology",
+      "meaningEs": "perfeccionar",
+      "forms": [
+        "refine"
+      ],
+      "collocations": [
+        "refine",
+        "refine a rule"
+      ],
+      "examples": [
+        "We need to refine the matcher."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "We need to refine the matcher.",
+          "es": "Necesitamos perfeccionar el patrón de búsqueda."
+        }
+      ],
+      "tags": [
+        "technology",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "refine",
+        "perfeccionar",
+        "technology",
+        "refine a rule"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-151",
+      "lemma": "prioritize",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "work",
+      "meaningEs": "priorizar",
+      "forms": [
+        "prioritize"
+      ],
+      "collocations": [
+        "prioritize",
+        "prioritize tasks"
+      ],
+      "examples": [
+        "Prioritize the most useful corrections."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Prioritize the most useful corrections.",
+          "es": "Prioriza las correcciones más útiles."
+        }
+      ],
+      "tags": [
+        "work",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "prioritize",
+        "priorizar",
+        "work",
+        "prioritize tasks"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-152",
+      "lemma": "distinguish",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "distinguir",
+      "forms": [
+        "distinguish"
+      ],
+      "collocations": [
+        "distinguish",
+        "distinguish between"
+      ],
+      "examples": [
+        "Distinguish errors from style choices."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Distinguish errors from style choices.",
+          "es": "Distingue errores de elecciones de estilo."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "distinguish",
+        "distinguir",
+        "communication",
+        "distinguish between"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-153",
+      "lemma": "revise",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "revisar; corregir",
+      "forms": [
+        "revise"
+      ],
+      "collocations": [
+        "revise",
+        "revise a draft"
+      ],
+      "examples": [
+        "Revise your paragraph after feedback."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Revise your paragraph after feedback.",
+          "es": "Revisa tu párrafo después de la retroalimentación."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "revise",
+        "revisar; corregir",
+        "learning",
+        "revise a draft"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-154",
+      "lemma": "paraphrase",
+      "partOfSpeech": "verb/noun",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "parafrasear",
+      "forms": [
+        "paraphrase"
+      ],
+      "collocations": [
+        "paraphrase",
+        "paraphrase a sentence"
+      ],
+      "examples": [
+        "Paraphrase the idea in your own words."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Paraphrase the idea in your own words.",
+          "es": "Parafrasea la idea con tus propias palabras."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb/noun",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "paraphrase",
+        "parafrasear",
+        "communication",
+        "paraphrase a sentence"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-155",
+      "lemma": "summarize",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "resumir",
+      "forms": [
+        "summarize"
+      ],
+      "collocations": [
+        "summarize",
+        "summarize a text"
+      ],
+      "examples": [
+        "Summarize the main point."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Summarize the main point.",
+          "es": "Resume la idea principal."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "summarize",
+        "resumir",
+        "learning",
+        "summarize a text"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-156",
+      "lemma": "elaborate",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "ampliar una explicación",
+      "forms": [
+        "elaborate"
+      ],
+      "collocations": [
+        "elaborate",
+        "elaborate on"
+      ],
+      "examples": [
+        "Could you elaborate on that point?"
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Could you elaborate on that point?",
+          "es": "¿Podrías ampliar ese punto?"
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "elaborate",
+        "ampliar una explicación",
+        "communication",
+        "elaborate on"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-157",
+      "lemma": "emphasize",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "enfatizar",
+      "forms": [
+        "emphasize"
+      ],
+      "collocations": [
+        "emphasize",
+        "emphasize a point"
+      ],
+      "examples": [
+        "The report emphasizes the main risk."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The report emphasizes the main risk.",
+          "es": "El informe enfatiza el riesgo principal."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "emphasize",
+        "enfatizar",
+        "communication",
+        "emphasize a point"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-158",
+      "lemma": "acknowledge",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "reconocer",
+      "forms": [
+        "acknowledge"
+      ],
+      "collocations": [
+        "acknowledge",
+        "acknowledge a concern"
+      ],
+      "examples": [
+        "A strong argument acknowledges limitations."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "A strong argument acknowledges limitations.",
+          "es": "Un argumento sólido reconoce las limitaciones."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "acknowledge",
+        "reconocer",
+        "communication",
+        "acknowledge a concern"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-159",
+      "lemma": "address",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "abordar",
+      "forms": [
+        "address"
+      ],
+      "collocations": [
+        "address",
+        "address a problem"
+      ],
+      "examples": [
+        "The essay addresses both views."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The essay addresses both views.",
+          "es": "El ensayo aborda ambas posturas."
+        }
+      ],
+      "tags": [
+        "communication",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "address",
+        "abordar",
+        "communication",
+        "address a problem"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-160",
+      "lemma": "underlying",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "subyacente",
+      "forms": [
+        "underlying"
+      ],
+      "collocations": [
+        "underlying",
+        "underlying reason"
+      ],
+      "examples": [
+        "Identify the underlying assumption."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Identify the underlying assumption.",
+          "es": "Identifica la suposición subyacente."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adjective",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "underlying",
+        "subyacente",
+        "communication",
+        "underlying reason"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-161",
+      "lemma": "approximately",
+      "partOfSpeech": "adverb",
+      "level": "B1",
+      "domain": "numbers",
+      "meaningEs": "aproximadamente",
+      "forms": [
+        "approximately"
+      ],
+      "collocations": [
+        "approximately",
+        "approximately five minutes"
+      ],
+      "examples": [
+        "The activity takes approximately five minutes."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The activity takes approximately five minutes.",
+          "es": "La actividad dura aproximadamente cinco minutos."
+        }
+      ],
+      "tags": [
+        "numbers",
+        "adverb",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "approximately",
+        "aproximadamente",
+        "numbers",
+        "approximately five minutes"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-162",
+      "lemma": "attain",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "learning",
+      "meaningEs": "alcanzar",
+      "forms": [
+        "attain"
+      ],
+      "collocations": [
+        "attain",
+        "attain a goal"
+      ],
+      "examples": [
+        "Learners attain mastery through practice."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Learners attain mastery through practice.",
+          "es": "Los estudiantes alcanzan el dominio mediante la práctica."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "attain",
+        "alcanzar",
+        "learning",
+        "attain a goal"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-163",
+      "lemma": "sustain",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "domain": "learning",
+      "meaningEs": "mantener; sostener",
+      "forms": [
+        "sustain"
+      ],
+      "collocations": [
+        "sustain",
+        "sustain progress"
+      ],
+      "examples": [
+        "Sustain a regular practice routine."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Sustain a regular practice routine.",
+          "es": "Mantén una rutina de práctica regular."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "sustain",
+        "mantener; sostener",
+        "learning",
+        "sustain progress"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-164",
+      "lemma": "transfer",
+      "partOfSpeech": "verb/noun",
+      "level": "B2",
+      "domain": "learning",
+      "meaningEs": "transferir; transferencia",
+      "forms": [
+        "transfer"
+      ],
+      "collocations": [
+        "transfer",
+        "transfer learning"
+      ],
+      "examples": [
+        "Transfer the skill to a new situation."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "Transfer the skill to a new situation.",
+          "es": "Transfiere la habilidad a una situación nueva."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb/noun",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "transfer",
+        "transferir; transferencia",
+        "learning",
+        "transfer learning"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-165",
+      "lemma": "master",
+      "partOfSpeech": "verb/noun",
+      "level": "B1",
+      "domain": "learning",
+      "meaningEs": "dominar",
+      "forms": [
+        "master"
+      ],
+      "collocations": [
+        "master",
+        "master a skill"
+      ],
+      "examples": [
+        "You can master the pattern with practice."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "You can master the pattern with practice.",
+          "es": "Puedes dominar el patrón con práctica."
+        }
+      ],
+      "tags": [
+        "learning",
+        "verb/noun",
+        "b1"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B1",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "master",
+        "dominar",
+        "learning",
+        "master a skill"
+      ]
+    },
+    {
+      "id": "VOC-GLOBAL-166",
+      "lemma": "ambiguous",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "domain": "communication",
+      "meaningEs": "ambiguo",
+      "forms": [
+        "ambiguous"
+      ],
+      "collocations": [
+        "ambiguous",
+        "ambiguous meaning"
+      ],
+      "examples": [
+        "The sentence is ambiguous without context."
+      ],
+      "examplesBilingual": [
+        {
+          "en": "The sentence is ambiguous without context.",
+          "es": "La oración es ambigua sin contexto."
+        }
+      ],
+      "tags": [
+        "communication",
+        "adjective",
+        "b2"
+      ],
+      "knowledgeAccess": {
+        "scope": "global",
+        "searchable": true,
+        "activityIndependent": true,
+        "availableForCorrection": true
+      },
+      "depthProfile": {
+        "targetLevel": "B2",
+        "correctionIgnoresProgression": true,
+        "stageSet": "cefr-depth-v1"
+      },
+      "searchTerms": [
+        "ambiguous",
+        "ambiguo",
+        "communication",
+        "ambiguous meaning"
+      ]
+    }
+  ],
+  "testCases": []
+}
