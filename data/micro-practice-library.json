@@ -702,10 +702,10 @@
       "promptEs": "Practice this in English.",
       "answer": "work",
       "feedback": {
-        "correct": "Correct.",
-        "correctEs": "Correcto.",
-        "incorrect": "Try again.",
-        "incorrectEs": "Inténtalo de nuevo."
+        "correct": "Correct. “work” fits the sentence pattern and meaning tested here.",
+        "correctEs": "Correcto. «work» encaja con la estructura y el significado evaluados aquí.",
+        "incorrect": "Check the subject, verb form and words around the gap. The expected answer here is “work”.",
+        "incorrectEs": "Comprueba el sujeto, la forma verbal y las palabras alrededor del espacio. La respuesta esperada aquí es «work»."
       },
       "tags": [
         "grammar",
@@ -746,10 +746,10 @@
       "promptEs": "Practice this in English.",
       "answer": "work",
       "feedback": {
-        "correct": "Correct.",
-        "correctEs": "Correcto.",
-        "incorrect": "Try again.",
-        "incorrectEs": "Inténtalo de nuevo."
+        "correct": "Correct. “work” fits the sentence pattern and meaning tested here.",
+        "correctEs": "Correcto. «work» encaja con la estructura y el significado evaluados aquí.",
+        "incorrect": "Check the subject, verb form and words around the gap. The expected answer here is “work”.",
+        "incorrectEs": "Comprueba el sujeto, la forma verbal y las palabras alrededor del espacio. La respuesta esperada aquí es «work»."
       },
       "tags": [
         "grammar",
@@ -788,10 +788,10 @@
       "promptEs": "Practice this in English.",
       "answer": "building",
       "feedback": {
-        "correct": "Correct.",
-        "correctEs": "Correcto.",
-        "incorrect": "Try again.",
-        "incorrectEs": "Inténtalo de nuevo."
+        "correct": "Correct. “building” fits the sentence pattern and meaning tested here.",
+        "correctEs": "Correcto. «building» encaja con la estructura y el significado evaluados aquí.",
+        "incorrect": "Check the subject, verb form and words around the gap. The expected answer here is “building”.",
+        "incorrectEs": "Comprueba el sujeto, la forma verbal y las palabras alrededor del espacio. La respuesta esperada aquí es «building»."
       },
       "tags": [
         "grammar",
@@ -882,10 +882,10 @@
       "promptEs": "Practice this in English.",
       "answer": "robotics",
       "feedback": {
-        "correct": "Correct.",
-        "correctEs": "Correcto.",
-        "incorrect": "Try again.",
-        "incorrectEs": "Inténtalo de nuevo."
+        "correct": "Correct. “robotics” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «robotics» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “robotics”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «robotics»."
       },
       "tags": [
         "vocabulary",
@@ -926,10 +926,10 @@
       "promptEs": "Practice this in English.",
       "answer": "profesor",
       "feedback": {
-        "correct": "Correct.",
-        "correctEs": "Correcto.",
-        "incorrect": "Try again.",
-        "incorrectEs": "Inténtalo de nuevo."
+        "correct": "Correct. “profesor” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «profesor» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “profesor”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «profesor»."
       },
       "tags": [
         "vocabulary",
@@ -970,10 +970,10 @@
       "promptEs": "Practice this in English.",
       "answer": "school",
       "feedback": {
-        "correct": "Correct.",
-        "correctEs": "Correcto.",
-        "incorrect": "Try again.",
-        "incorrectEs": "Inténtalo de nuevo."
+        "correct": "Correct. “school” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «school» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “school”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «school»."
       },
       "tags": [
         "vocabulary",
@@ -1014,10 +1014,10 @@
       "promptEs": "Practice this in English.",
       "answer": "trabajar con",
       "feedback": {
-        "correct": "Correct.",
-        "correctEs": "Correcto.",
-        "incorrect": "Try again.",
-        "incorrectEs": "Inténtalo de nuevo."
+        "correct": "Correct. “trabajar con” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «trabajar con» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “trabajar con”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «trabajar con»."
       },
       "tags": [
         "vocabulary",
@@ -2398,10 +2398,10 @@
       ],
       "answer": "usually",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. “usually” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «usually» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “usually”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «usually»."
       },
       "tags": [
         "frequency-adverbs",
@@ -2442,10 +2442,10 @@
       ],
       "answer": "any",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. “any” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «any» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “any”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «any»."
       },
       "tags": [
         "some",
@@ -2486,10 +2486,10 @@
       ],
       "answer": "many",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. “many” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «many» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “many”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «many»."
       },
       "tags": [
         "countable",
@@ -2529,10 +2529,10 @@
       ],
       "answer": "is",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. “is” fits the sentence pattern and meaning tested here.",
+        "correctEs": "Correcto. «is» encaja con la estructura y el significado evaluados aquí.",
+        "incorrect": "Check the subject, verb form and words around the gap. The expected answer here is “is”.",
+        "incorrectEs": "Comprueba el sujeto, la forma verbal y las palabras alrededor del espacio. La respuesta esperada aquí es «is»."
       },
       "tags": [
         "indirect-questions",
@@ -2903,10 +2903,10 @@
       ],
       "answer": "retroalimentación",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. “retroalimentación” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «retroalimentación» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “retroalimentación”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «retroalimentación»."
       },
       "tags": [
         "learning",
@@ -2945,10 +2945,10 @@
       ],
       "answer": "make progress",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. “make progress” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «make progress» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “make progress”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «make progress»."
       },
       "tags": [
         "collocations",
@@ -2987,10 +2987,10 @@
       ],
       "answer": "however",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. “however” matches the meaning or expression tested in this activity.",
+        "correctEs": "Correcto. «however» corresponde al significado o expresión evaluados en esta actividad.",
+        "incorrect": "Review the meaning of the key word or expression. In this item, the expected match is “however”.",
+        "incorrectEs": "Revisa el significado de la palabra o expresión clave. En este ejercicio, la respuesta esperada es «however»."
       },
       "tags": [
         "connectors",
@@ -3031,10 +3031,10 @@
       ],
       "answer": "Check the robot batteries",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. The audio supports this answer: “Check the robot batteries”.",
+        "correctEs": "Correcto. El audio respalda esta respuesta: «Check the robot batteries».",
+        "incorrect": "Listen again for the specific detail asked about. The expected answer is “Check the robot batteries”.",
+        "incorrectEs": "Vuelve a escuchar buscando el detalle específico de la pregunta. La respuesta esperada es «Check the robot batteries»."
       },
       "tags": [
         "listening",
@@ -3071,10 +3071,10 @@
       ],
       "answer": "A loose connection",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. The audio supports this answer: “A loose connection”.",
+        "correctEs": "Correcto. El audio respalda esta respuesta: «A loose connection».",
+        "incorrect": "Listen again for the specific detail asked about. The expected answer is “A loose connection”.",
+        "incorrectEs": "Vuelve a escuchar buscando el detalle específico de la pregunta. La respuesta esperada es «A loose connection»."
       },
       "tags": [
         "listening",
@@ -3111,10 +3111,10 @@
       ],
       "answer": "To practise vocabulary and review mistakes",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. The audio supports this answer: “To practise vocabulary and review mistakes”.",
+        "correctEs": "Correcto. El audio respalda esta respuesta: «To practise vocabulary and review mistakes».",
+        "incorrect": "Listen again for the specific detail asked about. The expected answer is “To practise vocabulary and review mistakes”.",
+        "incorrectEs": "Vuelve a escuchar buscando el detalle específico de la pregunta. La respuesta esperada es «To practise vocabulary and review mistakes»."
       },
       "tags": [
         "listening",
@@ -3151,10 +3151,10 @@
       ],
       "answer": "Rewrote the instructions and tested again",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. The audio supports this answer: “Rewrote the instructions and tested again”.",
+        "correctEs": "Correcto. El audio respalda esta respuesta: «Rewrote the instructions and tested again».",
+        "incorrect": "Listen again for the specific detail asked about. The expected answer is “Rewrote the instructions and tested again”.",
+        "incorrectEs": "Vuelve a escuchar buscando el detalle específico de la pregunta. La respuesta esperada es «Rewrote the instructions and tested again»."
       },
       "tags": [
         "listening",
@@ -3191,10 +3191,10 @@
       ],
       "answer": "Last Friday",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. The audio supports this answer: “Last Friday”.",
+        "correctEs": "Correcto. El audio respalda esta respuesta: «Last Friday».",
+        "incorrect": "Listen again for the specific detail asked about. The expected answer is “Last Friday”.",
+        "incorrectEs": "Vuelve a escuchar buscando el detalle específico de la pregunta. La respuesta esperada es «Last Friday»."
       },
       "tags": [
         "listening",
@@ -3231,10 +3231,10 @@
       ],
       "answer": "The app is useful but needs more listening activities",
       "feedback": {
-        "correct": "Correct. Check the meaning and context.",
-        "correctEs": "Correcto. Comprueba el significado y el contexto.",
-        "incorrect": "Not quite. Review the options and try again.",
-        "incorrectEs": "No exactamente. Revisa las opciones e inténtalo de nuevo."
+        "correct": "Correct. The audio supports this answer: “The app is useful but needs more listening activities”.",
+        "correctEs": "Correcto. El audio respalda esta respuesta: «The app is useful but needs more listening activities».",
+        "incorrect": "Listen again for the specific detail asked about. The expected answer is “The app is useful but needs more listening activities”.",
+        "incorrectEs": "Vuelve a escuchar buscando el detalle específico de la pregunta. La respuesta esperada es «The app is useful but needs more listening activities»."
       },
       "tags": [
         "listening",
@@ -14434,10 +14434,10 @@
         "RS-A2-SPEAK"
       ],
       "feedback": {
-        "correct": "Correct. You preserved the main message.",
-        "correctEs": "Correcto. Conservaste el mensaje principal.",
-        "incorrect": "Check who said the message and keep its meaning.",
-        "incorrectEs": "Comprueba quién dijo el mensaje y conserva su significado."
+        "correct": "This is an open writing task. The checklist checks whether your report identifies the speaker and communicates the message; it does not certify every grammar choice.",
+        "correctEs": "Esta es una tarea de escritura abierta. La lista comprueba si identificas a quien habla y comunicas el mensaje; no certifica todas las decisiones gramaticales.",
+        "incorrect": "Add who said the message and the message itself. If you are unsure about tense changes, keep the original time context clear.",
+        "incorrectEs": "Añade quién dijo el mensaje y el contenido. Si dudas sobre los cambios de tiempo verbal, deja claro el contexto temporal original."
       },
       "evaluation": {
         "criteria": [
@@ -14726,10 +14726,10 @@
         "RS-A1-SPEAK"
       ],
       "feedback": {
-        "correct": "Correct. You preserved the main message.",
-        "correctEs": "Correcto. Conservaste el mensaje principal.",
-        "incorrect": "Check who said the message and keep its meaning.",
-        "incorrectEs": "Comprueba quién dijo el mensaje y conserva su significado."
+        "correct": "This is an open writing task. The checklist checks whether your report identifies the speaker and communicates the message; it does not certify every grammar choice.",
+        "correctEs": "Esta es una tarea de escritura abierta. La lista comprueba si identificas a quien habla y comunicas el mensaje; no certifica todas las decisiones gramaticales.",
+        "incorrect": "Add who said the message and the message itself. If you are unsure about tense changes, keep the original time context clear.",
+        "incorrectEs": "Añade quién dijo el mensaje y el contenido. Si dudas sobre los cambios de tiempo verbal, deja claro el contexto temporal original."
       },
       "evaluation": {
         "criteria": [
