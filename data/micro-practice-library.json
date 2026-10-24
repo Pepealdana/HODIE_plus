@@ -5276,7 +5276,15 @@
         "communication"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A1-02",
@@ -5323,10 +5331,19 @@
       "primarySkill": "reading",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "reading"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A1-03",
@@ -5374,13 +5391,22 @@
       "primarySkill": "listening",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "listening"
       ],
       "languageResource": "grammar",
       "knowledgeScope": "global",
       "audioText": "Ben says he is at home.",
       "gameMode": "timed-challenge",
-      "timeLimitSeconds": 25
+      "timeLimitSeconds": 25,
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A1-04",
@@ -5440,7 +5466,15 @@
         "communication"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A2-01",
@@ -5491,7 +5525,15 @@
         "communication"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A2-02",
@@ -5539,10 +5581,19 @@
       "primarySkill": "reading",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "reading"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A2-03",
@@ -5590,10 +5641,19 @@
       "primarySkill": "listening",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "listening"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A2-04",
@@ -5636,10 +5696,19 @@
       "primarySkill": "writing",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "writing"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-B1-01",
@@ -5690,7 +5759,15 @@
         "communication"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-B1-02",
@@ -5738,10 +5815,19 @@
       "primarySkill": "reading",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "reading"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-B1-03",
@@ -5801,7 +5887,15 @@
         "communication"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-B1-04",
@@ -5844,10 +5938,19 @@
       "primarySkill": "writing",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "writing"
       ],
       "languageResource": "grammar",
-      "knowledgeScope": "global"
+      "knowledgeScope": "global",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A1-05",
@@ -5897,7 +6000,15 @@
       ],
       "languageResource": "grammar",
       "knowledgeScope": "global",
-      "gameMode": "quick-recall"
+      "gameMode": "quick-recall",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A1-06",
@@ -5943,13 +6054,22 @@
       "primarySkill": "listening",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "listening"
       ],
       "languageResource": "grammar",
       "knowledgeScope": "global",
       "gameMode": "timed-challenge",
       "audioText": "Lina says she is at home.",
-      "timeLimitSeconds": 25
+      "timeLimitSeconds": 25,
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A2-05",
@@ -5999,7 +6119,15 @@
       ],
       "languageResource": "grammar",
       "knowledgeScope": "global",
-      "gameMode": "quick-recall"
+      "gameMode": "quick-recall",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-A2-06",
@@ -6049,7 +6177,15 @@
       ],
       "languageResource": "grammar",
       "knowledgeScope": "global",
-      "gameMode": "quick-recall"
+      "gameMode": "quick-recall",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-B1-05",
@@ -6100,7 +6236,15 @@
       "languageResource": "grammar",
       "knowledgeScope": "global",
       "gameMode": "quick-recall",
-      "timeLimitSeconds": 30
+      "timeLimitSeconds": 30,
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-RS-B1-06",
@@ -6146,13 +6290,22 @@
       "primarySkill": "listening",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "listening"
       ],
       "languageResource": "grammar",
       "knowledgeScope": "global",
       "gameMode": "memory-recall",
       "audioText": "Marta said the plan was too expensive. David suggested trying a smaller version first.",
-      "memoryText": "Marta: too expensive. David: try a smaller version first."
+      "memoryText": "Marta: too expensive. David: try a smaller version first.",
+      "relatedCanDoIds": [
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE",
+        "RS-B1-SPEAK"
+      ]
     },
     {
       "id": "MIC-CEFR-A1-GRAMMAR-01",
@@ -11869,7 +12022,8 @@
       "reviewPriority": "high",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "speaking"
       ],
       "knowledgeScope": "global",
       "audioText": "Tom says hello.",
@@ -11879,9 +12033,15 @@
         "language": "en-US"
       },
       "relatedCanDoIds": [
-        "RS-A1-SPEAK"
+        "RS-A1-SPEAK",
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE"
       ],
-      "gameMode": "quick-recall"
+      "gameMode": "quick-recall",
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A1-08",
@@ -11923,7 +12083,8 @@
       "reviewPriority": "high",
       "resources": [
         "grammar",
-        "writing"
+        "writing",
+        "communication"
       ],
       "knowledgeScope": "global",
       "evaluation": {
@@ -11953,8 +12114,14 @@
         "practiceMinimumCriteria": 1
       },
       "relatedCanDoIds": [
-        "RS-A1-WRITE"
-      ]
+        "RS-A1-WRITE",
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-SPEAK"
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-07",
@@ -12001,7 +12168,8 @@
       "reviewPriority": "high",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "speaking"
       ],
       "knowledgeScope": "global",
       "audioText": "Alex said he would call me the next day.",
@@ -12011,9 +12179,15 @@
         "language": "en-US"
       },
       "relatedCanDoIds": [
-        "RS-A2-SPEAK"
+        "RS-A2-SPEAK",
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE"
       ],
-      "gameMode": "memory-recall"
+      "gameMode": "memory-recall",
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-08",
@@ -12055,7 +12229,8 @@
       "reviewPriority": "high",
       "resources": [
         "grammar",
-        "writing"
+        "writing",
+        "communication"
       ],
       "knowledgeScope": "global",
       "evaluation": {
@@ -12094,8 +12269,14 @@
         "practiceMinimumCriteria": 2
       },
       "relatedCanDoIds": [
-        "RS-A2-WRITE"
-      ]
+        "RS-A2-WRITE",
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-SPEAK"
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-B1-07",
@@ -12143,7 +12324,8 @@
       "reviewPriority": "high",
       "resources": [
         "grammar",
-        "communication"
+        "communication",
+        "speaking"
       ],
       "knowledgeScope": "global",
       "audioText": "Jo said she wanted to reduce waste.",
@@ -12153,9 +12335,15 @@
         "language": "en-US"
       },
       "relatedCanDoIds": [
-        "RS-B1-SPEAK"
+        "RS-B1-SPEAK",
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-WRITE"
       ],
-      "gameMode": "timed-challenge"
+      "gameMode": "timed-challenge",
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-B1-08",
@@ -12197,7 +12385,8 @@
       "reviewPriority": "high",
       "resources": [
         "grammar",
-        "writing"
+        "writing",
+        "communication"
       ],
       "knowledgeScope": "global",
       "evaluation": {
@@ -12229,8 +12418,14 @@
         "practiceMinimumCriteria": 1
       },
       "relatedCanDoIds": [
-        "RS-B1-WRITE"
-      ]
+        "RS-B1-WRITE",
+        "RS-B1-GRAM",
+        "RS-B1-READ",
+        "RS-B1-LISTEN",
+        "RS-B1-COMM",
+        "RS-B1-SPEAK"
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-B1-09",
@@ -12610,7 +12805,8 @@
       "resources": [
         "reading",
         "vocabulary",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "languageResource": "vocabulary",
       "target": "reported-speech",
@@ -12668,7 +12864,8 @@
       "reviewPriority": "high",
       "resources": [
         "reading",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -12724,7 +12921,9 @@
       "reviewPriority": "high",
       "resources": [
         "reading",
-        "vocabulary"
+        "vocabulary",
+        "grammar",
+        "communication"
       ],
       "languageResource": "vocabulary",
       "target": "reported-speech",
@@ -12897,7 +13096,8 @@
       "reviewPriority": "high",
       "resources": [
         "listening",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -12958,7 +13158,8 @@
       "resources": [
         "listening",
         "vocabulary",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "languageResource": "vocabulary",
       "target": "reported-speech",
@@ -13016,7 +13217,8 @@
       "resources": [
         "speaking",
         "pronunciation",
-        "grammar"
+        "grammar",
+        "communication"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -13076,7 +13278,8 @@
       "resources": [
         "speaking",
         "pronunciation",
-        "grammar"
+        "grammar",
+        "communication"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -13196,7 +13399,9 @@
       "resources": [
         "speaking",
         "vocabulary",
-        "pronunciation"
+        "pronunciation",
+        "grammar",
+        "communication"
       ],
       "languageResource": "vocabulary",
       "target": "reported-speech",
@@ -13352,7 +13557,8 @@
       "resources": [
         "writing",
         "vocabulary",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -13636,7 +13842,8 @@
       "reviewPriority": "high",
       "resources": [
         "communication",
-        "writing"
+        "writing",
+        "grammar"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -13693,7 +13900,8 @@
       "reviewPriority": "high",
       "resources": [
         "communication",
-        "vocabulary"
+        "vocabulary",
+        "grammar"
       ],
       "languageResource": "vocabulary",
       "target": "reported-speech",
@@ -13974,7 +14182,8 @@
       "reviewPriority": "high",
       "resources": [
         "reading",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -14032,7 +14241,8 @@
       "resources": [
         "listening",
         "communication",
-        "vocabulary"
+        "vocabulary",
+        "grammar"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -14090,7 +14300,8 @@
       "resources": [
         "speaking",
         "pronunciation",
-        "grammar"
+        "grammar",
+        "communication"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -14151,7 +14362,8 @@
       "resources": [
         "writing",
         "reading",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "languageResource": "grammar",
       "target": "reported-speech",
@@ -14300,7 +14512,12 @@
         "RS-A2-COMM",
         "RS-A2-WRITE",
         "RS-A2-SPEAK"
-      ]
+      ],
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-10",
@@ -14347,7 +14564,12 @@
         "RS-A2-COMM",
         "RS-A2-WRITE",
         "RS-A2-SPEAK"
-      ]
+      ],
+      "resources": [
+        "grammar",
+        "communication"
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-11",
@@ -14377,7 +14599,8 @@
       ],
       "resources": [
         "reading",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "feedback": {
         "correct": "Says reports the current notice; the sentence keeps the time and day unchanged.",
@@ -14400,7 +14623,8 @@
         "RS-A2-COMM",
         "RS-A2-WRITE",
         "RS-A2-SPEAK"
-      ]
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-12",
@@ -14455,7 +14679,8 @@
         "RS-A2-COMM",
         "RS-A2-WRITE",
         "RS-A2-SPEAK"
-      ]
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-13",
@@ -14487,7 +14712,8 @@
       ],
       "resources": [
         "listening",
-        "communication"
+        "communication",
+        "grammar"
       ],
       "gameMode": "memory-recall",
       "memoryText": "The teacher said to bring a notebook tomorrow.",
@@ -14512,7 +14738,8 @@
         "RS-A2-COMM",
         "RS-A2-WRITE",
         "RS-A2-SPEAK"
-      ]
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-14",
@@ -14542,7 +14769,8 @@
       "resources": [
         "speaking",
         "pronunciation",
-        "grammar"
+        "grammar",
+        "communication"
       ],
       "feedback": {
         "correct": "The key reporting words are present. This check uses the speech transcript and does not fully assess pronunciation.",
@@ -14566,7 +14794,8 @@
         "RS-A2-WRITE",
         "RS-A2-SPEAK"
       ],
-      "audioText": "He said that he was busy."
+      "audioText": "He said that he was busy.",
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-15",
@@ -14646,7 +14875,8 @@
         "practiceMinimumCriteria": 2,
         "minimumResponseCharacters": 18,
         "errorType": "task-completion"
-      }
+      },
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A2-16",
@@ -14699,7 +14929,8 @@
         "RS-A2-COMM",
         "RS-A2-WRITE",
         "RS-A2-SPEAK"
-      ]
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A1-09",
@@ -14729,7 +14960,8 @@
       ],
       "resources": [
         "grammar",
-        "vocabulary"
+        "vocabulary",
+        "communication"
       ],
       "feedback": {
         "correct": "Said hello reports the greeting without adding information.",
@@ -14752,7 +14984,8 @@
         "RS-A1-COMM",
         "RS-A1-WRITE",
         "RS-A1-SPEAK"
-      ]
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A1-10",
@@ -14782,7 +15015,9 @@
       ],
       "resources": [
         "reading",
-        "vocabulary"
+        "vocabulary",
+        "grammar",
+        "communication"
       ],
       "feedback": {
         "correct": "The report preserves Eva's thank-you message.",
@@ -14805,7 +15040,8 @@
         "RS-A1-COMM",
         "RS-A1-WRITE",
         "RS-A1-SPEAK"
-      ]
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A1-11",
@@ -14836,7 +15072,9 @@
       ],
       "resources": [
         "listening",
-        "vocabulary"
+        "vocabulary",
+        "grammar",
+        "communication"
       ],
       "feedback": {
         "correct": "The audio says good morning, a greeting used in the morning.",
@@ -14859,7 +15097,8 @@
         "RS-A1-COMM",
         "RS-A1-WRITE",
         "RS-A1-SPEAK"
-      ]
+      ],
+      "languageResource": "grammar"
     },
     {
       "id": "MIC-RS-A1-12",
@@ -14883,7 +15122,8 @@
       ],
       "resources": [
         "writing",
-        "grammar"
+        "grammar",
+        "communication"
       ],
       "reviewTargets": [
         "reported-speech"
@@ -14938,7 +15178,8 @@
         "practiceMinimumCriteria": 2,
         "minimumResponseCharacters": 18,
         "errorType": "task-completion"
-      }
+      },
+      "languageResource": "grammar"
     }
   ]
 }
