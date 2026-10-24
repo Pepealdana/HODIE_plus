@@ -58,4 +58,5 @@ assert.ok(app.includes("reported speech"));
 
 assert.ok(app.includes('home.querySelector("#activityCatalog")'));
 
-assert.ok(app.includes("catalogSection?.scrollIntoView"));
+assert.ok(app.includes('document.addEventListener("click", (event) => {'));
+assert.ok(app.includes('closest("#reportedSpeechShortcut")'));
