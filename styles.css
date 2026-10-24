@@ -1103,3 +1103,23 @@ html[data-theme="dark"] body { background: #101827; }
 @media (max-width:520px) { .reported-speech-shortcut { grid-template-columns:auto minmax(0,1fr); } .reported-speech-shortcut > button { grid-column:1 / -1; width:100%; } }
 
 .activity-timeout-note { margin:0 0 10px; padding:10px 12px; border-radius:10px; background:var(--surface-alt); border:1px solid var(--line); line-height:1.45; }
+
+
+/* Expandable, complete activity relationships: counts stay visible without
+   overwhelming the activity card, and the full linked library remains reachable. */
+.catalog-linked-activities > summary {
+  cursor: pointer;
+  font-weight: 650;
+  padding: .25rem 0;
+}
+.catalog-related-list {
+  display: grid;
+  gap: .2rem;
+  max-height: 15rem;
+  overflow: auto;
+  padding: .35rem .55rem;
+  border-inline-start: 2px solid var(--border, #465064);
+}
+.catalog-related-link {
+  overflow-wrap: anywhere;
+}
