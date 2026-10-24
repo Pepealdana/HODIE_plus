@@ -17,6 +17,8 @@ for (const activity of library.activities) {
   assert.ok(activity.id && !ids.has(activity.id), "Activity IDs must be present and unique: " + activity.id);
   ids.add(activity.id);
   assert.ok(canDoIds.has(activity.canDoId), activity.id + " references an unknown Can-Do: " + activity.canDoId);
+  const linkedGoal = matrix.canDos.find((item) => item.id === activity.canDoId);
+  assert.equal(linkedGoal.level, activity.level, activity.id + " level must match its Can-Do target");
   assert.ok(allowedTypes.has(activity.type), activity.id + " uses unsupported type " + activity.type);
   assert.ok(activity.level && ["A1", "A2", "B1", "B2"].includes(activity.level), activity.id + " needs a CEFR level");
 
