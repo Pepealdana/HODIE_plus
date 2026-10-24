@@ -1133,18 +1133,20 @@ The final criterion remains actual learning progress.
 
 ### Current runnable scope (v1)
 
-The size of the Can-Do matrix is not the same as the amount of content already executable in the interface.
+The size of the Can-Do matrix is not the same as the amount of content already executable in the interface. HODIE now has a broad activity catalogue, while the guided home path and progression evidence remain narrower.
 
 - **Can-Do descriptors:** 133 in the matrix.
-- **Currently executable targets:** four A2 speaking targets, `SP-A2-01` through `SP-A2-04`.
-- **Micro-practice:** 47 activities across those four targets; each target has mixed, speaking, listening and writing practice.
+- **Guided home starter path:** four A2 speaking targets, `SP-A2-01` through `SP-A2-04`.
+- **Micro-practice catalogue:** 284 activities across grammar, vocabulary, reading, listening, speaking, writing, pronunciation and communication. Small focused pools can expand within the same CEFR level and requested skill.
+- **Reported Speech:** 68 active activities across A1, A2 and B1; a separate 24-activity B2 pack remains locked until the progression evidence gate is implemented.
+- **Correction:** four narrow, regression-tested Reported Speech rules provide high-confidence feedback. A missing correction does not prove the full response is correct.
 - **Conversation and simulation:** four rule-based experiences (one open conversation and three simulations).
 - **Persistence:** progress and resumable sessions are stored locally in the browser.
-- **Voice:** speech recognition depends on browser support and microphone permission; typing remains available as a fallback.
+- **Voice:** speech recognition depends on browser support and microphone permission; typing remains available as a fallback. Transcript word checks are not phonetic scoring.
 - **AI:** the provider interface exists, but an AI service is not wired into the app.
-- **Not yet covered end-to-end:** the remaining 129 Can-Do descriptors, full B1 content coverage, and direct Reading/Pronunciation modes in the home interface.
+- **Not yet covered end-to-end:** the complete 133-descriptor learning path, independent validation of B1/B2 outcomes, and a real browser/device smoke test for the full activity catalogue.
 
-The app should not imply that all 133 descriptors are already fully teachable. Expand content and tests before marking additional Can-Dos as executable.
+The app must not imply that activity completion alone proves CEFR mastery. Progression still requires evidence across skills, retention and transfer.
 
 ---
 
