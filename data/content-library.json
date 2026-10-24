@@ -1,0 +1,3071 @@
+{
+  "schemaVersion": "1.0.0",
+  "activities": [
+    {
+      "id": "ACT-SP-A2-01-01",
+      "canDoId": "SP-A2-01",
+      "activityType": "independent-production",
+      "level": "A2",
+      "skill": "speaking",
+      "context": "professional",
+      "title": "Introduce yourself",
+      "objective": "Introduce yourself using basic personal and professional information.",
+      "instructions": "Speak in English for 30 to 60 seconds.",
+      "task": "Say your name, your job, what you teach or work with, and one thing you enjoy doing.",
+      "support": {
+        "optionalSentenceStarters": [
+          "My name is...",
+          "I am a...",
+          "I work with...",
+          "I enjoy..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.9,
+          "grammar": 0.8,
+          "fluency": 0.8,
+          "vocabulary": 0.8,
+          "pronunciation": 0.8
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "introduction",
+          "work",
+          "technology",
+          "teacher"
+        ]
+      },
+      "titleEs": "Preséntate",
+      "objectiveEs": "Preséntate usando información personal y profesional básica.",
+      "instructionsEs": "Habla en inglés durante 30 a 60 segundos.",
+      "taskEs": "Di tu nombre, tu trabajo, qué enseñas o con qué trabajas y una cosa que disfrutas hacer.",
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "name",
+            "label": "gives basic personal identification",
+            "type": "content-point"
+          },
+          {
+            "id": "profession",
+            "label": "states job or profession",
+            "type": "content-point"
+          },
+          {
+            "id": "work-context",
+            "label": "states what or who they work with",
+            "type": "content-point"
+          },
+          {
+            "id": "interest",
+            "label": "states one thing they enjoy",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 3,
+        "minimumResponseCharacters": 40,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "introduction",
+        "work",
+        "technology",
+        "teacher"
+      ]
+    },
+    {
+      "id": "ACT-SP-A2-02-01",
+      "canDoId": "SP-A2-02",
+      "activityType": "guided-production",
+      "level": "A2",
+      "skill": "speaking",
+      "context": "family",
+      "title": "Talk about your family",
+      "objective": "Talk about close family members using simple connected sentences.",
+      "instructions": "Speak in English for 45 to 90 seconds.",
+      "task": "Talk about two family members. Say who they are, what they usually do, and one thing they like.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I live with...",
+          "My son...",
+          "He likes...",
+          "She usually..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.9,
+          "grammar": 0.8,
+          "fluency": 0.8,
+          "vocabulary": 0.8,
+          "pronunciation": 0.8
+        },
+        "independent": false
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 7,
+        "tags": [
+          "family",
+          "daily-life",
+          "speaking"
+        ]
+      },
+      "titleEs": "Habla sobre tu familia",
+      "objectiveEs": "Habla sobre familiares cercanos usando oraciones sencillas conectadas.",
+      "instructionsEs": "Habla en inglés durante 45 a 90 segundos.",
+      "taskEs": "Habla sobre dos familiares. Di quiénes son, qué hacen normalmente y una cosa que les gusta.",
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "family-member-1",
+            "label": "describes one family member",
+            "type": "content-point"
+          },
+          {
+            "id": "family-member-2",
+            "label": "describes a second family member",
+            "type": "content-point"
+          },
+          {
+            "id": "routine",
+            "label": "gives simple information about what they do",
+            "type": "content-point"
+          },
+          {
+            "id": "preference",
+            "label": "states one family preference",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 3,
+        "minimumResponseCharacters": 40,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "family",
+        "daily-life",
+        "speaking"
+      ]
+    },
+    {
+      "id": "ACT-SP-A2-03-01",
+      "canDoId": "SP-A2-03",
+      "activityType": "guided-production",
+      "level": "A2",
+      "skill": "speaking",
+      "context": "daily-life",
+      "title": "Describe your daily routine",
+      "objective": "Describe a normal weekday using simple present sentences and time expressions.",
+      "instructions": "Speak in English for 45 to 90 seconds.",
+      "task": "Describe a normal weekday. Say when you get up, what you do during the day, and what you usually do in the evening.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I usually get up at...",
+          "Then I...",
+          "In the afternoon, I...",
+          "In the evening, I..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.9,
+          "grammar": 0.8,
+          "fluency": 0.8,
+          "vocabulary": 0.8,
+          "pronunciation": 0.8
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 7,
+        "tags": [
+          "daily-routine",
+          "daily-life",
+          "speaking",
+          "present-simple"
+        ]
+      },
+      "titleEs": "Describe tu rutina diaria",
+      "objectiveEs": "Describe un día normal entre semana usando oraciones en presente simple y expresiones de tiempo.",
+      "instructionsEs": "Habla en inglés durante 45 a 90 segundos.",
+      "taskEs": "Describe un día normal entre semana. Di a qué hora te levantas, qué haces durante el día y qué haces normalmente en la noche.",
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "start",
+            "label": "says when they get up",
+            "type": "content-point"
+          },
+          {
+            "id": "day",
+            "label": "describes activities during the day",
+            "type": "content-point"
+          },
+          {
+            "id": "evening",
+            "label": "describes an evening activity",
+            "type": "content-point"
+          },
+          {
+            "id": "time",
+            "label": "uses at least one time expression",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 3,
+        "minimumResponseCharacters": 40,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "daily-routine",
+        "daily-life",
+        "speaking",
+        "present-simple"
+      ]
+    },
+    {
+      "id": "ACT-SP-A2-04-01",
+      "canDoId": "SP-A2-04",
+      "activityType": "independent-production",
+      "level": "A2",
+      "skill": "speaking",
+      "context": "personal",
+      "title": "Talk about likes and dislikes",
+      "objective": "Talk about personal likes and dislikes and give simple reasons.",
+      "instructions": "Speak in English for 45 to 90 seconds.",
+      "task": "Talk about three things you like and two things you dislike. Give a simple reason for at least two of them.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I like...",
+          "I really enjoy...",
+          "I don't like...",
+          "I prefer...",
+          "Because..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.9,
+          "grammar": 0.8,
+          "fluency": 0.8,
+          "vocabulary": 0.8,
+          "pronunciation": 0.8
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 7,
+        "tags": [
+          "likes",
+          "dislikes",
+          "preferences",
+          "speaking"
+        ]
+      },
+      "titleEs": "Habla sobre lo que te gusta y lo que no te gusta",
+      "objectiveEs": "Habla sobre tus gustos y disgustos personales y da razones sencillas.",
+      "instructionsEs": "Habla en inglés durante 45 a 90 segundos.",
+      "taskEs": "Habla sobre tres cosas que te gustan y dos que no te gustan. Da una razón sencilla para al menos dos de ellas.",
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "likes",
+            "label": "gives three likes",
+            "type": "content-point"
+          },
+          {
+            "id": "dislikes",
+            "label": "gives two dislikes",
+            "type": "content-point"
+          },
+          {
+            "id": "reasons",
+            "label": "gives reasons for at least two preferences",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 3,
+        "minimumResponseCharacters": 40,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "likes",
+        "dislikes",
+        "preferences",
+        "speaking"
+      ]
+    },
+    {
+      "id": "ACT-LI-A2-01-01",
+      "canDoId": "LI-A2-01",
+      "activityType": "listening-comprehension",
+      "level": "A2",
+      "skill": "listening",
+      "context": "educational",
+      "title": "Understand classroom instructions",
+      "titleEs": "Comprende instrucciones de clase",
+      "objective": "Identify the key steps in a short spoken classroom instruction.",
+      "objectiveEs": "Identificar los pasos principales de una instrucción oral breve.",
+      "instructions": "Read the short transcript aloud or use device text-to-speech, then answer the question.",
+      "instructionsEs": "Lee el texto en voz alta o usa la lectura en voz alta del dispositivo y responde la pregunta.",
+      "task": "Transcript: First, connect the sensor. Then open the program. Finally, test the robot. What should you do first?",
+      "taskEs": "Transcripción: Primero, conecta el sensor. Luego abre el programa. Finalmente, prueba el robot. ¿Qué debes hacer primero?",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.8,
+          "gist": 0.8,
+          "details": 0.8,
+          "confidence": 0.7
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "listening",
+          "instructions",
+          "sequence-connectors"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "first-step",
+            "label": "identifies the first step",
+            "type": "content-point"
+          },
+          {
+            "id": "sequence",
+            "label": "recognizes sequence markers",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "imperatives",
+        "sequence-connectors"
+      ]
+    },
+    {
+      "id": "ACT-RE-A2-01-01",
+      "canDoId": "RE-A2-01",
+      "activityType": "reading-comprehension",
+      "level": "A2",
+      "skill": "reading",
+      "context": "educational",
+      "title": "Read a project update",
+      "titleEs": "Lee una actualización de proyecto",
+      "objective": "Find the main idea and a detail in a short project update.",
+      "objectiveEs": "Encontrar la idea principal y un detalle en una actualización breve.",
+      "instructions": "Read the message and answer the question.",
+      "instructionsEs": "Lee el mensaje y responde la pregunta.",
+      "task": "The robotics team tested a sensor on Tuesday. It worked indoors, but sunlight affected readings outside. The team will test a cover next week. What problem did the team find?",
+      "taskEs": "El equipo de robótica probó un sensor el martes. Funcionó en interiores, pero la luz solar afectó las lecturas en exteriores. El equipo probará una cubierta la próxima semana. ¿Qué problema encontró?",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.8,
+          "gist": 0.8,
+          "details": 0.8,
+          "confidence": 0.7
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "reading",
+          "technology",
+          "past-simple"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "problem",
+            "label": "identifies the effect of sunlight",
+            "type": "content-point"
+          },
+          {
+            "id": "next-step",
+            "label": "recognizes the next step",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "past-simple",
+        "problem-solution"
+      ]
+    },
+    {
+      "id": "ACT-WR-A2-01-01",
+      "canDoId": "WR-A2-01",
+      "activityType": "guided-production",
+      "level": "A2",
+      "skill": "writing",
+      "context": "educational",
+      "title": "Write a learning update",
+      "titleEs": "Escribe una actualización de aprendizaje",
+      "objective": "Write a short connected update using a past event and a next step.",
+      "objectiveEs": "Escribir una actualización breve usando un hecho pasado y un siguiente paso.",
+      "instructions": "Write 3–4 sentences about what you practised, one difficulty and what you will do next.",
+      "instructionsEs": "Escribe 3–4 oraciones sobre lo que practicaste, una dificultad y lo que harás después.",
+      "task": "Describe what you practised, what was difficult, what helped, and your next step.",
+      "taskEs": "Describe qué practicaste, qué fue difícil, qué te ayudó y tu siguiente paso.",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.8,
+          "accuracy": 0.7,
+          "coherence": 0.8,
+          "clarity": 0.8,
+          "vocabulary": 0.7,
+          "grammar": 0.7,
+          "confidence": 0.7
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "writing",
+          "past-simple",
+          "connectors"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "practice",
+            "label": "states what was practised",
+            "type": "content-point"
+          },
+          {
+            "id": "difficulty",
+            "label": "describes a difficulty",
+            "type": "content-point"
+          },
+          {
+            "id": "next-step",
+            "label": "states a next step",
+            "type": "content-point"
+          },
+          {
+            "id": "connectors",
+            "label": "uses one connector",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "past-simple",
+        "because-so-therefore"
+      ]
+    },
+    {
+      "id": "ACT-GR-A2-01-01",
+      "canDoId": "GR-A2-01",
+      "activityType": "controlled-practice",
+      "level": "A2",
+      "skill": "grammar",
+      "context": "educational",
+      "title": "Choose a verb pattern",
+      "titleEs": "Elige un patrón verbal",
+      "objective": "Choose a reviewed verb pattern in a controlled sentence.",
+      "objectiveEs": "Elegir un patrón verbal revisado en una oración controlada.",
+      "instructions": "Choose the correct option and explain why.",
+      "instructionsEs": "Elige la opción correcta y explica por qué.",
+      "task": "I use this app ___ practise English. (to / for / at)",
+      "taskEs": "Uso esta aplicación ___ practicar inglés. (to / for / at)",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.9,
+          "communicativeUse": 0.7
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "grammar",
+          "infinitive-purpose"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "purpose",
+            "label": "uses to + base verb for purpose",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 1,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "infinitive-of-purpose"
+      ]
+    },
+    {
+      "id": "ACT-VO-A2-01-01",
+      "canDoId": "VO-A2-01",
+      "activityType": "recognition",
+      "level": "A2",
+      "skill": "vocabulary",
+      "context": "educational",
+      "title": "Build useful collocations",
+      "titleEs": "Construye combinaciones útiles",
+      "objective": "Recognize natural collocations for learning and technology.",
+      "objectiveEs": "Reconocer combinaciones naturales sobre aprendizaje y tecnología.",
+      "instructions": "Choose the natural phrase and use it in a sentence.",
+      "instructionsEs": "Elige la expresión natural y úsala en una oración.",
+      "task": "Choose: make progress / do progress / take progress.",
+      "taskEs": "Elige: make progress / do progress / take progress.",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "recall": 0.8,
+          "use": 0.7,
+          "spontaneousUse": 0.5
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "vocabulary",
+          "collocations",
+          "progress"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "collocation",
+            "label": "selects make progress",
+            "type": "language-resource"
+          },
+          {
+            "id": "sentence",
+            "label": "uses the phrase in context",
+            "type": "production"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "collocations",
+        "progress"
+      ]
+    },
+    {
+      "id": "ACT-PR-A2-01-01",
+      "canDoId": "PR-A2-01",
+      "activityType": "pronunciation",
+      "level": "A2",
+      "skill": "pronunciation",
+      "context": "educational",
+      "title": "Make key words clear",
+      "titleEs": "Pronuncia con claridad las palabras clave",
+      "objective": "Practise sentence stress in a short statement.",
+      "objectiveEs": "Practicar el acento de frase en una afirmación breve.",
+      "instructions": "Record yourself saying the sentence twice, focusing on the key words.",
+      "instructionsEs": "Grábate diciendo la oración dos veces, enfocándote en las palabras clave.",
+      "task": "I BUILT a ROBOT yesterday. Focus on BUILT and ROBOT.",
+      "taskEs": "I BUILT a ROBOT yesterday. Enfatiza BUILT y ROBOT.",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "intelligibility": 0.8,
+          "prosody": 0.7,
+          "confidence": 0.7
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "pronunciation",
+          "sentence-stress"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "stress",
+            "label": "makes key words prominent",
+            "type": "pronunciation-feature"
+          },
+          {
+            "id": "intelligibility",
+            "label": "sentence remains understandable",
+            "type": "communicative-outcome"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "sentence-stress",
+        "past-simple"
+      ]
+    },
+    {
+      "id": "ACT-CO-A2-01-01",
+      "canDoId": "CO-A2-01",
+      "activityType": "interaction",
+      "level": "A2",
+      "skill": "communication",
+      "context": "educational",
+      "title": "Ask for clarification",
+      "titleEs": "Pide una aclaración",
+      "objective": "Repair a communication breakdown with a polite clarification request.",
+      "objectiveEs": "Resolver una dificultad comunicativa mediante una petición cortés.",
+      "instructions": "Imagine a colleague gives an instruction you do not understand. Respond politely.",
+      "instructionsEs": "Imagina que un compañero da una instrucción que no entiendes. Responde con cortesía.",
+      "task": "Use “Could you repeat that, please?” or “What do you mean by…?”",
+      "taskEs": "Usa “Could you repeat that, please?” o “What do you mean by…?”.",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.8,
+          "interaction": 0.8,
+          "repair": 0.9,
+          "confidence": 0.7
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "communication",
+          "clarification"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "polite",
+            "label": "uses a polite request",
+            "type": "language-resource"
+          },
+          {
+            "id": "repair",
+            "label": "signals what needs clarification",
+            "type": "interaction-strategy"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "question-forms",
+        "interaction-repair"
+      ]
+    },
+    {
+      "id": "ACT-WR-B1-01-01",
+      "canDoId": "WR-B1-01",
+      "activityType": "integrated-task",
+      "level": "B1",
+      "skill": "writing",
+      "context": "educational",
+      "title": "Explain a problem and solution",
+      "titleEs": "Explica un problema y una solución",
+      "objective": "Explain a problem, its cause and a proposed solution in a connected paragraph.",
+      "objectiveEs": "Explicar un problema, su causa y una solución propuesta en un párrafo conectado.",
+      "instructions": "Write 5–6 sentences. Use because and however or therefore.",
+      "instructionsEs": "Escribe 5–6 oraciones. Usa because y however o therefore.",
+      "task": "A learning activity gives unclear feedback. Explain the problem, its effect and one practical solution.",
+      "taskEs": "Una actividad de aprendizaje da retroalimentación poco clara. Explica el problema, su efecto y una solución práctica.",
+      "support": {
+        "optionalSentenceStarters": []
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.8,
+          "accuracy": 0.7,
+          "coherence": 0.8,
+          "clarity": 0.8,
+          "vocabulary": 0.7,
+          "grammar": 0.7,
+          "confidence": 0.7
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 5,
+        "tags": [
+          "writing",
+          "B1",
+          "connectors"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "problem",
+            "label": "explains the problem",
+            "type": "content-point"
+          },
+          {
+            "id": "cause",
+            "label": "explains a cause",
+            "type": "content-point"
+          },
+          {
+            "id": "solution",
+            "label": "proposes a solution",
+            "type": "content-point"
+          },
+          {
+            "id": "cohesion",
+            "label": "uses connectors accurately",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 12,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "because-so-therefore",
+        "however",
+        "argumentation"
+      ]
+    },
+    {
+      "id": "ACT-CO-A1-01-01",
+      "canDoId": "CO-A1-01",
+      "activityType": "interaction",
+      "level": "A1",
+      "skill": "communication",
+      "context": "educational",
+      "title": "Greet and introduce yourself",
+      "titleEs": "Saluda y preséntate",
+      "objective": "Greet someone, introduce yourself, and ask or answer one simple personal question.",
+      "objectiveEs": "Saluda a alguien, preséntate y formula o responde una pregunta personal sencilla.",
+      "instructions": "Use short phrases. You may use the sentence starters.",
+      "instructionsEs": "Usa frases cortas. Puedes apoyarte en los comienzos de oración.",
+      "task": "Write or say a greeting, your name, and one simple question.",
+      "taskEs": "Escribe o di un saludo, tu nombre y una pregunta sencilla.",
+      "support": {
+        "optionalSentenceStarters": [
+          "Hello, my name is...",
+          "I am...",
+          "How are you?",
+          "I am fine, thank you."
+        ],
+        "optionalSentenceStartersEs": [
+          "Hola, me llamo...",
+          "Soy...",
+          "¿Cómo estás?",
+          "Estoy bien, gracias."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.8,
+          "interaction": 0.8,
+          "repair": 0.9,
+          "confidence": 0.7
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2,
+        "mode": "evidence-based",
+        "noFalsePositiveClaim": true
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true,
+        "afterCorrection": "short-targeted-practice-then-retry"
+      },
+      "metadata": {
+        "durationMinutes": 3,
+        "tags": [
+          "greetings",
+          "introductions",
+          "personal-information",
+          "A1"
+        ],
+        "contentVersion": "1.1.0",
+        "source": "HODIE-curated"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "greeting",
+            "label": "uses a greeting",
+            "type": "content-point"
+          },
+          {
+            "id": "name",
+            "label": "states their name",
+            "type": "content-point"
+          },
+          {
+            "id": "question",
+            "label": "asks or answers a simple personal question",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "greetings",
+        "introductions",
+        "personal-information"
+      ]
+    },
+    {
+      "id": "ACT-A1-SPEAKING-CORE-01",
+      "canDoId": "SP-A1-01",
+      "activityType": "guided-production",
+      "level": "A1",
+      "skill": "speaking",
+      "context": "social",
+      "title": "Communicate a familiar experience",
+      "titleEs": "Comunica una experiencia conocida",
+      "objective": "Produce a connected spoken response suited to the level.",
+      "objectiveEs": "Produce una respuesta oral conectada y adecuada al nivel.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Introduce yourself in three sentences. Say: your name, where you live, and one thing you like. You may start: “My name is… I live in… I like…”",
+      "taskEs": "Preséntate en tres frases. Di tu nombre, dónde vives y algo que te gusta. Puedes empezar: «My name is… I live in… I like…»",
+      "support": {
+        "optionalSentenceStarters": [
+          "I think...",
+          "For example...",
+          "Because..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "grammar": 0.75,
+          "fluency": 0.75,
+          "vocabulary": 0.75,
+          "pronunciation": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "speaking",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-idea",
+            "label": "communicates the main idea",
+            "type": "content-point"
+          },
+          {
+            "id": "supporting-detail",
+            "label": "includes a relevant detail",
+            "type": "content-point"
+          },
+          {
+            "id": "language-resource",
+            "label": "uses a level-appropriate phrase or connector",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "speaking",
+        "a1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A1-LISTENING-CORE-01",
+      "canDoId": "LI-A1-01",
+      "activityType": "listening-comprehension",
+      "level": "A1",
+      "skill": "listening",
+      "context": "daily-life",
+      "title": "Listen for key information",
+      "titleEs": "Escucha para identificar información clave",
+      "objective": "Identify the main point and relevant details in spoken English.",
+      "objectiveEs": "Identifica la idea principal y detalles relevantes en inglés hablado.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Listen to this short message: “Hello, I'm Ana. I live in Bogotá. I take the bus to school.” Answer: What is her name? Where does she live?",
+      "taskEs": "Escucha este mensaje breve: «Hello, I'm Ana. I live in Bogotá. I take the bus to school». Responde: ¿Cómo se llama? ¿Dónde vive?",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "gist": 0.75,
+          "details": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "listening",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "audio-script"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-point",
+            "label": "identifies the main point",
+            "type": "content-point"
+          },
+          {
+            "id": "detail",
+            "label": "identifies one accurate detail",
+            "type": "content-point"
+          },
+          {
+            "id": "intention",
+            "label": "identifies the speaker's basic intention",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "listening",
+        "a1",
+        "cefr-informed"
+      ],
+      "audioText": "“Hello, I'm Ana. I live in Bogotá. I take the bus to school.” Answer: What is her name? Where does she live?",
+      "audioLanguage": "en-US",
+      "audioPlayback": "speech-synthesis"
+    },
+    {
+      "id": "ACT-A1-READING-CORE-01",
+      "canDoId": "RE-A1-01",
+      "activityType": "reading-comprehension",
+      "level": "A1",
+      "skill": "reading",
+      "context": "daily-life",
+      "title": "Read for meaning and evidence",
+      "titleEs": "Lee para comprender y encontrar evidencia",
+      "objective": "Understand a level-appropriate text and select information supported by it.",
+      "objectiveEs": "Comprende un texto adecuado al nivel y selecciona información respaldada por él.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Read the note: “Hi Sam, the English class is in Room 4 at 9:00. Please bring your notebook. —Mia” Identify the room, time and one thing Sam should bring.",
+      "taskEs": "Lee la nota: «Hi Sam, the English class is in Room 4 at 9:00. Please bring your notebook. —Mia». Identifica el salón, la hora y algo que Sam debe llevar.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "gist": 0.75,
+          "details": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "reading",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "reading-text"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-idea",
+            "label": "identifies the main idea",
+            "type": "content-point"
+          },
+          {
+            "id": "text-evidence",
+            "label": "selects a detail supported by the text",
+            "type": "content-point"
+          },
+          {
+            "id": "meaning",
+            "label": "interprets a key phrase in context",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "reading",
+        "a1",
+        "cefr-informed"
+      ],
+      "readingText": "“Hi Sam, the English class is in Room 4 at 9:00. Please bring your notebook. —Mia” Identify the room, time and one thing Sam should bring."
+    },
+    {
+      "id": "ACT-A1-WRITING-CORE-01",
+      "canDoId": "WR-A1-01",
+      "activityType": "guided-production",
+      "level": "A1",
+      "skill": "writing",
+      "context": "social",
+      "title": "Write a purposeful message",
+      "titleEs": "Escribe un mensaje con propósito",
+      "objective": "Write a clear text with a purpose, relevant details and appropriate language.",
+      "objectiveEs": "Escribe un texto claro con propósito, detalles pertinentes y lenguaje adecuado.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Write a message of 3–4 short sentences to a new classmate. Include a greeting, your name, where you live and one interest.",
+      "taskEs": "Escribe un mensaje de 3–4 frases cortas para un nuevo compañero. Incluye saludo, nombre, dónde vives y un interés.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I think...",
+          "For example...",
+          "Because..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "accuracy": 0.75,
+          "coherence": 0.75,
+          "clarity": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "writing",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "purpose",
+            "label": "makes the purpose clear",
+            "type": "content-point"
+          },
+          {
+            "id": "detail",
+            "label": "includes relevant details",
+            "type": "content-point"
+          },
+          {
+            "id": "cohesion",
+            "label": "connects ideas clearly",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "writing",
+        "a1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A1-GRAMMAR-CORE-01",
+      "canDoId": "GR-A1-01",
+      "activityType": "controlled-practice",
+      "level": "A1",
+      "skill": "grammar",
+      "context": "daily-life",
+      "title": "Choose and explain the structure",
+      "titleEs": "Elige y explica la estructura",
+      "objective": "Select a grammatical form that fits the meaning and context.",
+      "objectiveEs": "Selecciona una forma gramatical adecuada al significado y al contexto.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Choose the correct forms: “I ___ a student. My friends ___ at school. Ana ___ from Colombia.” Use am/is/are and explain one choice.",
+      "taskEs": "Elige las formas correctas: «I ___ a student. My friends ___ at school. Ana ___ from Colombia». Usa am/is/are y explica una elección.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "communicativeUse": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "grammar",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "form",
+            "label": "selects a suitable form",
+            "type": "language-resource"
+          },
+          {
+            "id": "meaning",
+            "label": "preserves the intended meaning",
+            "type": "content-point"
+          },
+          {
+            "id": "context",
+            "label": "uses the context clue",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "grammar",
+        "a1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A1-VOCABULARY-CORE-01",
+      "canDoId": "VO-A1-01",
+      "activityType": "controlled-practice",
+      "level": "A1",
+      "skill": "vocabulary",
+      "context": "daily-life",
+      "title": "Retrieve vocabulary in context",
+      "titleEs": "Recupera vocabulario en contexto",
+      "objective": "Choose and use words or collocations appropriate to the situation.",
+      "objectiveEs": "Elige y utiliza palabras o colocaciones adecuadas a la situación.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Sort these words into people, places and objects: teacher, station, umbrella, cousin, library, ticket. Then use two words in a sentence.",
+      "taskEs": "Clasifica estas palabras en personas, lugares y objetos: teacher, station, umbrella, cousin, library, ticket. Luego usa dos palabras en una frase.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "recall": 0.75,
+          "use": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "vocabulary",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "meaning",
+            "label": "chooses a word with the right meaning",
+            "type": "language-resource"
+          },
+          {
+            "id": "context",
+            "label": "matches the situation",
+            "type": "content-point"
+          },
+          {
+            "id": "collocation",
+            "label": "uses a natural word combination",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "vocabulary",
+        "a1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A1-PRONUNCIATION-CORE-01",
+      "canDoId": "PR-A1-01",
+      "activityType": "pronunciation",
+      "level": "A1",
+      "skill": "pronunciation",
+      "context": "daily-life",
+      "title": "Make the message intelligible",
+      "titleEs": "Haz comprensible el mensaje",
+      "objective": "Produce a short phrase with intelligible key words, stress and intonation.",
+      "objectiveEs": "Produce una frase breve con palabras clave, acento y entonación comprensibles.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Listen to and repeat: “Good morning. My name is Ana. Nice to meet you.” Repeat slowly, then at a natural speed. Focus on word stress and clear final sounds.",
+      "taskEs": "Escucha y repite: «Good morning. My name is Ana. Nice to meet you». Repite despacio y luego a velocidad natural. Concéntrate en el acento de palabra y los sonidos finales.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "intelligibility": 0.75,
+          "prosody": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "pronunciation",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "spoken-model"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "key-words",
+            "label": "makes key words intelligible",
+            "type": "content-point"
+          },
+          {
+            "id": "stress",
+            "label": "uses understandable stress",
+            "type": "language-resource"
+          },
+          {
+            "id": "phrase",
+            "label": "keeps the phrase clear and connected",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "pronunciation",
+        "a1",
+        "cefr-informed"
+      ],
+      "targetPhrase": "“Good morning. My name is Ana. Nice to meet you.” Repeat slowly, then at a natural speed. Focus on word stress and clear final sounds.",
+      "audioLanguage": "en-US"
+    },
+    {
+      "id": "ACT-A1-COMMUNICATION-CORE-01",
+      "canDoId": "CO-A1-01",
+      "activityType": "interaction",
+      "level": "A1",
+      "skill": "communication",
+      "context": "social",
+      "title": "Keep the exchange moving",
+      "titleEs": "Mantén el intercambio",
+      "objective": "Respond appropriately and help the interaction continue.",
+      "objectiveEs": "Responde de manera adecuada y ayuda a que la interacción continúe.",
+      "instructions": "Read or listen carefully, then answer in English using the support if needed.",
+      "instructionsEs": "Lee o escucha con atención y responde en inglés usando la ayuda si la necesitas.",
+      "task": "Role-play: meet a classmate for the first time. Greet them, ask their name, answer one question and say goodbye politely.",
+      "taskEs": "Juego de roles: conoce a un compañero por primera vez. Saluda, pregunta su nombre, responde una pregunta y despídete con cortesía.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "interaction": 0.75,
+          "repair": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 3
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 4,
+        "tags": [
+          "cefr-informed",
+          "a1",
+          "communication",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "response",
+            "label": "responds to the other person",
+            "type": "content-point"
+          },
+          {
+            "id": "interaction",
+            "label": "uses a suitable interaction phrase",
+            "type": "language-resource"
+          },
+          {
+            "id": "continuation",
+            "label": "keeps the exchange moving",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 8,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "communication",
+        "a1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A2-SPEAKING-CORE-01",
+      "canDoId": "SP-A2-01",
+      "activityType": "guided-production",
+      "level": "A2",
+      "skill": "speaking",
+      "context": "social",
+      "title": "Communicate a familiar experience",
+      "titleEs": "Comunica una experiencia conocida",
+      "objective": "Produce a connected spoken response suited to the level.",
+      "objectiveEs": "Produce una respuesta oral conectada y adecuada al nivel.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Describe a recent weekend activity. Say where you went, what you did and what you enjoyed. Use at least one past verb and one reason with because.",
+      "taskEs": "Describe una actividad reciente del fin de semana. Di adónde fuiste, qué hiciste y qué disfrutaste. Usa un verbo en pasado y una razón con because.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I think...",
+          "For example...",
+          "Because..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "grammar": 0.75,
+          "fluency": 0.75,
+          "vocabulary": 0.75,
+          "pronunciation": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "speaking",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-idea",
+            "label": "communicates the main idea",
+            "type": "content-point"
+          },
+          {
+            "id": "supporting-detail",
+            "label": "includes a relevant detail",
+            "type": "content-point"
+          },
+          {
+            "id": "language-resource",
+            "label": "uses a level-appropriate phrase or connector",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "speaking",
+        "a2",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A2-LISTENING-CORE-01",
+      "canDoId": "LI-A2-01",
+      "activityType": "listening-comprehension",
+      "level": "A2",
+      "skill": "listening",
+      "context": "daily-life",
+      "title": "Listen for key information",
+      "titleEs": "Escucha para identificar información clave",
+      "objective": "Identify the main point and relevant details in spoken English.",
+      "objectiveEs": "Identifica la idea principal y detalles relevantes en inglés hablado.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Listen to the conversation: “I booked the museum for Saturday, but the tour starts at 10:30, not 10:00. We should meet outside at 10:15.” Answer: What time does the tour start? Where should they meet?",
+      "taskEs": "Escucha: «I booked the museum for Saturday, but the tour starts at 10:30, not 10:00. We should meet outside at 10:15». Responde: ¿A qué hora empieza el recorrido? ¿Dónde deben encontrarse?",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "gist": 0.75,
+          "details": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "listening",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "audio-script"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-point",
+            "label": "identifies the main point",
+            "type": "content-point"
+          },
+          {
+            "id": "detail",
+            "label": "identifies one accurate detail",
+            "type": "content-point"
+          },
+          {
+            "id": "intention",
+            "label": "identifies the speaker's basic intention",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "listening",
+        "a2",
+        "cefr-informed"
+      ],
+      "audioText": "Listen to the conversation: “I booked the museum for Saturday, but the tour starts at 10:30, not 10:00. We should meet outside at 10:15.” Answer: What time does the tour start? Where should they meet?",
+      "audioLanguage": "en-US",
+      "audioPlayback": "speech-synthesis"
+    },
+    {
+      "id": "ACT-A2-READING-CORE-01",
+      "canDoId": "RE-A2-01",
+      "activityType": "reading-comprehension",
+      "level": "A2",
+      "skill": "reading",
+      "context": "daily-life",
+      "title": "Read for meaning and evidence",
+      "titleEs": "Lee para comprender y encontrar evidencia",
+      "objective": "Understand a level-appropriate text and select information supported by it.",
+      "objectiveEs": "Comprende un texto adecuado al nivel y selecciona información respaldada por él.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Read the email: “Hi Jo, the meeting has moved to Thursday at 3 p.m. Please read the attached notes before we meet. If you can't come, let me know by Wednesday. —Ravi” Identify the change, the preparation and the deadline.",
+      "taskEs": "Lee el correo: «Hi Jo, the meeting has moved to Thursday at 3 p.m. Please read the attached notes before we meet. If you can't come, let me know by Wednesday. —Ravi». Identifica el cambio, la preparación y el plazo.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "gist": 0.75,
+          "details": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "reading",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "reading-text"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-idea",
+            "label": "identifies the main idea",
+            "type": "content-point"
+          },
+          {
+            "id": "text-evidence",
+            "label": "selects a detail supported by the text",
+            "type": "content-point"
+          },
+          {
+            "id": "meaning",
+            "label": "interprets a key phrase in context",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "reading",
+        "a2",
+        "cefr-informed"
+      ],
+      "readingText": "“Hi Jo, the meeting has moved to Thursday at 3 p.m. Please read the attached notes before we meet. If you can't come, let me know by Wednesday. —Ravi” Identify the change, the preparation and the deadline."
+    },
+    {
+      "id": "ACT-A2-WRITING-CORE-01",
+      "canDoId": "WR-A2-01",
+      "activityType": "guided-production",
+      "level": "A2",
+      "skill": "writing",
+      "context": "social",
+      "title": "Write a purposeful message",
+      "titleEs": "Escribe un mensaje con propósito",
+      "objective": "Write a clear text with a purpose, relevant details and appropriate language.",
+      "objectiveEs": "Escribe un texto claro con propósito, detalles pertinentes y lenguaje adecuado.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Write a 70–90 word message asking to change an appointment. Explain why, suggest a new day or time and close politely. Use could or would.",
+      "taskEs": "Escribe un mensaje de 70–90 palabras para cambiar una cita. Explica por qué, propone otro día u hora y cierra con cortesía. Usa could o would.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I think...",
+          "For example...",
+          "Because..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "accuracy": 0.75,
+          "coherence": 0.75,
+          "clarity": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "writing",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "purpose",
+            "label": "makes the purpose clear",
+            "type": "content-point"
+          },
+          {
+            "id": "detail",
+            "label": "includes relevant details",
+            "type": "content-point"
+          },
+          {
+            "id": "cohesion",
+            "label": "connects ideas clearly",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "writing",
+        "a2",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A2-GRAMMAR-CORE-01",
+      "canDoId": "GR-A2-01",
+      "activityType": "controlled-practice",
+      "level": "A2",
+      "skill": "grammar",
+      "context": "daily-life",
+      "title": "Choose and explain the structure",
+      "titleEs": "Elige y explica la estructura",
+      "objective": "Select a grammatical form that fits the meaning and context.",
+      "objectiveEs": "Selecciona una forma gramatical adecuada al significado y al contexto.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Complete and explain: “I ___ (visit) my aunt yesterday. We ___ (not / see) that film yet. If it rains tomorrow, we ___ (stay) home.” Choose forms that match the time and meaning.",
+      "taskEs": "Completa y explica: «I ___ (visit) my aunt yesterday. We ___ (not / see) that film yet. If it rains tomorrow, we ___ (stay) home». Elige formas acordes con el tiempo y el significado.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "communicativeUse": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "grammar",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "form",
+            "label": "selects a suitable form",
+            "type": "language-resource"
+          },
+          {
+            "id": "meaning",
+            "label": "preserves the intended meaning",
+            "type": "content-point"
+          },
+          {
+            "id": "context",
+            "label": "uses the context clue",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "grammar",
+        "a2",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A2-VOCABULARY-CORE-01",
+      "canDoId": "VO-A2-01",
+      "activityType": "controlled-practice",
+      "level": "A2",
+      "skill": "vocabulary",
+      "context": "daily-life",
+      "title": "Retrieve vocabulary in context",
+      "titleEs": "Recupera vocabulario en contexto",
+      "objective": "Choose and use words or collocations appropriate to the situation.",
+      "objectiveEs": "Elige y utiliza palabras o colocaciones adecuadas a la situación.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Choose and use the collocations: make a decision, catch a bus, look after a child, miss an appointment. Match each phrase to a short everyday situation and write one original sentence.",
+      "taskEs": "Elige y usa las colocaciones: make a decision, catch a bus, look after a child, miss an appointment. Relaciona cada expresión con una situación cotidiana y escribe una frase propia.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "recall": 0.75,
+          "use": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "vocabulary",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "meaning",
+            "label": "chooses a word with the right meaning",
+            "type": "language-resource"
+          },
+          {
+            "id": "context",
+            "label": "matches the situation",
+            "type": "content-point"
+          },
+          {
+            "id": "collocation",
+            "label": "uses a natural word combination",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "vocabulary",
+        "a2",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-A2-PRONUNCIATION-CORE-01",
+      "canDoId": "PR-A2-01",
+      "activityType": "pronunciation",
+      "level": "A2",
+      "skill": "pronunciation",
+      "context": "daily-life",
+      "title": "Make the message intelligible",
+      "titleEs": "Haz comprensible el mensaje",
+      "objective": "Produce a short phrase with intelligible key words, stress and intonation.",
+      "objectiveEs": "Produce una frase breve con palabras clave, acento y entonación comprensibles.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Repeat: “Could you tell me whether the next train stops at Central Station?” First practise in chunks, then say the whole question. Focus on linking, sentence stress and clear question intonation.",
+      "taskEs": "Repite: «Could you tell me whether the next train stops at Central Station?». Practica por bloques y luego di toda la pregunta. Concéntrate en enlaces, acento oracional y entonación.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "intelligibility": 0.75,
+          "prosody": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "pronunciation",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "spoken-model"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "key-words",
+            "label": "makes key words intelligible",
+            "type": "content-point"
+          },
+          {
+            "id": "stress",
+            "label": "uses understandable stress",
+            "type": "language-resource"
+          },
+          {
+            "id": "phrase",
+            "label": "keeps the phrase clear and connected",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "pronunciation",
+        "a2",
+        "cefr-informed"
+      ],
+      "targetPhrase": "“Could you tell me whether the next train stops at Central Station?” First practise in chunks, then say the whole question. Focus on linking, sentence stress and clear question intonation.",
+      "audioLanguage": "en-US"
+    },
+    {
+      "id": "ACT-A2-COMMUNICATION-CORE-01",
+      "canDoId": "CO-A2-01",
+      "activityType": "interaction",
+      "level": "A2",
+      "skill": "communication",
+      "context": "social",
+      "title": "Keep the exchange moving",
+      "titleEs": "Mantén el intercambio",
+      "objective": "Respond appropriately and help the interaction continue.",
+      "objectiveEs": "Responde de manera adecuada y ayuda a que la interacción continúe.",
+      "instructions": "Complete the task, then check the feedback and retry if needed.",
+      "instructionsEs": "Completa la tarea, revisa la retroalimentación e inténtalo de nuevo si hace falta.",
+      "task": "Role-play a service problem: explain that the item you received is the wrong colour, ask for a replacement politely, listen to the response and agree on the next step.",
+      "taskEs": "Juego de roles sobre un problema de servicio: explica que recibiste un artículo de otro color, pide un cambio con cortesía, escucha la respuesta y acuerda el siguiente paso.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "interaction": 0.75,
+          "repair": 0.75
+        },
+        "independent": false,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 6,
+        "tags": [
+          "cefr-informed",
+          "a2",
+          "communication",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "response",
+            "label": "responds to the other person",
+            "type": "content-point"
+          },
+          {
+            "id": "interaction",
+            "label": "uses a suitable interaction phrase",
+            "type": "language-resource"
+          },
+          {
+            "id": "continuation",
+            "label": "keeps the exchange moving",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 15,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "communication",
+        "a2",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-B1-SPEAKING-CORE-01",
+      "canDoId": "SP-B1-01",
+      "activityType": "guided-production",
+      "level": "B1",
+      "skill": "speaking",
+      "context": "social",
+      "title": "Communicate a familiar experience",
+      "titleEs": "Comunica una experiencia conocida",
+      "objective": "Produce a connected spoken response suited to the level.",
+      "objectiveEs": "Produce una respuesta oral conectada y adecuada al nivel.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Give a 1–2 minute account of a change at work, school or in your community. Explain the background, two effects and your opinion; use first, however and as a result.",
+      "taskEs": "Habla durante 1–2 minutos sobre un cambio en el trabajo, el colegio o tu comunidad. Explica el contexto, dos efectos y tu opinión; usa first, however y as a result.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I think...",
+          "For example...",
+          "Because..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "grammar": 0.75,
+          "fluency": 0.75,
+          "vocabulary": 0.75,
+          "pronunciation": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "speaking",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-idea",
+            "label": "communicates the main idea",
+            "type": "content-point"
+          },
+          {
+            "id": "supporting-detail",
+            "label": "includes a relevant detail",
+            "type": "content-point"
+          },
+          {
+            "id": "language-resource",
+            "label": "uses a level-appropriate phrase or connector",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "speaking",
+        "b1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-B1-LISTENING-CORE-01",
+      "canDoId": "LI-B1-01",
+      "activityType": "listening-comprehension",
+      "level": "B1",
+      "skill": "listening",
+      "context": "daily-life",
+      "title": "Listen for key information",
+      "titleEs": "Escucha para identificar información clave",
+      "objective": "Identify the main point and relevant details in spoken English.",
+      "objectiveEs": "Identifica la idea principal y detalles relevantes en inglés hablado.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Listen to the discussion: “Marta said the proposal could reduce travel time, but she was concerned about the cost. David agreed about the benefit and suggested a four-week trial before a final decision.” Identify each speaker's position, the concern and the suggested next step.",
+      "taskEs": "Escucha el diálogo: «Marta said the proposal could reduce travel time, but she was concerned about the cost. David agreed about the benefit and suggested a four-week trial before a final decision». Identifica la postura de cada hablante, la preocupación y el siguiente paso propuesto.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "gist": 0.75,
+          "details": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "listening",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "audio-script"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-point",
+            "label": "identifies the main point",
+            "type": "content-point"
+          },
+          {
+            "id": "detail",
+            "label": "identifies one accurate detail",
+            "type": "content-point"
+          },
+          {
+            "id": "intention",
+            "label": "identifies the speaker's basic intention",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "listening",
+        "b1",
+        "cefr-informed"
+      ],
+      "audioText": "Listen to the discussion: “Marta said the proposal could reduce travel time, but she was concerned about the cost. David agreed about the benefit and suggested a four-week trial before a final decision.” Identify each speaker's position, the concern and the suggested next step.",
+      "audioLanguage": "en-US",
+      "audioPlayback": "speech-synthesis"
+    },
+    {
+      "id": "ACT-B1-READING-CORE-01",
+      "canDoId": "RE-B1-01",
+      "activityType": "reading-comprehension",
+      "level": "B1",
+      "skill": "reading",
+      "context": "daily-life",
+      "title": "Read for meaning and evidence",
+      "titleEs": "Lee para comprender y encontrar evidencia",
+      "objective": "Understand a level-appropriate text and select information supported by it.",
+      "objectiveEs": "Comprende un texto adecuado al nivel y selecciona información respaldada por él.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Read the report: “The pilot reduced average waiting time by 12 minutes in two departments. Staff feedback was mostly positive, although weekend coverage remained uneven. The team recommends extending the trial for one month and collecting data from all shifts.” State the main finding, the limitation and the recommendation.",
+      "taskEs": "Lee el informe: «The pilot reduced average waiting time by 12 minutes in two departments. Staff feedback was mostly positive, although weekend coverage remained uneven. The team recommends extending the trial for one month and collecting data from all shifts». Expón el hallazgo principal, la limitación y la recomendación.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "gist": 0.75,
+          "details": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "reading",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "reading-text"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "main-idea",
+            "label": "identifies the main idea",
+            "type": "content-point"
+          },
+          {
+            "id": "text-evidence",
+            "label": "selects a detail supported by the text",
+            "type": "content-point"
+          },
+          {
+            "id": "meaning",
+            "label": "interprets a key phrase in context",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "reading",
+        "b1",
+        "cefr-informed"
+      ],
+      "readingText": "“The pilot reduced average waiting time by 12 minutes in two departments. Staff feedback was mostly positive, although weekend coverage remained uneven. The team recommends extending the trial for one month and collecting data from all shifts.” State the main finding, the limitation and the recommendation."
+    },
+    {
+      "id": "ACT-B1-WRITING-CORE-01",
+      "canDoId": "WR-B1-01",
+      "activityType": "guided-production",
+      "level": "B1",
+      "skill": "writing",
+      "context": "social",
+      "title": "Write a purposeful message",
+      "titleEs": "Escribe un mensaje con propósito",
+      "objective": "Write a clear text with a purpose, relevant details and appropriate language.",
+      "objectiveEs": "Escribe un texto claro con propósito, detalles pertinentes y lenguaje adecuado.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Write a 150–180 word email or short report explaining a problem, comparing two possible solutions, recommending one and acknowledging a limitation. Organise the text with clear paragraphs and connectors.",
+      "taskEs": "Escribe un correo o informe breve de 150–180 palabras: explica un problema, compara dos soluciones, recomienda una y reconoce una limitación. Organiza el texto en párrafos claros con conectores.",
+      "support": {
+        "optionalSentenceStarters": [
+          "I think...",
+          "For example...",
+          "Because..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "accuracy": 0.75,
+          "coherence": 0.75,
+          "clarity": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "writing",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "purpose",
+            "label": "makes the purpose clear",
+            "type": "content-point"
+          },
+          {
+            "id": "detail",
+            "label": "includes relevant details",
+            "type": "content-point"
+          },
+          {
+            "id": "cohesion",
+            "label": "connects ideas clearly",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "writing",
+        "b1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-B1-GRAMMAR-CORE-01",
+      "canDoId": "GR-B1-01",
+      "activityType": "controlled-practice",
+      "level": "B1",
+      "skill": "grammar",
+      "context": "daily-life",
+      "title": "Choose and explain the structure",
+      "titleEs": "Elige y explica la estructura",
+      "objective": "Select a grammatical form that fits the meaning and context.",
+      "objectiveEs": "Selecciona una forma gramatical adecuada al significado y al contexto.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Choose the best form and justify the meaning: “If the supplier ___ (deliver) today, we ___ (finish) on time. The results ___ (check) every Friday. She asked me where I ___ (work).”",
+      "taskEs": "Elige la mejor forma y justifica el significado: «If the supplier ___ (deliver) today, we ___ (finish) on time. The results ___ (check) every Friday. She asked me where I ___ (work)».",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "accuracy": 0.75,
+          "communicativeUse": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "grammar",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "form",
+            "label": "selects a suitable form",
+            "type": "language-resource"
+          },
+          {
+            "id": "meaning",
+            "label": "preserves the intended meaning",
+            "type": "content-point"
+          },
+          {
+            "id": "context",
+            "label": "uses the context clue",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "grammar",
+        "b1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-B1-VOCABULARY-CORE-01",
+      "canDoId": "VO-B1-01",
+      "activityType": "controlled-practice",
+      "level": "B1",
+      "skill": "vocabulary",
+      "context": "daily-life",
+      "title": "Retrieve vocabulary in context",
+      "titleEs": "Recupera vocabulario en contexto",
+      "objective": "Choose and use words or collocations appropriate to the situation.",
+      "objectiveEs": "Elige y utiliza palabras o colocaciones adecuadas a la situación.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Rewrite the vague phrases with precise collocations: “do a decision”, “big problem”, “say an opinion”, “make a research”. Then write a short paragraph using three natural replacements.",
+      "taskEs": "Reescribe las expresiones imprecisas con colocaciones naturales: «do a decision», «big problem», «say an opinion», «make a research». Después escribe un párrafo breve usando tres reemplazos naturales.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "recall": 0.75,
+          "use": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "vocabulary",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "meaning",
+            "label": "chooses a word with the right meaning",
+            "type": "language-resource"
+          },
+          {
+            "id": "context",
+            "label": "matches the situation",
+            "type": "content-point"
+          },
+          {
+            "id": "collocation",
+            "label": "uses a natural word combination",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "vocabulary",
+        "b1",
+        "cefr-informed"
+      ]
+    },
+    {
+      "id": "ACT-B1-PRONUNCIATION-CORE-01",
+      "canDoId": "PR-B1-01",
+      "activityType": "pronunciation",
+      "level": "B1",
+      "skill": "pronunciation",
+      "context": "daily-life",
+      "title": "Make the message intelligible",
+      "titleEs": "Haz comprensible el mensaje",
+      "objective": "Produce a short phrase with intelligible key words, stress and intonation.",
+      "objectiveEs": "Produce una frase breve con palabras clave, acento y entonación comprensibles.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Deliver this connected sentence: “Although the first attempt failed, we reviewed the evidence and agreed on a more practical solution.” Focus on contrastive stress, chunking and a clear final intonation.",
+      "taskEs": "Di esta frase conectada: «Although the first attempt failed, we reviewed the evidence and agreed on a more practical solution». Concéntrate en el acento contrastivo, los bloques y una entonación final clara.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "intelligibility": 0.75,
+          "prosody": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "pronunciation",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "spoken-model"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "key-words",
+            "label": "makes key words intelligible",
+            "type": "content-point"
+          },
+          {
+            "id": "stress",
+            "label": "uses understandable stress",
+            "type": "language-resource"
+          },
+          {
+            "id": "phrase",
+            "label": "keeps the phrase clear and connected",
+            "type": "language-resource"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "pronunciation",
+        "b1",
+        "cefr-informed"
+      ],
+      "targetPhrase": "“Although the first attempt failed, we reviewed the evidence and agreed on a more practical solution.” Focus on contrastive stress, chunking and a clear final intonation.",
+      "audioLanguage": "en-US"
+    },
+    {
+      "id": "ACT-B1-COMMUNICATION-CORE-01",
+      "canDoId": "CO-B1-01",
+      "activityType": "interaction",
+      "level": "B1",
+      "skill": "communication",
+      "context": "social",
+      "title": "Keep the exchange moving",
+      "titleEs": "Mantén el intercambio",
+      "objective": "Respond appropriately and help the interaction continue.",
+      "objectiveEs": "Responde de manera adecuada y ayuda a que la interacción continúe.",
+      "instructions": "Complete the task independently, justify your choice and review any feedback.",
+      "instructionsEs": "Completa la tarea de forma independiente, justifica tu elección y revisa la retroalimentación.",
+      "task": "Simulate a project meeting. Summarise another person's concern, disagree politely with one point, ask a follow-up question and propose an action the group can agree on.",
+      "taskEs": "Simula una reunión de proyecto. Resume la preocupación de otra persona, discrepa con cortesía de un punto, haz una pregunta de seguimiento y propone una acción acordable.",
+      "support": {
+        "optionalSentenceStarters": [
+          "The main idea is...",
+          "The speaker says...",
+          "The text explains..."
+        ]
+      },
+      "evidence": {
+        "dimensions": {
+          "taskCompletion": 0.75,
+          "interaction": 0.75,
+          "repair": 0.75
+        },
+        "independent": true,
+        "confidenceRequiredForMastery": 4
+      },
+      "feedback": {
+        "languages": [
+          "en",
+          "es"
+        ],
+        "maxPriorityCorrections": 2
+      },
+      "retry": {
+        "requiredAfterPriorityError": true,
+        "preserveOriginalTask": true
+      },
+      "metadata": {
+        "durationMinutes": 8,
+        "tags": [
+          "cefr-informed",
+          "b1",
+          "communication",
+          "transferable-contexts",
+          "task-specific-stimulus",
+          "cefr-informed"
+        ],
+        "stimulusType": "task-brief"
+      },
+      "evaluation": {
+        "observable": true,
+        "criteria": [
+          {
+            "id": "response",
+            "label": "responds to the other person",
+            "type": "content-point"
+          },
+          {
+            "id": "interaction",
+            "label": "uses a suitable interaction phrase",
+            "type": "language-resource"
+          },
+          {
+            "id": "continuation",
+            "label": "keeps the exchange moving",
+            "type": "content-point"
+          }
+        ],
+        "minimumCriteria": 2,
+        "minimumResponseCharacters": 25,
+        "errorMapping": "structured-error-model-v1"
+      },
+      "reviewTargets": [
+        "communication",
+        "b1",
+        "cefr-informed"
+      ]
+    }
+  ]
+}
