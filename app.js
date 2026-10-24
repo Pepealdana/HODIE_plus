@@ -659,51 +659,43 @@ function applyConversationFirstHome(level, targetActivity, statement) {
     if (summary) summary.textContent = isBeginner ? "Focus en una habilidad o recurso" : "Focus on a skill or resource";
   }
 
-  // Delegate this action from document so it survives home-section re-renders.
-  if (!document.documentElement.dataset.reportedSpeechShortcutBound) {
-    document.documentElement.dataset.reportedSpeechShortcutBound = "true";
-    document.addEventListener("click", (event) => {
-      const button = event.target instanceof Element ? event.target.closest("#reportedSpeechShortcut") : null;
-      if (!button) return;
-      event.preventDefault();
+  const reportedSpeechButton = home.querySelector("#reportedSpeechShortcut");
+  reportedSpeechButton?.addEventListener("click", (event) => {
+    event.preventDefault();
+    reportedSpeechButton.disabled = true;
+    const originalLabel = reportedSpeechButton.textContent;
+    reportedSpeechButton.textContent = isBeginner ? "Abriendo actividad…" : "Opening activity…";
 
-      const requestedLevel = document.querySelector(".level-option.is-selected")?.dataset.homeLevel || level || "A2";
+    try {
+      const selectedLevel = document.querySelector(".level-option.is-selected")?.dataset.homeLevel;
+      const requestedLevel = selectedLevel || level || "A2";
       const topicMatch = (activity) => {
         const searchable = [
           activity.id, activity.title, activity.titleEs, activity.prompt, activity.promptEs,
           ...(activity.tags || []), ...(activity.reviewTargets || []), ...(activity.relatedCanDoIds || [])
         ].filter(Boolean).join(" ").toLowerCase();
-        return /reported[- ]speech|estilo indirecto/.test(searchable);
+        return /reported[- ]speech|reported speech|estilo indirecto/.test(searchable);
       };
-      const activity = microLibrary.activities.find((item) =>
-        item.level === requestedLevel && topicMatch(item) &&
-        (item.level !== "B2" || isB2Unlocked())
-      ) || microLibrary.activities.find((item) =>
-        item.level === "A2" && topicMatch(item)
+      const candidates = microLibrary.activities.filter((item) =>
+        topicMatch(item) && (item.level !== "B2" || isB2Unlocked())
       );
+      const activity = candidates.find((item) => item.level === requestedLevel)
+        || candidates.find((item) => item.level === "A2")
+        || candidates[0];
 
-      if (activity) {
-        const mode = activity.skill || getActivitySkill(activity) || "grammar";
-        try {
-          startPractice(mode, activity.id);
-        } catch (error) {
-          renderError(error);
-        }
-        return;
+      if (!activity) {
+        throw new Error("No se encontró ninguna actividad de Reported Speech en la biblioteca.");
       }
 
-      const catalogSection = document.querySelector("#activityCatalog");
-      const levelFilter = document.querySelector("#catalogLevel");
-      const skillFilter = document.querySelector("#catalogSkill");
-      const searchFilter = document.querySelector("#catalogSearch");
-      if (levelFilter) levelFilter.value = requestedLevel;
-      if (skillFilter) skillFilter.value = "all";
-      if (searchFilter) searchFilter.value = "reported speech";
-      renderActivityCatalog();
-      catalogSection?.scrollIntoView({ behavior: "smooth", block: "start" });
-      window.alert("No Reported Speech activity is available at this level yet. The filtered catalogue is open.");
-    });
-  }
+      const mode = activity.skill || getActivitySkill(activity) || "grammar";
+      startPractice(mode, activity.id);
+    } catch (error) {
+      console.error("Reported Speech shortcut failed:", error);
+      reportedSpeechButton.disabled = false;
+      reportedSpeechButton.textContent = originalLabel;
+      window.alert("No se pudo abrir la actividad. " + (error?.message || "Revisa la conexión y vuelve a intentarlo."));
+    }
+  });
 
   const catalog = home.querySelector("#activityCatalog");
   if (catalog) {
