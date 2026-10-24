@@ -14076,6 +14076,693 @@
         "She told that the meeting was moved.",
         "She said me that the meeting was moved."
       ]
+    },
+    {
+      "id": "MIC-RS-A2-09",
+      "canDoId": "RS-A2-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "level": "A2",
+      "context": "daily-life",
+      "title": "Report a simple statement",
+      "titleEs": "Comunica una afirmación sencilla",
+      "prompt": "Tom said, “I live near the school.” Tom said that he ___ near the school.",
+      "promptEs": "Tom dijo: «Vivo cerca del colegio». Tom dijo que ___ cerca del colegio.",
+      "options": [
+        "lived",
+        "lives he",
+        "is live"
+      ],
+      "answer": "lived",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "statements",
+        "backshift"
+      ],
+      "feedback": {
+        "correct": "Lived is the usual backshift after said in this past reporting frame.",
+        "correctEs": "Lived es el cambio habitual después de said en este marco pasado.",
+        "incorrect": "Use subject + past verb: he lived. Do not use question word order.",
+        "incorrectEs": "Usa sujeto + verbo en pasado: he lived. No uses el orden de pregunta."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A2-10",
+      "canDoId": "RS-A2-GRAM",
+      "type": "complete",
+      "skill": "grammar",
+      "level": "A2",
+      "context": "school",
+      "title": "Report what someone wants",
+      "titleEs": "Comunica lo que alguien quiere",
+      "prompt": "“I want a new notebook,” Ana said. Ana said that she ___ a new notebook.",
+      "promptEs": "«Quiero un cuaderno nuevo», dijo Ana. Ana dijo que ___ un cuaderno nuevo.",
+      "answer": "wanted",
+      "acceptableAnswers": [
+        "wanted"
+      ],
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "statements",
+        "tense"
+      ],
+      "feedback": {
+        "correct": "Wanted is the expected past form of want in this reported statement.",
+        "correctEs": "Wanted es la forma pasada esperada de want en esta afirmación indirecta.",
+        "incorrect": "Change want to wanted in this exercise.",
+        "incorrectEs": "Cambia want por wanted en este ejercicio."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A2-11",
+      "canDoId": "RS-A2-READ",
+      "type": "choose",
+      "skill": "reading",
+      "level": "A2",
+      "context": "school",
+      "title": "Read a reported message",
+      "titleEs": "Lee un mensaje comunicado",
+      "prompt": "Notice on the door: “The library closes at four today.” Which report matches the notice?",
+      "promptEs": "Aviso en la puerta: «La biblioteca cierra a las cuatro hoy». ¿Qué reporte coincide con el aviso?",
+      "options": [
+        "The notice says that the library closes at four today.",
+        "The notice asks who closes the library.",
+        "The notice says the library closed at six yesterday."
+      ],
+      "answer": "The notice says that the library closes at four today.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "reading-comprehension",
+        "present-reporting"
+      ],
+      "resources": [
+        "reading",
+        "communication"
+      ],
+      "feedback": {
+        "correct": "Says reports the current notice; the sentence keeps the time and day unchanged.",
+        "correctEs": "Says comunica el aviso actual; la oración conserva la hora y el día.",
+        "incorrect": "The notice is current, so report its exact time rather than inventing a past time.",
+        "incorrectEs": "El aviso es actual; comunica la hora exacta sin inventar un momento pasado."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A2-12",
+      "canDoId": "RS-A2-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "level": "A2",
+      "context": "daily-life",
+      "title": "Listen and pass on a plan",
+      "titleEs": "Escucha y transmite un plan",
+      "prompt": "Listen to the short message and choose the matching report.",
+      "promptEs": "Escucha el mensaje breve y elige el reporte correspondiente.",
+      "audioText": "Sara said, 'I will call you after class.'",
+      "options": [
+        "Sara said she would call me after class.",
+        "Sara said she called me before class.",
+        "Sara asked me to call the class."
+      ],
+      "answer": "Sara said she would call me after class.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "listening-comprehension",
+        "future-in-the-past"
+      ],
+      "resources": [
+        "listening",
+        "grammar",
+        "communication"
+      ],
+      "feedback": {
+        "correct": "Would call reports the future plan after a past reporting verb in this exercise.",
+        "correctEs": "Would call comunica el plan futuro después de un verbo de reporte en pasado en este ejercicio.",
+        "incorrect": "Listen for who will call and when. The call is planned after class, not before it.",
+        "incorrectEs": "Escucha quién llamará y cuándo. La llamada está prevista después de clase, no antes."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A2-13",
+      "canDoId": "RS-A2-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "level": "A2",
+      "context": "school",
+      "title": "Memory challenge: remember a classroom message",
+      "titleEs": "Reto de memoria: recuerda un mensaje del aula",
+      "prompt": "Listen, remember the two details, then choose the report.",
+      "promptEs": "Escucha, recuerda los dos detalles y elige el reporte.",
+      "audioText": "The teacher said, 'Bring your notebook tomorrow.'",
+      "options": [
+        "The teacher said to bring our notebooks the next day.",
+        "The teacher said we had brought notebooks yesterday.",
+        "The teacher asked us where the notebooks were."
+      ],
+      "answer": "The teacher said to bring our notebooks the next day.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "listening",
+        "memory",
+        "requests"
+      ],
+      "resources": [
+        "listening",
+        "communication"
+      ],
+      "gameMode": "memory-recall",
+      "memoryText": "The teacher said to bring a notebook tomorrow.",
+      "feedback": {
+        "correct": "The report keeps the requested item and changes tomorrow to the next day in the past reporting frame.",
+        "correctEs": "El reporte conserva el objeto solicitado y cambia tomorrow por the next day en el marco pasado.",
+        "incorrect": "Remember the item and the time reference: notebook, tomorrow.",
+        "incorrectEs": "Recuerda el objeto y la referencia temporal: notebook, tomorrow."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A2-14",
+      "canDoId": "RS-A2-SPEAK",
+      "type": "speak",
+      "skill": "speaking",
+      "level": "A2",
+      "context": "school",
+      "title": "Say what your classmate said",
+      "titleEs": "Di lo que dijo tu compañero",
+      "prompt": "Listen to the model and repeat the reported message.",
+      "promptEs": "Escucha el modelo y repite el mensaje comunicado.",
+      "targetPhrase": "He said that he was busy.",
+      "requiredTokens": [
+        "said",
+        "busy"
+      ],
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "speaking",
+        "short-report"
+      ],
+      "resources": [
+        "speaking",
+        "pronunciation",
+        "grammar"
+      ],
+      "feedback": {
+        "correct": "The key reporting words are present. This check uses the speech transcript and does not fully assess pronunciation.",
+        "correctEs": "Están presentes las palabras clave del reporte. Esta comprobación usa la transcripción y no evalúa por completo la pronunciación.",
+        "incorrect": "Say who spoke and what he said. The transcript check only looks for key words.",
+        "incorrectEs": "Di quién habló y qué dijo. La comprobación solo busca palabras clave."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ],
+      "audioText": "He said that he was busy."
+    },
+    {
+      "id": "MIC-RS-A2-15",
+      "canDoId": "RS-A2-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "level": "A2",
+      "context": "daily-life",
+      "title": "Write a short message report",
+      "titleEs": "Escribe un reporte breve de mensaje",
+      "prompt": "Write one sentence telling a friend what another person said about a meeting.",
+      "promptEs": "Escribe una oración para decirle a un amigo qué dijo otra persona sobre una reunión.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "writing",
+        "short-message"
+      ],
+      "resources": [
+        "writing",
+        "grammar",
+        "communication"
+      ],
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ],
+      "feedback": {
+        "correct": "Correct. You preserved the main message.",
+        "correctEs": "Correcto. Conservaste el mensaje principal.",
+        "incorrect": "Check who said the message and keep its meaning.",
+        "incorrectEs": "Comprueba quién dijo el mensaje y conserva su significado."
+      },
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "reporting",
+            "label": "Use a reporting verb",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\btold\\b",
+              "\\basked\\b"
+            ],
+            "missingMessage": "Say who gave the message.",
+            "missingMessageEs": "Indica quién dio el mensaje."
+          },
+          {
+            "id": "content",
+            "label": "Include the message",
+            "patterns": [
+              "\\bthat\\b",
+              "\\bwas\\b",
+              "\\bwere\\b",
+              "\\bwould\\b",
+              "\\bto\\b"
+            ],
+            "missingMessage": "Include the reported information.",
+            "missingMessageEs": "Incluye la información comunicada."
+          }
+        ],
+        "minimumCriteria": 2,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 18,
+        "errorType": "task-completion"
+      }
+    },
+    {
+      "id": "MIC-RS-A2-16",
+      "canDoId": "RS-A2-COMM",
+      "type": "choose",
+      "skill": "communication",
+      "level": "A2",
+      "context": "daily-life",
+      "title": "Pass on a message accurately",
+      "titleEs": "Transmite un mensaje con precisión",
+      "prompt": "Your friend says, “I can't come today.” What is the best report?",
+      "promptEs": "Tu amigo dice: «No puedo ir hoy». ¿Cuál es el mejor reporte?",
+      "options": [
+        "My friend said that he couldn't come that day.",
+        "My friend asked me to come today.",
+        "My friend said that he came tomorrow."
+      ],
+      "answer": "My friend said that he couldn't come that day.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a2",
+        "communication",
+        "meaning-preservation"
+      ],
+      "resources": [
+        "communication",
+        "grammar"
+      ],
+      "feedback": {
+        "correct": "Couldn't preserves the inability and that day fits a past reporting frame.",
+        "correctEs": "Couldn't conserva la imposibilidad y that day encaja en un marco de reporte pasado.",
+        "incorrect": "Keep the negative meaning and the time reference; do not change it into a request.",
+        "incorrectEs": "Conserva el significado negativo y la referencia temporal; no lo conviertas en una petición."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A2-GRAM",
+        "RS-A2-READ",
+        "RS-A2-LISTEN",
+        "RS-A2-COMM",
+        "RS-A2-WRITE",
+        "RS-A2-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A1-09",
+      "canDoId": "RS-A1-GRAM",
+      "type": "choose",
+      "skill": "grammar",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Who said it?",
+      "titleEs": "¿Quién lo dijo?",
+      "prompt": "Ben says, “Hello!” Which sentence tells us the message?",
+      "promptEs": "Ben dice: «¡Hola!». ¿Qué oración comunica el mensaje?",
+      "options": [
+        "Ben said hello.",
+        "Ben asked a question about school.",
+        "Ben denied saying hello."
+      ],
+      "answer": "Ben said hello.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a1",
+        "recognition",
+        "basic-messages"
+      ],
+      "resources": [
+        "grammar",
+        "vocabulary"
+      ],
+      "feedback": {
+        "correct": "Said hello reports the greeting without adding information.",
+        "correctEs": "Said hello comunica el saludo sin añadir información.",
+        "incorrect": "Choose the sentence that keeps the original greeting.",
+        "incorrectEs": "Elige la oración que conserva el saludo original."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A1-10",
+      "canDoId": "RS-A1-READ",
+      "type": "choose",
+      "skill": "reading",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Match a message to its report",
+      "titleEs": "Relaciona un mensaje con su reporte",
+      "prompt": "Message: “Thank you,” says Eva. Which report matches it?",
+      "promptEs": "Mensaje: Eva dice «Gracias». ¿Qué reporte coincide?",
+      "options": [
+        "Eva said thank you.",
+        "Eva asked for a pencil.",
+        "Eva said goodbye."
+      ],
+      "answer": "Eva said thank you.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a1",
+        "reading",
+        "basic-messages"
+      ],
+      "resources": [
+        "reading",
+        "vocabulary"
+      ],
+      "feedback": {
+        "correct": "The report preserves Eva's thank-you message.",
+        "correctEs": "El reporte conserva el mensaje de agradecimiento de Eva.",
+        "incorrect": "Match the same meaning: thank you, not goodbye or a request.",
+        "incorrectEs": "Relaciona el mismo significado: thank you, no goodbye ni una petición."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A1-11",
+      "canDoId": "RS-A1-LISTEN",
+      "type": "listening",
+      "skill": "listening",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Listen to a greeting",
+      "titleEs": "Escucha un saludo",
+      "prompt": "Listen and choose the greeting you heard.",
+      "promptEs": "Escucha y elige el saludo que oíste.",
+      "audioText": "Mia said, 'Good morning.'",
+      "options": [
+        "Mia said good morning.",
+        "Mia said good night.",
+        "Mia asked for help."
+      ],
+      "answer": "Mia said good morning.",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a1",
+        "listening",
+        "greetings"
+      ],
+      "resources": [
+        "listening",
+        "vocabulary"
+      ],
+      "feedback": {
+        "correct": "The audio says good morning, a greeting used in the morning.",
+        "correctEs": "El audio dice good morning, un saludo que se usa por la mañana.",
+        "incorrect": "Listen to the greeting itself; good night has a different meaning.",
+        "incorrectEs": "Escucha el saludo: good night tiene un significado diferente."
+      },
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ]
+    },
+    {
+      "id": "MIC-RS-A1-12",
+      "canDoId": "RS-A1-WRITE",
+      "type": "mini-production",
+      "skill": "writing",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Write a modelled message report",
+      "titleEs": "Escribe un reporte siguiendo un modelo",
+      "prompt": "Complete a short message about what a friend said. Use a simple sentence such as “Tom said hello.”",
+      "promptEs": "Escribe una oración breve sobre lo que dijo un amigo. Puedes usar un modelo como «Tom said hello».",
+      "tags": [
+        "reported-speech",
+        "reported speech",
+        "estilo indirecto",
+        "cefr",
+        "a1",
+        "writing",
+        "guided-production"
+      ],
+      "resources": [
+        "writing",
+        "grammar"
+      ],
+      "reviewTargets": [
+        "reported-speech"
+      ],
+      "reviewPriority": "high",
+      "errorType": "grammar",
+      "errorTarget": "reported-speech",
+      "errorSeverity": "medium",
+      "errorPriority": "high",
+      "relatedCanDoIds": [
+        "RS-A1-GRAM",
+        "RS-A1-READ",
+        "RS-A1-LISTEN",
+        "RS-A1-COMM",
+        "RS-A1-WRITE",
+        "RS-A1-SPEAK"
+      ],
+      "feedback": {
+        "correct": "Correct. You preserved the main message.",
+        "correctEs": "Correcto. Conservaste el mensaje principal.",
+        "incorrect": "Check who said the message and keep its meaning.",
+        "incorrectEs": "Comprueba quién dijo el mensaje y conserva su significado."
+      },
+      "evaluation": {
+        "criteria": [
+          {
+            "id": "reporting",
+            "label": "Use a reporting verb",
+            "patterns": [
+              "\\bsaid\\b",
+              "\\btold\\b",
+              "\\basked\\b"
+            ],
+            "missingMessage": "Say who gave the message.",
+            "missingMessageEs": "Indica quién dio el mensaje."
+          },
+          {
+            "id": "content",
+            "label": "Include the message",
+            "patterns": [
+              "\\bthat\\b",
+              "\\bwas\\b",
+              "\\bwere\\b",
+              "\\bwould\\b",
+              "\\bto\\b"
+            ],
+            "missingMessage": "Include the reported information.",
+            "missingMessageEs": "Incluye la información comunicada."
+          }
+        ],
+        "minimumCriteria": 2,
+        "practiceMinimumCriteria": 2,
+        "minimumResponseCharacters": 18,
+        "errorType": "task-completion"
+      }
     }
   ]
 }
