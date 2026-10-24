@@ -1,0 +1,318 @@
+import catalog from "../data/linguistic-catalog.json" with { type: "json" };
+
+const PRIORITY = { critical: 4, high: 3, medium: 2, low: 1 };
+const metadata = new Map(catalog.grammarRules.map((rule) => [rule.implementation, rule]));
+
+const JOB_NOUNS = new Set([
+  "teacher", "student", "programmer", "developer", "engineer", "doctor",
+  "lawyer", "nurse", "designer", "technician", "coordinator", "professor",
+  "administrator", "architect", "accountant", "mechanic", "artist", "manager",
+  "robotics teacher", "technology teacher", "technology and robotics teacher"
+]);
+const THIRD_PERSON_FORMS = {
+  work: "works", teach: "teaches", build: "builds", use: "uses", like: "likes",
+  enjoy: "enjoys", have: "has", do: "does", go: "goes", study: "studies",
+  watch: "watches", fix: "fixes", make: "makes", play: "plays", read: "reads",
+  write: "writes", speak: "speaks", live: "lives", need: "needs", want: "wants",
+  help: "helps", explain: "explains", create: "creates", teach: "teaches"
+};
+const PLURAL_FORMS = Object.fromEntries(
+  Object.entries(THIRD_PERSON_FORMS).map(([base, third]) => [third, base])
+);
+const COMMON_WORDS = new Set("i am a an the is are was were be been being you he she it we they my your his her our their and or but because so with at on in to of for from work teach teacher student students robotics technology enjoy like love want would can do have has had build builds use uses this that these those here there what where when who why how about one thing difficult problem challenge english".split(/\s+/));
+
+function preserveCase(source, replacement) {
+  if (source && source === source.toUpperCase()) return replacement.toUpperCase();
+  if (source && source[0] === source[0].toUpperCase()) {
+    return replacement[0].toUpperCase() + replacement.slice(1);
+  }
+  return replacement;
+}
+
+function applyRule(text, implementation, pattern, replace, fallback = {}) {
+  const rule = metadata.get(implementation);
+  const regex = new RegExp(pattern.source, pattern.flags.includes("g") ? pattern.flags : pattern.flags + "g");
+  let changed = false;
+  let nextText = "";
+  let cursor = 0;
+  const errors = [];
+  for (const match of text.matchAll(regex)) {
+    if (match.index < cursor) continue;
+    const replacement = typeof replace === "function" ? replace(...match) : match[0].replace(pattern, replace);
+    if (replacement === match[0]) continue;
+    nextText += text.slice(cursor, match.index) + replacement;
+    const start = match.index;
+    const end = start + match[0].length;
+    errors.push({
+      ruleId: rule?.id || implementation,
+      target: implementation,
+      type: rule?.category === "spelling" ? "spelling" : rule?.category === "syntax" ? "word-order" : "grammar",
+      actual: match[0],
+      expected: replacement,
+      correction: replacement,
+      start,
+      end,
+      severity: rule?.severity || fallback.severity || "medium",
+      priority: rule?.priority || fallback.priority || "medium",
+      message: rule?.explanation || fallback.message || "",
+      messageEs: rule?.explanationEs || fallback.messageEs || "",
+      examples: rule?.examples || [],
+      retry: ["high", "critical"].includes(rule?.priority || fallback.priority || "medium"),
+      confidence: fallback.confidence || "high"
+    });
+    cursor = end;
+    changed = true;
+  }
+  if (!changed) return { text, errors: [] };
+  nextText += text.slice(cursor);
+  return { text: nextText, errors };
+}
+
+function runReplacementRule(text, implementation, regex, replace, options) {
+  return applyRule(text, implementation, regex, replace, options);
+}
+
+function getJobNouns(extraVocabulary = []) {
+  const jobs = new Set(JOB_NOUNS);
+  for (const item of [...catalog.vocabularyEntries, ...extraVocabulary]) {
+    if (item?.domain === "jobs" || item?.partOfSpeech === "job") {
+      jobs.add(String(item.lemma || item.word || "").toLowerCase());
+      for (const form of item.forms || []) jobs.add(String(form).toLowerCase());
+    }
+  }
+  return [...jobs].filter(Boolean).sort((a, b) => b.length - a.length).map(escapeRegex).join("|");
+}
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function transformVerbForm(value, type) {
+  const original = String(value || ""), lower = original.toLowerCase();
+  const base = {went:"go",gone:"go",saw:"see",seen:"see",built:"build",made:"make",had:"have",did:"do",done:"do",wrote:"write",written:"write",ate:"eat",eaten:"eat",took:"take",taken:"take",chose:"choose",chosen:"choose",used:"use",liked:"like",loved:"love",lived:"live",moved:"move"};
+  const participle = {go:"gone",went:"gone",see:"seen",saw:"seen",build:"built",built:"built",make:"made",made:"made",have:"had",had:"had",do:"done",did:"done",write:"written",wrote:"written",eat:"eaten",ate:"eaten",take:"taken",took:"taken",choose:"chosen",chose:"chosen"};
+  let result=lower;
+  if(type==="thirdPersonToBase"){
+    if(["has","is","does","goes"].includes(lower)) result=({has:"have",is:"be",does:"do",goes:"go"})[lower];
+    else if(/ies$/.test(lower)) result=lower.slice(0,-3)+"y";
+    else if(/(ches|shes|xes|zes|sses)$/.test(lower)) result=lower.slice(0,-2);
+    else if(/s$/.test(lower)) result=lower.slice(0,-1);
+  } else if(type==="pastToBase"){
+    if(base[lower]) result=base[lower];
+    else if(/ied$/.test(lower)) result=lower.slice(0,-3)+"y";
+    else if(/ed$/.test(lower)){result=lower.slice(0,-2);if(/(.)\1$/.test(result))result=result.slice(0,-1);}
+  } else if(type==="toGerund"){
+    const forms={be:"being",have:"having",make:"making",take:"taking",write:"writing",use:"using",come:"coming",go:"going",run:"running",swim:"swimming",get:"getting",sit:"sitting",put:"putting",lie:"lying",die:"dying",tie:"tying"};
+    if(forms[lower])result=forms[lower];else if(/ie$/.test(lower))result=lower.slice(0,-2)+"ying";else if(/e$/.test(lower)&&!/ee$/.test(lower))result=lower.slice(0,-1)+"ing";else if(/[aeiou][^aeiou]$/.test(lower)&&lower.length<=5)result=lower+lower.slice(-1)+"ing";else result=lower+"ing";
+  } else if(type==="pastParticiple") result=participle[lower]||(/e$/.test(lower)?lower+"d":lower+"ed");
+  if(original===original.toUpperCase())return result.toUpperCase();
+  if(original[0]&&original[0]===original[0].toUpperCase())return result[0].toUpperCase()+result.slice(1);
+  return result;
+}
+
+function applyCatalogMatcher(text, rule) {
+  const matcher = rule?.matcher;
+  if (!matcher?.pattern || (typeof matcher.replacement !== "string" && !matcher.transform)) return { text, errors: [] };
+
+  let regex;
+  try {
+    const flags = String(matcher.flags || "gi");
+    if (/[^dgimsuvy]/.test(flags) || new Set(flags).size !== flags.length) return { text, errors: [] };
+    regex = new RegExp(matcher.pattern, flags.includes("g") ? flags : flags + "g");
+  } catch {
+    return { text, errors: [] };
+  }
+
+  let changed = false;
+  let cursor = 0;
+  let nextText = "";
+  const errors = [];
+  for (const match of text.matchAll(regex)) {
+    if (match.index < cursor) continue;
+    let replacement;
+    if (matcher.transform && Number.isInteger(matcher.transform.capture) && match[matcher.transform.capture]) {
+      const captureIndex = matcher.transform.capture;
+      const transformed = transformVerbForm(match[captureIndex], matcher.transform.type);
+      replacement = String(matcher.replacement || "$&").replace(/\$(\d+)/g, (token, index) =>
+        Number(index) === 0 ? match[0] : Number(index) === captureIndex ? transformed : (match[Number(index)] ?? "")
+      );
+    } else {
+      replacement = match[0].replace(regex, matcher.replacement);
+    }
+    replacement = preserveCase(match[0], replacement);
+    if (replacement === match[0]) continue;
+    nextText += text.slice(cursor, match.index) + replacement;
+    errors.push({
+      ruleId: rule.id,
+      target: rule.implementation,
+      type: rule.category === "spelling" ? "spelling" : rule.category === "syntax" ? "word-order" : "grammar",
+      actual: match[0],
+      expected: replacement,
+      correction: replacement,
+      start: match.index,
+      end: match.index + match[0].length,
+      severity: rule.severity || "medium",
+      priority: rule.priority || rule.severity || "medium",
+      message: rule.explanation || "",
+      messageEs: rule.explanationEs || "",
+      examples: rule.examples || [],
+      retry: ["high", "critical"].includes(rule.priority || rule.severity || "medium"),
+      confidence: matcher.confidence || "high"
+    });
+    cursor = match.index + match[0].length;
+    changed = true;
+  }
+  if (!changed) return { text, errors: [] };
+  nextText += text.slice(cursor);
+  return { text: nextText, errors };
+}
+
+function analyzeLanguage(input, options = {}) {
+  const originalText = String(input ?? "");
+  let text = originalText;
+  const errors = [];
+  const extraVocabulary = Array.isArray(options.vocabulary) ? options.vocabulary : [];
+  const jobPattern = getJobNouns(extraVocabulary);
+  const rules = [
+    ["capital-i", /(^|[.!?]\s*)i(?=\s+(?:am|work|teach|have|like|enjoy|want|would|can|do|live|study|build|make|use|need|go)\b)/g, (m, prefix) => prefix + "I"],
+    ["spelling-teacher", /\bte(?:cher|caher)\b/gi, (m) => preserveCase(m, "teacher")],
+    ["be-agreement", /(?<!that )\b(I|he|she|it|you|we|they)\s+(am|is|are)\b/gi, (m, subject, verb) => {
+      const s = subject.toLowerCase();
+      const expected = s === "i" ? "am" : ["he", "she", "it"].includes(s) ? "is" : "are";
+      return subject + " " + preserveCase(verb, expected);
+    }],
+    ["compound-job-connector", /\b(a\s+technology)\s+an\s+(robotics\s+teacher)\b/gi, (m, first, second) => first + " and " + second],
+    ["article-profession", new RegExp("\\b(I am|I'm|he is|she is|he's|she's|they are|we are)\\s+(?!a\\b|an\\b|the\\b)(" + jobPattern + ")\\b", "gi"),
+      (m, subject, job) => subject + " " + (/^[aeiou]/i.test(job) ? "an" : "a") + " " + job],
+    ["article-a-an", /\b(a)\s+(engineer|architect|accountant|artist|administrator)\b/gi, (m, article, noun) => preserveCase(article, "an") + " " + noun],
+    ["enjoy-gerund", /\b(enjoy|enjoys|enjoyed)\s+to\s+([a-z]+)\b/gi, (m, verb, base) => {
+      const irregular = { be: "being", have: "having", make: "making", take: "taking", write: "writing", use: "using", come: "coming", go: "going", run: "running", swim: "swimming", get: "getting", sit: "sitting", put: "putting" };
+      const gerund = irregular[base.toLowerCase()] || (/ie$/i.test(base) ? base.slice(0, -2) + "ying" : /e$/i.test(base) && !/ee$/i.test(base) ? base.slice(0, -1) + "ing" : /[aeiou][^aeiou]$/i.test(base) && base.length <= 5 ? base + base.slice(-1) + "ing" : base + "ing");
+      return verb + " " + gerund;
+    }],
+    ["plural-agreement", /\b(my students|the students|students|my teachers|the teachers|teachers|children|people|they|we)\s+(is|has|does|works|teaches|builds|uses|likes|enjoys|goes|studies|watches|fixes|makes|plays|reads|writes|speaks|lives|needs|wants|helps|explains|creates)\b/gi,
+      (m, subject, verb) => subject + " " + (PLURAL_FORMS[verb.toLowerCase()] || ({ is: "are", has: "have", does: "do" })[verb.toLowerCase()] || verb)],
+    ["third-person-singular", /\b(he|she|it|the robot|a robot|my school|the school|my student|the student)\s+(work|teach|build|use|like|enjoy|have|do|go|study|watch|fix|make|play|read|write|speak|live|need|want|help|explain|create)\b/gi,
+      (m, subject, verb) => subject + " " + (THIRD_PERSON_FORMS[verb.toLowerCase()] || verb + "s")],
+    ["work-place", /\b(work|works|worked)\s+as\s+at\s+(?:a\s+)?(school)\b/gi, (m, verb, place) => verb + " at a " + place],
+    ["work-place", /\b(work|works|worked)\s+on\s+(a|the)\s+(school|company|office)\b/gi, (m, verb, article, place) => verb + " at " + article + " " + place],
+    ["repeated-connector", /\b(and|but|because|so)\s+\1\b/gi, (m, connector) => connector],
+    ["adjective-noun-order", /\b(a|an|the)\s+(problem|robot|project|class|lesson)\s+(difficult|interesting|new|important|easy)\b/gi, (m, article, noun, adjective) => article + " " + adjective + " " + noun]
+  ];
+
+  for (const [implementation, pattern, replacement] of rules) {
+    if (implementation === "work-place" && !/\b(teacher|student|employee|workplace|office staff|work\s+as\s+at)\b/i.test(text)) continue;
+    const result = runReplacementRule(text, implementation, pattern, replacement);
+    if (result.errors.length) {
+      errors.push(...result.errors);
+      text = result.text;
+    }
+  }
+
+  // Data-driven rules let reviewed catalog entries add narrow, deterministic
+  // corrections without adding a new branch to this engine.
+  for (const rule of catalog.grammarRules || []) {
+    if (rule.status !== "tested" || !rule.matcher) continue;
+    const result = applyCatalogMatcher(text, rule);
+    if (result.errors.length) {
+      errors.push(...result.errors);
+      text = result.text;
+    }
+  }
+
+  // Unknown vocabulary remains neutral. Only a small, reviewed spelling list is auto-corrected.
+  const vocabulary = [...catalog.vocabularyEntries, ...extraVocabulary];
+  const knownWords = new Set(vocabulary.flatMap((entry) => [
+    entry.lemma, ...(entry.forms || []), ...(entry.collocations || []).flatMap((phrase) => phrase.split(/\s+/))
+  ]).filter(Boolean).map((word) => String(word).toLowerCase()));
+  const tokens = originalText.match(/[\p{L}]+/gu) || [];
+  const unknownWords = [...new Set(tokens.filter((word) => !knownWords.has(word.toLowerCase()) && !COMMON_WORDS.has(word.toLowerCase()) && word.length > 2))];
+
+  const prioritized = errors
+    .filter((error, index, all) => all.findIndex((other) => other.ruleId === error.ruleId && other.actual === error.actual) === index)
+    .sort((a, b) => (PRIORITY[b.priority] || 0) - (PRIORITY[a.priority] || 0))
+    .slice(0, Math.max(1, options.maxCorrections || 3));
+
+  const evaluationStatus = !originalText.trim()
+    ? "not-evaluated"
+    : prioritized.length
+      ? "issues-detected"
+      : "no-issue-detected";
+
+  return {
+    schemaVersion: catalog.schemaVersion,
+    originalText,
+    correctedText: text,
+    errors: prioritized,
+    unknownWords,
+    evaluationStatus,
+    evaluationScope: "partial-deterministic-rule-based",
+    evaluationNote: evaluationStatus === "no-issue-detected"
+      ? "No known rule matched this response. This is not a complete grammar check."
+      : evaluationStatus === "issues-detected"
+        ? "Known patterns were detected; other errors may remain."
+        : "No response was provided for evaluation.",
+    evaluationNoteEs: evaluationStatus === "no-issue-detected"
+      ? "Ninguna regla conocida coincidió con esta respuesta. Esto no es una revisión gramatical completa."
+      : evaluationStatus === "issues-detected"
+        ? "Se detectaron patrones conocidos; pueden quedar otros errores."
+        : "No se proporcionó una respuesta para evaluar.",
+    hasHighConfidenceCorrection: prioritized.some((error) => error.confidence === "high"),
+    catalogCoverage: { grammarRules: catalog.grammarRules.length, testedRules: catalog.grammarRules.filter((rule) => rule.status === "tested").length, plannedRules: catalog.grammarRules.filter((rule) => rule.status === "draft").length, vocabularyEntries: vocabulary.length },
+    policy: "Unknown words are not errors by themselves; uncertain cases are left unchanged. No detected issue does not prove that a response is correct."
+  };
+}
+
+function validateLinguisticCatalog(value = catalog) {
+  const errors = [];
+  const ids = new Set();
+  const implementations = new Set(value.grammarRules.map((rule) => rule.implementation));
+  const functionIds = new Set();
+  const vocabularyIds = new Set();
+  for (const item of value.communicativeFunctions || []) {
+    if (!item.id || functionIds.has(item.id)) errors.push("Missing or duplicate communicative function id: " + (item.id || "(empty)"));
+    functionIds.add(item.id);
+    if (!item.level || !item.label || !item.labelEs || !item.skills?.length || !item.structures?.length || !item.contexts?.length) {
+      errors.push((item.id || "Communicative function") + ": incomplete CEFR function metadata");
+    }
+  }
+  for (const item of value.vocabularyEntries || []) {
+    if (!item.id || vocabularyIds.has(item.id)) errors.push("Missing or duplicate vocabulary id: " + (item.id || "(empty)"));
+    vocabularyIds.add(item.id);
+    if (!item.lemma || !item.partOfSpeech || !item.level || !item.domain || !item.meaningEs || !Array.isArray(item.forms) || !Array.isArray(item.collocations) || !Array.isArray(item.examples)) {
+      errors.push((item.id || "Vocabulary entry") + ": incomplete vocabulary metadata");
+    }
+  }
+  for (const rule of value.grammarRules) {
+    if (!rule.id || ids.has(rule.id)) errors.push("Missing or duplicate grammar rule id: " + (rule.id || "(empty)"));
+    ids.add(rule.id);
+    if (!rule.level || !rule.category || !rule.explanation || !rule.explanationEs) errors.push(rule.id + ": missing required rule metadata");
+    if (!Array.isArray(rule.examples) || !Array.isArray(rule.incorrect)) errors.push(rule.id + ": examples and incorrect cases must be arrays");
+    if (!["tested", "policy", "draft"].includes(rule.status)) errors.push(rule.id + ": invalid review status");
+  }
+  for (const testCase of value.testCases || []) {
+    for (const ruleId of testCase.expectRules || []) {
+      if (!ids.has(ruleId)) errors.push(testCase.id + ": unknown expected rule " + ruleId);
+    }
+  }
+  const implemented = new Set(["capital-i","spelling-teacher","article-profession","article-a-an","be-agreement","plural-agreement","third-person-singular","enjoy-gerund","work-place","repeated-connector","adjective-noun-order","open-vocabulary-policy","like-gerund","compound-job-connector"]);
+  for (const rule of value.grammarRules) {
+    const hasDataMatcher = Boolean(rule.matcher?.pattern && (typeof rule.matcher.replacement === "string" || (rule.matcher.transform && Number.isInteger(rule.matcher.transform.capture))));
+    if (rule.status === "tested" && !implemented.has(rule.implementation) && !hasDataMatcher) {
+      errors.push("Missing rule implementation for tested rule: " + rule.id + " (" + rule.implementation + ")");
+    }
+    if (rule.matcher) {
+      if (!rule.matcher.pattern || (typeof rule.matcher.replacement !== "string" && !(rule.matcher.transform && Number.isInteger(rule.matcher.transform.capture)))) errors.push(rule.id + ": matcher requires pattern and replacement or a transform");
+      if (rule.matcher.transform && !["thirdPersonToBase","pastToBase","toGerund","pastParticiple"].includes(rule.matcher.transform.type)) errors.push(rule.id + ": unsupported matcher transform");
+      try {
+        const flags = String(rule.matcher.flags || "gi");
+        if (/[^dgimsuvy]/.test(flags) || new Set(flags).size !== flags.length) throw new Error("invalid flags");
+        new RegExp(rule.matcher.pattern, flags);
+      } catch {
+        errors.push(rule.id + ": invalid matcher regular expression or flags");
+      }
+    }
+  }
+  return { valid: errors.length === 0, errors, ruleCount: value.grammarRules.length, testedRuleCount: value.grammarRules.filter((rule) => rule.status === "tested").length, draftRuleCount: value.grammarRules.filter((rule) => rule.status === "draft").length, vocabularyCount: value.vocabularyEntries.length, communicativeFunctionCount: functionIds.size };
+}
+
+export { analyzeLanguage, validateLinguisticCatalog, catalog as linguisticCatalog };
