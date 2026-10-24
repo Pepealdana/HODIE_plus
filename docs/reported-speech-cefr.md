@@ -2,33 +2,55 @@
 
 ## Purpose and CEFR-informed progression
 
-This is a HODIE learning pathway informed by CEFR communicative progression, not an official CEFR mapping or certification.
+This is a HODIE learning pathway informed by CEFR communicative progression, not an official CEFR mapping, examination or certification. Level assignment describes the intended task demand; it does not certify that every learner at a level has mastered the structure.
 
-- **A1 — recognition and mediation:** identify who said a short familiar message and preserve its basic meaning. Learners are not expected to master tense backshift at this stage.
-- **A2 — familiar statements:** practise common reported statements, pronoun reference and frequent tense changes after a past reporting verb.
-- **B1 — conversations and requests:** report questions with statement word order, requests, advice and short interviews.
-- **B2 — stance and nuance:** attribute claims, distinguish evidence from opinion, select reporting verbs and summarise discussion fairly.
+- **A1 — recognise and relay familiar messages:** identify who said a short, familiar message and preserve its basic meaning. Learners are not expected to master tense backshift at this stage.
+- **A2 — report familiar statements and plans:** practise common reported statements, pronoun reference, simple requests and frequent time/tense changes when the past reporting frame makes them useful.
+- **B1 — report conversations, questions and requests:** use statement word order in indirect questions; report requests, advice and short interviews; distinguish common reporting verbs such as *say*, *tell*, *ask*, *advise* and *deny*.
+- **B2 — preserve stance, evidence and nuance:** attribute claims, distinguish evidence from opinion, report concessions and uncertainty, select reporting verbs precisely and summarise disagreement fairly.
 
-Each level currently has four bilingual microactivities across grammar, reading, listening, writing or communication. The first content slice contains 16 activities; it is a starting module, not the full reported-speech curriculum.
+The progression is deliberately communicative. Backshift is presented as a common pattern, not an absolute rule: speakers may retain a present tense when information is still true or relevant. Time and place words such as *today*, *tomorrow*, *here* and *now* change only when the reporting context requires it.
 
-## Runtime integration
+## Current activity library
 
-The activity catalogue reads `data/micro-practice-library.json` and filters by selected level, skill and topic. Search for either “Reported Speech” or “Estilo indirecto”. Activities use the existing micro-practice evaluator and feedback model; no separate runtime or AI dependency is required.
+The active data/micro-practice-library.json contains **276 activities overall**. Reported Speech contributes **68 activities** across the six skills represented in this topic:
 
-Learning targets live in `data/can-do-matrix.json`. A2 reported-speech targets depend on the existing A2 introduction target; B1 targets depend on a B1 speaking target; B2 targets depend on B1 speaking and communication targets. These prerequisites are normal progression constraints, not a substitute for the future B2 unlock decision.
+| Level | Active Reported Speech activities | Intended emphasis |
+|---|---:|---|
+| A1 | 12 | Recognising and relaying familiar messages |
+| A2 | 16 | Simple statements, plans and messages |
+| B1 | 40 | Indirect questions, requests, advice, listening, speaking and writing |
+| B2 | 24 in the separate locked pack | Attribution, stance, uncertainty and evidence boundaries |
 
-## Correction rules and confidence
+The 24 B2 activities are authored in data/reported-speech-b2-pack.json, which remains **locked until the progression evidence gate is implemented**. B2 content is not inserted into the active micro-library and cannot be reached merely by choosing a topic.
 
-Two narrow rules currently correct reviewed examples:
-- `She said, "I am tired."` → `She said that she was tired.`
-- `He said, "I am busy."` → `He said that he was busy.`
+The active topic uses varied interaction types already supported by HODIE: multiple choice, gap completion, ordering, listening comprehension, spoken repetition, and guided written production. Some activities add memory recall, riddles or a time limit. A timer changes the task conditions; it does not by itself demonstrate language mastery.
 
-The tested matchers deliberately cover only these quoted forms. They must not be generalized to arbitrary names, pronouns, verb tenses or contexts without new positive and negative tests. “Said”/“told”, indirect question word order, requests, advice and reporting verbs are available as practice content; broader automatic correction remains draft until it has safe context-aware implementations.
+## Runtime integration and relationships
 
-## B2 visibility
+The activity catalogue reads data/micro-practice-library.json and filters by level, skill and topic. Search for “Reported Speech” or “Estilo indirecto”. Related activities are linked through relatedCanDoIds and the Can-Do recovery graph; the catalogue no longer truncates those links to three items.
 
-B2 activities are authored in the library now, but the level selector remains disabled and the catalogue returns no B2 activities. `isB2Unlocked()` currently returns false intentionally. A later progression gate must assess independent evidence across skills and Can-Do goals, retention and transfer—not activity count alone—before changing that behavior.
+Practice selection can expand a small Can-Do pool to other activities **at the same CEFR level and in the requested skill/resource**. This fills sessions without silently replacing Listening with Speaking or a writing task. Mixed practice can draw on several skills. The default session can contain up to ten activities when enough matching material exists; a specific catalogue item still opens as an individual activity.
+
+Learning targets live in data/can-do-matrix.json. The B2 gate remains closed intentionally. Before unlocking B2, HODIE must assess independent evidence across skills and Can-Do goals, retention and transfer—not activity count alone.
+
+## Correction rules and confidence boundaries
+
+src/reported-speech-review.js adds four **narrow, tested** high-confidence patterns:
+
+1. *said me* → *told me*
+2. *told that* → *said that* when no person object is present
+3. *asked me where did I live* → *asked me where I lived* for a small, explicit verb list and a past-time question
+4. *asked me if was I ready* → *asked me if I was ready*
+
+The rules run only on activities identified as Reported Speech. Each correction includes an English and Spanish explanation. Positive and negative regression tests protect the known examples.
+
+These rules are intentionally limited. No correction means only that none of the reviewed patterns matched; it does **not** mean the whole answer is correct. The checker does not automatically decide whether backshift is required in every context, and it does not claim to fully grade open-ended writing or pronunciation. Speaking activities that use browser speech recognition check for key words in the transcript; that is not a phonetic assessment. Listening activities currently use browser-generated speech for the supplied audioText, not recordings of different real speakers or accents.
+
+Closed activities use answer-specific feedback. Open production uses a checklist of observable task features; meeting the checklist is not a full CEFR assessment or a guarantee that every sentence is grammatically correct.
 
 ## Validation
 
-The regression suite checks rule IDs and exact corrections, negative cases, activity counts by level, bilingual feedback, Can-Do links and the PWA cache contract. Automated checks must pass before merge. A desktop and Android PWA smoke test remains necessary after deployment.
+tests/activity-library-integrity.test.js checks unique IDs, Can-Do references, answer-option integrity, ordering tokens, listening source text, speaking requirements, writing criteria, level coverage and session selection. tests/reported-speech-review.test.js checks each targeted correction and negative cases. The existing micro-practice and PWA contracts verify skill boundaries and offline asset paths.
+
+Automated checks are necessary but not sufficient. A real desktop and Android PWA smoke test is still needed to verify the complete click, audio, microphone-permission, retry, offline and install flows in browsers.
