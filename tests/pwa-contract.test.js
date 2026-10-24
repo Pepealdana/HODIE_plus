@@ -32,6 +32,7 @@ assert.match(worker, /assets\/brand\/hodie-logo-dark\.svg/);
 assert.match(worker, /assets\/icons\/icon-light\.svg/);
 assert.match(worker, /src\/learning-engine\.js/);
 assert.match(worker, /src\/session-runner\.js/);
+assert.match(worker, /src\/reported-speech-review\.js/);
 assert.match(worker, /data\/knowledge-library\.json/);
 assert.match(worker, /data\/integrated-units\.json/);
 assert.doesNotMatch(worker, /\.png/);
@@ -44,6 +45,7 @@ const shellResources = [...shellMatch[1].matchAll(/"([^"]+)"/g)].map((match) => 
 assert.ok(shellResources.includes("./data/knowledge-library.json"));
 assert.ok(shellResources.includes("./data/linguistic-catalog.json"));
 assert.ok(shellResources.includes("./src/linguistic-engine.js"));
+assert.ok(shellResources.includes("./src/reported-speech-review.js"));
 assert.ok(shellResources.includes("./data/integrated-units.json"));
 assert.equal(new Set(shellResources).size, shellResources.length, "APP_SHELL must not contain duplicate paths");
 
