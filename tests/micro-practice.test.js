@@ -26,7 +26,7 @@ assert.ok(vocabulary.every((item) => ["choose", "complete", "order", "match"].in
 assert.ok(vocabulary.every((item) => item.type !== "mini-production"));
 
 const listening = selectMicroActivities(library, { canDoId: "SP-A2-01", mode: "listening", limit: 4 });
-assert.equal(listening.length, 3);
+assert.equal(listening.length, 4, "Focused listening should fill the requested limit when same-level content exists");
 assert.ok(listening.every((item) => item.type === "listening"));
 assert.ok(listening.every((item) => item.skill === "listening"));
 
@@ -35,10 +35,10 @@ assert.ok(speaking.length >= 2);
 assert.ok(speaking.every((item) => ["speak", "mini-production"].includes(item.type)));
 
 const writing = selectMicroActivities(library, { canDoId: "SP-A2-01", mode: "writing", limit: 4 });
-assert.equal(writing.length, 1);
-assert.equal(writing[0].type, "mini-production");
-assert.equal(writing[0].skill, "writing");
-assert.ok(writing[0].evaluation?.criteria?.length >= 3);
+assert.equal(writing.length, 4, "Focused writing should expand within the same level when the Can-Do pool is small");
+assert.ok(writing.every((item) => item.type === "mini-production"));
+assert.ok(writing.every((item) => item.skill === "writing"));
+assert.ok(writing.every((item) => item.evaluation?.criteria?.length >= 2));
 
 const speakActivity = library.activities.find((item) => item.type === "speak");
 assert.equal(speakActivity.audioText, speakActivity.targetPhrase);
