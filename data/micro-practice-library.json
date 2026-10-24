@@ -15267,6 +15267,174 @@
         "incorrect": "Find the instruction that begins with “Bring”.",
         "incorrectEs": "Busca la instrucción que comienza con «Bring»."
       }
+    },
+    {
+      "id": "MIC-CEFR-A1-VOCABULARY-09",
+      "canDoId": "VO-A1-01",
+      "type": "choose",
+      "skill": "vocabulary",
+      "primarySkill": "vocabulary",
+      "level": "A1",
+      "context": "family",
+      "title": "Vocabulary: family members",
+      "titleEs": "Vocabulario: miembros de la familia",
+      "prompt": "My mother's sister is my ___.",
+      "promptEs": "La hermana de mi madre es mi ___.",
+      "options": [
+        "aunt",
+        "cousin",
+        "niece"
+      ],
+      "answer": "aunt",
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "family"
+      ],
+      "resources": [
+        "vocabulary"
+      ],
+      "languageResource": "vocabulary",
+      "feedback": {
+        "correct": "An aunt is your mother’s or father’s sister.",
+        "correctEs": "An aunt es la hermana de tu madre o de tu padre.",
+        "incorrect": "A cousin is the child of your aunt or uncle. A niece is your sibling’s daughter.",
+        "incorrectEs": "A cousin es el hijo de tu tío o tía. A niece es la hija de tu hermano o hermana."
+      }
+    },
+    {
+      "id": "MIC-CEFR-A1-VOCABULARY-10",
+      "canDoId": "VO-A1-01",
+      "type": "choose",
+      "skill": "vocabulary",
+      "primarySkill": "vocabulary",
+      "level": "A1",
+      "context": "classroom",
+      "title": "Vocabulary: classroom objects",
+      "titleEs": "Vocabulario: objetos del aula",
+      "prompt": "You use a ___ to draw a straight line.",
+      "promptEs": "Usas una ___ para dibujar una línea recta.",
+      "options": [
+        "ruler",
+        "pillow",
+        "plate"
+      ],
+      "answer": "ruler",
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "classroom"
+      ],
+      "resources": [
+        "vocabulary"
+      ],
+      "languageResource": "vocabulary",
+      "feedback": {
+        "correct": "A ruler is used to measure or draw straight lines.",
+        "correctEs": "Una regla se usa para medir o dibujar líneas rectas.",
+        "incorrect": "A pillow is for resting your head; a plate is for food.",
+        "incorrectEs": "Una almohada sirve para apoyar la cabeza; un plato sirve para la comida."
+      }
+    },
+    {
+      "id": "MIC-CEFR-A1-VOCABULARY-11",
+      "canDoId": "VO-A1-01",
+      "type": "choose",
+      "skill": "vocabulary",
+      "primarySkill": "vocabulary",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Vocabulary: daily routines",
+      "titleEs": "Vocabulario: rutinas diarias",
+      "prompt": "I ___ at seven o'clock and then I have breakfast.",
+      "promptEs": "Me ___ a las siete y después desayuno.",
+      "options": [
+        "wake up",
+        "sit down",
+        "turn off"
+      ],
+      "answer": "wake up",
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "daily-routine"
+      ],
+      "resources": [
+        "vocabulary"
+      ],
+      "languageResource": "vocabulary",
+      "feedback": {
+        "correct": "Wake up means stop sleeping and become awake.",
+        "correctEs": "Wake up significa dejar de dormir y despertarse.",
+        "incorrect": "Sit down means take a seat; turn off means stop a device or light.",
+        "incorrectEs": "Sit down significa sentarse; turn off significa apagar un dispositivo o una luz."
+      }
+    },
+    {
+      "id": "MIC-CEFR-A1-VOCABULARY-12",
+      "canDoId": "VO-A1-01",
+      "type": "choose",
+      "skill": "vocabulary",
+      "primarySkill": "vocabulary",
+      "level": "A1",
+      "context": "food",
+      "title": "Vocabulary: food and drink",
+      "titleEs": "Vocabulario: comida y bebida",
+      "prompt": "I'm thirsty. Can I have a ___ of water, please?",
+      "promptEs": "Tengo sed. ¿Me das un ___ de agua, por favor?",
+      "options": [
+        "glass",
+        "slice",
+        "pair"
+      ],
+      "answer": "glass",
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "food-and-drink"
+      ],
+      "resources": [
+        "vocabulary"
+      ],
+      "languageResource": "vocabulary",
+      "feedback": {
+        "correct": "A glass of water is a natural expression for water served in a glass.",
+        "correctEs": "A glass of water es una expresión natural para el agua servida en un vaso.",
+        "incorrect": "A slice is used for a flat piece of food; a pair refers to two matching things.",
+        "incorrectEs": "A slice se usa para una porción plana de comida; a pair se refiere a dos cosas que forman pareja."
+      }
+    },
+    {
+      "id": "MIC-CEFR-A1-VOCABULARY-13",
+      "canDoId": "VO-A1-01",
+      "type": "complete",
+      "skill": "vocabulary",
+      "primarySkill": "vocabulary",
+      "level": "A1",
+      "context": "daily-life",
+      "title": "Vocabulary: places in town",
+      "titleEs": "Vocabulario: lugares de la ciudad",
+      "prompt": "You can borrow books from a lib___.",
+      "promptEs": "Puedes pedir libros prestados en una bibliot___.",
+      "answer": "library",
+      "acceptableAnswers": [
+        "library"
+      ],
+      "tags": [
+        "a1",
+        "cefr-informed",
+        "places"
+      ],
+      "resources": [
+        "vocabulary"
+      ],
+      "languageResource": "vocabulary",
+      "feedback": {
+        "correct": "A library is a place where people can read or borrow books.",
+        "correctEs": "Una biblioteca es un lugar donde las personas pueden leer o pedir libros prestados.",
+        "incorrect": "Complete the word for the place where books can be borrowed.",
+        "incorrectEs": "Completa la palabra del lugar donde se pueden pedir libros prestados."
+      }
     }
   ]
 }
