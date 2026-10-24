@@ -25,10 +25,10 @@
       ],
       "answer": "She claimed that the figures were inaccurate.",
       "feedback": {
-        "correct": "Claimed attributes the statement to the speaker without treating it as independently verified.",
-        "correctEs": "Claimed atribuye la afirmación a quien habla sin presentarla como verificada de forma independiente.",
-        "incorrect": "Choose the option that attributes the claim rather than endorsing it.",
-        "incorrectEs": "Elige la opción que atribuye la afirmación sin respaldarla como hecho."
+        "correct": "Claimed explicitly attributes the statement to the speaker. The other options present the claim as fact or add unjustified certainty.",
+        "correctEs": "Claimed atribuye explícitamente la afirmación a quien habla. Las otras opciones presentan la afirmación como un hecho o añaden una certeza injustificada.",
+        "incorrect": "Choose the sentence that keeps the figures' accuracy as an attributed claim rather than a confirmed fact.",
+        "incorrectEs": "Elige la oración que mantiene la exactitud de las cifras como una afirmación atribuida, no como un hecho confirmado."
       },
       "tags": [
         "reported-speech",
@@ -77,10 +77,10 @@
       ],
       "answer": "admitted → accepted something difficult or potentially negative",
       "feedback": {
-        "correct": "Reporting verbs convey stance; choose them according to the source and context.",
-        "correctEs": "Los verbos de reporte transmiten postura; elígelos según la fuente y el contexto.",
-        "incorrect": "Check the meaning and pragmatic force of each reporting verb.",
-        "incorrectEs": "Revisa el significado y la fuerza pragmática de cada verbo de reporte."
+        "correct": "Admitted means accepting or acknowledging something. Denied means rejecting a claim, while suggested proposes an idea rather than issuing an order.",
+        "correctEs": "Admitted significa aceptar o reconocer algo. Denied significa rechazar una afirmación, mientras que suggested propone una idea en lugar de dar una orden.",
+        "incorrect": "Check the communicative function of each verb: acceptance, rejection or proposal.",
+        "incorrectEs": "Comprueba la función comunicativa de cada verbo: aceptación, rechazo o propuesta."
       },
       "tags": [
         "reported-speech",
@@ -138,10 +138,10 @@
         "The team concluded that more evidence was needed."
       ],
       "feedback": {
-        "correct": "A balanced report distinguishes a concern, a proposal and the group's conclusion.",
-        "correctEs": "Un reporte equilibrado distingue una preocupación, una propuesta y la conclusión del grupo.",
-        "incorrect": "Present the concern, then the proposal, and finally the conclusion.",
-        "incorrectEs": "Presenta la preocupación, luego la propuesta y finalmente la conclusión."
+        "correct": "The order moves from the concern about cost, to the smaller pilot proposal, and then to the group's conclusion that more evidence is needed.",
+        "correctEs": "El orden pasa de la preocupación por el costo, a la propuesta de una prueba piloto más pequeña y luego a la conclusión del grupo de que hace falta más evidencia.",
+        "incorrect": "Start with the concern, follow with the proposed smaller test, and finish with the group's conclusion.",
+        "incorrectEs": "Empieza con la preocupación, sigue con la propuesta de una prueba más pequeña y termina con la conclusión del grupo."
       },
       "tags": [
         "reported-speech",
@@ -185,10 +185,10 @@
       "promptEs": "«Esta política puede fracasar», dijo el analista. → The analyst warned that the policy ___ fail.",
       "answer": "might",
       "feedback": {
-        "correct": "Might can report a possibility with appropriate distance or tentativeness.",
-        "correctEs": "Might puede transmitir una posibilidad con cierto distanciamiento o cautela.",
-        "incorrect": "Use might to report the original possibility in this pattern.",
-        "incorrectEs": "Usa might para transmitir la posibilidad original en este patrón."
+        "correct": "Might reports the original possibility with appropriate distance after a past reporting verb. It does not claim that the policy will definitely fail.",
+        "correctEs": "Might comunica la posibilidad original con el distanciamiento adecuado después de un verbo de reporte en pasado. No afirma que la política vaya a fracasar con certeza.",
+        "incorrect": "Use might to preserve the possibility in “may fail”; do not turn it into a definite prediction.",
+        "incorrectEs": "Usa might para conservar la posibilidad de “may fail”; no la conviertas en una predicción segura."
       },
       "tags": [
         "reported-speech",
