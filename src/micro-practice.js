@@ -251,6 +251,15 @@ function selectMicroActivities(
   const filtered = activities.filter((item) => activityMatchesFocus(item, config));
   const ordered = [...filtered].sort((a, b) => rankMixed(a) - rankMixed(b));
 
+  // Speaking sessions should include a short controlled task and, when available,
+  // one open production task at the end. The open task is not replaced by drills.
+  if (mode === "speaking") {
+    const production = ordered.find((item) => item.type === "mini-production");
+    if (production && limit > 0) {
+      return [...ordered.filter((item) => item.id !== production.id).slice(0, Math.max(0, limit - 1)), production];
+    }
+  }
+
   // Focused modes remain faithful to their category and CEFR level.
   // A small Can-Do pool is supplemented only by the same requested skill/resource.
   return ordered.slice(0, limit);
