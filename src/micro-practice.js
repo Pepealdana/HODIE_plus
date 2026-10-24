@@ -73,7 +73,7 @@ function detectLanguageCorrections(activity, response) {
     contextId: activity?.context || "practice"
   })).map((error, index) => ({ ...error, ruleId: analysis.errors[index].ruleId, start: analysis.errors[index].start, end: analysis.errors[index].end, confidence: analysis.errors[index].confidence }));
 
-  const activityTags = (activity?.tags || []).map((tag) => String(tag).toLowerCase().replace(/\\s+/g, "-"));
+  const activityTags = (activity?.tags || []).map((tag) => String(tag).toLowerCase().replace(/\s+/g, "-"));
   const isReportedSpeechTask = activityTags.includes("reported-speech") ||
     String(activity?.errorTarget || "").toLowerCase().includes("reported-speech") ||
     String(activity?.target || "").toLowerCase().includes("reported-speech");
