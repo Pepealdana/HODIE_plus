@@ -15,7 +15,7 @@ assert.match(app, /DATA\.contexts/);
 assert.match(app, /chooseLearningSurface/);
 assert.match(app, /startExperience/);
 assert.match(app, /startPractice/);
-assert.ok(app.includes('home.querySelector("#reportedSpeechShortcut")?.addEventListener("click"'), "Reported Speech shortcut must bind directly to its rendered button");
+assert.ok(app.includes('const reportedSpeechButton = home.querySelector("#reportedSpeechShortcut")') && app.includes('reportedSpeechButton?.addEventListener("click"'), "Reported Speech shortcut must bind directly to its rendered button");
 assert.ok(app.includes("startPractice(mode, activity.id)"), "Reported Speech shortcut must launch a matching activity");
 
 console.log("HODIE app runtime contract: PASS");
