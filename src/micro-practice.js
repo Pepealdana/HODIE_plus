@@ -1,6 +1,7 @@
 import { buildFeedback, createError, evaluateCriteria, normalizeErrors, prioritizeErrors } from "./error-engine.js";
 import { analyzeLanguage } from "./linguistic-engine.js";
 import { getLinguisticResourcesForActivity } from "./linguistic-activity-links.js";
+import { reviewReportedSpeech } from "./reported-speech-review.js";
 
 const normalize = (value) =>
   String(value ?? "")
@@ -71,8 +72,38 @@ function detectLanguageCorrections(activity, response) {
     retry: error.retry,
     contextId: activity?.context || "practice"
   })).map((error, index) => ({ ...error, ruleId: analysis.errors[index].ruleId, start: analysis.errors[index].start, end: analysis.errors[index].end, confidence: analysis.errors[index].confidence }));
+
+  const activityTags = (activity?.tags || []).map((tag) => String(tag).toLowerCase().replace(/\\s+/g, "-"));
+  const isReportedSpeechTask = activityTags.includes("reported-speech") ||
+    String(activity?.errorTarget || "").toLowerCase().includes("reported-speech") ||
+    String(activity?.target || "").toLowerCase().includes("reported-speech");
+
+  const reportedReview = isReportedSpeechTask
+    ? reviewReportedSpeech(analysis.correctedText || response)
+    : { correctedText: analysis.correctedText || response, errors: [] };
+  const reportedErrors = reportedReview.errors.map((error) => createError({
+    activity,
+    type: error.type,
+    target: error.target,
+    actual: error.actual,
+    expected: error.expected,
+    severity: error.severity,
+    priority: error.priority,
+    message: error.message,
+    messageEs: error.messageEs,
+    correction: error.correction,
+    retry: error.retry,
+    contextId: activity?.context || "reported-speech"
+  })).map((error, index) => ({
+    ...error,
+    ruleId: reportedReview.errors[index].ruleId,
+    start: reportedReview.errors[index].start,
+    end: reportedReview.errors[index].end,
+    confidence: reportedReview.errors[index].confidence
+  }));
+  errors.push(...reportedErrors);
   if (!errors.length) return [];
-  errors[0].correctedText = analysis.correctedText;
+  errors[0].correctedText = reportedReview.correctedText;
   errors[0].unknownWords = analysis.unknownWords;
   return errors;
 }
