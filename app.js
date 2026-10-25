@@ -36,19 +36,16 @@ const app = document.querySelector("#app");
 const levelBadge = document.querySelector("#levelBadge");
 const resetButton = document.querySelector("#resetButton");
 
-// Global delegated handler: survives home rendering and section replacement.
-document.addEventListener("click", (event) => {
-  const target = event.target instanceof Element ? event.target.closest("#reportedSpeechShortcut") : null;
+// Central action for Reported Speech, triggered by the persistent page-level listener.
+document.addEventListener("hodie:reported-speech", (event) => {
+  const target = event.detail?.button || document.querySelector("#reportedSpeechShortcut");
   if (!target) return;
-  event.preventDefault();
   if (!microLibrary?.activities) {
-    window.alert("HODIE todavía está cargando las actividades. Espera un momento e inténtalo de nuevo.");
+    target.disabled = false;
+    target.textContent = "Try again / Reintentar";
+    window.alert("Las actividades aún no están cargadas. Recarga HODIE e inténtalo de nuevo.");
     return;
   }
-
-  const originalLabel = target.textContent;
-  target.disabled = true;
-  target.textContent = "Opening activity…";
   try {
     const selectedLevel = document.querySelector(".level-option.is-selected")?.dataset.homeLevel;
     const requestedLevel = selectedLevel || session?.target?.level || "A2";
@@ -64,14 +61,23 @@ document.addEventListener("click", (event) => {
       || candidates.find((item) => item.level === "A2")
       || candidates[0];
     if (!activity) throw new Error("No se encontraron actividades de Reported Speech.");
-
     startPractice(getActivitySkill(activity), activity.id);
   } catch (error) {
-    console.error("Reported Speech shortcut failed:", error);
+    console.error("Reported Speech launch failed:", error);
     target.disabled = false;
-    target.textContent = originalLabel;
-    window.alert("No se pudo abrir Reported Speech: " + (error?.message || "error desconocido"));
+    target.textContent = "Try again / Reintentar";
+    window.alert("No se pudo abrir el ejercicio: " + (error?.message || "error desconocido"));
   }
+});
+
+// Fallback if the button is inserted after the first render.
+document.addEventListener("click", (event) => {
+  const button = event.target instanceof Element ? event.target.closest("#reportedSpeechShortcut") : null;
+  if (!button) return;
+  event.preventDefault();
+  button.disabled = true;
+  button.textContent = "Opening… / Abriendo…";
+  document.dispatchEvent(new CustomEvent("hodie:reported-speech", { detail: { button } }));
 });
 
 let matrix;
