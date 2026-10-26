@@ -21,6 +21,14 @@
   <title>HODIE — Today. Not tomorrow.</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    .ai-lab-entry { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:1.25rem 0 1.5rem; padding:1.1rem 1.25rem; border:1px solid var(--border,#cfd7e2); border-left:4px solid #e0a63d; border-radius:1rem; background:var(--surface,#fff); }
+    .ai-lab-entry h2 { margin:.15rem 0 .35rem; font-size:1.15rem; }
+    .ai-lab-entry p { margin:.2rem 0; }
+    .ai-lab-eyebrow { font-size:.75rem; font-weight:700; letter-spacing:.08em; color:var(--muted,#526071); }
+    .ai-lab-button { flex-shrink:0; display:inline-block; padding:.8rem 1rem; border-radius:.7rem; background:#172033; color:#fff; font-weight:700; text-decoration:none; }
+    @media(max-width:600px) { .ai-lab-entry { align-items:flex-start; flex-direction:column; } }
+  </style>
 </head>
 <body translate="no" class="notranslate">
   <main class="app-shell">
@@ -34,6 +42,15 @@
         <span class="badge" id="levelBadge">A2</span>
       </div>
     </header>
+
+    <section class="ai-lab-entry" aria-labelledby="ai-lab-title">
+      <div>
+        <p class="ai-lab-eyebrow">EXPERIMENTAL · AI TOOLS</p>
+        <h2 id="ai-lab-title">Experiment with voice AI</h2>
+        <p>Try speech recognition with Scribe and English voice generation with Voice.</p>
+      </div>
+      <a class="ai-lab-button" href="./runonweb-lab.html">Open AI Lab →</a>
+    </section>
 
     <section id="app" aria-live="polite">
       <div class="loading">Preparing today's practice...</div>
