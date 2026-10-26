@@ -266,7 +266,7 @@ function renderPronunciationResult(data) {
 }
 
 $("#check-pronunciation-server").addEventListener("click", async () => {
-  const baseUrl = pronunciationEndpoint.value.trim().replace(/\\/+$/, "");
+  const baseUrl = pronunciationEndpoint.value.trim().replace(/\/+$/, "");
   if (!baseUrl) {
     setStatus(pronunciationStatus, "Escribe primero la URL base del servidor. La página no incluye el motor OpenPronounce.");
     return;
@@ -288,7 +288,7 @@ $("#check-pronunciation-server").addEventListener("click", async () => {
 });
 
 $("#analyze-pronunciation").addEventListener("click", async () => {
-  const baseUrl = pronunciationEndpoint.value.trim().replace(/\\/+$/, "");
+  const baseUrl = pronunciationEndpoint.value.trim().replace(/\/+$/, "");
   const expected = $("#expected-text").value.trim();
   if (!recordedBlob?.size || !expected || !baseUrl) {
     setStatus(pronunciationStatus, "Necesitas una grabación, una frase esperada y la URL base de un servidor OpenPronounce activo.");
