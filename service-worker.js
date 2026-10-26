@@ -1,7 +1,9 @@
-const CACHE = "hodie-shell-v42";
+const CACHE = "hodie-shell-v43";
 const APP_SHELL = [
   "./",
   "./index.html",
+  "./tools-lab.html",
+  "./tools-lab.js",
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
