@@ -9,14 +9,14 @@ const packageJson = JSON.parse(await readFile(new URL("../package.json", import.
 
 for (const id of [
   "check-writing", "check-rules", "speak-browser", "start-recognition",
-  "start-recording", "analyze-pronunciation", "build-practice"
+  "start-recording", "analyze-pronunciation", "check-pronunciation-server", "build-practice"
 ]) assert.match(html, new RegExp(`id="${id}"`), `Missing lab control: ${id}`);
 
 assert.match(js, /harper\.js@2\.4\.0/);
 assert.match(js, /SpeechRecognition|webkitSpeechRecognition/);
 assert.match(js, /speechSynthesis/);
 assert.match(html, /localhost:8000\/pronunciation/);
-assert.match(js, /evaluateKnownRules/);
+assert.match(js, /evaluateKnownRules/);\nassert.match(js, /renderPronunciationResult/);\nassert.match(js, /\\/health/);\nassert.match(js, /\\/pronunciation/);
 assert.doesNotMatch(home, /runonweb-lab|Scribe|RunOnWeb Lab/i);
 assert.match(home, /tools-lab\.html/);
 assert.match(sw, /hodie-shell-v43/);
