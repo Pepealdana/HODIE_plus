@@ -232,3 +232,22 @@ La presencia de un test no garantiza por sí sola que cubra todos los escenarios
 ---
 
 **Principio de cierre:** la IA puede proponer, explicar y generar variantes. HODIE conserva la decisión pedagógica y el registro oficial del aprendizaje.
+
+
+## 12. Implementación ejecutable del contrato v1.0.0
+
+El contrato ejecutable se mantiene en `data/ai-provider-contract.json`; sus validadores de entrada/salida están en `src/ai-provider-contract.js`, y sus pruebas en `tests/ai-provider-contract.test.js`.
+
+La interfaz real de proveedores en v1.0.0 es deliberadamente asimétrica:
+- `rule-based`: `start`, `respond`, `advance`.
+- `ai`: `respond`, que debe devolver una respuesta normalizada.
+
+`analyze` es un tipo de tarea (`analyze_interaction`), no un método obligatorio de proveedor. `finish` no es método de proveedor: completar sesiones y decidir si una evaluación puede producir evidencia es responsabilidad de los módulos de sesión y de `src/evidence-boundary.js`.
+
+### Sobre la validación
+
+Los validadores actuales comprueban forma, campos, versión, tarea, correlación y límites básicos. No garantizan por sí mismos que el contenido generado sea lingüísticamente correcto, seguro o pedagógicamente apropiado. Esa validación de contenido y la revisión humana siguen siendo necesarias antes de integrar un proveedor externo en producción.
+
+### Criterio de estado
+
+`contract-implemented` significa que existe un contrato versionado con validadores ejecutables y pruebas unitarias; no significa que haya un proveedor de IA de producción conectado, que los secretos estén configurados ni que se haya certificado la calidad pedagógica de un modelo.
