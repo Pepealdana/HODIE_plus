@@ -20,8 +20,11 @@ Este repositorio se utiliza para evaluar e integrar de forma controlada proveedo
 - **Contrato técnico v1.0.0:** [ai-provider-contract.json](data/ai-provider-contract.json).
 - **Validadores ejecutables:** [ai-provider-contract.js](src/ai-provider-contract.js).
 - **Pruebas de contrato y adaptadores:** [ai-provider-contract.test.js](tests/ai-provider-contract.test.js).
+- **Laboratorio RunOnWeb:** [runonweb-lab.html](runonweb-lab.html) — transcripción de voz y síntesis de audio en el navegador.
+- **Adaptador de capacidades RunOnWeb:** [runonweb-capabilities.js](src/providers/runonweb-capabilities.js).
+- **Pruebas de RunOnWeb:** [runonweb-capabilities.test.js](tests/runonweb-capabilities.test.js) y [runonweb-lab-contract.test.js](tests/runonweb-lab-contract.test.js).
 
-El documento de límites es una propuesta inicial. La primera integración experimental se orientará a herramientas de RunOnWeb, previa verificación de sus capacidades y requisitos. No se deben sincronizar repositorios completos de forma ciega.
+El primer experimento de RunOnWeb usa Scribe para voz-a-texto y Voice para texto-a-voz en una página de laboratorio aislada. Los módulos descargan pesos al navegador; las pruebas automatizadas usan módulos simulados y no certifican todavía la compatibilidad real del modelo en todos los navegadores. No se deben sincronizar repositorios completos de forma ciega.
 
 ## Linguistic coverage and activity suite
 
