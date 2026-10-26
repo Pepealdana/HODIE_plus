@@ -327,9 +327,9 @@ $("#build-practice").addEventListener("click", () => {
       applied.push(finding);
     }
   }
-  const explanation = applied.map((finding, index) => `${index + 1}. ${finding.explanation}`).join("\\n");
-  const practice = applied.map((finding, index) => `${index + 1}. ${finding.id === "present-continuous-be" ? "Completa: I ___ (learn) English now." : finding.id === "want-to" ? "Completa: I want ___ (improve) my English." : finding.id === "third-person-s" ? "Completa: She ___ (teach) English." : finding.id === "past-simple-go" ? "Completa: Yesterday I ___ (go) to school." : finding.id === "do-support-he" ? "Completa: He ___ like coffee." : "Reescribe la edad usando “I am … years old”."}`).join("\\n");
-  pedagogyResults.textContent = `Tu frase:\\n${text}\\n\\nCorrección sugerida:\\n${corrected}\\n\\nPor qué:\\n${explanation}\\n\\nPractica:\\n${practice}\\n\\nEstas reglas detectan solo patrones concretos. Revisa la frase completa y no tomes la sugerencia como una evaluación exhaustiva.`;
+  const explanation = applied.map((finding, index) => `${index + 1}. ${finding.explanation}`).join("\n");
+  const practice = applied.map((finding, index) => `${index + 1}. ${finding.id === "present-continuous-be" ? "Completa: I ___ (learn) English now." : finding.id === "want-to" ? "Completa: I want ___ (improve) my English." : finding.id === "third-person-s" ? "Completa: She ___ (teach) English." : finding.id === "past-simple-go" ? "Completa: Yesterday I ___ (go) to school." : finding.id === "do-support-he" ? "Completa: He ___ like coffee." : "Reescribe la edad usando “I am … years old”."}`).join("\n");
+  pedagogyResults.textContent = `Tu frase:\n${text}\n\nCorrección sugerida:\n${corrected}\n\nPor qué:\n${explanation}\n\nPractica:\n${practice}\n\nEstas reglas detectan solo patrones concretos. Revisa la frase completa y no tomes la sugerencia como una evaluación exhaustiva.`;
 });
 
 window.addEventListener("pagehide", () => {
