@@ -253,15 +253,15 @@ Los validadores actuales comprueban forma, campos, versión, tarea, correlación
 `contract-implemented` significa que existe un contrato versionado con validadores ejecutables y pruebas unitarias; no significa que haya un proveedor de IA de producción conectado, que los secretos estén configurados ni que se haya certificado la calidad pedagógica de un modelo.
 
 
-## 13. Experimento inicial RunOnWeb: capacidades locales de voz
+## 13. Laboratorio experimental de herramientas lingüísticas
 
-Se añadió un laboratorio aislado en `runonweb-lab.html` y `runonweb-lab.js`. Importa los módulos oficiales `runonweb/stt` y `runonweb/tts` para evaluar dos capacidades concretas:
+Se descartan las dos opciones RunOnWeb (Scribe y Voice) del flujo de HODIE_plus. La página `runonweb-lab.html`, su adaptador y sus pruebas se retiran; no forman parte de la nueva arquitectura de pruebas.
 
-- **Scribe:** graba una respuesta breve mediante el micrófono del navegador y la transcribe localmente.
-- **Voice:** genera audio de una frase modelo en inglés y permite reproducirlo.
+El nuevo laboratorio aislado `tools-lab.html` y `tools-lab.js` permite evaluar cuatro fases sin escribir progreso ni evidencia oficial:
 
-El adaptador `src/providers/runonweb-capabilities.js` encapsula carga, transcripción, síntesis, errores y liberación de recursos. No se presenta como proveedor conversacional: estos módulos no sustituyen un modelo generativo capaz de mantener un diálogo pedagógico. Tampoco escribe progreso, historial oficial ni evidencia.
+1. **Corrección escrita:** `harper.js` por CDN y reglas pedagógicas deterministas para un conjunto limitado de errores A2. Harper está en acceso temprano y su API puede cambiar; el laboratorio fija una versión para que la prueba sea reproducible.
+2. **Voz inmediata:** `speechSynthesis` y `SpeechRecognition`/`webkitSpeechRecognition` cuando estén disponibles. La síntesis puede ser local al dispositivo; el reconocimiento puede enviar audio a un servicio del navegador y su disponibilidad varía.
+3. **Pronunciación:** integración opcional con un servidor OpenPronounce autogestionado mediante `POST /pronunciation`. Requiere un servidor accesible por HTTPS, CORS configurado y recursos de cómputo/modelos; no puede ejecutarse como proceso persistente dentro de GitHub Pages.
+4. **Tutor pedagógico:** reglas locales de muestra que ofrecen correcciones y explicaciones para patrones conocidos. Es una prueba de concepto, no un corrector exhaustivo ni un modelo generativo.
 
-La página carga el código de los módulos desde esm.sh; los modelos ejecutan la inferencia en el navegador y descargan pesos la primera vez. Esto evita llamadas a una API de IA por solicitud, pero requiere conexión inicial, almacenamiento y memoria del dispositivo. La compatibilidad de la carga por CDN y de los formatos de audio debe comprobarse en la prueba manual del navegador publicado.
-
-Las pruebas automatizadas `tests/runonweb-capabilities.test.js` y `tests/runonweb-lab-contract.test.js` validan el contrato con módulos simulados y la presencia de los controles del laboratorio. No descargan modelos ni sustituyen la validación manual de audio, idiomas, rendimiento, permisos del micrófono y funcionamiento en móvil.
+El laboratorio es experimental. No se considera aprobada una herramienta solo porque la interfaz funcione: se requiere medir precisión lingüística, latencia, compatibilidad móvil, privacidad y falsos positivos. La respuesta de OpenPronounce se presenta como datos técnicos y nunca se convierte directamente en calificación oficial.
