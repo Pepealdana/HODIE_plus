@@ -18,7 +18,11 @@ function createAIProvider(adapter) {
   }
   return {
     kind: "ai",
-    respond: async (request) => {\n      validateAIRequest(request);\n      const response = await adapter.respond(request);\n      return validateAIResponse(response, request);\n    }
+    respond: async (request) => {
+      validateAIRequest(request);
+      const response = await adapter.respond(request);
+      return validateAIResponse(response, request);
+    }
   };
 }
 
