@@ -1,33 +1,129 @@
 {
   "schemaVersion": "1.0.0",
-  "status": "interface-only",
+  "status": "contract-implemented",
   "principle": "AI is an optional capability provider. It never owns progress, mastery, retention, or evidence mutation.",
+  "authority": {
+    "providerMaySuggest": true,
+    "providerMayWriteProgress": false,
+    "providerMayCreateAuthoritativeEvidence": false,
+    "evidenceMustPassThrough": "src/evidence-boundary.js",
+    "learningStateOwner": "HODIE learning engine"
+  },
   "providerFlow": [
     "experience-engine",
     "conversation-provider",
-    "rule-based-or-ai-provider",
-    "raw-interaction-analysis",
+    "provider-adapter",
+    "validated-provider-response",
+    "application-feedback-and-review",
     "evidence-boundary",
     "learning-engine"
   ],
-  "providers": ["rule-based", "ai"],
-  "operations": {
-    "start": "Create an experience state without mutating progress.",
-    "respond": "Return a learner-facing turn plus optional raw analysis.",
-    "analyze": "Return structured observations; observations are not authoritative evidence.",
-    "finish": "Return a summary; only explicit assessment sessions may enter the evidence boundary."
+  "providers": {
+    "rule-based": {
+      "requiredMethods": [
+        "start",
+        "respond",
+        "advance"
+      ],
+      "capabilities": [
+        "targetLanguageResponse",
+        "optionalCorrection",
+        "followUpQuestion",
+        "contextAwareness",
+        "structuredObservations"
+      ],
+      "externalCall": false
+    },
+    "ai": {
+      "requiredMethods": [
+        "respond"
+      ],
+      "capabilities": [
+        "targetLanguageResponse",
+        "optionalCorrection",
+        "followUpQuestion",
+        "contextAwareness",
+        "structuredObservations"
+      ],
+      "externalCall": true,
+      "responseMustBeNormalized": true
+    }
   },
-  "requiredCapabilities": [
-    "targetLanguageResponse",
-    "optionalCorrection",
-    "followUpQuestion",
-    "contextAwareness",
-    "structuredObservations"
-  ],
+  "operations": {
+    "start": "Rule-based provider operation: create an experience state without mutating learner progress.",
+    "respond": "Produce a learner-facing turn. AI responses must use the normalized response envelope.",
+    "advance": "Rule-based provider operation: advance an experience state without mutating learner progress.",
+    "analyze": "Optional task type analyze_interaction. Structured observations are suggestions, not authoritative evidence.",
+    "finish": "Not a provider method in v1.0.0. Session completion and evidence submission remain owned by HODIE session/evidence modules."
+  },
+  "request": {
+    "validator": "validateAIRequest",
+    "module": "src/ai-provider-contract.js",
+    "requiredFields": [
+      "contractVersion",
+      "requestId",
+      "taskType",
+      "learningObjective",
+      "input",
+      "constraints"
+    ],
+    "optionalFields": [
+      "languageLevel",
+      "referenceIds",
+      "maxOutputChars"
+    ],
+    "taskTypes": [
+      "conversation_turn",
+      "explain",
+      "generate_activity",
+      "suggest_feedback",
+      "analyze_interaction"
+    ],
+    "maxOutputChars": {
+      "minimum": 1,
+      "maximum": 20000
+    }
+  },
+  "response": {
+    "validator": "validateAIResponse",
+    "module": "src/ai-provider-contract.js",
+    "requiredFields": [
+      "contractVersion",
+      "requestId",
+      "taskType",
+      "status"
+    ],
+    "statuses": [
+      "ok",
+      "refused",
+      "unavailable",
+      "invalid"
+    ],
+    "successRequires": [
+      "result"
+    ],
+    "optionalFields": [
+      "uncertainty",
+      "warnings",
+      "provider",
+      "model",
+      "usage"
+    ],
+    "uncertaintyRange": [
+      0,
+      1
+    ],
+    "requestIdMustMatch": true,
+    "taskTypeMustMatch": true
+  },
   "safetyAndCost": {
     "localFirst": true,
     "externalCallRequiredForCorePractice": false,
     "progressMutationByProvider": false,
-    "providerSecretsInClient": false
+    "providerSecretsInClient": false,
+    "inputIsUntrusted": true,
+    "outputIsUntrusted": true,
+    "defaultNoSensitiveData": true,
+    "maxOutputChars": 20000
   }
 }
