@@ -18,7 +18,6 @@ let recordedBlob;
 let recordedChunks = [];
 
 function setStatus(node, message) { node.textContent = message; }
-function escapeText(value) { return String(value ?? ""); }
 
 const knownRules = [
   {
@@ -101,7 +100,10 @@ $("#check-writing").addEventListener("click", async () => {
     const findings = lints.map((lint) => {
       let location = "";
       try { const span = lint.span(); location = span ? ` (posición ${span.start}–${span.end})` : ""; } catch {}
-      return { message: `${lint.message()}${location}`, original: "", correction: "", explanation: "" };
+      let suggestions = [];
+      try { suggestions = typeof lint.suggestions === "function" ? lint.suggestions().map((item) => item.get_replacement_text()).filter(Boolean) : []; } catch {}
+      const suggestionText = suggestions.length ? `\\nSugerencias: ${suggestions.join(" / ")}` : "";
+      return { message: `${lint.message()}${location}${suggestionText}`, original: "", correction: "", explanation: "" };
     });
     renderFindings(harperResults, findings, "Harper no encontró problemas en esta frase. Esto no garantiza que toda la frase sea correcta.");
     setStatus(harperStatus, `Revisión terminada: ${lints.length} observación(es). Harper se ejecuta en el navegador.`);
