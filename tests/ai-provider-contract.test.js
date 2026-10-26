@@ -57,9 +57,30 @@ assert.throws(() => validateAIResponse({ ...response, status: "ok", result: unde
 assert.throws(() => validateAIResponse({ ...response, uncertainty: 1.1 }, request), /uncertainty/);
 assert.throws(() => validateAIResponse({ ...response, status: "unknown" }, request), /Unsupported AI response status/);
 
-const aiProvider = createAIProvider({ respond: async (value) => ({ echo: value.requestId }) });
+const aiProvider = createAIProvider({
+  respond: async (value) => ({
+    contractVersion: CONTRACT_VERSION,
+    requestId: value.requestId,
+    taskType: value.taskType,
+    status: "ok",
+    result: { text: "That sounds interesting. What do you teach?" },
+    provider: "fixture",
+    model: "deterministic-test"
+  })
+});
 assert.equal(validateProvider(aiProvider).kind, "ai");
-assert.equal((await aiProvider.respond(request)).echo, request.requestId);
+assert.equal((await aiProvider.respond(request)).result.text, "That sounds interesting. What do you teach?");
+await assert.rejects(() => aiProvider.respond({ ...request, requestId: "" }), /requestId/);
+const malformedAdapter = createAIProvider({
+  respond: async (value) => ({
+    contractVersion: CONTRACT_VERSION,
+    requestId: "wrong-request",
+    taskType: value.taskType,
+    status: "ok",
+    result: { text: "This response belongs to another request." }
+  })
+});
+await assert.rejects(() => malformedAdapter.respond(request), /requestId does not match/);
 assert.throws(() => createAIProvider({}), /respond\(\)/);
 
 const ruleBased = createRuleBasedProvider({
