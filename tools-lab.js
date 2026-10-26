@@ -157,7 +157,9 @@ if (SpeechRecognition) {
       browserTranscript.textContent = "No se obtuvo una transcripción final. Intenta hablar más cerca del micrófono y pronunciar una frase corta.";
       setStatus(browserVoiceStatus, "No se recibió una transcripción final.");
     } else {
-      setStatus(browserVoiceStatus, "Reconocimiento terminado. Compara el texto con la frase objetivo; no es una puntuación de pronunciación.");
+      const recognized = browserTranscript.textContent.trim();
+      browserTranscript.textContent = `Frase objetivo: ${speechText.value.trim()}\\nTexto reconocido: ${recognized}`;
+      setStatus(browserVoiceStatus, "Reconocimiento terminado. Compara ambos textos; esta función transcribe voz, no califica pronunciación.");
     }
   });
 } else {
