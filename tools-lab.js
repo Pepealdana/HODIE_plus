@@ -288,10 +288,10 @@ $("#check-pronunciation-server").addEventListener("click", async () => {
 });
 
 $("#analyze-pronunciation").addEventListener("click", async () => {
-  const endpoint = $("#pronounce-endpoint").value.trim();
+  const baseUrl = pronunciationEndpoint.value.trim().replace(/\\/+$/, "");
   const expected = $("#expected-text").value.trim();
-  if (!recordedBlob?.size || !expected || !endpoint) {
-    setStatus(pronunciationStatus, "Necesitas una grabación, una frase esperada y una URL de servicio.");
+  if (!recordedBlob?.size || !expected || !baseUrl) {
+    setStatus(pronunciationStatus, "Necesitas una grabación, una frase esperada y la URL base de un servidor OpenPronounce activo.");
     return;
   }
   const button = $("#analyze-pronunciation");
@@ -305,7 +305,7 @@ $("#analyze-pronunciation").addEventListener("click", async () => {
     const response = await fetch(`${baseUrl}/pronunciation`, { method: "POST", body: form });
     if (!response.ok) throw new Error(`El servicio respondió HTTP ${response.status}. Verifica el endpoint y CORS.`);
     const data = await response.json();
-    pronunciationResults.textContent = JSON.stringify(data, null, 2);
+    renderPronunciationResult(data);
     setStatus(pronunciationStatus, "Análisis recibido. La puntuación es orientativa, no una calificación oficial.");
   } catch (error) {
     setStatus(pronunciationStatus, `No se pudo analizar: ${error.message}. Confirma que el servidor esté activo, accesible por HTTPS y permita CORS desde GitHub Pages.`);
