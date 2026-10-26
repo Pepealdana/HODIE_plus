@@ -15,7 +15,7 @@ for (const id of [
 assert.match(js, /harper\.js@2\.4\.0/);
 assert.match(js, /SpeechRecognition|webkitSpeechRecognition/);
 assert.match(js, /speechSynthesis/);
-assert.match(js, /\/pronunciation/);
+assert.match(html, /localhost:8000\/pronunciation/);
 assert.match(js, /evaluateKnownRules/);
 assert.doesNotMatch(home, /runonweb-lab|Scribe|RunOnWeb Lab/i);
 assert.match(home, /tools-lab\.html/);
