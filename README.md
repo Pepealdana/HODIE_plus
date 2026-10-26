@@ -20,6 +20,8 @@ Este repositorio se utiliza para evaluar e integrar de forma controlada proveedo
 - **Contrato técnico v1.0.0:** [ai-provider-contract.json](data/ai-provider-contract.json).
 - **Validadores ejecutables:** [ai-provider-contract.js](src/ai-provider-contract.js).
 - **Pruebas de contrato y adaptadores:** [ai-provider-contract.test.js](tests/ai-provider-contract.test.js).
+- **Adaptador experimental de OpenAI (solo servidor):** [openai-chat-completions-adapter.js](src/providers/openai-chat-completions-adapter.js).
+- **Pruebas del adaptador:** [openai-chat-completions-adapter.test.js](tests/openai-chat-completions-adapter.test.js).
 
 El documento de límites es una propuesta inicial: los umbrales de calidad por tarea, los proveedores concretos y la política de datos deben definirse antes de aprobar una integración. No se deben sincronizar repositorios completos de forma ciega.
 
