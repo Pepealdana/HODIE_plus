@@ -209,7 +209,7 @@ La presencia de un test no garantiza por sí sola que cubra todos los escenarios
 
 ## 10. Decisiones pendientes antes de conectar proveedores
 
-- Inventario exacto de herramientas/proveedores de Moudeved que se evaluarán.
+- Inventario de herramientas RunOnWeb por evaluar; la primera fase cubre Scribe (voz-a-texto) y Voice (texto-a-voz).
 - Tareas que cada proveedor puede ejecutar y tareas prohibidas.
 - Esquema ejecutable definitivo y política de compatibilidad.
 - Umbrales de calidad por tarea, coste y latencia.
@@ -251,3 +251,17 @@ Los validadores actuales comprueban forma, campos, versión, tarea, correlación
 ### Criterio de estado
 
 `contract-implemented` significa que existe un contrato versionado con validadores ejecutables y pruebas unitarias; no significa que haya un proveedor de IA de producción conectado, que los secretos estén configurados ni que se haya certificado la calidad pedagógica de un modelo.
+
+
+## 13. Experimento inicial RunOnWeb: capacidades locales de voz
+
+Se añadió un laboratorio aislado en `runonweb-lab.html` y `runonweb-lab.js`. Importa los módulos oficiales `runonweb/stt` y `runonweb/tts` para evaluar dos capacidades concretas:
+
+- **Scribe:** graba una respuesta breve mediante el micrófono del navegador y la transcribe localmente.
+- **Voice:** genera audio de una frase modelo en inglés y permite reproducirlo.
+
+El adaptador `src/providers/runonweb-capabilities.js` encapsula carga, transcripción, síntesis, errores y liberación de recursos. No se presenta como proveedor conversacional: estos módulos no sustituyen un modelo generativo capaz de mantener un diálogo pedagógico. Tampoco escribe progreso, historial oficial ni evidencia.
+
+La página carga el código de los módulos desde esm.sh; los modelos ejecutan la inferencia en el navegador y descargan pesos la primera vez. Esto evita llamadas a una API de IA por solicitud, pero requiere conexión inicial, almacenamiento y memoria del dispositivo. La compatibilidad de la carga por CDN y de los formatos de audio debe comprobarse en la prueba manual del navegador publicado.
+
+Las pruebas automatizadas `tests/runonweb-capabilities.test.js` y `tests/runonweb-lab-contract.test.js` validan el contrato con módulos simulados y la presencia de los controles del laboratorio. No descargan modelos ni sustituyen la validación manual de audio, idiomas, rendimiento, permisos del micrófono y funcionamiento en móvil.
