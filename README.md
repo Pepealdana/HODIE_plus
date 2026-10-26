@@ -20,11 +20,10 @@ Este repositorio se utiliza para evaluar e integrar de forma controlada proveedo
 - **Contrato técnico v1.0.0:** [ai-provider-contract.json](data/ai-provider-contract.json).
 - **Validadores ejecutables:** [ai-provider-contract.js](src/ai-provider-contract.js).
 - **Pruebas de contrato y adaptadores:** [ai-provider-contract.test.js](tests/ai-provider-contract.test.js).
-- **Laboratorio RunOnWeb:** [runonweb-lab.html](runonweb-lab.html) — transcripción de voz y síntesis de audio en el navegador.
-- **Adaptador de capacidades RunOnWeb:** [runonweb-capabilities.js](src/providers/runonweb-capabilities.js).
-- **Pruebas de RunOnWeb:** [runonweb-capabilities.test.js](tests/runonweb-capabilities.test.js) y [runonweb-lab-contract.test.js](tests/runonweb-lab-contract.test.js).
+- **Laboratorio de herramientas lingüísticas:** [tools-lab.html](tools-lab.html) — evaluación experimental de corrección escrita con Harper, voz del navegador, pronunciación con OpenPronounce y reglas pedagógicas locales.
+- **Pruebas del laboratorio:** `tests/tools-lab-contract.test.js` verifica los controles y límites básicos de la página.
 
-El primer experimento de RunOnWeb usa Scribe para voz-a-texto y Voice para texto-a-voz en una página de laboratorio aislada. Los módulos descargan pesos al navegador; las pruebas automatizadas usan módulos simulados y no certifican todavía la compatibilidad real del modelo en todos los navegadores. No se deben sincronizar repositorios completos de forma ciega.
+El laboratorio de herramientas compara cuatro fases. Harper y las reglas pedagógicas funcionan como pruebas en el navegador; la voz usa las API disponibles del navegador. OpenPronounce necesita una instancia propia compatible con su API, pues GitHub Pages solo aloja archivos estáticos. Los resultados no modifican el progreso oficial de HODIE. No se deben sincronizar repositorios completos de forma ciega.
 
 ## Linguistic coverage and activity suite
 
