@@ -1,4 +1,4 @@
-const CACHE = "hodie-shell-v40";
+const CACHE = "hodie-shell-v41";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -51,7 +51,7 @@ const APP_SHELL = [
   "./src/learning-engine.js",
   "./src/linguistic-engine.js",
   "./src/linguistic-knowledge-index.js",
-    "./src/linguistic-activity-links.js",
+  "./src/linguistic-activity-links.js",
   "./src/learning-orchestrator.js",
   "./src/learning-planner.js",
   "./src/learning-session.js",
