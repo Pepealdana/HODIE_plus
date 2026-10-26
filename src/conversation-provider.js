@@ -24,6 +24,16 @@ function validateProvider(provider) {
   if (!provider?.kind || !PROVIDER_KINDS.has(provider.kind)) {
     throw new Error("Unsupported conversation provider.");
   }
+
+  const requiredMethods = provider.kind === "rule-based"
+    ? ["start", "respond", "advance"]
+    : ["respond"];
+
+  const missing = requiredMethods.filter((method) => typeof provider[method] !== "function");
+  if (missing.length) {
+    throw new Error(`Invalid ${provider.kind} provider: missing required method(s): ${missing.join(", ")}.`);
+  }
+
   return provider;
 }
 
