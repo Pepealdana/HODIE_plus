@@ -21,6 +21,6 @@ assert.doesNotMatch(home, /runonweb-lab|Scribe|RunOnWeb Lab/i);
 assert.match(home, /tools-lab\.html/);
 assert.match(sw, /hodie-shell-v43/);
 assert.match(sw, /tools-lab\.html/);
-assert.equal(packageJson.scripts["test:tools-lab"], "node tests/tools-lab-contract.test.js");
+assert.equal(packageJson.scripts["test:tools-lab"], "node --check tools-lab.js && node tests/tools-lab-contract.test.js");
 assert.doesNotMatch(packageJson.scripts.test, /test:runonweb/);
 console.log("Language tools lab contract tests: PASS");
