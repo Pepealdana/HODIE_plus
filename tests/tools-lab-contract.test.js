@@ -10,22 +10,22 @@ const packageJson = JSON.parse(await readFile(new URL("../package.json", import.
 for (const id of [
   "check-writing", "check-rules", "speak-browser", "start-recognition",
   "start-recording", "analyze-pronunciation", "check-pronunciation-server", "build-practice"
-]) assert.match(html, new RegExp(`id="${id}"`), `Missing lab control: ${id}`);
+]) assert.ok(html.includes(`id="${id}"`), `Missing lab control: ${id}`);
 
-assert.match(js, /harper\\.js@2\\.4\\.0/);
-assert.match(js, /SpeechRecognition|webkitSpeechRecognition/);
-assert.match(js, /speechSynthesis/);
-assert.match(html, /https:\\/\\/tu-servidor:8000/);
-assert.doesNotMatch(html, /localhost:8000/);
-assert.match(js, /evaluateKnownRules/);
-assert.match(js, /renderPronunciationResult/);
-assert.match(js, /\\/health/);
-assert.match(js, /\\/pronunciation/);
-assert.match(js, /const applied = \[\]/);
-assert.doesNotMatch(home, /runonweb-lab|Scribe|RunOnWeb Lab/i);
-assert.match(home, /tools-lab\\.html/);
-assert.match(sw, /hodie-shell-v43/);
-assert.match(sw, /tools-lab\\.html/);
+assert.ok(js.includes("harper.js@2.4.0"));
+assert.ok(js.includes("SpeechRecognition"));
+assert.ok(js.includes("speechSynthesis"));
+assert.ok(html.includes("https://tu-servidor:8000"));
+assert.ok(!html.includes("localhost:8000"));
+assert.ok(js.includes("evaluateKnownRules"));
+assert.ok(js.includes("renderPronunciationResult"));
+assert.ok(js.includes("${baseUrl}/health"));
+assert.ok(js.includes("${baseUrl}/pronunciation"));
+assert.ok(js.includes("const applied = []"));
+assert.ok(!home.match(/runonweb-lab|Scribe|RunOnWeb Lab/i));
+assert.ok(home.includes("tools-lab.html"));
+assert.ok(sw.includes("hodie-shell-v44"));
+assert.ok(sw.includes("tools-lab.html"));
 assert.equal(packageJson.scripts["test:tools-lab"], "node --check tools-lab.js && node tests/tools-lab-contract.test.js");
-assert.doesNotMatch(packageJson.scripts.test, /test:runonweb/);
+assert.ok(!packageJson.scripts.test.includes("test:runonweb"));
 console.log("Language tools lab contract tests: PASS");
