@@ -11178,7 +11178,15 @@
       "negativeCases": [
         {
           "text": "She says, \"I am tired.\"",
-          "reason": "The reporting verb is present; this tested backshift pattern does not apply."
+          "reason": "The reporting verb is present, so this past-reporting correction does not apply."
+        },
+        {
+          "text": "She said that she was tired.",
+          "reason": "This reported statement is already correct."
+        },
+        {
+          "text": "She said, \"I am tired.\"",
+          "reason": "Direct speech is valid and must not be rewritten as an error."
         }
       ],
       "practice": [
@@ -11210,7 +11218,7 @@
       },
       "severity": "medium",
       "priority": "high",
-      "status": "draft",
+      "status": "tested",
       "knowledgeAccess": {
         "scope": "global",
         "searchable": true,
@@ -11231,8 +11239,14 @@
         "tired"
       ],
       "incorrectCases": [
-        "She said, “I am tired.”"
-      ]
+        "She said that she am tired."
+      ],
+      "matcher": {
+        "pattern": "\\bShe said that she am tired\\b",
+        "flags": "gi",
+        "replacement": "She said that she was tired",
+        "confidence": "high"
+      }
     },
     {
       "id": "REPORTED-SPEECH-HE-AM-BUSY-001",
@@ -11264,7 +11278,15 @@
       "negativeCases": [
         {
           "text": "He says, \"I am busy.\"",
-          "reason": "The reporting verb is present; this tested backshift pattern does not apply."
+          "reason": "The reporting verb is present, so this past-reporting correction does not apply."
+        },
+        {
+          "text": "He said that he was busy.",
+          "reason": "This reported statement is already correct."
+        },
+        {
+          "text": "He said, \"I am busy.\"",
+          "reason": "Direct speech is valid and must not be rewritten as an error."
         }
       ],
       "practice": [
@@ -11296,7 +11318,7 @@
       },
       "severity": "medium",
       "priority": "high",
-      "status": "draft",
+      "status": "tested",
       "knowledgeAccess": {
         "scope": "global",
         "searchable": true,
@@ -11317,8 +11339,14 @@
         "busy"
       ],
       "incorrectCases": [
-        "He said, “I am busy.”"
-      ]
+        "He said that he be busy."
+      ],
+      "matcher": {
+        "pattern": "\\bHe said that he be busy\\b",
+        "flags": "gi",
+        "replacement": "He said that he was busy",
+        "confidence": "high"
+      }
     },
     {
       "id": "REPORTED-SPEECH-SHE-HAPPY-001",
@@ -34432,6 +34460,56 @@
         "REPORTED-SPEECH-SHE-ASKED-WHERE-001"
       ],
       "expectCorrection": "She asked me where I lived."
+    },
+    {
+      "id": "TC-LEX-BE-VERB-001",
+      "text": "I am agree with you.",
+      "expectRules": [
+        "LEX-BE-VERB-001"
+      ],
+      "expectCorrection": "I agree with you."
+    },
+    {
+      "id": "TC-LEX-BE-VERB-NEG-001",
+      "text": "I agree with you.",
+      "expectRules": [],
+      "expectCorrection": "I agree with you."
+    },
+    {
+      "id": "TC-LEX-BE-VERB-NEG-002",
+      "text": "I am a teacher.",
+      "expectRules": [],
+      "expectCorrection": "I am a teacher."
+    },
+    {
+      "id": "TC-LEX-BE-VERB-NEG-003",
+      "text": "I am working now.",
+      "expectRules": [],
+      "expectCorrection": "I am working now."
+    },
+    {
+      "id": "TC-PEOPLE-AGREE-001",
+      "text": "People is ready.",
+      "expectRules": [
+        "SVA-PLURAL-001"
+      ],
+      "expectCorrection": "People are ready."
+    },
+    {
+      "id": "TC-REPORTED-SPEECH-SHE-AM-TIRED-001",
+      "text": "She said that she am tired.",
+      "expectRules": [
+        "REPORTED-SPEECH-SHE-AM-TIRED-001"
+      ],
+      "expectCorrection": "She said that she was tired."
+    },
+    {
+      "id": "TC-REPORTED-SPEECH-HE-AM-BUSY-001",
+      "text": "He said that he be busy.",
+      "expectRules": [
+        "REPORTED-SPEECH-HE-AM-BUSY-001"
+      ],
+      "expectCorrection": "He said that he was busy."
     }
   ],
   "cefrDimensions": {
@@ -34480,15 +34558,15 @@
   "build": {
     "generatorVersion": "1.1.0",
     "packs": [
-      "coverage-2026-02.json",
       "expansion-2026-01.json",
+      "coverage-2026-02.json",
       "knowledge-library-2026-03.json"
     ],
     "counts": {
-      "communicativeFunctions": 59,
-      "grammarRules": 92,
-      "vocabularyEntries": 357,
-      "testCases": 94
+      "communicativeFunctions": 69,
+      "grammarRules": 119,
+      "vocabularyEntries": 449,
+      "testCases": 130
     }
   }
 }

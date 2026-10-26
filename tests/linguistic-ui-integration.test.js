@@ -62,4 +62,4 @@ assert.match(app, /reported speech/i);
 
 assert.ok(app.includes('home.querySelector("#activityCatalog")'));
 
-assert.ok(app.includes("catalogSection?.scrollIntoView"));
+assert.ok(app.includes("disclosure?.scrollIntoView"));
