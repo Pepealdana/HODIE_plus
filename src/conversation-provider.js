@@ -1,3 +1,5 @@
+import { validateAIRequest, validateAIResponse } from "./ai-provider-contract.js";
+
 const PROVIDER_KINDS = new Set(["rule-based", "ai"]);
 
 function createRuleBasedProvider(engine) {
@@ -16,7 +18,7 @@ function createAIProvider(adapter) {
   }
   return {
     kind: "ai",
-    respond: (...args) => adapter.respond(...args)
+    respond: async (request) => {\n      validateAIRequest(request);\n      const response = await adapter.respond(request);\n      return validateAIResponse(response, request);\n    }
   };
 }
 
