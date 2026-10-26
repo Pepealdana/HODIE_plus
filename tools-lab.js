@@ -8,6 +8,7 @@ const browserVoiceStatus = $("#browser-voice-status");
 const browserTranscript = $("#browser-transcript");
 const pronunciationStatus = $("#pronunciation-status");
 const pronunciationResults = $("#pronunciation-results");
+const pronunciationEndpoint = $("#pronounce-endpoint");
 const pedagogyResults = $("#pedagogy-results");
 
 let harperLinter;
@@ -218,6 +219,74 @@ $("#stop-recording").addEventListener("click", () => {
   $("#stop-recording").disabled = true;
 });
 
+
+function renderPronunciationResult(data) {
+  pronunciationResults.replaceChildren();
+  if (!data || typeof data !== "object") {
+    pronunciationResults.textContent = "El servidor no devolvió un resultado válido.";
+    return;
+  }
+  const score = typeof data.score === "number" ? data.score : null;
+  const transcript = data.transcribe || data.transcript || "";
+  const summary = document.createElement("p");
+  summary.textContent = score === null
+    ? "El servidor respondió, pero no incluyó una puntuación reconocible."
+    : `Puntuación orientativa: ${score}/100`;
+  pronunciationResults.append(summary);
+  if (transcript) {
+    const transcriptLine = document.createElement("p");
+    transcriptLine.textContent = `El sistema entendió: ${transcript}`;
+    pronunciationResults.append(transcriptLine);
+  }
+  const errors = data.differences?.errors;
+  if (Array.isArray(errors) && errors.length) {
+    const heading = document.createElement("h3");
+    heading.textContent = "Palabras o sonidos para revisar";
+    pronunciationResults.append(heading);
+    for (const error of errors.slice(0, 20)) {
+      const line = document.createElement("p");
+      const phones = Array.isArray(error.phones)
+        ? error.phones.map((phone) => `${phone.expected ?? "?"} → ${phone.heard ?? "?"}`).join(", ")
+        : "";
+      line.textContent = `${error.word ?? "Palabra"}: esperado ${error.expected ?? "?"}; escuchado ${error.actual ?? "?"}${phones ? ` (sonidos: ${phones})` : ""}`;
+      pronunciationResults.append(line);
+    }
+  } else {
+    const note = document.createElement("p");
+    note.textContent = "No se devolvieron errores por palabra. Revisa también la transcripción y recuerda que el resultado puede contener falsos positivos.";
+    pronunciationResults.append(note);
+  }
+  const details = document.createElement("details");
+  const summaryDetails = document.createElement("summary");
+  summaryDetails.textContent = "Ver respuesta técnica completa";
+  const pre = document.createElement("pre");
+  pre.textContent = JSON.stringify(data, null, 2);
+  details.append(summaryDetails, pre);
+  pronunciationResults.append(details);
+}
+
+$("#check-pronunciation-server").addEventListener("click", async () => {
+  const baseUrl = pronunciationEndpoint.value.trim().replace(/\\/+$/, "");
+  if (!baseUrl) {
+    setStatus(pronunciationStatus, "Escribe primero la URL base del servidor. La página no incluye el motor OpenPronounce.");
+    return;
+  }
+  const button = $("#check-pronunciation-server");
+  button.disabled = true;
+  setStatus(pronunciationStatus, "Comprobando el endpoint /health…");
+  try {
+    const response = await fetch(`${baseUrl}/health`, { method: "GET" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (data.status !== "ok") throw new Error("El endpoint respondió, pero no confirmó status: ok.");
+    setStatus(pronunciationStatus, "Servidor OpenPronounce disponible. Ya puedes grabar una frase y analizarla.");
+  } catch (error) {
+    setStatus(pronunciationStatus, `No se pudo conectar: ${error.message}. Comprueba URL, servidor, HTTPS y CORS.`);
+  } finally {
+    button.disabled = false;
+  }
+});
+
 $("#analyze-pronunciation").addEventListener("click", async () => {
   const endpoint = $("#pronounce-endpoint").value.trim();
   const expected = $("#expected-text").value.trim();
@@ -233,13 +302,13 @@ $("#analyze-pronunciation").addEventListener("click", async () => {
     form.append("file", recordedBlob, "hodie-practice-audio.webm");
     form.append("expected_text", expected);
     form.append("lang", "en");
-    const response = await fetch(endpoint, { method: "POST", body: form });
+    const response = await fetch(`${baseUrl}/pronunciation`, { method: "POST", body: form });
     if (!response.ok) throw new Error(`El servicio respondió HTTP ${response.status}. Verifica el endpoint y CORS.`);
     const data = await response.json();
     pronunciationResults.textContent = JSON.stringify(data, null, 2);
     setStatus(pronunciationStatus, "Análisis recibido. La puntuación es orientativa, no una calificación oficial.");
   } catch (error) {
-    setStatus(pronunciationStatus, `No se pudo analizar: ${error.message}. Para GitHub Pages, configura un servidor accesible por HTTPS y CORS.`);
+    setStatus(pronunciationStatus, `No se pudo analizar: ${error.message}. Confirma que el servidor esté activo, accesible por HTTPS y permita CORS desde GitHub Pages.`);
   } finally { button.disabled = false; }
 });
 
