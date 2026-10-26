@@ -33,7 +33,7 @@
   <section class="lab-panel" aria-labelledby="phase1-title">
     <span class="phase">Fase 1 · Corrección escrita</span>
     <h2 id="phase1-title">Harper + reglas pedagógicas</h2>
-    <p>Harper revisa gramática y estilo en inglés. El motor local de HODIE añade explicaciones para algunos errores frecuentes de nivel A2.</p>
+    <p>Harper detecta posibles problemas gramaticales o de estilo. Las sugerencias son propuestas, no una corrección infalible. El botón de reglas de HODIE muestra por separado los patrones didácticos que reconoce.</p>
     <label for="writing-text">Escribe una frase en inglés</label>
     <textarea id="writing-text">I learning English because I want improve my job opportunities.</textarea>
     <div class="lab-actions">
@@ -48,7 +48,7 @@
   <section class="lab-panel" aria-labelledby="phase2-title">
     <span class="phase">Fase 2 · Interacción inmediata</span>
     <h2 id="phase2-title">Voz nativa del navegador</h2>
-    <p>Prueba la síntesis de voz y, si el navegador la ofrece, el reconocimiento de voz. El reconocimiento puede utilizar un servicio externo según el navegador.</p>
+    <p>Primero escucha la frase modelo. Después, inicia el reconocimiento y léela completa en voz alta. Compara la transcripción con el texto original: esta función convierte voz en texto, pero no califica la pronunciación.</p>
     <label for="speech-text">Frase para escuchar o decir</label>
     <textarea id="speech-text">Hello! I teach technology and robotics at school.</textarea>
     <div class="lab-actions">
@@ -67,23 +67,24 @@
     <p>Graba la frase objetivo y envíala a una instancia de OpenPronounce que controles. El análisis incluye transcripción y diferencias fonéticas; puede producir falsos positivos, especialmente con acentos o ruido.</p>
     <label for="expected-text">Frase esperada</label>
     <textarea id="expected-text">Hello, how are you?</textarea>
-    <label for="pronounce-endpoint">URL de la instancia OpenPronounce</label>
-    <input id="pronounce-endpoint" type="url" value="http://localhost:8000/pronunciation" autocomplete="url">
-    <p class="lab-note">En GitHub Pages, localhost se refiere al dispositivo del estudiante, no a GitHub. El servidor debe permitir CORS desde el dominio de HODIE_plus. No envíes audio a un servidor que no controles.</p>
+    <label for="pronounce-endpoint">URL base del servidor OpenPronounce</label>
+    <input id="pronounce-endpoint" type="url" value="" placeholder="https://tu-servidor:8000" autocomplete="url">
+    <p class="lab-note">Esta fase no funciona hasta que instales y ejecutes OpenPronounce en un PC o servidor. Si pruebas desde el teléfono, no uses localhost: apunta al servidor de tu PC mediante una dirección accesible y HTTPS. Configura CORS para GitHub Pages y envía audio solo a un servidor que controles.</p>
     <div class="lab-actions">
       <button class="primary" id="start-recording" type="button">Grabar frase</button>
       <button class="secondary" id="stop-recording" type="button" disabled>Detener grabación</button>
+      <button class="secondary" id="check-pronunciation-server" type="button">Comprobar servidor</button>
       <button class="secondary" id="analyze-pronunciation" type="button" disabled>Analizar pronunciación</button>
     </div>
     <audio id="pronunciation-audio" controls hidden></audio>
-    <p id="pronunciation-status" class="lab-status" role="status" aria-live="polite">OpenPronounce aún no está conectado.</p>
+    <p id="pronunciation-status" class="lab-status" role="status" aria-live="polite">Servidor no configurado. Primero ejecuta OpenPronounce y comprueba la conexión.</p>
     <div id="pronunciation-results" class="lab-output">Aquí aparecerán los resultados del análisis.</div>
   </section>
 
   <section class="lab-panel" aria-labelledby="phase4-title">
     <span class="phase">Fase 4 · Tutor pedagógico</span>
     <h2 id="phase4-title">Explicación y práctica de refuerzo</h2>
-    <p>Prueba un corrector local determinista para errores frecuentes. No es un modelo generativo: solo corrige patrones conocidos, para que la respuesta sea inmediata y predecible.</p>
+    <p>Esta fase usa reglas sencillas para enseñar errores conocidos. Puede corregir varios patrones de una frase y proponer una práctica por cada uno; no sustituye una revisión completa.</p>
     <div class="lab-actions"><button class="primary" id="build-practice" type="button">Crear ejercicio desde mi frase</button></div>
     <div id="pedagogy-results" class="lab-output">El ejercicio de refuerzo aparecerá aquí.</div>
   </section>
