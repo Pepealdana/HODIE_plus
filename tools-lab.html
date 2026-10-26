@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F6F8">
+  <meta name="description" content="Laboratorio experimental de corrección escrita, voz y pronunciación para HODIE_plus.">
+  <title>Laboratorio de herramientas · HODIE_plus</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .tools-lab{max-width:900px;margin:1.5rem auto;padding:1rem;display:grid;gap:1rem}
+    .lab-panel{padding:1.2rem;border:1px solid var(--line,#d0d5dd);border-radius:1rem;background:var(--surface,#fff);display:grid;gap:.8rem}
+    .lab-panel textarea,.lab-panel input{width:100%;padding:.7rem;border:1px solid var(--line,#d0d5dd);border-radius:.5rem;background:var(--surface,#fff);color:inherit}
+    .lab-panel textarea{min-height:105px}
+    .lab-actions{display:flex;gap:.6rem;flex-wrap:wrap}
+    .lab-status{min-height:1.5rem;color:var(--muted,#667085)}
+    .lab-output{padding:.8rem;border-radius:.6rem;background:var(--surface-alt,#f4f6f8);overflow-wrap:anywhere;white-space:pre-wrap}
+    .lab-note{font-size:.92rem;color:var(--muted,#667085)}
+    .lab-panel button:disabled{opacity:.55}
+    .phase{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted,#667085);font-weight:800}
+    .error-item{padding:.5rem 0;border-bottom:1px solid var(--line,#d0d5dd)}
+    .error-item:last-child{border-bottom:0}
+    @media(max-width:560px){.tools-lab{padding:.7rem}.lab-panel{padding:1rem}}
+  </style>
+</head>
+<body>
+<main class="tools-lab">
+  <p class="kicker">HODIE_plus · laboratorio experimental</p>
+  <h1>Pruebas de escritura, voz y pronunciación</h1>
+  <p>Este laboratorio compara cuatro capacidades. Los resultados son experimentales y no modifican el progreso de HODIE.</p>
+  <p class="lab-note">La corrección local y las voces del navegador pueden probarse sin una clave de IA. La evaluación fonética requiere ejecutar OpenPronounce en un equipo o servidor propio. Harper se descarga desde su CDN la primera vez.</p>
+
+  <section class="lab-panel" aria-labelledby="phase1-title">
+    <span class="phase">Fase 1 · Corrección escrita</span>
+    <h2 id="phase1-title">Harper + reglas pedagógicas</h2>
+    <p>Harper revisa gramática y estilo en inglés. El motor local de HODIE añade explicaciones para algunos errores frecuentes de nivel A2.</p>
+    <label for="writing-text">Escribe una frase en inglés</label>
+    <textarea id="writing-text">I learning English because I want improve my job opportunities.</textarea>
+    <div class="lab-actions">
+      <button class="primary" id="check-writing" type="button">Revisar con Harper</button>
+      <button class="secondary" id="check-rules" type="button">Revisar reglas de HODIE</button>
+    </div>
+    <p id="harper-status" class="lab-status" role="status" aria-live="polite">Harper aún no se ha cargado.</p>
+    <div id="harper-results" class="lab-output">Los resultados de Harper aparecerán aquí.</div>
+    <div id="rules-results" class="lab-output">Las sugerencias pedagógicas aparecerán aquí.</div>
+  </section>
+
+  <section class="lab-panel" aria-labelledby="phase2-title">
+    <span class="phase">Fase 2 · Interacción inmediata</span>
+    <h2 id="phase2-title">Voz nativa del navegador</h2>
+    <p>Prueba la síntesis de voz y, si el navegador la ofrece, el reconocimiento de voz. El reconocimiento puede utilizar un servicio externo según el navegador.</p>
+    <label for="speech-text">Frase para escuchar o decir</label>
+    <textarea id="speech-text">Hello! I teach technology and robotics at school.</textarea>
+    <div class="lab-actions">
+      <button class="primary" id="speak-browser" type="button">Escuchar en inglés</button>
+      <button class="secondary" id="start-recognition" type="button">Iniciar reconocimiento</button>
+      <button class="secondary" id="stop-recognition" type="button" disabled>Detener</button>
+    </div>
+    <p id="browser-voice-status" class="lab-status" role="status" aria-live="polite">Listo para probar la voz del navegador.</p>
+    <h3>Texto reconocido</h3>
+    <div id="browser-transcript" class="lab-output">La transcripción aparecerá aquí.</div>
+  </section>
+
+  <section class="lab-panel" aria-labelledby="phase3-title">
+    <span class="phase">Fase 3 · Pronunciación fonética</span>
+    <h2 id="phase3-title">OpenPronounce</h2>
+    <p>Graba la frase objetivo y envíala a una instancia de OpenPronounce que controles. El análisis incluye transcripción y diferencias fonéticas; puede producir falsos positivos, especialmente con acentos o ruido.</p>
+    <label for="expected-text">Frase esperada</label>
+    <textarea id="expected-text">Hello, how are you?</textarea>
+    <label for="pronounce-endpoint">URL de la instancia OpenPronounce</label>
+    <input id="pronounce-endpoint" type="url" value="http://localhost:8000/pronunciation" autocomplete="url">
+    <p class="lab-note">En GitHub Pages, localhost se refiere al dispositivo del estudiante, no a GitHub. El servidor debe permitir CORS desde el dominio de HODIE_plus. No envíes audio a un servidor que no controles.</p>
+    <div class="lab-actions">
+      <button class="primary" id="start-recording" type="button">Grabar frase</button>
+      <button class="secondary" id="stop-recording" type="button" disabled>Detener grabación</button>
+      <button class="secondary" id="analyze-pronunciation" type="button" disabled>Analizar pronunciación</button>
+    </div>
+    <audio id="pronunciation-audio" controls hidden></audio>
+    <p id="pronunciation-status" class="lab-status" role="status" aria-live="polite">OpenPronounce aún no está conectado.</p>
+    <div id="pronunciation-results" class="lab-output">Aquí aparecerán los resultados del análisis.</div>
+  </section>
+
+  <section class="lab-panel" aria-labelledby="phase4-title">
+    <span class="phase">Fase 4 · Tutor pedagógico</span>
+    <h2 id="phase4-title">Explicación y práctica de refuerzo</h2>
+    <p>Prueba un corrector local determinista para errores frecuentes. No es un modelo generativo: solo corrige patrones conocidos, para que la respuesta sea inmediata y predecible.</p>
+    <div class="lab-actions"><button class="primary" id="build-practice" type="button">Crear ejercicio desde mi frase</button></div>
+    <div id="pedagogy-results" class="lab-output">El ejercicio de refuerzo aparecerá aquí.</div>
+  </section>
+
+  <p><a href="./index.html">Volver a HODIE_plus</a></p>
+</main>
+<script type="module" src="./tools-lab.js"></script>
+</body>
+</html>
