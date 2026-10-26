@@ -50,6 +50,7 @@ function audioToWavBlob(samples, sampleRate) {
 }
 
 async function initialize() {
+  setStatus(sttStatus, "Conectando con los módulos de RunOnWeb…");
   const [{ SpeechToText }, { TextToSpeech }] = await Promise.all([
     import("https://esm.sh/runonweb@0.1.0/stt"),
     import("https://esm.sh/runonweb@0.1.0/tts")
@@ -59,15 +60,22 @@ async function initialize() {
 
 loadSttButton.addEventListener("click", async () => {
   loadSttButton.disabled = true;
-  setStatus(sttStatus, "Loading Scribe model… The first download may take a few minutes.");
+  setStatus(sttStatus, "Iniciando Scribe… Si es la primera vez, descargará el modelo (puede superar 100 MB).");
   try {
     if (!capabilities) await initialize();
-    await capabilities.loadSpeechToText();
+    setStatus(sttStatus, "Descargando y preparando Scribe… Mantén esta página abierta.");
+    await capabilities.loadSpeechToText({
+      onProgress: (progress) => {
+        const detail = typeof progress === "number" ? ` ${Math.round(progress * 100)}%` : "";
+        setStatus(sttStatus, `Descargando y preparando Scribe…${detail}`);
+      }
+    });
     recordButton.disabled = !navigator.mediaDevices?.getUserMedia || !window.MediaRecorder;
     transcribeButton.disabled = !audioBlob;
-    setStatus(sttStatus, "Scribe is ready. Record a short answer in English.");
+    setStatus(sttStatus, "Scribe está listo. Graba una respuesta corta en inglés.");
   } catch (error) {
-    setStatus(sttStatus, `Could not load Scribe: ${error.message}`);
+    const detail = error?.cause?.message ? ` Detalle: ${error.cause.message}` : "";
+    setStatus(sttStatus, `No se pudo cargar Scribe: ${error.message}.${detail}`);
     loadSttButton.disabled = false;
   }
 });
@@ -84,14 +92,14 @@ recordButton.addEventListener("click", async () => {
       recordingPlayer.hidden = false;
       transcribeButton.disabled = false;
       stream.getTracks().forEach((track) => track.stop());
-      setStatus(sttStatus, "Recording saved in this tab. Select Transcribe audio to process it locally.");
+      setStatus(sttStatus, "Grabación guardada en esta pestaña. Pulsa Transcribir audio para procesarla localmente.");
     }, { once: true });
     recorder.start();
     recordButton.disabled = true;
     stopButton.disabled = false;
-    setStatus(sttStatus, "Recording… Speak in English, then stop.");
+    setStatus(sttStatus, "Grabando… Habla en inglés y luego detén la grabación.");
   } catch (error) {
-    setStatus(sttStatus, `Microphone unavailable: ${error.message}`);
+    setStatus(sttStatus, `Micrófono no disponible: ${error.message}`);
   }
 });
 
@@ -103,13 +111,13 @@ stopButton.addEventListener("click", () => {
 
 transcribeButton.addEventListener("click", async () => {
   transcribeButton.disabled = true;
-  setStatus(sttStatus, "Transcribing audio locally…");
+  setStatus(sttStatus, "Transcribiendo audio localmente…");
   try {
     const result = await capabilities.transcribe(audioBlob);
-    transcriptOutput.textContent = result.text || "(No words detected.)";
-    setStatus(sttStatus, "Transcription complete. Check the result against what you said.");
+    transcriptOutput.textContent = result.text || "(No se detectaron palabras.)";
+    setStatus(sttStatus, "Transcripción terminada. Compara el resultado con lo que dijiste.");
   } catch (error) {
-    setStatus(sttStatus, `Transcription failed: ${error.message}`);
+    setStatus(sttStatus, `Falló la transcripción: ${error.message}`);
   } finally {
     transcribeButton.disabled = false;
   }
@@ -117,21 +125,28 @@ transcribeButton.addEventListener("click", async () => {
 
 loadTtsButton.addEventListener("click", async () => {
   loadTtsButton.disabled = true;
-  setStatus(ttsStatus, "Loading Voice model… The first download may take a few minutes.");
+  setStatus(ttsStatus, "Iniciando Voice… La primera descarga puede superar 300 MB; mantén la página abierta.");
   try {
     if (!capabilities) await initialize();
-    await capabilities.loadTextToSpeech();
+    setStatus(ttsStatus, "Descargando y preparando Voice…");
+    await capabilities.loadTextToSpeech({
+      onProgress: (progress) => {
+        const detail = typeof progress === "number" ? ` ${Math.round(progress * 100)}%` : "";
+        setStatus(ttsStatus, `Descargando y preparando Voice…${detail}`);
+      }
+    });
     speakButton.disabled = false;
-    setStatus(ttsStatus, "Voice is ready.");
+    setStatus(ttsStatus, "Voice está listo.");
   } catch (error) {
-    setStatus(ttsStatus, `Could not load Voice: ${error.message}`);
+    const detail = error?.cause?.message ? ` Detalle: ${error.cause.message}` : "";
+    setStatus(ttsStatus, `No se pudo cargar Voice: ${error.message}.${detail}`);
     loadTtsButton.disabled = false;
   }
 });
 
 speakButton.addEventListener("click", async () => {
   speakButton.disabled = true;
-  setStatus(ttsStatus, "Generating speech locally…");
+  setStatus(ttsStatus, "Generando voz localmente…");
   try {
     const chunks = [];
     for await (const chunk of capabilities.speak(voiceText.value)) chunks.push(chunk.audio);
@@ -143,9 +158,9 @@ speakButton.addEventListener("click", async () => {
     voicePlayer.src = URL.createObjectURL(wav);
     voicePlayer.hidden = false;
     await voicePlayer.play();
-    setStatus(ttsStatus, "Audio generated locally.");
+    setStatus(ttsStatus, "Audio generado localmente.");
   } catch (error) {
-    setStatus(ttsStatus, `Speech generation failed: ${error.message}`);
+    setStatus(ttsStatus, `Falló la generación de voz: ${error.message}`);
   } finally {
     speakButton.disabled = false;
   }
@@ -156,5 +171,5 @@ window.addEventListener("pagehide", () => {
   if (audioContext && audioContext.state !== "closed") audioContext.close();
 });
 
-setStatus(sttStatus, "Ready to load Scribe. A microphone permission prompt will appear when you record.");
-setStatus(ttsStatus, "Ready to load Voice.");
+setStatus(sttStatus, "Listo para cargar Scribe. Al grabar, el navegador solicitará permiso para usar el micrófono.");
+setStatus(ttsStatus, "Listo para cargar Voice.");
