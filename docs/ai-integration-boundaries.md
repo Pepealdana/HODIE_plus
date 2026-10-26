@@ -251,18 +251,3 @@ Los validadores actuales comprueban forma, campos, versión, tarea, correlación
 ### Criterio de estado
 
 `contract-implemented` significa que existe un contrato versionado con validadores ejecutables y pruebas unitarias; no significa que haya un proveedor de IA de producción conectado, que los secretos estén configurados ni que se haya certificado la calidad pedagógica de un modelo.
-
-
-## 13. Primer adaptador concreto: OpenAI Chat Completions
-
-Se añadió `src/providers/openai-chat-completions-adapter.js` como adaptador experimental del lado del servidor. Usa `OPENAI_API_KEY` y `OPENAI_MODEL` del entorno, y permite inyectar `fetchImpl` para pruebas deterministas. No se debe importar desde código ejecutado en el navegador ni publicar la clave en GitHub Pages.
-
-El adaptador:
-- valida la solicitud antes de enviarla;
-- envía solo la tarea, objetivo, nivel, entrada y restricciones declaradas;
-- solicita una respuesta JSON y la normaliza al contrato v1.0.0;
-- comprueba correlación y estructura antes de devolver la respuesta;
-- normaliza errores HTTP, respuesta vacía, JSON inválido y fallos de red;
-- no escribe progreso ni evidencia y no registra el contenido completo de la solicitud.
-
-La prueba `tests/openai-chat-completions-adapter.test.js` usa respuestas simuladas; valida la integración técnica y el manejo de fallos, pero **no realiza una llamada real al proveedor ni certifica calidad pedagógica**. Para una prueba real se necesita un entorno de servidor seguro con las variables de entorno configuradas, límites de gasto, política de privacidad y consentimiento apropiado.
