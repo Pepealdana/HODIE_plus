@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F6F8">
+  <title>RunOnWeb Lab · HODIE_plus</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .runonweb-lab { max-width: 850px; margin: 2rem auto; padding: 1rem; }
+    .lab-panel { padding: 1.25rem; margin: 1rem 0; border: 1px solid var(--border, #d8dee7); border-radius: 1rem; }
+    .lab-panel textarea { width: 100%; min-height: 100px; margin: .75rem 0; }
+    .lab-actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .lab-status { min-height: 1.5rem; margin-top: .75rem; }
+    .lab-note { color: var(--muted, #526071); font-size: .95rem; }
+    .lab-transcript { white-space: pre-wrap; overflow-wrap: anywhere; padding: .75rem; border-radius: .5rem; background: var(--surface, #eef2f6); }
+    .lab-panel button:disabled { opacity: .55; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <main class="runonweb-lab">
+    <p class="kicker">HODIE_plus · Experimental provider lab</p>
+    <h1>RunOnWeb: oral English practice</h1>
+    <p>Test local speech-to-text and text-to-speech models before deciding whether to connect them to a learning experience.</p>
+    <p class="lab-note">The models run in this browser. The first load downloads model weights and may use significant memory and storage. This page does not write to HODIE learning progress.</p>
+
+    <section class="lab-panel" aria-labelledby="scribe-title">
+      <h2 id="scribe-title">1. Scribe — speech to text</h2>
+      <p>Load the model, record a short answer in English, then transcribe it locally.</p>
+      <div class="lab-actions">
+        <button id="load-stt" type="button">Load Scribe model</button>
+        <button id="record" type="button" disabled>Start recording</button>
+        <button id="stop" type="button" disabled>Stop recording</button>
+        <button id="transcribe" type="button" disabled>Transcribe audio</button>
+      </div>
+      <p id="stt-status" class="lab-status" role="status" aria-live="polite">Scribe model not loaded.</p>
+      <audio id="recording" controls hidden></audio>
+      <h3>Transcript</h3>
+      <div id="transcript" class="lab-transcript">Your transcript will appear here.</div>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="voice-title">
+      <h2 id="voice-title">2. Voice — text to speech</h2>
+      <label for="voice-text">Text to hear / Texto para escuchar</label>
+      <textarea id="voice-text">Hello! I teach technology and robotics at school.</textarea>
+      <div class="lab-actions">
+        <button id="load-tts" type="button">Load Voice model</button>
+        <button id="speak" type="button" disabled>Play English audio</button>
+      </div>
+      <p id="tts-status" class="lab-status" role="status" aria-live="polite">Voice model not loaded.</p>
+      <audio id="voice-audio" controls hidden></audio>
+    </section>
+
+    <p><a href="./index.html">Return to HODIE_plus</a></p>
+  </main>
+  <script type="module" src="./runonweb-lab.js"></script>
+</body>
+</html>
