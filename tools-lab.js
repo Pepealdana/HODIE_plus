@@ -75,9 +75,21 @@ function renderFindings(target, findings, emptyMessage) {
     item.className = "error-item";
     const title = document.createElement("strong");
     title.textContent = finding.original ? `${finding.original} → ${finding.correction}` : finding.message;
-    const detail = document.createElement("p");
-    detail.textContent = finding.explanation || finding.message || "Revisa esta sugerencia y confirma si se ajusta a lo que querías decir.";
-    item.append(title, detail);
+    item.append(title);
+    if (finding.explanation) {
+      const detail = document.createElement("p");
+      detail.textContent = finding.explanation;
+      item.append(detail);
+    }
+    if (finding.suggestions?.length) {
+      const suggestion = document.createElement("p");
+      suggestion.textContent = `Sugerencia: ${finding.suggestions.join(" / ")}`;
+      item.append(suggestion);
+    } else if (finding.message && !finding.original) {
+      const detail = document.createElement("p");
+      detail.textContent = "Harper detectó un posible problema, pero no proporcionó una sustitución automática.";
+      item.append(detail);
+    }
     target.append(item);
   }
 }
@@ -102,8 +114,13 @@ $("#check-writing").addEventListener("click", async () => {
       try { const span = lint.span(); location = span ? ` (posición ${span.start}–${span.end})` : ""; } catch {}
       let suggestions = [];
       try { suggestions = typeof lint.suggestions === "function" ? lint.suggestions().map((item) => item.get_replacement_text()).filter(Boolean) : []; } catch {}
-      const suggestionText = suggestions.length ? `\\nSugerencias: ${suggestions.join(" / ")}` : "";
-      return { message: `${lint.message()}${location}${suggestionText}`, original: "", correction: "", explanation: "" };
+      return {
+        message: `${lint.message()}${location}`,
+        suggestions,
+        original: "",
+        correction: "",
+        explanation: ""
+      };
     });
     renderFindings(harperResults, findings, "Harper no encontró problemas en esta frase. Esto no garantiza que toda la frase sea correcta.");
     setStatus(harperStatus, `Revisión terminada: ${lints.length} observación(es). Harper se ejecuta en el navegador.`);
@@ -121,17 +138,26 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 if (SpeechRecognition) {
   recognition = new SpeechRecognition();
   recognition.lang = "en-US";
-  recognition.interimResults = true;
+  recognition.interimResults = false;
   recognition.continuous = false;
   recognition.addEventListener("result", (event) => {
-    const transcript = Array.from(event.results).map((result) => result[0].transcript).join(" ");
+    const transcript = Array.from(event.results)
+      .filter((result) => result.isFinal)
+      .map((result) => result[0].transcript.trim())
+      .filter(Boolean)
+      .join(" ");
     browserTranscript.textContent = transcript || "No se detectaron palabras.";
   });
   recognition.addEventListener("error", (event) => setStatus(browserVoiceStatus, `Reconocimiento no disponible: ${event.error}. Puedes probar la síntesis de voz igualmente.`));
   recognition.addEventListener("end", () => {
     $("#start-recognition").disabled = false;
     $("#stop-recognition").disabled = true;
-    if (browserTranscript.textContent !== "La transcripción aparecerá aquí.") setStatus(browserVoiceStatus, "Reconocimiento terminado. La disponibilidad y privacidad dependen del navegador.");
+    if (browserTranscript.textContent === "Escuchando…" || !browserTranscript.textContent.trim()) {
+      browserTranscript.textContent = "No se obtuvo una transcripción final. Intenta hablar más cerca del micrófono y pronunciar una frase corta.";
+      setStatus(browserVoiceStatus, "No se recibió una transcripción final.");
+    } else {
+      setStatus(browserVoiceStatus, "Reconocimiento terminado. Compara el texto con la frase objetivo; no es una puntuación de pronunciación.");
+    }
   });
 } else {
   $("#start-recognition").disabled = true;
@@ -224,8 +250,17 @@ $("#build-practice").addEventListener("click", () => {
     pedagogyResults.textContent = "No se encontró un patrón conocido para crear un ejercicio. Prueba con: “I learning English”, “She work every day” o “Yesterday I go to school”.";
     return;
   }
-  const finding = findings[0];
-  pedagogyResults.textContent = `Tu frase: ${text}\nCorrección sugerida: ${text.replace(finding.original, finding.correction)}\n\nExplicación: ${finding.explanation}\n\nPráctica: escribe una nueva frase usando la misma estructura y cambia el sujeto o el contexto.\n\nNota: esta regla cubre un patrón concreto; revisa siempre la frase completa.`;
+  let corrected = text;
+  const applied = [];
+  for (const finding of findings) {
+    if (corrected.includes(finding.original)) {
+      corrected = corrected.replace(finding.original, finding.correction);
+      applied.push(finding);
+    }
+  }
+  const explanation = applied.map((finding, index) => `${index + 1}. ${finding.explanation}`).join("\\n");
+  const practice = applied.map((finding, index) => `${index + 1}. ${finding.id === "present-continuous-be" ? "Completa: I ___ (learn) English now." : finding.id === "want-to" ? "Completa: I want ___ (improve) my English." : finding.id === "third-person-s" ? "Completa: She ___ (teach) English." : finding.id === "past-simple-go" ? "Completa: Yesterday I ___ (go) to school." : finding.id === "do-support-he" ? "Completa: He ___ like coffee." : "Reescribe la edad usando “I am … years old”."}`).join("\\n");
+  pedagogyResults.textContent = `Tu frase:\\n${text}\\n\\nCorrección sugerida:\\n${corrected}\\n\\nPor qué:\\n${explanation}\\n\\nPractica:\\n${practice}\\n\\nEstas reglas detectan solo patrones concretos. Revisa la frase completa y no tomes la sugerencia como una evaluación exhaustiva.`;
 });
 
 window.addEventListener("pagehide", () => {
