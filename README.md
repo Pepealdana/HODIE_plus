@@ -12,6 +12,16 @@ Everything in the architecture, pedagogy, content, interface and future AI layer
 
 ---
 
+## HODIE_plus: entorno de experimentación de IA
+
+Este repositorio se utiliza para evaluar e integrar de forma controlada proveedores y herramientas de IA antes de considerar cambios para el producto pedagógico principal. HODIE conserva la autoridad sobre contenido validado, evaluación de evidencia y progreso del estudiante; ningún proveedor de IA puede modificar esos datos directamente.
+
+- **Límites de arquitectura, propiedad de módulos, flujo de datos y pruebas de aceptación:** [AI integration boundaries](docs/ai-integration-boundaries.md).
+- **Contrato técnico inicial del proveedor:** [ai-provider-contract.json](data/ai-provider-contract.json).
+- **Prueba actual del contrato:** [ai-provider-contract.test.js](tests/ai-provider-contract.test.js).
+
+El documento de límites es una propuesta inicial: los umbrales de calidad por tarea, los proveedores concretos y la política de datos deben definirse antes de aprobar una integración. No se deben sincronizar repositorios completos de forma ciega.
+
 ## Linguistic coverage and activity suite
 
 The current catalog and activity inventory, rule-activation criteria, cross-skill links and validation boundaries are documented in [Linguistic coverage and activity suite](docs/linguistic-coverage-and-activity-suite.md). Draft grammar references remain searchable but are not automatically corrected until validated by positive and negative regression tests.
